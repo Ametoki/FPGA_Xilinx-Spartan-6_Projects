@@ -1,0 +1,118 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/GsZoMuLu/ISE/Project/PLL_20190608
+vglbl
+Z1 !s110 1559926594
+!i10b 1
+!s100 V<`KW`8LXe32mQ2Gdj1MB2
+IAEdkNoa=ngjnNeMS7IIdN3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1381681120
+8C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+FC:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+Z3 OL;L;10.7;67
+r1
+!s85 0
+31
+Z4 !s108 1559926594.000000
+!s107 C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -reportprogress|300|C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!i113 0
+Z5 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
+vPLL_20190608
+R1
+!i10b 1
+!s100 @lNGLoL]m^aYOC0l_zSh42
+Ig>GKR9mmg]PoCHPJTQ9IV1
+R2
+R0
+w1559926070
+8src/PLL_20190608.v
+Fsrc/PLL_20190608.v
+L0 71
+R3
+r1
+!s85 0
+31
+!s108 1559926593.000000
+!s107 src/PLL_20190608.v|
+!s90 -reportprogress|300|src/PLL_20190608.v|
+!i113 0
+R5
+R6
+n@p@l@l_20190608
+vPLL_EXM
+R1
+!i10b 1
+!s100 FnCe]beQe=cX56kUSid5M2
+IgWR_UU9_7i63`zYNhA8Dg2
+R2
+R0
+w1559926256
+8src/PLL_EXM_20190608.v
+Fsrc/PLL_EXM_20190608.v
+L0 21
+R3
+r1
+!s85 0
+31
+R4
+!s107 src/PLL_EXM_20190608.v|
+!s90 -reportprogress|300|src/PLL_EXM_20190608.v|
+!i113 0
+R5
+R6
+n@p@l@l_@e@x@m
+vPLL_TB
+!s110 1559926392
+!i10b 1
+!s100 7NQLoX4ab4S__I400OzU;1
+II`6ld]HBXJFkBge5li[g_3
+R2
+R0
+w1559926364
+Z7 8PLL_TB.v
+Z8 FPLL_TB.v
+L0 25
+R3
+r1
+!s85 0
+31
+!s108 1559926391.000000
+Z9 !s107 PLL_TB.v|
+Z10 !s90 -reportprogress|300|PLL_TB.v|
+!i113 0
+R5
+R6
+n@p@l@l_@t@b
+vpll_test_tb
+R1
+!i10b 1
+!s100 4H38BDd5o=g3BdICI<S_40
+IOYRVjDBgISE=o]cQ6MFI12
+R2
+R0
+w1559926563
+R7
+R8
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R9
+R10
+!i113 0
+R5
+R6

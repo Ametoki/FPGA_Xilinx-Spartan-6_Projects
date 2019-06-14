@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/Project/LED_20190605/LED_20190605/LED_20190605.xst" -ofn "D:/GsZoMuLu/ISE/Project/LED_20190605/LED_20190605/LED_20190605.syr" 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/Project/LED_20190605/LED_20190605/LED_20190605.xst" -ofn "D:/GsZoMuLu/ISE/Project/LED_20190605/LED_20190605/LED_20190605.syr" 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/Project/LED_20190605/LED_20190605/LED_20190605.xst" -ofn "D:/GsZoMuLu/ISE/Project/LED_20190605/LED_20190605/LED_20190605.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-ftg256-2 LED_20190605.ngc LED_20190605.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LED_20190605_map.ncd LED_20190605.ngd LED_20190605.pcf 
+par -w -intstyle ise -ol high -mt off LED_20190605_map.ncd LED_20190605.ncd LED_20190605.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LED_20190605.twx LED_20190605.ncd -o LED_20190605.twr LED_20190605.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LED_20190605.ucf -p xc6slx9-ftg256-2 LED_20190605.ngc LED_20190605.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LED_20190605_map.ncd LED_20190605.ngd LED_20190605.pcf 
+par -w -intstyle ise -ol high -mt off LED_20190605_map.ncd LED_20190605.ncd LED_20190605.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LED_20190605.twx LED_20190605.ncd -o LED_20190605.twr LED_20190605.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LED_20190605.ucf -p xc6slx9-ftg256-2 LED_20190605.ngc LED_20190605.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LED_20190605_map.ncd LED_20190605.ngd LED_20190605.pcf 
+par -w -intstyle ise -ol high -mt off LED_20190605_map.ncd LED_20190605.ncd LED_20190605.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LED_20190605.twx LED_20190605.ncd -o LED_20190605.twr LED_20190605.pcf 
+bitgen -intstyle ise -f LED_20190605.ut LED_20190605.ncd 

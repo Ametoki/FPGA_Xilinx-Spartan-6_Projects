@@ -1,0 +1,20 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Jun 08 00:06:55 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led<0>" LOCATE = SITE "P4" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "N5" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "P5" LEVEL 1;
+COMP "clk" LOCATE = SITE "T8" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "M6" LEVEL 1;
+COMP "key<0>" LOCATE = SITE "C3" LEVEL 1;
+COMP "key<1>" LOCATE = SITE "D3" LEVEL 1;
+COMP "key<2>" LOCATE = SITE "E4" LEVEL 1;
+COMP "key<3>" LOCATE = SITE "E3" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "clk_BUFGP/BUFG" BEL "Mshreg_led_r1_0" BEL
+        "led_r1_0" BEL "Mshreg_led_r1_1" BEL "led_r1_1" BEL "Mshreg_led_r1_2"
+        BEL "led_r1_2" BEL "Mshreg_led_r1_3" BEL "led_r1_3";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

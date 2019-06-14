@@ -1,0 +1,6 @@
+verilog work "src/SEG_Scan.v"
+verilog work "src/SEG_Decoder.v"
+verilog work "src/KEY_Debounce.v"
+verilog work "src/Generator.v"
+verilog work "src/Counter_M10.v"
+verilog work "src/Generator_Test.v"

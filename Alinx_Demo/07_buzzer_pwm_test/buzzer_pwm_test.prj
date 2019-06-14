@@ -1,0 +1,3 @@
+verilog work "src/ax_pwm.v"
+verilog work "src/ax_debounce.v"
+verilog work "src/buzzer_pwm_test.v"

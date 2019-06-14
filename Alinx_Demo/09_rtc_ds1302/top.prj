@@ -1,0 +1,8 @@
+verilog work "src/spi_master.v"
+verilog work "src/ds1302_io.v"
+verilog work "src/seg_scan.v"
+verilog work "src/seg_decoder.v"
+verilog work "src/ds1302.v"
+verilog work "src/seg_bcd.v"
+verilog work "src/ds1302_test.v"
+verilog work "src/top.v"

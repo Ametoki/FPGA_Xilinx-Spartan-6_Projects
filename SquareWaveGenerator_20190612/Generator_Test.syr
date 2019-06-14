@@ -1,0 +1,695 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: Generator_Test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Generator_Test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Generator_Test"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : Generator_Test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\SEG_Scan.v" into library work
+Parsing module <SEG_Scan>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\SEG_Decoder.v" into library work
+Parsing module <SEG_Decoder>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\KEY_Debounce.v" into library work
+Parsing module <KEY_Debounce>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\Generator.v" into library work
+Parsing module <Generator>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\Counter_M10.v" into library work
+Parsing module <Counter_M10>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\Generator_Test.v" into library work
+Parsing module <Generator_Test>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Generator_Test>.
+
+Elaborating module <Generator>.
+
+Elaborating module <SEG_Decoder>.
+
+Elaborating module <SEG_Scan>.
+
+Elaborating module <Counter_M10>.
+WARNING:HDLCompiler:1127 - "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\Generator_Test.v" Line 174: Assignment to co_5 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\Generator_Test.v" Line 176: Assignment to do_5 ignored, since the identifier is never used
+
+Elaborating module <KEY_Debounce>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Generator_Test>.
+    Related source file is "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\Generator_Test.v".
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\Generator_Test.v" line 168: Output port <co> of the instance <Counter_M10_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\Generator_Test.v" line 168: Output port <d0> of the instance <Counter_M10_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\Generator_Test.v" line 182: Output port <button_posedge> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\Generator_Test.v" line 182: Output port <button_out> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\Generator_Test.v" line 191: Output port <button_posedge> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\Generator_Test.v" line 191: Output port <button_out> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\Generator_Test.v" line 200: Output port <button_posedge> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\Generator_Test.v" line 200: Output port <button_out> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\Generator_Test.v" line 209: Output port <button_posedge> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\Generator_Test.v" line 209: Output port <button_out> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <Freq_min>.
+    Found 1-bit register for signal <Freq_plus>.
+    Found 1-bit register for signal <Freq_Lplus>.
+    Found 1-bit register for signal <Freq_Lmin>.
+    Found 9-bit adder for signal <n0079[8:0]> created at line 33.
+    Found 12-bit adder for signal <n0082[11:0]> created at line 33.
+    Found 15-bit adder for signal <n0085[14:0]> created at line 33.
+    Found 19-bit adder for signal <n0088[18:0]> created at line 33.
+    Found 22-bit adder for signal <n0091[21:0]> created at line 33.
+    Found 4x4-bit multiplier for signal <temp_1[3]_PWR_1_o_MuLt_0_OUT> created at line 34.
+    Found 4x7-bit multiplier for signal <temp_2[3]_PWR_1_o_MuLt_2_OUT> created at line 35.
+    Found 4x10-bit multiplier for signal <temp_3[3]_PWR_1_o_MuLt_4_OUT> created at line 36.
+    Found 4x14-bit multiplier for signal <temp_4[3]_PWR_1_o_MuLt_6_OUT> created at line 37.
+    Found 4x17-bit multiplier for signal <temp_5[3]_PWR_1_o_MuLt_8_OUT> created at line 38.
+    Summary:
+	inferred   5 Multiplier(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <Generator_Test> synthesized.
+
+Synthesizing Unit <Generator>.
+    Related source file is "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\Generator.v".
+    Found 32-bit register for signal <timer>.
+    Found 1-bit register for signal <Square>.
+    Found 32-bit register for signal <Counter>.
+    Found 32-bit adder for signal <timer[31]_GND_7_o_add_5_OUT> created at line 52.
+    Found 32-bit comparator equal for signal <timer[31]_Counter[31]_equal_5_o> created at line 45
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  65 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <Generator> synthesized.
+
+Synthesizing Unit <SEG_Decoder>.
+    Related source file is "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\SEG_Decoder.v".
+    Found 16x8-bit Read Only RAM for signal <seg_data>
+    Summary:
+	inferred   1 RAM(s).
+Unit <SEG_Decoder> synthesized.
+
+Synthesizing Unit <SEG_Scan>.
+    Related source file is "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\SEG_Scan.v".
+        SCAN_FREQ = 200
+        CLK_FREQ = 50000000
+        SCAN_COUNT = 41665
+    Found 6-bit register for signal <seg_sel>.
+    Found 8-bit register for signal <seg_data>.
+    Found 4-bit register for signal <scan_sel>.
+    Found 32-bit register for signal <scan_timer>.
+    Found 4-bit adder for signal <scan_sel[3]_GND_9_o_add_2_OUT> created at line 54.
+    Found 32-bit adder for signal <scan_timer[31]_GND_9_o_add_4_OUT> created at line 58.
+    Found 8x6-bit Read Only RAM for signal <_n0059>
+    Found 8-bit 7-to-1 multiplexer for signal <_n0072> created at line 70.
+    Found 32-bit comparator greater for signal <n0000> created at line 48
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  50 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <SEG_Scan> synthesized.
+
+Synthesizing Unit <Counter_M10>.
+    Related source file is "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\Counter_M10.v".
+    Found 1-bit register for signal <co>.
+    Found 1-bit register for signal <d0>.
+    Found 4-bit register for signal <data>.
+    Found 4-bit subtractor for signal <data[3]_GND_11_o_sub_6_OUT> created at line 54.
+    Found 4-bit adder for signal <data[3]_GND_11_o_add_2_OUT> created at line 39.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   6 D-type flip-flop(s).
+	inferred  12 Multiplexer(s).
+Unit <Counter_M10> synthesized.
+
+Synthesizing Unit <KEY_Debounce>.
+    Related source file is "D:\GsZoMuLu\ISE\Project\SquareWaveGenerator_20190612\src\KEY_Debounce.v".
+        N = 32
+        FREQ = 50
+        MAX_TIME = 20
+    Found 1-bit register for signal <button_out_d0>.
+    Found 1-bit register for signal <button_out>.
+    Found 32-bit register for signal <q_reg>.
+    Found 1-bit register for signal <DFF2>.
+    Found 1-bit register for signal <button_posedge>.
+    Found 1-bit register for signal <button_negedge>.
+    Found 1-bit register for signal <DFF1>.
+    Found 32-bit adder for signal <q_reg[31]_GND_12_o_add_1_OUT> created at line 51.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  38 D-type flip-flop(s).
+Unit <KEY_Debounce> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 16x8-bit single-port Read Only RAM                    : 6
+ 8x6-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 5
+ 10x4-bit multiplier                                   : 1
+ 14x4-bit multiplier                                   : 1
+ 17x4-bit multiplier                                   : 1
+ 4x4-bit multiplier                                    : 1
+ 7x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 18
+ 12-bit adder                                          : 1
+ 15-bit adder                                          : 1
+ 19-bit adder                                          : 1
+ 22-bit adder                                          : 1
+ 32-bit adder                                          : 6
+ 4-bit adder                                           : 1
+ 4-bit addsub                                          : 6
+ 9-bit adder                                           : 1
+# Registers                                            : 57
+ 1-bit register                                        : 41
+ 32-bit register                                       : 7
+ 4-bit register                                        : 7
+ 6-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 2
+ 32-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 78
+ 1-bit 2-to-1 multiplexer                              : 30
+ 32-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 43
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+ 8-bit 7-to-1 multiplexer                              : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <Counter_22> (without init value) has a constant value of 0 in block <Generator_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Counter_23> (without init value) has a constant value of 0 in block <Generator_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Counter_24> (without init value) has a constant value of 0 in block <Generator_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Counter_25> (without init value) has a constant value of 0 in block <Generator_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Counter_26> (without init value) has a constant value of 0 in block <Generator_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Counter_27> (without init value) has a constant value of 0 in block <Generator_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Counter_28> (without init value) has a constant value of 0 in block <Generator_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Counter_29> (without init value) has a constant value of 0 in block <Generator_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Counter_30> (without init value) has a constant value of 0 in block <Generator_0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Counter_31> (without init value) has a constant value of 0 in block <Generator_0>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <Generator>.
+The following registers are absorbed into counter <timer>: 1 register on signal <timer>.
+Unit <Generator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Generator_Test>.
+	The following adders/subtractors are grouped into adder tree <Madd_n0091[21:0]1> :
+ 	<Madd_n0079[8:0]> in block <Generator_Test>, 	<Madd_n0082[11:0]> in block <Generator_Test>, 	<Madd_n0085[14:0]> in block <Generator_Test>, 	<Madd_n0088[18:0]> in block <Generator_Test>, 	<Madd_n0091[21:0]> in block <Generator_Test>.
+	Multiplier <Mmult_temp_5[3]_PWR_1_o_MuLt_8_OUT> in block <Generator_Test> and adder/subtractor <ADDER_FOR_MULTADD_Madd4> in block <Generator_Test> are combined into a MAC<Maddsub_temp_5[3]_PWR_1_o_MuLt_8_OUT>.
+	Multiplier <Mmult_temp_4[3]_PWR_1_o_MuLt_6_OUT> in block <Generator_Test> and adder/subtractor <ADDER_FOR_MULTADD_Madd3> in block <Generator_Test> are combined into a MAC<Maddsub_temp_4[3]_PWR_1_o_MuLt_6_OUT>.
+	Multiplier <Mmult_temp_3[3]_PWR_1_o_MuLt_4_OUT> in block <Generator_Test> and adder/subtractor <ADDER_FOR_MULTADD_Madd2> in block <Generator_Test> are combined into a MAC<Maddsub_temp_3[3]_PWR_1_o_MuLt_4_OUT>.
+	Multiplier <Mmult_temp_2[3]_PWR_1_o_MuLt_2_OUT> in block <Generator_Test> and adder/subtractor <ADDER_FOR_MULTADD_Madd1> in block <Generator_Test> are combined into a MAC<Maddsub_temp_2[3]_PWR_1_o_MuLt_2_OUT>.
+	Multiplier <Mmult_temp_1[3]_PWR_1_o_MuLt_0_OUT> in block <Generator_Test> and adder/subtractor <ADDER_FOR_MULTADD_Madd> in block <Generator_Test> are combined into a MAC<Maddsub_temp_1[3]_PWR_1_o_MuLt_0_OUT>.
+Unit <Generator_Test> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SEG_Decoder>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_seg_data> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <bin_data>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <seg_data>      |          |
+    -----------------------------------------------------------------------
+Unit <SEG_Decoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SEG_Scan>.
+The following registers are absorbed into counter <scan_timer>: 1 register on signal <scan_timer>.
+The following registers are absorbed into counter <scan_sel>: 1 register on signal <scan_sel>.
+INFO:Xst:3217 - HDL ADVISOR - Register <seg_sel> currently described with an asynchronous reset, could be combined with distributed RAM <Mram__n0059> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 6-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <scan_sel<2:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <SEG_Scan> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 16x8-bit single-port distributed Read Only RAM        : 6
+ 8x6-bit single-port distributed Read Only RAM         : 1
+# MACs                                                 : 5
+ 10x4-to-22-bit MAC                                    : 1
+ 14x4-to-22-bit MAC                                    : 1
+ 17x4-to-22-bit MAC                                    : 1
+ 4x4-to-22-bit MAC                                     : 1
+ 7x4-to-22-bit MAC                                     : 1
+# Adders/Subtractors                                   : 10
+ 32-bit adder                                          : 4
+ 4-bit addsub                                          : 6
+# Counters                                             : 3
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 1
+# Registers                                            : 239
+ Flip-Flops                                            : 239
+# Comparators                                          : 2
+ 32-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 75
+ 1-bit 2-to-1 multiplexer                              : 30
+ 4-bit 2-to-1 multiplexer                              : 42
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+ 8-bit 7-to-1 multiplexer                              : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <Counter_22> in Unit <Generator> is equivalent to the following 9 FFs/Latches, which will be removed : <Counter_23> <Counter_24> <Counter_25> <Counter_26> <Counter_27> <Counter_28> <Counter_29> <Counter_30> <Counter_31> 
+WARNING:Xst:1710 - FF/Latch <Counter_22> (without init value) has a constant value of 0 in block <Generator>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Generator_Test> ...
+
+Optimizing unit <Generator> ...
+
+Optimizing unit <SEG_Scan> ...
+
+Optimizing unit <Counter_M10> ...
+
+Optimizing unit <KEY_Debounce> ...
+WARNING:Xst:2677 - Node <Counter_M10_5/d0> of sequential type is unconnected in block <Generator_Test>.
+WARNING:Xst:2677 - Node <Counter_M10_5/co> of sequential type is unconnected in block <Generator_Test>.
+WARNING:Xst:2677 - Node <KEY_Debounce_3/button_posedge> of sequential type is unconnected in block <Generator_Test>.
+WARNING:Xst:2677 - Node <KEY_Debounce_2/button_posedge> of sequential type is unconnected in block <Generator_Test>.
+WARNING:Xst:2677 - Node <KEY_Debounce_1/button_posedge> of sequential type is unconnected in block <Generator_Test>.
+WARNING:Xst:2677 - Node <KEY_Debounce_0/button_posedge> of sequential type is unconnected in block <Generator_Test>.
+WARNING:Xst:1710 - FF/Latch <KEY_Debounce_2/q_reg_27> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_26> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_25> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_24> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_23> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_22> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_21> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_20> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_31> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_30> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_29> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_28> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_27> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_26> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_25> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_24> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_23> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_22> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_21> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_20> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_31> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_30> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_29> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_28> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_27> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_26> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_25> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_24> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_23> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_22> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_21> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_20> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_31> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_30> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_29> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_28> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_27> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_26> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_25> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_24> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_23> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_22> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_21> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_20> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_19> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_18> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_17> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_16> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_28> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_29> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_30> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_31> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_20> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_21> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_22> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_23> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_24> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_25> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_26> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_27> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_28> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_29> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_30> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_31> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_sel_3> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+WARNING:Xst:1710 - FF/Latch <SEG_Scan/seg_data_7> (without init value) has a constant value of 1 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Generator_Test, actual ratio is 7.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 225
+ Flip-Flops                                            : 225
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Generator_Test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 636
+#      GND                         : 1
+#      INV                         : 14
+#      LUT1                        : 77
+#      LUT2                        : 12
+#      LUT3                        : 62
+#      LUT4                        : 20
+#      LUT5                        : 134
+#      LUT6                        : 49
+#      MUXCY                       : 138
+#      VCC                         : 1
+#      XORCY                       : 128
+# FlipFlops/Latches                : 225
+#      FD                          : 22
+#      FDC                         : 153
+#      FDCE                        : 27
+#      FDE                         : 2
+#      FDP                         : 21
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 20
+#      IBUF                        : 5
+#      OBUF                        : 15
+# DSPs                             : 5
+#      DSP48A1                     : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             225  out of  11440     1%  
+ Number of Slice LUTs:                  368  out of   5720     6%  
+    Number used as Logic:               368  out of   5720     6%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    400
+   Number with an unused Flip Flop:     175  out of    400    43%  
+   Number with an unused LUT:            32  out of    400     8%  
+   Number of fully used LUT-FF pairs:   193  out of    400    48%  
+   Number of unique control sets:        10
+
+IO Utilization: 
+ Number of IOs:                          21
+ Number of bonded IOBs:                  21  out of    186    11%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      5  out of     16    31%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 225   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 20.062ns (Maximum Frequency: 49.845MHz)
+   Minimum input arrival time before clock: 5.222ns
+   Maximum output required time after clock: 4.162ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 20.062ns (frequency: 49.845MHz)
+  Total number of paths / destination ports: 1888479629 / 248
+-------------------------------------------------------------------------
+Delay:               20.062ns (Levels of Logic = 7)
+  Source:            Counter_M10_1/data_0 (FF)
+  Destination:       Generator_0/Counter_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Counter_M10_1/data_0 to Generator_0/Counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            14   0.525   1.126  Counter_M10_1/data_0 (Counter_M10_1/data_0)
+     DSP48A1:B0->PCOUT47    1   5.153   0.000  Maddsub_temp_1[3]_PWR_1_o_MuLt_0_OUT (Maddsub_temp_1[3]_PWR_1_o_MuLt_0_OUT_PCOUT_to_Maddsub_temp_2[3]_PWR_1_o_MuLt_2_OUT_PCIN_47)
+     DSP48A1:PCIN47->PCOUT47    1   2.653   0.000  Maddsub_temp_2[3]_PWR_1_o_MuLt_2_OUT (Maddsub_temp_2[3]_PWR_1_o_MuLt_2_OUT_PCOUT_to_Maddsub_temp_3[3]_PWR_1_o_MuLt_4_OUT_PCIN_47)
+     DSP48A1:PCIN47->PCOUT47    1   2.653   0.000  Maddsub_temp_3[3]_PWR_1_o_MuLt_4_OUT (Maddsub_temp_3[3]_PWR_1_o_MuLt_4_OUT_PCOUT_to_Maddsub_temp_4[3]_PWR_1_o_MuLt_6_OUT_PCIN_47)
+     DSP48A1:PCIN47->PCOUT47    1   2.653   0.000  Maddsub_temp_4[3]_PWR_1_o_MuLt_6_OUT (Maddsub_temp_4[3]_PWR_1_o_MuLt_6_OUT_PCOUT_to_Maddsub_temp_5[3]_PWR_1_o_MuLt_8_OUT_PCIN_47)
+     DSP48A1:PCIN47->P13    2   2.645   1.181  Maddsub_temp_5[3]_PWR_1_o_MuLt_8_OUT (ADDER_FOR_MULTADD_Madd_134)
+     LUT6:I0->O            1   0.254   0.910  Generator_0/n0000_inv3 (Generator_0/n0000_inv3)
+     LUT5:I2->O            1   0.235   0.000  Generator_0/Counter_0_rstpot (Generator_0/Counter_0_rstpot)
+     FD:D                      0.074          Generator_0/Counter_0
+    ----------------------------------------
+    Total                     20.062ns (16.845ns logic, 3.217ns route)
+                                       (84.0% logic, 16.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 207 / 207
+-------------------------------------------------------------------------
+Offset:              5.222ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       Freq_plus (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst_n to Freq_plus
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.328   0.765  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            201   0.255   2.415  rst_n_inv1_INV_0 (Counter_M10_0/rst_n_inv)
+     FDC:CLR                   0.459          Counter_M10_0/co
+    ----------------------------------------
+    Total                      5.222ns (2.042ns logic, 3.180ns route)
+                                       (39.1% logic, 60.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            Generator_0/Square (FF)
+  Destination:       Square (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Generator_0/Square to Square
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.525   0.725  Generator_0/Square (Generator_0/Square)
+     OBUF:I->O                 2.912          Square_OBUF (Square)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   20.062|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.21 secs
+ 
+--> 
+
+Total memory usage is 4524256 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   85 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
+

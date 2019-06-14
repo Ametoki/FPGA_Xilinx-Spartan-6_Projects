@@ -1,0 +1,191 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Jun 08 01:10:06 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "seg_data<0>" LOCATE = SITE "C7" LEVEL 1;
+COMP "seg_data<1>" LOCATE = SITE "E6" LEVEL 1;
+COMP "seg_data<2>" LOCATE = SITE "C5" LEVEL 1;
+COMP "seg_data<3>" LOCATE = SITE "F7" LEVEL 1;
+COMP "seg_data<4>" LOCATE = SITE "D6" LEVEL 1;
+COMP "seg_data<5>" LOCATE = SITE "E7" LEVEL 1;
+COMP "seg_data<6>" LOCATE = SITE "D5" LEVEL 1;
+COMP "seg_data<7>" LOCATE = SITE "C6" LEVEL 1;
+COMP "seg_sel<0>" LOCATE = SITE "D9" LEVEL 1;
+COMP "seg_sel<1>" LOCATE = SITE "E10" LEVEL 1;
+COMP "seg_sel<2>" LOCATE = SITE "F10" LEVEL 1;
+COMP "seg_sel<3>" LOCATE = SITE "F9" LEVEL 1;
+COMP "seg_sel<4>" LOCATE = SITE "E8" LEVEL 1;
+COMP "seg_sel<5>" LOCATE = SITE "D8" LEVEL 1;
+COMP "clk" LOCATE = SITE "T8" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "L3" LEVEL 1;
+COMP "rtc_ce" LOCATE = SITE "C13" LEVEL 1;
+COMP "rtc_data" LOCATE = SITE "D14" LEVEL 1;
+COMP "rtc_sclk" LOCATE = SITE "E13" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "ds1302_test_m0/state_2" BEL
+        "ds1302_test_m0/state_1" BEL "ds1302_test_m0/state_0" BEL
+        "ds1302_test_m0/ds1302_m0/state_FSM_FFd2" BEL
+        "ds1302_test_m0/ds1302_m0/state_FSM_FFd3" BEL
+        "ds1302_test_m0/ds1302_m0/state_FSM_FFd1" BEL
+        "ds1302_test_m0/ds1302_m0/state_FSM_FFd5" BEL
+        "ds1302_test_m0/ds1302_m0/state_FSM_FFd4" BEL
+        "ds1302_test_m0/ds1302_m0/read_hour_7" BEL
+        "ds1302_test_m0/ds1302_m0/read_hour_6" BEL
+        "ds1302_test_m0/ds1302_m0/read_hour_5" BEL
+        "ds1302_test_m0/ds1302_m0/read_hour_4" BEL
+        "ds1302_test_m0/ds1302_m0/read_hour_3" BEL
+        "ds1302_test_m0/ds1302_m0/read_hour_2" BEL
+        "ds1302_test_m0/ds1302_m0/read_hour_1" BEL
+        "ds1302_test_m0/ds1302_m0/read_hour_0" BEL
+        "ds1302_test_m0/ds1302_m0/read_minute_7" BEL
+        "ds1302_test_m0/ds1302_m0/read_minute_6" BEL
+        "ds1302_test_m0/ds1302_m0/read_minute_5" BEL
+        "ds1302_test_m0/ds1302_m0/read_minute_4" BEL
+        "ds1302_test_m0/ds1302_m0/read_minute_3" BEL
+        "ds1302_test_m0/ds1302_m0/read_minute_2" BEL
+        "ds1302_test_m0/ds1302_m0/read_minute_1" BEL
+        "ds1302_test_m0/ds1302_m0/read_minute_0" BEL
+        "ds1302_test_m0/ds1302_m0/read_second_7" BEL
+        "ds1302_test_m0/ds1302_m0/read_second_6" BEL
+        "ds1302_test_m0/ds1302_m0/read_second_5" BEL
+        "ds1302_test_m0/ds1302_m0/read_second_4" BEL
+        "ds1302_test_m0/ds1302_m0/read_second_3" BEL
+        "ds1302_test_m0/ds1302_m0/read_second_2" BEL
+        "ds1302_test_m0/ds1302_m0/read_second_1" BEL
+        "ds1302_test_m0/ds1302_m0/read_second_0" BEL
+        "ds1302_test_m0/ds1302_m0/read_addr_3" BEL
+        "ds1302_test_m0/ds1302_m0/read_addr_2" BEL
+        "ds1302_test_m0/ds1302_m0/read_addr_1" BEL
+        "ds1302_test_m0/ds1302_m0/write_data_4" BEL
+        "ds1302_test_m0/ds1302_m0/write_data_2" BEL
+        "ds1302_test_m0/ds1302_m0/write_data_1" BEL
+        "ds1302_test_m0/ds1302_m0/write_data_0" BEL
+        "ds1302_test_m0/ds1302_m0/write_addr_3" BEL
+        "ds1302_test_m0/ds1302_m0/write_addr_2" BEL
+        "ds1302_test_m0/ds1302_m0/write_addr_1" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/delay_cnt_8" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/delay_cnt_7" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/delay_cnt_6" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/delay_cnt_5" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/delay_cnt_4" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/delay_cnt_3" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/delay_cnt_2" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/delay_cnt_1" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/delay_cnt_0" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/read_data_7" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/read_data_6" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/read_data_5" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/read_data_4" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/read_data_3" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/read_data_2" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/read_data_1" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/read_data_0" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/send_data_7" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/send_data_6" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/send_data_5" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/send_data_4" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/send_data_3" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/send_data_0" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/state_3" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/state_2" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/state_1" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/state_0" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_timer_15" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_timer_14" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_timer_13" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_timer_12" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_timer_11" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_timer_10" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_timer_9" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_timer_8" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_timer_7" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_timer_6" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_timer_5" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_timer_4" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_timer_3" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_timer_2" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_timer_1" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_timer_0" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_sel_2" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_sel_1" BEL
+        "seg_bcd_m0/seg_scan_m0/scan_sel_0" BEL
+        "seg_bcd_m0/seg_scan_m0/seg_sel_5" BEL
+        "seg_bcd_m0/seg_scan_m0/seg_sel_4" BEL
+        "seg_bcd_m0/seg_scan_m0/seg_sel_3" BEL
+        "seg_bcd_m0/seg_scan_m0/seg_sel_2" BEL
+        "seg_bcd_m0/seg_scan_m0/seg_sel_1" BEL
+        "seg_bcd_m0/seg_scan_m0/seg_sel_0" BEL
+        "seg_bcd_m0/seg_scan_m0/seg_data_6" BEL
+        "seg_bcd_m0/seg_scan_m0/seg_data_5" BEL
+        "seg_bcd_m0/seg_scan_m0/seg_data_4" BEL
+        "seg_bcd_m0/seg_scan_m0/seg_data_3" BEL
+        "seg_bcd_m0/seg_scan_m0/seg_data_2" BEL
+        "seg_bcd_m0/seg_scan_m0/seg_data_1" BEL
+        "seg_bcd_m0/seg_scan_m0/seg_data_0" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/state_FSM_FFd2"
+        BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_edge_cnt_4"
+        BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_edge_cnt_3"
+        BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_edge_cnt_2"
+        BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_edge_cnt_1"
+        BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_edge_cnt_0"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_cnt_15"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_cnt_14"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_cnt_13"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_cnt_12"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_cnt_11"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_cnt_10"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_cnt_9"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_cnt_8"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_cnt_7"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_cnt_6"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_cnt_5"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_cnt_4"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_cnt_3"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_cnt_2"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_cnt_1"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/clk_cnt_0"
+        BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/state_FSM_FFd1"
+        BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/state_FSM_FFd3"
+        BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/state_FSM_FFd4"
+        BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/state_FSM_FFd5"
+        BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/state_FSM_FFd6"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/MISO_shift_7"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/MISO_shift_6"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/MISO_shift_5"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/MISO_shift_4"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/MISO_shift_3"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/MISO_shift_2"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/MISO_shift_1"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/MISO_shift_0"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/MOSI_shift_6"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/MOSI_shift_5"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/MOSI_shift_4"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/MOSI_shift_3"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/MOSI_shift_2"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/MOSI_shift_1"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/MOSI_shift_0"
+        BEL "ds1302_test_m0/write_time_req" BEL "ds1302_test_m0/read_time_req"
+        BEL "ds1302_test_m0/write_hour_reg_0" BEL
+        "ds1302_test_m0/ds1302_m0/cmd_write" BEL
+        "ds1302_test_m0/ds1302_m0/cmd_read" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/CS_reg" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/wr_req" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/DCLK_reg" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/state_0_1" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/state_2_1" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/state_3_1" BEL "clk_BUFGP/BUFG"
+        BEL "ds1302_test_m0/ds1302_m0/ds1302_io_m0/ds1302_io_dir" BEL
+        "ds1302_test_m0/ds1302_m0/ds1302_io_m0/spi_master_m0/MOSI_shift_7";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

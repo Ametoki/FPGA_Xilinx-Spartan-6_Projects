@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/Project/PLL_20190608/PLL_EXM.xst" -ofn "D:/GsZoMuLu/ISE/Project/PLL_20190608/PLL_EXM.syr" 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/Project/PLL_20190608/PLL_EXM.xst" -ofn "D:/GsZoMuLu/ISE/Project/PLL_20190608/PLL_EXM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src -nt timestamp -uc PLL_20190608.ucf -p xc6slx9-ftg256-2 PLL_EXM.ngc PLL_EXM.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PLL_EXM_map.ncd PLL_EXM.ngd PLL_EXM.pcf 
+par -w -intstyle ise -ol high -mt off PLL_EXM_map.ncd PLL_EXM.ncd PLL_EXM.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PLL_EXM.twx PLL_EXM.ncd -o PLL_EXM.twr PLL_EXM.pcf -ucf PLL_20190608.ucf 
+bitgen -intstyle ise -f PLL_EXM.ut PLL_EXM.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/Project/PLL_20190608/PLL_EXM.xst" -ofn "D:/GsZoMuLu/ISE/Project/PLL_20190608/PLL_EXM.syr" 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/Project/PLL_20190608/PLL_EXM.xst" -ofn "D:/GsZoMuLu/ISE/Project/PLL_20190608/PLL_EXM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src -nt timestamp -uc PLL_20190608.ucf -p xc6slx9-ftg256-2 PLL_EXM.ngc PLL_EXM.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PLL_EXM_map.ncd PLL_EXM.ngd PLL_EXM.pcf 
+par -w -intstyle ise -ol high -mt off PLL_EXM_map.ncd PLL_EXM.ncd PLL_EXM.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PLL_EXM.twx PLL_EXM.ncd -o PLL_EXM.twr PLL_EXM.pcf -ucf PLL_20190608.ucf 
+bitgen -intstyle ise -f PLL_EXM.ut PLL_EXM.ncd 

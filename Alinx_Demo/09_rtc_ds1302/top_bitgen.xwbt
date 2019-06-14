@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\FPGA Learning Materials\demo\09_rtc_ds1302\top.ncd
+OUTFILE=D:\FPGA Learning Materials\demo\09_rtc_ds1302\top.bit
+FAMILY=Spartan6
+PART=xc6slx9-2ftg256
+WORKINGDIR=D:\FPGA Learning Materials\demo\09_rtc_ds1302
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

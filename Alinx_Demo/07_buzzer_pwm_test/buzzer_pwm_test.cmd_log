@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/FPGA Learning Materials/demo/07_buzzer_pwm_test/buzzer_pwm_test.xst" -ofn "D:/FPGA Learning Materials/demo/07_buzzer_pwm_test/buzzer_pwm_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc buzzer_pwm_test.ucf -p xc6slx9-ftg256-2 "buzzer_pwm_test.ngc" buzzer_pwm_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o buzzer_pwm_test_map.ncd buzzer_pwm_test.ngd buzzer_pwm_test.pcf 
+par -w -intstyle ise -ol high -mt off buzzer_pwm_test_map.ncd buzzer_pwm_test.ncd buzzer_pwm_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml buzzer_pwm_test.twx buzzer_pwm_test.ncd -o buzzer_pwm_test.twr buzzer_pwm_test.pcf -ucf buzzer_pwm_test.ucf 
+bitgen -intstyle ise -f buzzer_pwm_test.ut buzzer_pwm_test.ncd 

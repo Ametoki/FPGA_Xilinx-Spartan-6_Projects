@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/Project/KEY_20190607/KEY_20190607.xst" -ofn "D:/GsZoMuLu/ISE/Project/KEY_20190607/KEY_20190607.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-ftg256-2 KEY_20190607.ngc KEY_20190607.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o KEY_20190607_map.ncd KEY_20190607.ngd KEY_20190607.pcf 
+par -w -intstyle ise -ol high -mt off KEY_20190607_map.ncd KEY_20190607.ncd KEY_20190607.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml KEY_20190607.twx KEY_20190607.ncd -o KEY_20190607.twr KEY_20190607.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-ftg256-2 KEY_20190607.ngc KEY_20190607.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o KEY_20190607_map.ncd KEY_20190607.ngd KEY_20190607.pcf 
+par -w -intstyle ise -ol high -mt off KEY_20190607_map.ncd KEY_20190607.ncd KEY_20190607.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml KEY_20190607.twx KEY_20190607.ncd -o KEY_20190607.twr KEY_20190607.pcf 
+bitgen -intstyle ise -f KEY_20190607.ut KEY_20190607.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/Project/KEY_20190607/KEY_20190607.xst" -ofn "D:/GsZoMuLu/ISE/Project/KEY_20190607/KEY_20190607.syr" 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/Project/KEY_20190607/KEY_20190607.xst" -ofn "D:/GsZoMuLu/ISE/Project/KEY_20190607/KEY_20190607.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/KEY_20190607.ucf -p xc6slx9-ftg256-2 KEY_20190607.ngc KEY_20190607.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o KEY_20190607_map.ncd KEY_20190607.ngd KEY_20190607.pcf 
+par -w -intstyle ise -ol high -mt off KEY_20190607_map.ncd KEY_20190607.ncd KEY_20190607.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml KEY_20190607.twx KEY_20190607.ncd -o KEY_20190607.twr KEY_20190607.pcf 
+bitgen -intstyle ise -f KEY_20190607.ut KEY_20190607.ncd 

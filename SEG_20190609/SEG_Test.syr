@@ -1,0 +1,728 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.28 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.28 secs
+ 
+--> Reading design: SEG_Test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SEG_Test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SEG_Test"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : SEG_Test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\SEG_Scan.v" into library work
+Parsing module <SEG_Scan>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\SEG_Decoder.v" into library work
+Parsing module <SEG_Decoder>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\KEY_Debounce.v" into library work
+Parsing module <KEY_Debounce>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\Counter_M60.v" into library work
+Parsing module <Counter_M60>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\Counter_M24.v" into library work
+Parsing module <Counter_M24>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\SEG_Test.v" into library work
+Parsing module <SEG_Test>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\SEG_Test.v" Line 98: Port co is not connected to this instance
+
+Elaborating module <SEG_Test>.
+
+Elaborating module <Counter_M60>.
+
+Elaborating module <Counter_M24>.
+
+Elaborating module <SEG_Decoder>.
+
+Elaborating module <SEG_Scan>.
+
+Elaborating module <KEY_Debounce>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SEG_Test>.
+    Related source file is "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\SEG_Test.v".
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\SEG_Test.v" line 98: Output port <co> of the instance <Counter_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\SEG_Test.v" line 154: Output port <button_posedge> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\SEG_Test.v" line 154: Output port <button_out> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\SEG_Test.v" line 163: Output port <button_posedge> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\SEG_Test.v" line 163: Output port <button_out> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\SEG_Test.v" line 172: Output port <button_posedge> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\SEG_Test.v" line 172: Output port <button_out> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\SEG_Test.v" line 181: Output port <button_posedge> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\SEG_Test.v" line 181: Output port <button_out> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
+    Found 32-bit register for signal <timer_cnt>.
+    Found 1-bit register for signal <en_1Hz>.
+    Found 1-bit register for signal <hour_set>.
+    Found 32-bit register for signal <timer_lmt>.
+    Found 1-bit register for signal <min_set>.
+    Found 1-bit register for signal <sec_set>.
+    Found 1-bit register for signal <clk_en>.
+    Found 32-bit adder for signal <timer_cnt[31]_GND_1_o_add_1_OUT> created at line 68.
+    Found 32-bit comparator lessequal for signal <n0004> created at line 60
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  69 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <SEG_Test> synthesized.
+
+Synthesizing Unit <Counter_M60>.
+    Related source file is "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\Counter_M60.v".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <data_1>.
+    Found 4-bit register for signal <data_0>.
+    Found 1-bit register for signal <co>.
+    Found 4-bit adder for signal <data_1[3]_GND_2_o_add_3_OUT> created at line 53.
+    Found 4-bit adder for signal <data_0[3]_GND_2_o_add_4_OUT> created at line 57.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <Counter_M60> synthesized.
+
+Synthesizing Unit <Counter_M24>.
+    Related source file is "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\Counter_M24.v".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <data_1>.
+    Found 4-bit register for signal <data_0>.
+    Found 1-bit register for signal <co>.
+    Found 4-bit adder for signal <data_1[3]_GND_3_o_add_3_OUT> created at line 53.
+    Found 4-bit adder for signal <data_0[3]_GND_3_o_add_4_OUT> created at line 57.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <Counter_M24> synthesized.
+
+Synthesizing Unit <SEG_Decoder>.
+    Related source file is "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\SEG_Decoder.v".
+    Found 16x8-bit Read Only RAM for signal <seg_data>
+    Summary:
+	inferred   1 RAM(s).
+Unit <SEG_Decoder> synthesized.
+
+Synthesizing Unit <SEG_Scan>.
+    Related source file is "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\SEG_Scan.v".
+        SCAN_FREQ = 200
+        CLK_FREQ = 50000000
+        SCAN_COUNT = 41665
+    Found 6-bit register for signal <seg_sel>.
+    Found 8-bit register for signal <seg_data>.
+    Found 4-bit register for signal <scan_sel>.
+    Found 32-bit register for signal <scan_timer>.
+    Found 4-bit adder for signal <scan_sel[3]_GND_5_o_add_2_OUT> created at line 54.
+    Found 32-bit adder for signal <scan_timer[31]_GND_5_o_add_4_OUT> created at line 58.
+    Found 8x6-bit Read Only RAM for signal <_n0059>
+    Found 8-bit 7-to-1 multiplexer for signal <_n0072> created at line 70.
+    Found 32-bit comparator greater for signal <n0000> created at line 48
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  50 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <SEG_Scan> synthesized.
+
+Synthesizing Unit <KEY_Debounce>.
+    Related source file is "D:\GsZoMuLu\ISE\Project\SEG_20190609\src\KEY_Debounce.v".
+        N = 32
+        FREQ = 50
+        MAX_TIME = 20
+    Found 1-bit register for signal <button_out_d0>.
+    Found 1-bit register for signal <button_out>.
+    Found 32-bit register for signal <q_reg>.
+    Found 1-bit register for signal <DFF2>.
+    Found 1-bit register for signal <button_posedge>.
+    Found 1-bit register for signal <button_negedge>.
+    Found 1-bit register for signal <DFF1>.
+    Found 32-bit adder for signal <q_reg[31]_GND_7_o_add_1_OUT> created at line 51.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  38 D-type flip-flop(s).
+Unit <KEY_Debounce> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 16x8-bit single-port Read Only RAM                    : 6
+ 8x6-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 13
+ 32-bit adder                                          : 6
+ 4-bit adder                                           : 7
+# Registers                                            : 48
+ 1-bit register                                        : 32
+ 32-bit register                                       : 7
+ 4-bit register                                        : 7
+ 6-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 21
+ 1-bit 2-to-1 multiplexer                              : 6
+ 32-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 10
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+ 8-bit 7-to-1 multiplexer                              : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <timer_lmt_31> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_30> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_29> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_28> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_27> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_26> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_24> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_18> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_16> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_15> has a constant value of 1 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_14> has a constant value of 1 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_11> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_10> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_7> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_6> has a constant value of 1 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_3> has a constant value of 1 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_2> has a constant value of 1 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_1> has a constant value of 1 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_0> has a constant value of 1 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <Counter_M24>.
+The following registers are absorbed into counter <data_1>: 1 register on signal <data_1>.
+Unit <Counter_M24> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_M60>.
+The following registers are absorbed into counter <data_1>: 1 register on signal <data_1>.
+Unit <Counter_M60> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SEG_Decoder>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_seg_data> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <bin_data>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <seg_data>      |          |
+    -----------------------------------------------------------------------
+Unit <SEG_Decoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SEG_Scan>.
+The following registers are absorbed into counter <scan_timer>: 1 register on signal <scan_timer>.
+The following registers are absorbed into counter <scan_sel>: 1 register on signal <scan_sel>.
+INFO:Xst:3217 - HDL ADVISOR - Register <seg_sel> currently described with an asynchronous reset, could be combined with distributed RAM <Mram__n0059> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 6-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <scan_sel<2:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <SEG_Scan> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SEG_Test>.
+The following registers are absorbed into counter <timer_cnt>: 1 register on signal <timer_cnt>.
+Unit <SEG_Test> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 16x8-bit single-port distributed Read Only RAM        : 6
+ 8x6-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 7
+ 32-bit adder                                          : 4
+ 4-bit adder                                           : 3
+# Counters                                             : 6
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 4
+# Registers                                            : 218
+ Flip-Flops                                            : 218
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 15
+ 1-bit 2-to-1 multiplexer                              : 6
+ 4-bit 2-to-1 multiplexer                              : 6
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+ 8-bit 7-to-1 multiplexer                              : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <timer_lmt_31> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_30> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_29> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_28> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_27> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_26> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_24> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_18> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_16> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_15> has a constant value of 1 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_14> has a constant value of 1 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_11> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_10> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_7> has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_6> has a constant value of 1 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_3> has a constant value of 1 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_2> has a constant value of 1 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_1> has a constant value of 1 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <timer_lmt_0> has a constant value of 1 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <timer_lmt_4> in Unit <SEG_Test> is equivalent to the following 10 FFs/Latches, which will be removed : <timer_lmt_5> <timer_lmt_12> <timer_lmt_13> <timer_lmt_17> <timer_lmt_19> <timer_lmt_20> <timer_lmt_21> <timer_lmt_22> <timer_lmt_23> <timer_lmt_25> 
+INFO:Xst:2261 - The FF/Latch <timer_lmt_8> in Unit <SEG_Test> is equivalent to the following FF/Latch, which will be removed : <timer_lmt_9> 
+
+Optimizing unit <SEG_Test> ...
+
+Optimizing unit <Counter_M60> ...
+
+Optimizing unit <Counter_M24> ...
+
+Optimizing unit <SEG_Scan> ...
+
+Optimizing unit <KEY_Debounce> ...
+WARNING:Xst:2677 - Node <Counter_2/co> of sequential type is unconnected in block <SEG_Test>.
+WARNING:Xst:2677 - Node <KEY_Debounce_3/button_posedge> of sequential type is unconnected in block <SEG_Test>.
+WARNING:Xst:2677 - Node <KEY_Debounce_2/button_posedge> of sequential type is unconnected in block <SEG_Test>.
+WARNING:Xst:2677 - Node <KEY_Debounce_1/button_posedge> of sequential type is unconnected in block <SEG_Test>.
+WARNING:Xst:2677 - Node <KEY_Debounce_0/button_posedge> of sequential type is unconnected in block <SEG_Test>.
+WARNING:Xst:1710 - FF/Latch <KEY_Debounce_1/q_reg_26> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_27> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_28> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_29> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_30> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_31> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_20> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_21> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_22> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_23> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_24> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_25> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_26> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_27> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_28> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_29> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_30> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_31> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_20> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_21> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_22> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_23> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_24> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_25> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_26> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_27> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_28> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_29> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_30> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_31> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_20> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_21> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_22> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_23> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_24> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_25> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_22> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_23> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_24> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_25> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_26> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_27> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_28> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_29> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_30> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_31> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Counter_0/data_1_3> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Counter_1/data_1_3> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_cnt_31> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_cnt_30> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_cnt_29> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_cnt_28> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_cnt_27> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_cnt_26> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_20> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_21> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_22> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_23> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_24> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_25> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_26> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_27> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_28> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_29> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_30> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_31> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_sel_3> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_16> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_17> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_18> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_19> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_20> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_21> (without init value) has a constant value of 0 in block <SEG_Test>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:3203 - The FF/Latch <timer_lmt_4> in Unit <SEG_Test> is the opposite to the following FF/Latch, which will be removed : <timer_lmt_8> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SEG_Test, actual ratio is 7.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 189
+ Flip-Flops                                            : 189
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : SEG_Test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 605
+#      GND                         : 1
+#      INV                         : 14
+#      LUT1                        : 77
+#      LUT2                        : 50
+#      LUT3                        : 18
+#      LUT4                        : 32
+#      LUT5                        : 107
+#      LUT6                        : 50
+#      MUXCY                       : 133
+#      VCC                         : 1
+#      XORCY                       : 122
+# FlipFlops/Latches                : 189
+#      FD                          : 5
+#      FDC                         : 110
+#      FDCE                        : 52
+#      FDP                         : 22
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 19
+#      IBUF                        : 5
+#      OBUF                        : 14
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             189  out of  11440     1%  
+ Number of Slice LUTs:                  348  out of   5720     6%  
+    Number used as Logic:               348  out of   5720     6%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    358
+   Number with an unused Flip Flop:     169  out of    358    47%  
+   Number with an unused LUT:            10  out of    358     2%  
+   Number of fully used LUT-FF pairs:   179  out of    358    50%  
+   Number of unique control sets:        10
+
+IO Utilization: 
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of    186    10%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 189   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 6.023ns (Maximum Frequency: 166.019MHz)
+   Minimum input arrival time before clock: 5.121ns
+   Maximum output required time after clock: 4.118ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.023ns (frequency: 166.019MHz)
+  Total number of paths / destination ports: 31113 / 237
+-------------------------------------------------------------------------
+Delay:               6.023ns (Levels of Logic = 35)
+  Source:            timer_lmt_4 (FF)
+  Destination:       timer_cnt_25 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: timer_lmt_4 to timer_cnt_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              12   0.525   1.068  timer_lmt_4 (timer_lmt_4)
+     INV:I->O              2   0.255   0.834  timer_lmt<12>_inv1_INV_0 (timer_lmt<12>_inv)
+     LUT5:I3->O            1   0.250   0.000  Mcompar_timer_lmt[31]_timer_cnt[31]_LessThan_1_o_lut<2> (Mcompar_timer_lmt[31]_timer_cnt[31]_LessThan_1_o_lut<2>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_timer_lmt[31]_timer_cnt[31]_LessThan_1_o_cy<2> (Mcompar_timer_lmt[31]_timer_cnt[31]_LessThan_1_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_timer_lmt[31]_timer_cnt[31]_LessThan_1_o_cy<3> (Mcompar_timer_lmt[31]_timer_cnt[31]_LessThan_1_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_timer_lmt[31]_timer_cnt[31]_LessThan_1_o_cy<4> (Mcompar_timer_lmt[31]_timer_cnt[31]_LessThan_1_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_timer_lmt[31]_timer_cnt[31]_LessThan_1_o_cy<5> (Mcompar_timer_lmt[31]_timer_cnt[31]_LessThan_1_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_timer_lmt[31]_timer_cnt[31]_LessThan_1_o_cy<6> (Mcompar_timer_lmt[31]_timer_cnt[31]_LessThan_1_o_cy<6>)
+     MUXCY:CI->O          28   0.023   1.453  Mcompar_timer_lmt[31]_timer_cnt[31]_LessThan_1_o_cy<7> (timer_lmt[31]_timer_cnt[31]_LessThan_1_o)
+     LUT2:I1->O            1   0.254   0.000  Mcount_timer_cnt_lut<0> (Mcount_timer_cnt_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Mcount_timer_cnt_cy<0> (Mcount_timer_cnt_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<1> (Mcount_timer_cnt_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<2> (Mcount_timer_cnt_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<3> (Mcount_timer_cnt_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<4> (Mcount_timer_cnt_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<5> (Mcount_timer_cnt_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<6> (Mcount_timer_cnt_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<7> (Mcount_timer_cnt_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<8> (Mcount_timer_cnt_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<9> (Mcount_timer_cnt_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<10> (Mcount_timer_cnt_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<11> (Mcount_timer_cnt_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<12> (Mcount_timer_cnt_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<13> (Mcount_timer_cnt_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<14> (Mcount_timer_cnt_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<15> (Mcount_timer_cnt_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<16> (Mcount_timer_cnt_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<17> (Mcount_timer_cnt_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<18> (Mcount_timer_cnt_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<19> (Mcount_timer_cnt_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<20> (Mcount_timer_cnt_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<21> (Mcount_timer_cnt_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<22> (Mcount_timer_cnt_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cnt_cy<23> (Mcount_timer_cnt_cy<23>)
+     MUXCY:CI->O           0   0.023   0.000  Mcount_timer_cnt_cy<24> (Mcount_timer_cnt_cy<24>)
+     XORCY:CI->O           1   0.206   0.000  Mcount_timer_cnt_xor<25> (Mcount_timer_cnt25)
+     FDCE:D                    0.074          timer_cnt_25
+    ----------------------------------------
+    Total                      6.023ns (2.668ns logic, 3.355ns route)
+                                       (44.3% logic, 55.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 188 / 188
+-------------------------------------------------------------------------
+Offset:              5.121ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       en_1Hz (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst_n to en_1Hz
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            184   0.255   2.398  rst_n_inv1_INV_0 (Counter_0/rst_n_inv)
+     FDC:CLR                   0.459          Counter_0/co
+    ----------------------------------------
+    Total                      5.121ns (2.042ns logic, 3.079ns route)
+                                       (39.9% logic, 60.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            SEG_Scan/seg_sel_5 (FF)
+  Destination:       seg_sel<5> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: SEG_Scan/seg_sel_5 to seg_sel<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.525   0.681  SEG_Scan/seg_sel_5 (SEG_Scan/seg_sel_5)
+     OBUF:I->O                 2.912          seg_sel_5_OBUF (seg_sel<5>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    6.023|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 19.26 secs
+ 
+--> 
+
+Total memory usage is 4494972 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  119 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
+

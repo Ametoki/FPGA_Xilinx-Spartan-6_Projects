@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\FPGA Learning Materials\demo\01_led_test\impact.xsl
+OUTFILE=D:\FPGA Learning Materials\demo\01_led_test\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=D:\FPGA Learning Materials\demo\01_led_test
+LICENSE=iMPACT
+USER_INFO=iMPACT

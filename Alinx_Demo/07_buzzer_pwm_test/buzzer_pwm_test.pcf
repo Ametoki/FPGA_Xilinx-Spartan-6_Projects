@@ -1,0 +1,75 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Jun 10 20:29:48 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "T8" LEVEL 1;
+COMP "key1" LOCATE = SITE "C3" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "L3" LEVEL 1;
+COMP "buzzer" LOCATE = SITE "J11" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "period_1" BEL "duty_0" BEL "duty_3" BEL "duty_1"
+        BEL "duty_2" BEL "duty_4" BEL "duty_5" BEL "duty_8" BEL "duty_6" BEL
+        "duty_7" BEL "duty_9" BEL "duty_10" BEL "duty_11" BEL "duty_12" BEL
+        "duty_13" BEL "duty_14" BEL "duty_17" BEL "duty_15" BEL "duty_16" BEL
+        "duty_18" BEL "duty_19" BEL "duty_22" BEL "duty_20" BEL "duty_21" BEL
+        "duty_23" BEL "duty_24" BEL "duty_27" BEL "duty_25" BEL "duty_26" BEL
+        "duty_28" BEL "duty_29" BEL "duty_30" BEL "state_FSM_FFd1" BEL
+        "timer_0" BEL "timer_1" BEL "timer_2" BEL "timer_3" BEL "timer_4" BEL
+        "timer_5" BEL "timer_6" BEL "timer_7" BEL "timer_8" BEL "timer_9" BEL
+        "timer_10" BEL "timer_11" BEL "timer_12" BEL "timer_13" BEL "timer_14"
+        BEL "timer_15" BEL "timer_16" BEL "timer_17" BEL "timer_18" BEL
+        "timer_19" BEL "timer_20" BEL "timer_21" BEL "timer_22" BEL "timer_23"
+        BEL "duty_31" BEL "ax_debounce_m0/button_out_d0" BEL
+        "ax_debounce_m0/DFF2" BEL "ax_debounce_m0/DFF1" BEL
+        "ax_debounce_m0/button_negedge" BEL "ax_debounce_m0/q_reg_31" BEL
+        "ax_debounce_m0/q_reg_30" BEL "ax_debounce_m0/q_reg_29" BEL
+        "ax_debounce_m0/q_reg_28" BEL "ax_debounce_m0/q_reg_27" BEL
+        "ax_debounce_m0/q_reg_26" BEL "ax_debounce_m0/q_reg_25" BEL
+        "ax_debounce_m0/q_reg_24" BEL "ax_debounce_m0/q_reg_23" BEL
+        "ax_debounce_m0/q_reg_22" BEL "ax_debounce_m0/q_reg_21" BEL
+        "ax_debounce_m0/q_reg_20" BEL "ax_debounce_m0/q_reg_19" BEL
+        "ax_debounce_m0/q_reg_18" BEL "ax_debounce_m0/q_reg_17" BEL
+        "ax_debounce_m0/q_reg_16" BEL "ax_debounce_m0/q_reg_15" BEL
+        "ax_debounce_m0/q_reg_14" BEL "ax_debounce_m0/q_reg_13" BEL
+        "ax_debounce_m0/q_reg_12" BEL "ax_debounce_m0/q_reg_11" BEL
+        "ax_debounce_m0/q_reg_10" BEL "ax_debounce_m0/q_reg_9" BEL
+        "ax_debounce_m0/q_reg_8" BEL "ax_debounce_m0/q_reg_7" BEL
+        "ax_debounce_m0/q_reg_6" BEL "ax_debounce_m0/q_reg_5" BEL
+        "ax_debounce_m0/q_reg_4" BEL "ax_debounce_m0/q_reg_3" BEL
+        "ax_debounce_m0/q_reg_2" BEL "ax_debounce_m0/q_reg_1" BEL
+        "ax_debounce_m0/q_reg_0" BEL "ax_pwm_m0/period_cnt_31" BEL
+        "ax_pwm_m0/period_cnt_30" BEL "ax_pwm_m0/period_cnt_29" BEL
+        "ax_pwm_m0/period_cnt_28" BEL "ax_pwm_m0/period_cnt_27" BEL
+        "ax_pwm_m0/period_cnt_26" BEL "ax_pwm_m0/period_cnt_25" BEL
+        "ax_pwm_m0/period_cnt_24" BEL "ax_pwm_m0/period_cnt_23" BEL
+        "ax_pwm_m0/period_cnt_22" BEL "ax_pwm_m0/period_cnt_21" BEL
+        "ax_pwm_m0/period_cnt_20" BEL "ax_pwm_m0/period_cnt_19" BEL
+        "ax_pwm_m0/period_cnt_18" BEL "ax_pwm_m0/period_cnt_17" BEL
+        "ax_pwm_m0/period_cnt_16" BEL "ax_pwm_m0/period_cnt_15" BEL
+        "ax_pwm_m0/period_cnt_14" BEL "ax_pwm_m0/period_cnt_13" BEL
+        "ax_pwm_m0/period_cnt_12" BEL "ax_pwm_m0/period_cnt_11" BEL
+        "ax_pwm_m0/period_cnt_10" BEL "ax_pwm_m0/period_cnt_9" BEL
+        "ax_pwm_m0/period_cnt_8" BEL "ax_pwm_m0/period_cnt_7" BEL
+        "ax_pwm_m0/period_cnt_6" BEL "ax_pwm_m0/period_cnt_5" BEL
+        "ax_pwm_m0/period_cnt_4" BEL "ax_pwm_m0/period_cnt_3" BEL
+        "ax_pwm_m0/period_cnt_2" BEL "ax_pwm_m0/period_cnt_1" BEL
+        "ax_pwm_m0/pwm_r" BEL "ax_pwm_m0/duty_r_31" BEL "ax_pwm_m0/duty_r_30"
+        BEL "ax_pwm_m0/duty_r_29" BEL "ax_pwm_m0/duty_r_28" BEL
+        "ax_pwm_m0/duty_r_27" BEL "ax_pwm_m0/duty_r_26" BEL
+        "ax_pwm_m0/duty_r_25" BEL "ax_pwm_m0/duty_r_24" BEL
+        "ax_pwm_m0/duty_r_23" BEL "ax_pwm_m0/duty_r_22" BEL
+        "ax_pwm_m0/duty_r_21" BEL "ax_pwm_m0/duty_r_20" BEL
+        "ax_pwm_m0/duty_r_19" BEL "ax_pwm_m0/duty_r_18" BEL
+        "ax_pwm_m0/duty_r_17" BEL "ax_pwm_m0/duty_r_16" BEL
+        "ax_pwm_m0/duty_r_15" BEL "ax_pwm_m0/duty_r_14" BEL
+        "ax_pwm_m0/duty_r_13" BEL "ax_pwm_m0/duty_r_12" BEL
+        "ax_pwm_m0/duty_r_11" BEL "ax_pwm_m0/duty_r_10" BEL
+        "ax_pwm_m0/duty_r_9" BEL "ax_pwm_m0/duty_r_8" BEL "ax_pwm_m0/duty_r_7"
+        BEL "ax_pwm_m0/duty_r_6" BEL "ax_pwm_m0/duty_r_5" BEL
+        "ax_pwm_m0/duty_r_4" BEL "ax_pwm_m0/duty_r_3" BEL "ax_pwm_m0/duty_r_2"
+        BEL "ax_pwm_m0/duty_r_1" BEL "ax_pwm_m0/duty_r_0" BEL
+        "ax_pwm_m0/period_r_1" BEL "ax_debounce_m0/button_out" BEL
+        "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

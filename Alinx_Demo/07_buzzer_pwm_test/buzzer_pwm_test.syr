@@ -1,0 +1,586 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.41 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.41 secs
+ 
+--> Reading design: buzzer_pwm_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "buzzer_pwm_test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "buzzer_pwm_test"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : buzzer_pwm_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\FPGA Learning Materials\demo\07_buzzer_pwm_test\src\ax_pwm.v" into library work
+Parsing module <ax_pwm>.
+Analyzing Verilog file "D:\FPGA Learning Materials\demo\07_buzzer_pwm_test\src\ax_debounce.v" into library work
+Parsing module <ax_debounce>.
+Analyzing Verilog file "D:\FPGA Learning Materials\demo\07_buzzer_pwm_test\src\buzzer_pwm_test.v" into library work
+Parsing module <buzzer_pwm_test>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <buzzer_pwm_test>.
+
+Elaborating module <ax_debounce>.
+
+Elaborating module <ax_pwm(N=32)>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <buzzer_pwm_test>.
+    Related source file is "D:\FPGA Learning Materials\demo\07_buzzer_pwm_test\src\buzzer_pwm_test.v".
+        IDLE = 0
+        BUZZER = 1
+INFO:Xst:3210 - "D:\FPGA Learning Materials\demo\07_buzzer_pwm_test\src\buzzer_pwm_test.v" line 86: Output port <button_posedge> of the instance <ax_debounce_m0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\FPGA Learning Materials\demo\07_buzzer_pwm_test\src\buzzer_pwm_test.v" line 86: Output port <button_out> of the instance <ax_debounce_m0> is unconnected or connected to loadless signal.
+    Found 32-bit register for signal <timer>.
+    Found 32-bit register for signal <period>.
+    Found 4-bit register for signal <state>.
+    Found 32-bit register for signal <duty>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <duty[31]_GND_1_o_add_2_OUT> created at line 63.
+    Found 32-bit adder for signal <timer[31]_GND_1_o_add_7_OUT> created at line 76.
+    Found 32-bit comparator greater for signal <n0008> created at line 69
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  96 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <buzzer_pwm_test> synthesized.
+
+Synthesizing Unit <ax_debounce>.
+    Related source file is "D:\FPGA Learning Materials\demo\07_buzzer_pwm_test\src\ax_debounce.v".
+        N = 32
+        FREQ = 50
+        MAX_TIME = 20
+    Found 1-bit register for signal <button_out_d0>.
+    Found 1-bit register for signal <button_out>.
+    Found 32-bit register for signal <q_reg>.
+    Found 1-bit register for signal <DFF2>.
+    Found 1-bit register for signal <button_posedge>.
+    Found 1-bit register for signal <button_negedge>.
+    Found 1-bit register for signal <DFF1>.
+    Found 32-bit adder for signal <q_reg[31]_GND_2_o_add_1_OUT> created at line 65.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  38 D-type flip-flop(s).
+Unit <ax_debounce> synthesized.
+
+Synthesizing Unit <ax_pwm>.
+    Related source file is "D:\FPGA Learning Materials\demo\07_buzzer_pwm_test\src\ax_pwm.v".
+        N = 32
+    Found 32-bit register for signal <duty_r>.
+    Found 32-bit register for signal <period_cnt>.
+    Found 32-bit register for signal <period_r>.
+    Found 1-bit register for signal <pwm_r>.
+    Found 32-bit adder for signal <period_cnt[31]_period_r[31]_add_4_OUT> created at line 70.
+    Found 32-bit comparator lessequal for signal <n0006> created at line 81
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  97 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <ax_pwm> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 4
+# Registers                                            : 14
+ 1-bit register                                        : 7
+ 32-bit register                                       : 7
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 1
+ 32-bit 2-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <period_r_31> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_30> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_29> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_28> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_27> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_26> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_25> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_24> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_23> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_22> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_21> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_20> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_19> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_0> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_4> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_5> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_6> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_9> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_10> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_11> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_12> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_14> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_15> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_16> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_17> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <period_r_18> (without init value) has a constant value of 0 in block <ax_pwm_m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_19> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_20> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_21> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_22> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_23> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_24> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_25> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_26> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_27> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_28> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_29> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_30> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_31> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_18> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_17> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_16> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_15> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_14> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_12> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_11> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_10> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_9> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_6> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_5> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_4> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_0> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <period<31:14>> (without init value) have a constant value of 0 in block <buzzer_pwm_test>.
+
+Synthesizing (advanced) Unit <ax_pwm>.
+The following registers are absorbed into accumulator <period_cnt>: 1 register on signal <period_cnt>.
+Unit <ax_pwm> synthesized (advanced).
+
+Synthesizing (advanced) Unit <buzzer_pwm_test>.
+The following registers are absorbed into counter <timer>: 1 register on signal <timer>.
+The following registers are absorbed into accumulator <duty>: 1 register on signal <duty>.
+Unit <buzzer_pwm_test> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Accumulators                                         : 2
+ 32-bit up accumulator                                 : 2
+# Registers                                            : 117
+ Flip-Flops                                            : 117
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <period_0> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_4> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_5> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_6> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_9> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_10> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_11> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <period_12> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <period_1> in Unit <buzzer_pwm_test> is equivalent to the following 5 FFs/Latches, which will be removed : <period_2> <period_3> <period_7> <period_8> <period_13> 
+INFO:Xst:2261 - The FF/Latch <period_r_0> in Unit <ax_pwm> is equivalent to the following 25 FFs/Latches, which will be removed : <period_r_4> <period_r_5> <period_r_6> <period_r_9> <period_r_10> <period_r_11> <period_r_12> <period_r_14> <period_r_15> <period_r_16> <period_r_17> <period_r_18> <period_r_19> <period_r_20> <period_r_21> <period_r_22> <period_r_23> <period_r_24> <period_r_25> <period_r_26> <period_r_27> <period_r_28> <period_r_29> <period_r_30> <period_r_31> 
+INFO:Xst:2261 - The FF/Latch <period_r_1> in Unit <ax_pwm> is equivalent to the following 5 FFs/Latches, which will be removed : <period_r_2> <period_r_3> <period_r_7> <period_r_8> <period_r_13> 
+WARNING:Xst:1710 - FF/Latch <period_r_0> (without init value) has a constant value of 0 in block <ax_pwm>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0
+ 0001  | 1
+-------------------
+WARNING:Xst:1710 - FF/Latch <period_cnt_0> (without init value) has a constant value of 0 in block <ax_pwm>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <ax_pwm> ...
+
+Optimizing unit <buzzer_pwm_test> ...
+
+Optimizing unit <ax_debounce> ...
+WARNING:Xst:2677 - Node <ax_debounce_m0/button_posedge> of sequential type is unconnected in block <buzzer_pwm_test>.
+WARNING:Xst:1710 - FF/Latch <timer_24> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_25> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_26> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_27> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_28> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_29> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_30> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_31> (without init value) has a constant value of 0 in block <buzzer_pwm_test>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block buzzer_pwm_test, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 160
+ Flip-Flops                                            : 160
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : buzzer_pwm_test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 462
+#      GND                         : 1
+#      INV                         : 18
+#      LUT1                        : 73
+#      LUT2                        : 10
+#      LUT3                        : 26
+#      LUT4                        : 31
+#      LUT5                        : 9
+#      LUT6                        : 37
+#      MUXCY                       : 137
+#      VCC                         : 1
+#      XORCY                       : 119
+# FlipFlops/Latches                : 160
+#      FDC                         : 101
+#      FDCE                        : 42
+#      FDP                         : 2
+#      FDPE                        : 15
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 3
+#      IBUF                        : 2
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             160  out of  11440     1%  
+ Number of Slice LUTs:                  204  out of   5720     3%  
+    Number used as Logic:               204  out of   5720     3%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    239
+   Number with an unused Flip Flop:      79  out of    239    33%  
+   Number with an unused LUT:            35  out of    239    14%  
+   Number of fully used LUT-FF pairs:   125  out of    239    52%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                           4
+ Number of bonded IOBs:                   4  out of    186     2%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 160   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.688ns (Maximum Frequency: 175.817MHz)
+   Minimum input arrival time before clock: 5.096ns
+   Maximum output required time after clock: 5.808ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.688ns (frequency: 175.817MHz)
+  Total number of paths / destination ports: 15266 / 215
+-------------------------------------------------------------------------
+Delay:               5.688ns (Levels of Logic = 32)
+  Source:            timer_5 (FF)
+  Destination:       timer_23 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: timer_5 to timer_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.525   1.196  timer_5 (timer_5)
+     LUT5:I0->O            1   0.254   0.000  Mcompar_n0008_lut<1> (Mcompar_n0008_lut<1>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_n0008_cy<1> (Mcompar_n0008_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_n0008_cy<2> (Mcompar_n0008_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_n0008_cy<3> (Mcompar_n0008_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_n0008_cy<4> (Mcompar_n0008_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_n0008_cy<5> (Mcompar_n0008_cy<5>)
+     MUXCY:CI->O          26   0.235   1.419  Mcompar_n0008_cy<6> (Mcompar_n0008_cy<6>)
+     INV:I->O              1   0.255   0.681  Mcompar_n0008_cy<6>_inv1_INV_0 (GND_1_o_timer[31]_LessThan_7_o_inv)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<0> (Mcount_timer_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<1> (Mcount_timer_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<2> (Mcount_timer_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<3> (Mcount_timer_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<4> (Mcount_timer_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<5> (Mcount_timer_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<6> (Mcount_timer_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<7> (Mcount_timer_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<8> (Mcount_timer_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<9> (Mcount_timer_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<10> (Mcount_timer_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<11> (Mcount_timer_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<12> (Mcount_timer_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<13> (Mcount_timer_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<14> (Mcount_timer_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<15> (Mcount_timer_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<16> (Mcount_timer_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<17> (Mcount_timer_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<18> (Mcount_timer_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<19> (Mcount_timer_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<20> (Mcount_timer_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_timer_cy<21> (Mcount_timer_cy<21>)
+     MUXCY:CI->O           0   0.023   0.000  Mcount_timer_cy<22> (Mcount_timer_cy<22>)
+     XORCY:CI->O           1   0.206   0.000  Mcount_timer_xor<23> (Mcount_timer23)
+     FDCE:D                    0.074          timer_23
+    ----------------------------------------
+    Total                      5.688ns (2.392ns logic, 3.296ns route)
+                                       (42.1% logic, 57.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 161 / 161
+-------------------------------------------------------------------------
+Offset:              5.096ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       period_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst_n to period_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            160   0.255   2.373  rst_n_inv1_INV_0 (rst_n_inv)
+     FDCE:CLR                  0.459          period_1
+    ----------------------------------------
+    Total                      5.096ns (2.042ns logic, 3.054ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.808ns (Levels of Logic = 2)
+  Source:            state_FSM_FFd1 (FF)
+  Destination:       buzzer (PAD)
+  Source Clock:      clk rising
+
+  Data Path: state_FSM_FFd1 to buzzer
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             27   0.525   1.436  state_FSM_FFd1 (state_FSM_FFd1)
+     LUT2:I1->O            1   0.254   0.681  buzzer1 (buzzer_OBUF)
+     OBUF:I->O                 2.912          buzzer_OBUF (buzzer)
+    ----------------------------------------
+    Total                      5.808ns (3.691ns logic, 2.117ns route)
+                                       (63.5% logic, 36.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.688|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 14.99 secs
+ 
+--> 
+
+Total memory usage is 4494972 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   72 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+
