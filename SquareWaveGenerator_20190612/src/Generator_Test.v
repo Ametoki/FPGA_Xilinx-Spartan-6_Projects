@@ -30,29 +30,29 @@ module Generator_Test
 	output[5:0] seg_sel,
 	output[7:0] seg_data
 );
-reg[31:0]  Freq;
+wire[31:0]  Freq = temp_0;
+		  //+ temp_1 * 32'd10
+		  //+ temp_2 * 32'd100
+		  //+ temp_3 * 32'd1000
+		  //+ temp_4 * 32'd10000
+		  //+ temp_5 * 32'd100000;
+/*
+always@(temp_0 or temp_1 or temp_2 or temp_3 or temp_4 or temp_5)
+begin
+	Freq <= temp_0;
+		  //+ temp_1 * 32'd10
+		  //+ temp_2 * 32'd100
+		  //+ temp_3 * 32'd1000
+		  //+ temp_4 * 32'd10000
+		  //+ temp_5 * 32'd100000;
+end
+*/
 wire[3:0]  temp_0;
 wire[3:0]  temp_1;
 wire[3:0]  temp_2;
 wire[3:0]  temp_3;
 wire[3:0]  temp_4;
 wire[3:0]  temp_5;
-always@(posedge clk)
-begin
-	if(Freq == 32'b0)
-	begin
-		Freq <= 32'b1;
-	end
-	else
-	begin
-		Freq <= {28'b0,temp_0}
-			  + {28'b0,temp_1} * 32'd10 
-			  + {28'b0,temp_2} * 32'd100 
-			  + {28'b0,temp_3} * 32'd1000
-			  + {28'b0,temp_4} * 32'd10000
-			  + {28'b0,temp_5} * 32'd100000;
-	end
-end
 Generator Generator_0
 (
 	.clk    (clk),

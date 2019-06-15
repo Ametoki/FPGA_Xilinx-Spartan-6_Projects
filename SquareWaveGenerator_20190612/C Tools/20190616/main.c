@@ -3,13 +3,18 @@
 
 int main()
 {
+    int temp, i;
     double Freq, Counter;
     while(1)
     {
         printf("Enter the Frequency you want to generate:");
         scanf("%lf", &Freq);
-        Counter = 5E7 / (Freq * 2) - 1;
-        printf("The size of counter should be:%.2lf\n\n", Counter);
+        temp = (int)Freq;
+        for(i = 1;i <= temp;i++)
+        {
+            Counter = 5E7 / (i * 2) - 1;
+            printf("32'd%d:Counter <= %.0lf;\n", i, Counter);
+        }
     }
     return 0;
 }

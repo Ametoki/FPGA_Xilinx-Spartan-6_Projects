@@ -103,13 +103,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1560622285" xil_pn:in_ck="-7027422719993882784" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7361226379849589774" xil_pn:start_ts="1560622266">
+    <transform xil_pn:end_ts="1560626184" xil_pn:in_ck="-7027422719993882784" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7361226379849589774" xil_pn:start_ts="1560626175">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Generator_Test.lso"/>
       <outfile xil_pn:name="Generator_Test.ngc"/>
@@ -127,21 +125,19 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1560622291" xil_pn:in_ck="-1497724362266448043" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8027563187074015268" xil_pn:start_ts="1560622285">
+    <transform xil_pn:end_ts="1560626190" xil_pn:in_ck="-1497724362266448043" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8027563187074015268" xil_pn:start_ts="1560626184">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Generator_Test.bld"/>
       <outfile xil_pn:name="Generator_Test.ngd"/>
       <outfile xil_pn:name="Generator_Test_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1560622329" xil_pn:in_ck="-8726084035230659050" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="111412226054857016" xil_pn:start_ts="1560622291">
+    <transform xil_pn:end_ts="1560626200" xil_pn:in_ck="-8726084035230659050" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="111412226054857016" xil_pn:start_ts="1560626190">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Generator_Test.pcf"/>
       <outfile xil_pn:name="Generator_Test_map.map"/>
       <outfile xil_pn:name="Generator_Test_map.mrp"/>
@@ -152,11 +148,9 @@
       <outfile xil_pn:name="Generator_Test_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1560622347" xil_pn:in_ck="-6344943968213062545" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1560622329">
+    <transform xil_pn:end_ts="1560626213" xil_pn:in_ck="-6344943968213062545" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1560626200">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Generator_Test.ncd"/>
       <outfile xil_pn:name="Generator_Test.pad"/>
       <outfile xil_pn:name="Generator_Test.par"/>
@@ -168,10 +162,9 @@
       <outfile xil_pn:name="Generator_Test_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1560622363" xil_pn:in_ck="-2066924165780654231" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1560622347">
+    <transform xil_pn:end_ts="1560626225" xil_pn:in_ck="-2066924165780654231" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1560626213">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Generator_Test.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="generator_test.bgn"/>
@@ -181,28 +174,23 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1560620750" xil_pn:in_ck="-1777495204732344973" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="2682241697568822907" xil_pn:start_ts="1560620750">
+    <transform xil_pn:end_ts="1560622541" xil_pn:in_ck="-1777495204732344973" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="2682241697568822907" xil_pn:start_ts="1560622541">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1560349919" xil_pn:in_ck="-1777495204732344973" xil_pn:name="TRAN_genImpactFile" xil_pn:prop_ck="-7047989797201823252" xil_pn:start_ts="1560349917">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1560621691" xil_pn:in_ck="4633445036858061458" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1560621683">
-      <status xil_pn:value="AbortedRun"/>
+    <transform xil_pn:end_ts="1560626213" xil_pn:in_ck="4633445036858061458" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1560626208">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Generator_Test.twr"/>
       <outfile xil_pn:name="Generator_Test.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

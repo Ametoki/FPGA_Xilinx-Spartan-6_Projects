@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Jun 16 02:12:07 2019
+// Written by: Map P.20131013 on Sun Jun 16 03:16:38 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -24,72 +24,66 @@ COMP "key3" LOCATE = SITE "E4" LEVEL 1;
 COMP "key4" LOCATE = SITE "E3" LEVEL 1;
 COMP "rst_n" LOCATE = SITE "L3" LEVEL 1;
 COMP "Square" LOCATE = SITE "P4" LEVEL 1;
-TIMEGRP sys_clk_pin = BEL "Freq_min" BEL "Freq_plus" BEL "Freq_Lplus" BEL
-        "Freq_Lmin" BEL "Freq_0" BEL "Freq_1" BEL "Freq_2" BEL "Freq_3" BEL
-        "Freq_4" BEL "Freq_5" BEL "Freq_6" BEL "Freq_7" BEL "Freq_8" BEL
-        "Freq_9" BEL "Freq_10" BEL "Freq_11" BEL "Freq_12" BEL "Freq_13" BEL
-        "Freq_14" BEL "Freq_15" BEL "Freq_16" BEL "Freq_17" BEL "Freq_18" BEL
-        "Freq_19" BEL "Freq_20" BEL "Freq_21" BEL "Generator_0/timer_0" BEL
-        "Generator_0/timer_1" BEL "Generator_0/timer_2" BEL
-        "Generator_0/timer_3" BEL "Generator_0/timer_4" BEL
-        "Generator_0/timer_5" BEL "Generator_0/timer_6" BEL
-        "Generator_0/timer_7" BEL "Generator_0/timer_8" BEL
-        "Generator_0/timer_9" BEL "Generator_0/timer_10" BEL
-        "Generator_0/timer_11" BEL "Generator_0/timer_12" BEL
-        "Generator_0/timer_13" BEL "Generator_0/timer_14" BEL
-        "Generator_0/timer_15" BEL "Generator_0/timer_16" BEL
-        "Generator_0/timer_17" BEL "Generator_0/timer_18" BEL
-        "Generator_0/timer_19" BEL "Generator_0/timer_20" BEL
-        "Generator_0/timer_21" BEL "Generator_0/timer_22" BEL
-        "Generator_0/timer_23" BEL "Generator_0/timer_24" BEL
-        "Generator_0/timer_25" BEL "Generator_0/timer_26" BEL
-        "Generator_0/timer_27" BEL "Generator_0/timer_28" BEL
-        "Generator_0/timer_29" BEL "Generator_0/timer_30" BEL
-        "Generator_0/timer_31" BEL "SEG_Scan/scan_timer_15" BEL
-        "SEG_Scan/scan_timer_14" BEL "SEG_Scan/scan_timer_13" BEL
-        "SEG_Scan/scan_timer_12" BEL "SEG_Scan/scan_timer_11" BEL
-        "SEG_Scan/scan_timer_10" BEL "SEG_Scan/scan_timer_9" BEL
-        "SEG_Scan/scan_timer_8" BEL "SEG_Scan/scan_timer_7" BEL
-        "SEG_Scan/scan_timer_6" BEL "SEG_Scan/scan_timer_5" BEL
-        "SEG_Scan/scan_timer_4" BEL "SEG_Scan/scan_timer_3" BEL
-        "SEG_Scan/scan_timer_2" BEL "SEG_Scan/scan_timer_1" BEL
-        "SEG_Scan/scan_timer_0" BEL "SEG_Scan/scan_sel_2" BEL
-        "SEG_Scan/scan_sel_1" BEL "SEG_Scan/scan_sel_0" BEL
-        "SEG_Scan/seg_sel_5" BEL "SEG_Scan/seg_sel_4" BEL "SEG_Scan/seg_sel_3"
-        BEL "SEG_Scan/seg_sel_2" BEL "SEG_Scan/seg_sel_1" BEL
-        "SEG_Scan/seg_sel_0" BEL "SEG_Scan/seg_data_6" BEL
-        "SEG_Scan/seg_data_5" BEL "SEG_Scan/seg_data_4" BEL
-        "SEG_Scan/seg_data_3" BEL "SEG_Scan/seg_data_2" BEL
-        "SEG_Scan/seg_data_1" BEL "SEG_Scan/seg_data_0" BEL
-        "Counter_M10_5/data_3" BEL "Counter_M10_5/data_2" BEL
-        "Counter_M10_5/data_1" BEL "Counter_M10_5/data_0" BEL
-        "Counter_M10_4/data_3" BEL "Counter_M10_4/data_2" BEL
-        "Counter_M10_4/data_1" BEL "Counter_M10_4/data_0" BEL
-        "Counter_M10_4/d0" BEL "Counter_M10_4/co" BEL "Counter_M10_3/data_3"
-        BEL "Counter_M10_3/data_2" BEL "Counter_M10_3/data_1" BEL
-        "Counter_M10_3/data_0" BEL "Counter_M10_3/d0" BEL "Counter_M10_3/co"
-        BEL "Counter_M10_2/data_3" BEL "Counter_M10_2/data_2" BEL
-        "Counter_M10_2/data_1" BEL "Counter_M10_2/data_0" BEL
-        "Counter_M10_2/d0" BEL "Counter_M10_2/co" BEL "Counter_M10_1/data_3"
-        BEL "Counter_M10_1/data_2" BEL "Counter_M10_1/data_1" BEL
-        "Counter_M10_1/data_0" BEL "Counter_M10_1/d0" BEL "Counter_M10_1/co"
-        BEL "Counter_M10_0/data_3" BEL "Counter_M10_0/data_2" BEL
-        "Counter_M10_0/data_1" BEL "Counter_M10_0/data_0" BEL
-        "Counter_M10_0/d0" BEL "Counter_M10_0/co" BEL
-        "KEY_Debounce_3/button_out_d0" BEL "KEY_Debounce_3/button_out" BEL
-        "KEY_Debounce_3/DFF2" BEL "KEY_Debounce_3/DFF1" BEL
-        "KEY_Debounce_3/button_negedge" BEL "KEY_Debounce_3/q_reg_19" BEL
-        "KEY_Debounce_3/q_reg_18" BEL "KEY_Debounce_3/q_reg_17" BEL
-        "KEY_Debounce_3/q_reg_16" BEL "KEY_Debounce_3/q_reg_15" BEL
-        "KEY_Debounce_3/q_reg_14" BEL "KEY_Debounce_3/q_reg_13" BEL
-        "KEY_Debounce_3/q_reg_12" BEL "KEY_Debounce_3/q_reg_11" BEL
-        "KEY_Debounce_3/q_reg_10" BEL "KEY_Debounce_3/q_reg_9" BEL
-        "KEY_Debounce_3/q_reg_8" BEL "KEY_Debounce_3/q_reg_7" BEL
-        "KEY_Debounce_3/q_reg_6" BEL "KEY_Debounce_3/q_reg_5" BEL
-        "KEY_Debounce_3/q_reg_4" BEL "KEY_Debounce_3/q_reg_3" BEL
-        "KEY_Debounce_3/q_reg_2" BEL "KEY_Debounce_3/q_reg_1" BEL
-        "KEY_Debounce_3/q_reg_0" BEL "KEY_Debounce_2/button_out_d0" BEL
-        "KEY_Debounce_2/button_out" BEL "KEY_Debounce_2/DFF2" BEL
+TIMEGRP sys_clk_pin = BEL "Freq_plus" BEL "Freq_min" BEL "Freq_Lplus" BEL
+        "Freq_Lmin" BEL "Generator_0/timer_31" BEL "Generator_0/timer_30" BEL
+        "Generator_0/timer_29" BEL "Generator_0/timer_28" BEL
+        "Generator_0/timer_27" BEL "Generator_0/timer_26" BEL
+        "Generator_0/timer_25" BEL "Generator_0/timer_24" BEL
+        "Generator_0/timer_23" BEL "Generator_0/timer_22" BEL
+        "Generator_0/timer_21" BEL "Generator_0/timer_20" BEL
+        "Generator_0/timer_19" BEL "Generator_0/timer_18" BEL
+        "Generator_0/timer_17" BEL "Generator_0/timer_16" BEL
+        "Generator_0/timer_15" BEL "Generator_0/timer_14" BEL
+        "Generator_0/timer_13" BEL "Generator_0/timer_12" BEL
+        "Generator_0/timer_11" BEL "Generator_0/timer_10" BEL
+        "Generator_0/timer_9" BEL "Generator_0/timer_8" BEL
+        "Generator_0/timer_7" BEL "Generator_0/timer_6" BEL
+        "Generator_0/timer_5" BEL "Generator_0/timer_4" BEL
+        "Generator_0/timer_3" BEL "Generator_0/timer_2" BEL
+        "Generator_0/timer_1" BEL "Generator_0/timer_0" BEL
+        "SEG_Scan/scan_timer_15" BEL "SEG_Scan/scan_timer_14" BEL
+        "SEG_Scan/scan_timer_13" BEL "SEG_Scan/scan_timer_12" BEL
+        "SEG_Scan/scan_timer_11" BEL "SEG_Scan/scan_timer_10" BEL
+        "SEG_Scan/scan_timer_9" BEL "SEG_Scan/scan_timer_8" BEL
+        "SEG_Scan/scan_timer_7" BEL "SEG_Scan/scan_timer_6" BEL
+        "SEG_Scan/scan_timer_5" BEL "SEG_Scan/scan_timer_4" BEL
+        "SEG_Scan/scan_timer_3" BEL "SEG_Scan/scan_timer_2" BEL
+        "SEG_Scan/scan_timer_1" BEL "SEG_Scan/scan_timer_0" BEL
+        "SEG_Scan/scan_sel_2" BEL "SEG_Scan/scan_sel_1" BEL
+        "SEG_Scan/scan_sel_0" BEL "SEG_Scan/seg_sel_5" BEL
+        "SEG_Scan/seg_sel_4" BEL "SEG_Scan/seg_sel_3" BEL "SEG_Scan/seg_sel_2"
+        BEL "SEG_Scan/seg_sel_1" BEL "SEG_Scan/seg_sel_0" BEL
+        "SEG_Scan/seg_data_6" BEL "SEG_Scan/seg_data_5" BEL
+        "SEG_Scan/seg_data_4" BEL "SEG_Scan/seg_data_3" BEL
+        "SEG_Scan/seg_data_2" BEL "SEG_Scan/seg_data_1" BEL
+        "SEG_Scan/seg_data_0" BEL "Counter_M10_5/data_3" BEL
+        "Counter_M10_5/data_2" BEL "Counter_M10_5/data_1" BEL
+        "Counter_M10_5/data_0" BEL "Counter_M10_4/data_3" BEL
+        "Counter_M10_4/data_2" BEL "Counter_M10_4/data_1" BEL
+        "Counter_M10_4/data_0" BEL "Counter_M10_4/d0" BEL "Counter_M10_4/co"
+        BEL "Counter_M10_3/data_3" BEL "Counter_M10_3/data_2" BEL
+        "Counter_M10_3/data_1" BEL "Counter_M10_3/data_0" BEL
+        "Counter_M10_3/d0" BEL "Counter_M10_3/co" BEL "Counter_M10_2/data_3"
+        BEL "Counter_M10_2/data_2" BEL "Counter_M10_2/data_1" BEL
+        "Counter_M10_2/data_0" BEL "Counter_M10_2/d0" BEL "Counter_M10_2/co"
+        BEL "Counter_M10_1/data_3" BEL "Counter_M10_1/data_2" BEL
+        "Counter_M10_1/data_1" BEL "Counter_M10_1/data_0" BEL
+        "Counter_M10_1/d0" BEL "Counter_M10_1/co" BEL "Counter_M10_0/data_3"
+        BEL "Counter_M10_0/data_2" BEL "Counter_M10_0/data_1" BEL
+        "Counter_M10_0/data_0" BEL "Counter_M10_0/d0" BEL "Counter_M10_0/co"
+        BEL "KEY_Debounce_3/button_out_d0" BEL "KEY_Debounce_3/DFF2" BEL
+        "KEY_Debounce_3/DFF1" BEL "KEY_Debounce_3/button_negedge" BEL
+        "KEY_Debounce_3/q_reg_19" BEL "KEY_Debounce_3/q_reg_18" BEL
+        "KEY_Debounce_3/q_reg_17" BEL "KEY_Debounce_3/q_reg_16" BEL
+        "KEY_Debounce_3/q_reg_15" BEL "KEY_Debounce_3/q_reg_14" BEL
+        "KEY_Debounce_3/q_reg_13" BEL "KEY_Debounce_3/q_reg_12" BEL
+        "KEY_Debounce_3/q_reg_11" BEL "KEY_Debounce_3/q_reg_10" BEL
+        "KEY_Debounce_3/q_reg_9" BEL "KEY_Debounce_3/q_reg_8" BEL
+        "KEY_Debounce_3/q_reg_7" BEL "KEY_Debounce_3/q_reg_6" BEL
+        "KEY_Debounce_3/q_reg_5" BEL "KEY_Debounce_3/q_reg_4" BEL
+        "KEY_Debounce_3/q_reg_3" BEL "KEY_Debounce_3/q_reg_2" BEL
+        "KEY_Debounce_3/q_reg_1" BEL "KEY_Debounce_3/q_reg_0" BEL
+        "KEY_Debounce_2/button_out_d0" BEL "KEY_Debounce_2/DFF2" BEL
         "KEY_Debounce_2/DFF1" BEL "KEY_Debounce_2/button_negedge" BEL
         "KEY_Debounce_2/q_reg_19" BEL "KEY_Debounce_2/q_reg_18" BEL
         "KEY_Debounce_2/q_reg_17" BEL "KEY_Debounce_2/q_reg_16" BEL
@@ -101,20 +95,19 @@ TIMEGRP sys_clk_pin = BEL "Freq_min" BEL "Freq_plus" BEL "Freq_Lplus" BEL
         "KEY_Debounce_2/q_reg_5" BEL "KEY_Debounce_2/q_reg_4" BEL
         "KEY_Debounce_2/q_reg_3" BEL "KEY_Debounce_2/q_reg_2" BEL
         "KEY_Debounce_2/q_reg_1" BEL "KEY_Debounce_2/q_reg_0" BEL
-        "KEY_Debounce_1/button_out_d0" BEL "KEY_Debounce_1/button_out" BEL
-        "KEY_Debounce_1/DFF2" BEL "KEY_Debounce_1/DFF1" BEL
-        "KEY_Debounce_1/button_negedge" BEL "KEY_Debounce_1/q_reg_19" BEL
-        "KEY_Debounce_1/q_reg_18" BEL "KEY_Debounce_1/q_reg_17" BEL
-        "KEY_Debounce_1/q_reg_16" BEL "KEY_Debounce_1/q_reg_15" BEL
-        "KEY_Debounce_1/q_reg_14" BEL "KEY_Debounce_1/q_reg_13" BEL
-        "KEY_Debounce_1/q_reg_12" BEL "KEY_Debounce_1/q_reg_11" BEL
-        "KEY_Debounce_1/q_reg_10" BEL "KEY_Debounce_1/q_reg_9" BEL
-        "KEY_Debounce_1/q_reg_8" BEL "KEY_Debounce_1/q_reg_7" BEL
-        "KEY_Debounce_1/q_reg_6" BEL "KEY_Debounce_1/q_reg_5" BEL
-        "KEY_Debounce_1/q_reg_4" BEL "KEY_Debounce_1/q_reg_3" BEL
-        "KEY_Debounce_1/q_reg_2" BEL "KEY_Debounce_1/q_reg_1" BEL
-        "KEY_Debounce_1/q_reg_0" BEL "KEY_Debounce_0/button_out_d0" BEL
-        "KEY_Debounce_0/button_out" BEL "KEY_Debounce_0/DFF2" BEL
+        "KEY_Debounce_1/button_out_d0" BEL "KEY_Debounce_1/DFF2" BEL
+        "KEY_Debounce_1/DFF1" BEL "KEY_Debounce_1/button_negedge" BEL
+        "KEY_Debounce_1/q_reg_19" BEL "KEY_Debounce_1/q_reg_18" BEL
+        "KEY_Debounce_1/q_reg_17" BEL "KEY_Debounce_1/q_reg_16" BEL
+        "KEY_Debounce_1/q_reg_15" BEL "KEY_Debounce_1/q_reg_14" BEL
+        "KEY_Debounce_1/q_reg_13" BEL "KEY_Debounce_1/q_reg_12" BEL
+        "KEY_Debounce_1/q_reg_11" BEL "KEY_Debounce_1/q_reg_10" BEL
+        "KEY_Debounce_1/q_reg_9" BEL "KEY_Debounce_1/q_reg_8" BEL
+        "KEY_Debounce_1/q_reg_7" BEL "KEY_Debounce_1/q_reg_6" BEL
+        "KEY_Debounce_1/q_reg_5" BEL "KEY_Debounce_1/q_reg_4" BEL
+        "KEY_Debounce_1/q_reg_3" BEL "KEY_Debounce_1/q_reg_2" BEL
+        "KEY_Debounce_1/q_reg_1" BEL "KEY_Debounce_1/q_reg_0" BEL
+        "KEY_Debounce_0/button_out_d0" BEL "KEY_Debounce_0/DFF2" BEL
         "KEY_Debounce_0/DFF1" BEL "KEY_Debounce_0/button_negedge" BEL
         "KEY_Debounce_0/q_reg_19" BEL "KEY_Debounce_0/q_reg_18" BEL
         "KEY_Debounce_0/q_reg_17" BEL "KEY_Debounce_0/q_reg_16" BEL
@@ -126,23 +119,13 @@ TIMEGRP sys_clk_pin = BEL "Freq_min" BEL "Freq_plus" BEL "Freq_Lplus" BEL
         "KEY_Debounce_0/q_reg_5" BEL "KEY_Debounce_0/q_reg_4" BEL
         "KEY_Debounce_0/q_reg_3" BEL "KEY_Debounce_0/q_reg_2" BEL
         "KEY_Debounce_0/q_reg_1" BEL "KEY_Debounce_0/q_reg_0" BEL
-        "Generator_0/Square" BEL "Freq_0_1" BEL "Freq_1_1" BEL "Freq_2_1" BEL
-        "Freq_3_1" BEL "Freq_4_1" BEL "Freq_5_1" BEL "Freq_6_1" BEL "Freq_7_1"
-        BEL "Freq_8_1" BEL "Freq_9_1" BEL "Freq_10_1" BEL "Freq_11_1" BEL
-        "Freq_12_1" BEL "Freq_13_1" BEL "Freq_14_1" BEL "Freq_15_1" BEL
-        "Freq_16_1" BEL "Freq_17_1" BEL "Freq_18_1" BEL "Freq_19_1" BEL
-        "Freq_20_1" BEL "Freq_21_1" BEL "Freq_0_2" BEL "Freq_1_2" BEL
-        "Freq_2_2" BEL "Freq_4_2" BEL "Freq_3_2" BEL "Freq_5_2" BEL "Freq_6_2"
-        BEL "Freq_7_2" BEL "Freq_8_2" BEL "Freq_9_2" BEL "Freq_10_2" BEL
-        "Freq_11_2" BEL "Freq_12_2" BEL "Freq_13_2" BEL "Freq_14_2" BEL
-        "Freq_15_2" BEL "Freq_16_2" BEL "Freq_17_2" BEL "Freq_18_2" BEL
-        "Freq_19_2" BEL "Freq_20_2" BEL "Freq_21_2" BEL "Freq_1_3" BEL
-        "Freq_0_3" BEL "Freq_2_3" BEL "Freq_3_3" BEL "Freq_4_3" BEL "Freq_5_3"
-        BEL "Freq_6_3" BEL "Freq_7_3" BEL "Freq_8_3" BEL "Freq_9_3" BEL
-        "Freq_10_3" BEL "Freq_11_3" BEL "Freq_12_3" BEL "Freq_13_3" BEL
-        "Freq_14_3" BEL "Freq_15_3" BEL "Freq_16_3" BEL "Freq_17_3" BEL
-        "Freq_18_3" BEL "Freq_19_3" BEL "Freq_20_3" BEL "Freq_21_3" BEL
-        "clk_BUFGP/BUFG";
+        "Generator_0/Square" BEL "KEY_Debounce_3/button_out" BEL
+        "KEY_Debounce_2/button_out" BEL "KEY_Debounce_1/button_out" BEL
+        "KEY_Debounce_0/button_out" BEL "Counter_M10_0/data_1_1" BEL
+        "Counter_M10_0/data_3_1" BEL "Counter_M10_0/data_0_1" BEL
+        "Counter_M10_0/data_2_1" BEL "Counter_M10_0/data_1_2" BEL
+        "Counter_M10_0/data_2_2" BEL "Counter_M10_0/data_3_2" BEL
+        "Counter_M10_0/data_0_2" BEL "clk_BUFGP/BUFG";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
 SCHEMATIC END;
 
