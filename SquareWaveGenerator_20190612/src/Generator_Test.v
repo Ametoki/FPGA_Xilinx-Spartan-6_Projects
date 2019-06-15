@@ -31,22 +31,12 @@ module Generator_Test
 	output[7:0] seg_data
 );
 reg[31:0]  Freq;
-wire[3:0]  temp_0;//Freq % 10;
-wire[3:0]  temp_1;//(Freq / 10) % 10;
-wire[3:0]  temp_2;//(Freq / 100) % 10;
-wire[3:0]  temp_3;//(Freq / 1000) % 10;
-wire[3:0]  temp_4;//(Freq / 10000) % 10;
-wire[3:0]  temp_5;//(Freq / 100000) % 10;
-//wire[31:0] Counter;
-/*
-wire[31:0] Counter = Freq + 1;
-wire[3:0]  Freq_0 = (5_000_000 / Counter) % 10;
-wire[3:0]  Freq_1 = (500_000 / Counter) % 10;
-wire[3:0]  Freq_2 = (50_000 / Counter) % 10;
-wire[3:0]  Freq_3 = (5_000 / Counter) % 10;
-wire[3:0]  Freq_4 = (500 / Counter) % 10;
-wire[3:0]  Freq_5 = (50 / Counter) % 10;
-*/
+wire[3:0]  temp_0;
+wire[3:0]  temp_1;
+wire[3:0]  temp_2;
+wire[3:0]  temp_3;
+wire[3:0]  temp_4;
+wire[3:0]  temp_5;
 always@(posedge clk)
 begin
 	if(Freq == 32'b0)
@@ -55,12 +45,12 @@ begin
 	end
 	else
 	begin
-		Freq <= temp_0
-			  + temp_1 * 10 
-			  + temp_2 * 100 
-			  + temp_3 * 1000
-			  + temp_4 * 10000
-			  + temp_5 * 100000;
+		Freq <= {28'b0,temp_0}
+			  + {28'b0,temp_1} * 32'd10 
+			  + {28'b0,temp_2} * 32'd100 
+			  + {28'b0,temp_3} * 32'd1000
+			  + {28'b0,temp_4} * 32'd10000
+			  + {28'b0,temp_5} * 32'd100000;
 	end
 end
 Generator Generator_0

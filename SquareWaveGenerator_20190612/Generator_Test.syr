@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: Generator_Test.prj
 
@@ -131,8 +131,8 @@ Elaborating module <SEG_Decoder>.
 Elaborating module <SEG_Scan>.
 
 Elaborating module <Counter_M10>.
-WARNING:HDLCompiler:1127 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" Line 196: Assignment to co_5 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" Line 198: Assignment to do_5 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" Line 186: Assignment to co_5 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" Line 188: Assignment to do_5 ignored, since the identifier is never used
 
 Elaborating module <KEY_Debounce>.
 
@@ -142,31 +142,31 @@ Elaborating module <KEY_Debounce>.
 
 Synthesizing Unit <Generator_Test>.
     Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v".
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 190: Output port <co> of the instance <Counter_M10_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 190: Output port <d0> of the instance <Counter_M10_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 204: Output port <button_posedge> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 204: Output port <button_out> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 213: Output port <button_posedge> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 213: Output port <button_out> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 222: Output port <button_posedge> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 222: Output port <button_out> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 231: Output port <button_posedge> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 231: Output port <button_out> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 180: Output port <co> of the instance <Counter_M10_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 180: Output port <d0> of the instance <Counter_M10_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 194: Output port <button_posedge> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 194: Output port <button_out> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 203: Output port <button_posedge> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 203: Output port <button_out> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 212: Output port <button_posedge> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 212: Output port <button_out> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 221: Output port <button_posedge> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 221: Output port <button_out> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <Freq_plus>.
     Found 1-bit register for signal <Freq_min>.
     Found 1-bit register for signal <Freq_Lplus>.
     Found 1-bit register for signal <Freq_Lmin>.
     Found 32-bit register for signal <Freq>.
-    Found 9-bit adder for signal <n0083[8:0]> created at line 58.
-    Found 12-bit adder for signal <n0086[11:0]> created at line 58.
-    Found 15-bit adder for signal <n0089[14:0]> created at line 58.
-    Found 19-bit adder for signal <n0092[18:0]> created at line 58.
-    Found 22-bit adder for signal <n0095[21:0]> created at line 58.
-    Found 4x4-bit multiplier for signal <temp_1[3]_PWR_1_o_MuLt_2_OUT> created at line 59.
-    Found 4x7-bit multiplier for signal <temp_2[3]_PWR_1_o_MuLt_4_OUT> created at line 60.
-    Found 4x10-bit multiplier for signal <temp_3[3]_PWR_1_o_MuLt_6_OUT> created at line 61.
-    Found 4x14-bit multiplier for signal <temp_4[3]_PWR_1_o_MuLt_8_OUT> created at line 62.
-    Found 4x17-bit multiplier for signal <temp_5[3]_PWR_1_o_MuLt_10_OUT> created at line 63.
+    Found 9-bit adder for signal <n0083[8:0]> created at line 48.
+    Found 12-bit adder for signal <n0086[11:0]> created at line 48.
+    Found 15-bit adder for signal <n0089[14:0]> created at line 48.
+    Found 19-bit adder for signal <n0092[18:0]> created at line 48.
+    Found 22-bit adder for signal <n0095[21:0]> created at line 48.
+    Found 4x4-bit multiplier for signal <temp_1[3]_PWR_1_o_MuLt_2_OUT> created at line 49.
+    Found 4x7-bit multiplier for signal <temp_2[3]_PWR_1_o_MuLt_4_OUT> created at line 50.
+    Found 4x10-bit multiplier for signal <temp_3[3]_PWR_1_o_MuLt_6_OUT> created at line 51.
+    Found 4x14-bit multiplier for signal <temp_4[3]_PWR_1_o_MuLt_8_OUT> created at line 52.
+    Found 4x17-bit multiplier for signal <temp_5[3]_PWR_1_o_MuLt_10_OUT> created at line 53.
     Summary:
 	inferred   5 Multiplier(s).
 	inferred   5 Adder/Subtractor(s).
@@ -799,7 +799,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 92.929ns (frequency: 10.761MHz)
-  Total number of paths / destination ports: 13585689610140258000000000000000000000000 / 406
+  Total number of paths / destination ports: 13585689610140255000000000000000000000000 / 406
 -------------------------------------------------------------------------
 Delay:               92.929ns (Levels of Logic = 289)
   Source:            Freq_5_1 (FF)
@@ -1162,11 +1162,11 @@ clk            |   92.929|         |         |         |
 
 
 Total REAL time to Xst completion: 17.00 secs
-Total CPU time to Xst completion: 16.22 secs
+Total CPU time to Xst completion: 16.92 secs
  
 --> 
 
-Total memory usage is 4542728 kilobytes
+Total memory usage is 4542780 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   94 (   0 filtered)
