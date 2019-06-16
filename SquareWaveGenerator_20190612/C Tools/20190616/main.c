@@ -13,7 +13,7 @@ int main()
         for(i = 1;i <= temp;i++)
         {
             Counter = 5E7 / (i * 2) - 1;
-            printf("32'd%d:Counter <= %.0lf;\n", i, Counter);
+            printf("24'h%d:Counter <= 32'd%.0lf;\n", i, Counter);
         }
     }
     return 0;

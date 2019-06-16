@@ -5,8 +5,9 @@ TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000kHz;
 NET rst_n	LOC = L3 | IOSTANDARD = "LVCMOS33"; ## reset pushbutton
 ##
 
-#########LED Pin define##########
-NET Square	LOC = P4 | IOSTANDARD = "LVCMOS33"; ##LED1
+#########LED and Wave Out Pin define##########
+NET Square	LOC = K16 | IOSTANDARD = "LVCMOS33"; ##Wave Out
+NET LED	    LOC = P4 | IOSTANDARD = "LVCMOS33"; ##LED1
 ########smg interface Pin define##################### 
 NET seg_data<0>             LOC = C7 | IOSTANDARD = "LVCMOS33";           ##  
 NET seg_data<1>             LOC = E6 | IOSTANDARD = "LVCMOS33";           ##  

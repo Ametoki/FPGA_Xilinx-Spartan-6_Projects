@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.74 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.74 secs
  
 --> Reading design: Generator_Test.prj
 
@@ -124,15 +124,15 @@ Parsing module <Generator_Test>.
 
 Elaborating module <Generator_Test>.
 
-Elaborating module <Generator>.
+Elaborating module <Counter_M10>.
+WARNING:HDLCompiler:1127 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" Line 115: Assignment to co_5 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" Line 117: Assignment to do_5 ignored, since the identifier is never used
 
 Elaborating module <SEG_Decoder>.
 
 Elaborating module <SEG_Scan>.
 
-Elaborating module <Counter_M10>.
-WARNING:HDLCompiler:1127 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" Line 186: Assignment to co_5 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" Line 188: Assignment to do_5 ignored, since the identifier is never used
+Elaborating module <Generator>.
 
 Elaborating module <KEY_Debounce>.
 
@@ -142,36 +142,40 @@ Elaborating module <KEY_Debounce>.
 
 Synthesizing Unit <Generator_Test>.
     Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v".
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 180: Output port <co> of the instance <Counter_M10_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 180: Output port <d0> of the instance <Counter_M10_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 194: Output port <button_posedge> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 194: Output port <button_out> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 203: Output port <button_posedge> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 203: Output port <button_out> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 212: Output port <button_posedge> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 212: Output port <button_out> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 221: Output port <button_posedge> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 221: Output port <button_out> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
-    Found 1-bit register for signal <Freq_min>.
-    Found 1-bit register for signal <Freq_plus>.
-    Found 1-bit register for signal <Freq_Lplus>.
-    Found 1-bit register for signal <Freq_Lmin>.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 109: Output port <co> of the instance <Counter_M10_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 109: Output port <d0> of the instance <Counter_M10_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 180: Output port <button_posedge> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 180: Output port <button_out> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 189: Output port <button_posedge> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 189: Output port <button_out> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 198: Output port <button_posedge> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 198: Output port <button_out> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 207: Output port <button_posedge> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator_Test.v" line 207: Output port <button_out> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <Freq_Key1_M>.
+    Found 1-bit register for signal <Freq_Key2_P>.
+    Found 1-bit register for signal <Freq_Key2_M>.
+    Found 1-bit register for signal <Freq_Key3_P>.
+    Found 1-bit register for signal <Freq_Key3_M>.
+    Found 1-bit register for signal <PM_Mode>.
+    Found 1-bit register for signal <Freq_Key1_P>.
     Summary:
-	inferred   4 D-type flip-flop(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
 Unit <Generator_Test> synthesized.
 
-Synthesizing Unit <Generator>.
-    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator.v".
-    Found 32-bit register for signal <timer>.
-    Found 1-bit register for signal <Square>.
-    Found 32-bit adder for signal <timer[31]_GND_2_o_add_13_OUT> created at line 154.
-    Found 32-bit comparator equal for signal <timer[31]_Counter[31]_equal_13_o> created at line 147
+Synthesizing Unit <Counter_M10>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Counter_M10.v".
+    Found 1-bit register for signal <co>.
+    Found 1-bit register for signal <d0>.
+    Found 4-bit register for signal <data>.
+    Found 4-bit subtractor for signal <data[3]_GND_2_o_sub_6_OUT> created at line 54.
+    Found 4-bit adder for signal <data[3]_GND_2_o_add_2_OUT> created at line 39.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  33 D-type flip-flop(s).
-	inferred   1 Comparator(s).
-	inferred   2 Multiplexer(s).
-Unit <Generator> synthesized.
+	inferred   6 D-type flip-flop(s).
+	inferred  12 Multiplexer(s).
+Unit <Counter_M10> synthesized.
 
 Synthesizing Unit <SEG_Decoder>.
     Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\SEG_Decoder.v".
@@ -202,18 +206,113 @@ Synthesizing Unit <SEG_Scan>.
 	inferred   5 Multiplexer(s).
 Unit <SEG_Scan> synthesized.
 
-Synthesizing Unit <Counter_M10>.
-    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Counter_M10.v".
-    Found 1-bit register for signal <co>.
-    Found 1-bit register for signal <d0>.
-    Found 4-bit register for signal <data>.
-    Found 4-bit subtractor for signal <data[3]_GND_6_o_sub_6_OUT> created at line 54.
-    Found 4-bit adder for signal <data[3]_GND_6_o_add_2_OUT> created at line 39.
+Synthesizing Unit <Generator>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\Generator.v".
+WARNING:Xst:647 - Input <rst_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <Square>.
+    Found 32-bit register for signal <timer>.
+    Found 26-bit subtractor for signal <n0023[25:0]> created at line 36.
+    Found 9-bit adder for signal <n0046[8:0]> created at line 30.
+    Found 12-bit adder for signal <n0049[11:0]> created at line 30.
+    Found 15-bit adder for signal <n0052[14:0]> created at line 30.
+    Found 19-bit adder for signal <n0055[18:0]> created at line 30.
+    Found 22-bit adder for signal <n0058[21:0]> created at line 30.
+    Found 32-bit adder for signal <timer[31]_GND_6_o_add_14_OUT> created at line 46.
+    Found 4x4-bit multiplier for signal <Freq[7]_PWR_6_o_MuLt_0_OUT> created at line 31.
+    Found 4x7-bit multiplier for signal <Freq[11]_PWR_6_o_MuLt_2_OUT> created at line 32.
+    Found 4x10-bit multiplier for signal <Freq[15]_PWR_6_o_MuLt_4_OUT> created at line 33.
+    Found 4x14-bit multiplier for signal <Freq[19]_PWR_6_o_MuLt_6_OUT> created at line 34.
+    Found 4x17-bit multiplier for signal <Freq[23]_PWR_6_o_MuLt_8_OUT> created at line 35.
+    Found 32-bit comparator greater for signal <n0012> created at line 39
     Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred   6 D-type flip-flop(s).
-	inferred  12 Multiplexer(s).
-Unit <Counter_M10> synthesized.
+	inferred   5 Multiplier(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Generator> synthesized.
+
+Synthesizing Unit <div_25u_32u>.
+    Related source file is "".
+    Found 56-bit adder for signal <n2530> created at line 0.
+    Found 56-bit adder for signal <GND_12_o_b[31]_add_3_OUT> created at line 0.
+    Found 55-bit adder for signal <n2534> created at line 0.
+    Found 55-bit adder for signal <GND_12_o_b[31]_add_5_OUT> created at line 0.
+    Found 54-bit adder for signal <n2538> created at line 0.
+    Found 54-bit adder for signal <GND_12_o_b[31]_add_7_OUT> created at line 0.
+    Found 53-bit adder for signal <n2542> created at line 0.
+    Found 53-bit adder for signal <GND_12_o_b[31]_add_9_OUT> created at line 0.
+    Found 52-bit adder for signal <n2546> created at line 0.
+    Found 52-bit adder for signal <GND_12_o_b[31]_add_11_OUT> created at line 0.
+    Found 51-bit adder for signal <n2550> created at line 0.
+    Found 51-bit adder for signal <GND_12_o_b[31]_add_13_OUT> created at line 0.
+    Found 50-bit adder for signal <n2554> created at line 0.
+    Found 50-bit adder for signal <GND_12_o_b[31]_add_15_OUT> created at line 0.
+    Found 49-bit adder for signal <n2558> created at line 0.
+    Found 49-bit adder for signal <GND_12_o_b[31]_add_17_OUT> created at line 0.
+    Found 48-bit adder for signal <n2562> created at line 0.
+    Found 48-bit adder for signal <GND_12_o_b[31]_add_19_OUT> created at line 0.
+    Found 47-bit adder for signal <n2566> created at line 0.
+    Found 47-bit adder for signal <GND_12_o_b[31]_add_21_OUT> created at line 0.
+    Found 46-bit adder for signal <n2570> created at line 0.
+    Found 46-bit adder for signal <GND_12_o_b[31]_add_23_OUT> created at line 0.
+    Found 45-bit adder for signal <n2574> created at line 0.
+    Found 45-bit adder for signal <GND_12_o_b[31]_add_25_OUT> created at line 0.
+    Found 44-bit adder for signal <n2578> created at line 0.
+    Found 44-bit adder for signal <GND_12_o_b[31]_add_27_OUT> created at line 0.
+    Found 43-bit adder for signal <n2582> created at line 0.
+    Found 43-bit adder for signal <GND_12_o_b[31]_add_29_OUT> created at line 0.
+    Found 42-bit adder for signal <n2586> created at line 0.
+    Found 42-bit adder for signal <GND_12_o_b[31]_add_31_OUT> created at line 0.
+    Found 41-bit adder for signal <n2590> created at line 0.
+    Found 41-bit adder for signal <GND_12_o_b[31]_add_33_OUT> created at line 0.
+    Found 40-bit adder for signal <n2594> created at line 0.
+    Found 40-bit adder for signal <GND_12_o_b[31]_add_35_OUT> created at line 0.
+    Found 39-bit adder for signal <n2598> created at line 0.
+    Found 39-bit adder for signal <GND_12_o_b[31]_add_37_OUT> created at line 0.
+    Found 38-bit adder for signal <n2602> created at line 0.
+    Found 38-bit adder for signal <GND_12_o_b[31]_add_39_OUT> created at line 0.
+    Found 37-bit adder for signal <n2606> created at line 0.
+    Found 37-bit adder for signal <GND_12_o_b[31]_add_41_OUT> created at line 0.
+    Found 36-bit adder for signal <n2610> created at line 0.
+    Found 36-bit adder for signal <GND_12_o_b[31]_add_43_OUT> created at line 0.
+    Found 35-bit adder for signal <n2614> created at line 0.
+    Found 35-bit adder for signal <GND_12_o_b[31]_add_45_OUT> created at line 0.
+    Found 34-bit adder for signal <n2618> created at line 0.
+    Found 34-bit adder for signal <GND_12_o_b[31]_add_47_OUT> created at line 0.
+    Found 33-bit adder for signal <n2622> created at line 0.
+    Found 33-bit adder for signal <GND_12_o_b[31]_add_49_OUT> created at line 0.
+    Found 57-bit adder for signal <GND_12_o_b[31]_add_1_OUT> created at line 0.
+    Found 57-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 56-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 55-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 54-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 53-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 52-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 51-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 50-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 49-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 48-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 47-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 46-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 45-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 44-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 43-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 42-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 41-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 40-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 39-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Summary:
+	inferred  49 Adder/Subtractor(s).
+	inferred  26 Comparator(s).
+	inferred 625 Multiplexer(s).
+Unit <div_25u_32u> synthesized.
 
 Synthesizing Unit <KEY_Debounce>.
     Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\src\KEY_Debounce.v".
@@ -227,7 +326,7 @@ Synthesizing Unit <KEY_Debounce>.
     Found 1-bit register for signal <button_posedge>.
     Found 1-bit register for signal <button_negedge>.
     Found 1-bit register for signal <DFF1>.
-    Found 32-bit adder for signal <q_reg[31]_GND_7_o_add_1_OUT> created at line 51.
+    Found 32-bit adder for signal <q_reg[31]_GND_13_o_add_1_OUT> created at line 51.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  38 D-type flip-flop(s).
@@ -240,22 +339,84 @@ Macro Statistics
 # RAMs                                                 : 7
  16x8-bit single-port Read Only RAM                    : 6
  8x6-bit single-port Read Only RAM                     : 1
-# Adders/Subtractors                                   : 13
+# Multipliers                                          : 5
+ 10x4-bit multiplier                                   : 1
+ 14x4-bit multiplier                                   : 1
+ 17x4-bit multiplier                                   : 1
+ 4x4-bit multiplier                                    : 1
+ 7x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 68
+ 12-bit adder                                          : 1
+ 15-bit adder                                          : 1
+ 19-bit adder                                          : 1
+ 22-bit adder                                          : 1
+ 26-bit subtractor                                     : 1
  32-bit adder                                          : 6
+ 33-bit adder                                          : 2
+ 34-bit adder                                          : 2
+ 35-bit adder                                          : 2
+ 36-bit adder                                          : 2
+ 37-bit adder                                          : 2
+ 38-bit adder                                          : 2
+ 39-bit adder                                          : 2
  4-bit adder                                           : 1
  4-bit addsub                                          : 6
-# Registers                                            : 56
- 1-bit register                                        : 41
+ 40-bit adder                                          : 2
+ 41-bit adder                                          : 2
+ 42-bit adder                                          : 2
+ 43-bit adder                                          : 2
+ 44-bit adder                                          : 2
+ 45-bit adder                                          : 2
+ 46-bit adder                                          : 2
+ 47-bit adder                                          : 2
+ 48-bit adder                                          : 2
+ 49-bit adder                                          : 2
+ 50-bit adder                                          : 2
+ 51-bit adder                                          : 2
+ 52-bit adder                                          : 2
+ 53-bit adder                                          : 2
+ 54-bit adder                                          : 2
+ 55-bit adder                                          : 2
+ 56-bit adder                                          : 2
+ 57-bit adder                                          : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 59
+ 1-bit register                                        : 44
  32-bit register                                       : 6
  4-bit register                                        : 7
  6-bit register                                        : 1
  8-bit register                                        : 1
-# Comparators                                          : 2
- 32-bit comparator equal                               : 1
- 32-bit comparator greater                             : 1
-# Multiplexers                                         : 79
- 1-bit 2-to-1 multiplexer                              : 30
- 32-bit 2-to-1 multiplexer                             : 3
+# Comparators                                          : 28
+ 32-bit comparator greater                             : 2
+ 32-bit comparator lessequal                           : 1
+ 33-bit comparator lessequal                           : 1
+ 34-bit comparator lessequal                           : 1
+ 35-bit comparator lessequal                           : 1
+ 36-bit comparator lessequal                           : 1
+ 37-bit comparator lessequal                           : 1
+ 38-bit comparator lessequal                           : 1
+ 39-bit comparator lessequal                           : 1
+ 40-bit comparator lessequal                           : 1
+ 41-bit comparator lessequal                           : 1
+ 42-bit comparator lessequal                           : 1
+ 43-bit comparator lessequal                           : 1
+ 44-bit comparator lessequal                           : 1
+ 45-bit comparator lessequal                           : 1
+ 46-bit comparator lessequal                           : 1
+ 47-bit comparator lessequal                           : 1
+ 48-bit comparator lessequal                           : 1
+ 49-bit comparator lessequal                           : 1
+ 50-bit comparator lessequal                           : 1
+ 51-bit comparator lessequal                           : 1
+ 52-bit comparator lessequal                           : 1
+ 53-bit comparator lessequal                           : 1
+ 54-bit comparator lessequal                           : 1
+ 55-bit comparator lessequal                           : 1
+ 56-bit comparator lessequal                           : 1
+ 57-bit comparator lessequal                           : 1
+# Multiplexers                                         : 708
+ 1-bit 2-to-1 multiplexer                              : 661
+ 32-bit 2-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 43
  6-bit 2-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 1
@@ -273,6 +434,13 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 
 Synthesizing (advanced) Unit <Generator>.
 The following registers are absorbed into counter <timer>: 1 register on signal <timer>.
+	The following adders/subtractors are grouped into adder tree <Madd_n0058[21:0]1> :
+ 	<Madd_n0046[8:0]> in block <Generator>, 	<Madd_n0049[11:0]> in block <Generator>, 	<Madd_n0052[14:0]> in block <Generator>, 	<Madd_n0055[18:0]> in block <Generator>, 	<Madd_n0058[21:0]> in block <Generator>.
+	Multiplier <Mmult_Freq[23]_PWR_6_o_MuLt_8_OUT> in block <Generator> and adder/subtractor <ADDER_FOR_MULTADD_Madd4> in block <Generator> are combined into a MAC<Maddsub_Freq[23]_PWR_6_o_MuLt_8_OUT>.
+	Multiplier <Mmult_Freq[19]_PWR_6_o_MuLt_6_OUT> in block <Generator> and adder/subtractor <ADDER_FOR_MULTADD_Madd3> in block <Generator> are combined into a MAC<Maddsub_Freq[19]_PWR_6_o_MuLt_6_OUT>.
+	Multiplier <Mmult_Freq[15]_PWR_6_o_MuLt_4_OUT> in block <Generator> and adder/subtractor <ADDER_FOR_MULTADD_Madd2> in block <Generator> are combined into a MAC<Maddsub_Freq[15]_PWR_6_o_MuLt_4_OUT>.
+	Multiplier <Mmult_Freq[11]_PWR_6_o_MuLt_2_OUT> in block <Generator> and adder/subtractor <ADDER_FOR_MULTADD_Madd1> in block <Generator> are combined into a MAC<Maddsub_Freq[11]_PWR_6_o_MuLt_2_OUT>.
+	Multiplier <Mmult_Freq[7]_PWR_6_o_MuLt_0_OUT> in block <Generator> and adder/subtractor <ADDER_FOR_MULTADD_Madd> in block <Generator> are combined into a MAC<Maddsub_Freq[7]_PWR_6_o_MuLt_0_OUT>.
 Unit <Generator> synthesized (advanced).
 
 Synthesizing (advanced) Unit <SEG_Decoder>.
@@ -312,20 +480,53 @@ Macro Statistics
 # RAMs                                                 : 7
  16x8-bit single-port distributed Read Only RAM        : 6
  8x6-bit single-port distributed Read Only RAM         : 1
-# Adders/Subtractors                                   : 10
+# MACs                                                 : 5
+ 10x4-to-22-bit MAC                                    : 1
+ 14x4-to-22-bit MAC                                    : 1
+ 17x4-to-22-bit MAC                                    : 1
+ 4x4-to-22-bit MAC                                     : 1
+ 7x4-to-22-bit MAC                                     : 1
+# Adders/Subtractors                                   : 36
+ 25-bit adder                                          : 1
+ 25-bit adder carry in                                 : 24
+ 26-bit subtractor                                     : 1
  32-bit adder                                          : 4
  4-bit addsub                                          : 6
 # Counters                                             : 3
  32-bit up counter                                     : 2
  4-bit up counter                                      : 1
-# Registers                                            : 207
- Flip-Flops                                            : 207
-# Comparators                                          : 2
- 32-bit comparator equal                               : 1
- 32-bit comparator greater                             : 1
-# Multiplexers                                         : 76
- 1-bit 2-to-1 multiplexer                              : 30
- 32-bit 2-to-1 multiplexer                             : 1
+# Registers                                            : 210
+ Flip-Flops                                            : 210
+# Comparators                                          : 28
+ 32-bit comparator greater                             : 2
+ 32-bit comparator lessequal                           : 1
+ 33-bit comparator lessequal                           : 1
+ 34-bit comparator lessequal                           : 1
+ 35-bit comparator lessequal                           : 1
+ 36-bit comparator lessequal                           : 1
+ 37-bit comparator lessequal                           : 1
+ 38-bit comparator lessequal                           : 1
+ 39-bit comparator lessequal                           : 1
+ 40-bit comparator lessequal                           : 1
+ 41-bit comparator lessequal                           : 1
+ 42-bit comparator lessequal                           : 1
+ 43-bit comparator lessequal                           : 1
+ 44-bit comparator lessequal                           : 1
+ 45-bit comparator lessequal                           : 1
+ 46-bit comparator lessequal                           : 1
+ 47-bit comparator lessequal                           : 1
+ 48-bit comparator lessequal                           : 1
+ 49-bit comparator lessequal                           : 1
+ 50-bit comparator lessequal                           : 1
+ 51-bit comparator lessequal                           : 1
+ 52-bit comparator lessequal                           : 1
+ 53-bit comparator lessequal                           : 1
+ 54-bit comparator lessequal                           : 1
+ 55-bit comparator lessequal                           : 1
+ 56-bit comparator lessequal                           : 1
+ 57-bit comparator lessequal                           : 1
+# Multiplexers                                         : 706
+ 1-bit 2-to-1 multiplexer                              : 661
  4-bit 2-to-1 multiplexer                              : 42
  6-bit 2-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 1
@@ -341,11 +542,13 @@ Macro Statistics
 
 Optimizing unit <Generator_Test> ...
 
-Optimizing unit <Generator> ...
+Optimizing unit <Counter_M10> ...
 
 Optimizing unit <SEG_Scan> ...
 
-Optimizing unit <Counter_M10> ...
+Optimizing unit <Generator> ...
+
+Optimizing unit <div_25u_32u> ...
 
 Optimizing unit <KEY_Debounce> ...
 WARNING:Xst:2677 - Node <Counter_M10_5/d0> of sequential type is unconnected in block <Generator_Test>.
@@ -354,58 +557,60 @@ WARNING:Xst:2677 - Node <KEY_Debounce_3/button_posedge> of sequential type is un
 WARNING:Xst:2677 - Node <KEY_Debounce_2/button_posedge> of sequential type is unconnected in block <Generator_Test>.
 WARNING:Xst:2677 - Node <KEY_Debounce_1/button_posedge> of sequential type is unconnected in block <Generator_Test>.
 WARNING:Xst:2677 - Node <KEY_Debounce_0/button_posedge> of sequential type is unconnected in block <Generator_Test>.
-WARNING:Xst:1710 - FF/Latch <KEY_Debounce_2/q_reg_27> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_26> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_25> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_24> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_23> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_22> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_21> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_20> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_31> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_30> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_29> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_28> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <KEY_Debounce_1/q_reg_26> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_27> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_26> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_25> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_24> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_23> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_22> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_21> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_20> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_31> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_30> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_29> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_28> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_27> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_26> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_25> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_24> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_23> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_22> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_21> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_20> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_31> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_30> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_29> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_28> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_27> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_26> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_25> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_24> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_23> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_22> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_21> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_20> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_19> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_18> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_17> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_16> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_28> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_29> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_30> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_31> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_20> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_21> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_22> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_23> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_24> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_25> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_26> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_27> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_28> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_29> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_30> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_31> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_20> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_21> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_22> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_23> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_24> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_25> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_26> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_27> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_28> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_29> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_30> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_31> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_20> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_21> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_22> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_23> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_24> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_25> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generator_0/timer_31> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_sel_3> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_16> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_17> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_18> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_19> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_20> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_21> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_22> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_23> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_24> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_25> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_26> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_27> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_28> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_29> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_30> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_31> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_20> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_21> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_22> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
@@ -418,16 +623,17 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_re
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_29> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_30> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_31> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_sel_3> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generator_0/timer_25> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generator_0/timer_26> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generator_0/timer_27> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generator_0/timer_28> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generator_0/timer_29> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generator_0/timer_30> (without init value) has a constant value of 0 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 WARNING:Xst:1710 - FF/Latch <SEG_Scan/seg_data_7> (without init value) has a constant value of 1 in block <Generator_Test>. This FF/Latch will be trimmed during the optimization process.
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Generator_Test, actual ratio is 8.
-FlipFlop Counter_M10_0/data_0 has been replicated 2 time(s)
-FlipFlop Counter_M10_0/data_1 has been replicated 2 time(s)
-FlipFlop Counter_M10_0/data_2 has been replicated 2 time(s)
-FlipFlop Counter_M10_0/data_3 has been replicated 2 time(s)
+Found area constraint ratio of 100 (+ 5) on block Generator_Test, actual ratio is 27.
 
 Final Macro Processing ...
 
@@ -435,8 +641,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 211
- Flip-Flops                                            : 211
+# Registers                                            : 199
+ Flip-Flops                                            : 199
 
 =========================================================================
 
@@ -459,28 +665,32 @@ Top Level Output File Name         : Generator_Test.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 659
+# BELS                             : 2490
 #      GND                         : 1
-#      INV                         : 13
-#      LUT1                        : 77
-#      LUT2                        : 44
-#      LUT3                        : 32
-#      LUT4                        : 44
-#      LUT5                        : 133
-#      LUT6                        : 46
-#      MUXCY                       : 140
+#      INV                         : 54
+#      LUT1                        : 138
+#      LUT2                        : 43
+#      LUT3                        : 152
+#      LUT4                        : 351
+#      LUT5                        : 371
+#      LUT6                        : 290
+#      MUXCY                       : 657
 #      VCC                         : 1
-#      XORCY                       : 128
-# FlipFlops/Latches                : 211
-#      FDC                         : 153
-#      FDCE                        : 35
-#      FDE                         : 2
-#      FDP                         : 21
+#      XORCY                       : 432
+# FlipFlops/Latches                : 199
+#      FD                          : 25
+#      FDC                         : 124
+#      FDCE                        : 28
+#      FDE                         : 1
+#      FDP                         : 17
+#      FDPE                        : 4
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 20
+# IO Buffers                       : 21
 #      IBUF                        : 5
-#      OBUF                        : 15
+#      OBUF                        : 16
+# DSPs                             : 5
+#      DSP48A1                     : 5
 
 Device utilization summary:
 ---------------------------
@@ -489,23 +699,24 @@ Selected Device : 6slx9ftg256-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             211  out of  11440     1%  
- Number of Slice LUTs:                  389  out of   5720     6%  
-    Number used as Logic:               389  out of   5720     6%  
+ Number of Slice Registers:             199  out of  11440     1%  
+ Number of Slice LUTs:                 1399  out of   5720    24%  
+    Number used as Logic:              1399  out of   5720    24%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    402
-   Number with an unused Flip Flop:     191  out of    402    47%  
-   Number with an unused LUT:            13  out of    402     3%  
-   Number of fully used LUT-FF pairs:   198  out of    402    49%  
-   Number of unique control sets:         9
+ Number of LUT Flip Flop pairs used:   1415
+   Number with an unused Flip Flop:    1216  out of   1415    85%  
+   Number with an unused LUT:            16  out of   1415     1%  
+   Number of fully used LUT-FF pairs:   183  out of   1415    12%  
+   Number of unique control sets:        15
 
 IO Utilization: 
- Number of IOs:                          21
- Number of bonded IOBs:                  21  out of    186    11%  
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    186    11%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      5  out of     16    31%  
 
 ---------------------------
 Partition Resource Summary:
@@ -528,7 +739,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 211   |
+clk                                | BUFGP                  | 199   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -539,9 +750,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 6.617ns (Maximum Frequency: 151.121MHz)
-   Minimum input arrival time before clock: 5.225ns
-   Maximum output required time after clock: 4.162ns
+   Minimum period: 110.219ns (Maximum Frequency: 9.073MHz)
+   Minimum input arrival time before clock: 5.109ns
+   Maximum output required time after clock: 4.202ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -550,95 +761,314 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 6.617ns (frequency: 151.121MHz)
-  Total number of paths / destination ports: 83805 / 242
+  Clock period: 110.219ns (frequency: 9.073MHz)
+  Total number of paths / destination ports: 54047157470353875000000000000000000000000000000 / 228
 -------------------------------------------------------------------------
-Delay:               6.617ns (Levels of Logic = 45)
-  Source:            Counter_M10_0/data_1_1 (FF)
-  Destination:       Generator_0/timer_31 (FF)
+Delay:               110.219ns (Levels of Logic = 264)
+  Source:            Counter_M10_1/data_0 (FF)
+  Destination:       Generator_0/timer_24 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: Counter_M10_0/data_1_1 to Generator_0/timer_31
+  Data Path: Counter_M10_1/data_0 to Generator_0/timer_24
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            13   0.525   1.374  Counter_M10_0/data_1_1 (Counter_M10_0/data_1_1)
-     LUT4:I0->O            1   0.254   0.790  Generator_0/_n0049<31>1 (Generator_0/_n0049<31>)
-     LUT6:I4->O            1   0.250   0.000  Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_lut<0> (Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<0> (Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<1> (Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<2> (Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<3> (Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<4> (Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<5> (Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<6> (Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<7> (Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<8> (Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<8>)
-     MUXCY:CI->O          34   0.023   1.553  Generator_0/Mcompar_timer[31]_Counter[31]_equal_13_o_cy<9> (Generator_0/timer[31]_Counter[31]_equal_13_o)
-     LUT2:I1->O            1   0.254   0.000  Generator_0/Mcount_timer_lut<0> (Generator_0/Mcount_timer_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  Generator_0/Mcount_timer_cy<0> (Generator_0/Mcount_timer_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<1> (Generator_0/Mcount_timer_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<2> (Generator_0/Mcount_timer_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<3> (Generator_0/Mcount_timer_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<4> (Generator_0/Mcount_timer_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<5> (Generator_0/Mcount_timer_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<6> (Generator_0/Mcount_timer_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<7> (Generator_0/Mcount_timer_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<8> (Generator_0/Mcount_timer_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<9> (Generator_0/Mcount_timer_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<10> (Generator_0/Mcount_timer_cy<10>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<11> (Generator_0/Mcount_timer_cy<11>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<12> (Generator_0/Mcount_timer_cy<12>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<13> (Generator_0/Mcount_timer_cy<13>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<14> (Generator_0/Mcount_timer_cy<14>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<15> (Generator_0/Mcount_timer_cy<15>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<16> (Generator_0/Mcount_timer_cy<16>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<17> (Generator_0/Mcount_timer_cy<17>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<18> (Generator_0/Mcount_timer_cy<18>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<19> (Generator_0/Mcount_timer_cy<19>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<20> (Generator_0/Mcount_timer_cy<20>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<21> (Generator_0/Mcount_timer_cy<21>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<22> (Generator_0/Mcount_timer_cy<22>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<23> (Generator_0/Mcount_timer_cy<23>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<24> (Generator_0/Mcount_timer_cy<24>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<25> (Generator_0/Mcount_timer_cy<25>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<26> (Generator_0/Mcount_timer_cy<26>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<27> (Generator_0/Mcount_timer_cy<27>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<28> (Generator_0/Mcount_timer_cy<28>)
-     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcount_timer_cy<29> (Generator_0/Mcount_timer_cy<29>)
-     MUXCY:CI->O           0   0.023   0.000  Generator_0/Mcount_timer_cy<30> (Generator_0/Mcount_timer_cy<30>)
-     XORCY:CI->O           1   0.206   0.000  Generator_0/Mcount_timer_xor<31> (Generator_0/Mcount_timer31)
-     FDC:D                     0.074          Generator_0/timer_31
+     FDCE:C->Q            14   0.525   1.126  Counter_M10_1/data_0 (Counter_M10_1/data_0)
+     DSP48A1:B0->PCOUT47    1   5.153   0.000  Generator_0/Maddsub_Freq[7]_PWR_6_o_MuLt_0_OUT (Generator_0/Maddsub_Freq[7]_PWR_6_o_MuLt_0_OUT_PCOUT_to_Maddsub_Freq[11]_PWR_6_o_MuLt_2_OUT_PCIN_47)
+     DSP48A1:PCIN47->PCOUT47    1   2.653   0.000  Generator_0/Maddsub_Freq[11]_PWR_6_o_MuLt_2_OUT (Generator_0/Maddsub_Freq[11]_PWR_6_o_MuLt_2_OUT_PCOUT_to_Maddsub_Freq[15]_PWR_6_o_MuLt_4_OUT_PCIN_47)
+     DSP48A1:PCIN47->PCOUT47    1   2.653   0.000  Generator_0/Maddsub_Freq[15]_PWR_6_o_MuLt_4_OUT (Generator_0/Maddsub_Freq[15]_PWR_6_o_MuLt_4_OUT_PCOUT_to_Maddsub_Freq[19]_PWR_6_o_MuLt_6_OUT_PCIN_47)
+     DSP48A1:PCIN47->PCOUT47    1   2.653   0.000  Generator_0/Maddsub_Freq[19]_PWR_6_o_MuLt_6_OUT (Generator_0/Maddsub_Freq[19]_PWR_6_o_MuLt_6_OUT_PCOUT_to_Maddsub_Freq[23]_PWR_6_o_MuLt_8_OUT_PCIN_47)
+     DSP48A1:PCIN47->P5   66   2.645   2.375  Generator_0/Maddsub_Freq[23]_PWR_6_o_MuLt_8_OUT (Generator_0/ADDER_FOR_MULTADD_Madd_54)
+     LUT5:I0->O            1   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<24>_lut<0> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<24>_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<24>_cy<0> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<24>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<24>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<24>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<24>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<24>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<24>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<24>_cy<3>)
+     MUXCY:CI->O           4   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<24>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<24>)
+     MUXCY:CI->O           2   0.235   1.002  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[24]_GND_12_o_MUX_290_o11_cy (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[24]_GND_12_o_MUX_290_o)
+     LUT5:I1->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<23>_lutdi (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<23>_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<23>_cy<0> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<23>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<23>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<23>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<23>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<23>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<23>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<23>_cy<3>)
+     MUXCY:CI->O           9   0.023   0.976  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<23>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<23>)
+     LUT4:I3->O            2   0.254   0.954  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[24]_GND_12_o_MUX_400_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[24]_GND_12_o_MUX_400_o)
+     LUT5:I2->O            0   0.235   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<22>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<22>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<22>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<22>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<22>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<22>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<22>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<22>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<22>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<22>_cy<4>)
+     MUXCY:CI->O          14   0.023   1.127  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<22>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<22>)
+     LUT6:I5->O            3   0.254   1.196  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[24]_GND_12_o_MUX_508_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[24]_GND_12_o_MUX_508_o)
+     LUT5:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<21>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<21>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<21>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<21>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<21>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<21>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<21>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<21>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<21>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<21>_cy<4>)
+     MUXCY:CI->O          14   0.023   1.127  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<21>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<21>)
+     LUT6:I5->O            4   0.254   1.080  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[23]_GND_12_o_MUX_615_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[23]_GND_12_o_MUX_615_o)
+     LUT4:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<20>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<20>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<20>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<20>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<20>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<20>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<20>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<20>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<20>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<20>_cy<4>)
+     MUXCY:CI->O          17   0.023   1.209  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<20>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<20>)
+     LUT4:I3->O            4   0.254   1.234  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[24]_GND_12_o_MUX_718_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[24]_GND_12_o_MUX_718_o)
+     LUT5:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<19>_lutdi2 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<19>_lutdi2)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<19>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<19>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<19>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<19>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<19>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<19>_cy<4>)
+     MUXCY:CI->O          24   0.023   1.380  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<19>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<19>)
+     LUT6:I5->O            5   0.254   1.117  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[21]_GND_12_o_MUX_823_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[21]_GND_12_o_MUX_823_o)
+     LUT4:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<18>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<18>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<18>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<18>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<18>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<18>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<18>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<18>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<18>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<18>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<18>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<18>_cy<5>)
+     MUXCY:CI->O          30   0.023   1.487  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<18>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<18>)
+     LUT6:I5->O            3   0.254   1.042  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[20]_GND_12_o_MUX_924_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[20]_GND_12_o_MUX_924_o)
+     LUT4:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<17>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<17>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<17>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<17>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<17>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<17>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<17>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<17>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<17>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<17>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<17>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<17>_cy<5>)
+     MUXCY:CI->O          28   0.023   1.453  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<17>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<17>)
+     LUT6:I5->O            5   0.254   1.117  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[19]_GND_12_o_MUX_1023_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[19]_GND_12_o_MUX_1023_o)
+     LUT4:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<16>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<16>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<16>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<16>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<16>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<16>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<16>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<16>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<16>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<16>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<16>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<16>_cy<5>)
+     MUXCY:CI->O          38   0.023   1.620  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<16>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<16>)
+     LUT6:I5->O            3   0.254   1.042  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[18]_GND_12_o_MUX_1120_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[18]_GND_12_o_MUX_1120_o)
+     LUT4:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<15>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<15>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<15>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<15>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<15>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<15>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<15>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<15>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<15>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<15>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<15>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<15>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<15>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<15>_cy<6>)
+     MUXCY:CI->O          34   0.023   1.553  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<15>_cy<7> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<15>)
+     LUT6:I5->O            5   0.254   1.117  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[17]_GND_12_o_MUX_1215_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[17]_GND_12_o_MUX_1215_o)
+     LUT4:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<14>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<14>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<14>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<14>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<14>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<14>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<14>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<14>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<14>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<14>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<14>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<14>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<14>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<14>_cy<6>)
+     MUXCY:CI->O          46   0.023   1.754  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<14>_cy<7> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<14>)
+     LUT3:I2->O            3   0.254   1.196  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[24]_GND_12_o_MUX_1300_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[24]_GND_12_o_MUX_1300_o)
+     LUT5:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<13>_lutdi5 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<13>_lutdi5)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<13>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<13>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<13>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<13>_cy<6>)
+     MUXCY:CI->O          40   0.023   1.654  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<13>_cy<7> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<13>)
+     LUT6:I5->O            5   0.254   1.117  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[15]_GND_12_o_MUX_1399_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[15]_GND_12_o_MUX_1399_o)
+     LUT4:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<12>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<12>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<12>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<12>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<12>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<12>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<12>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<12>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<12>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<12>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<12>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<12>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<12>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<12>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<12>_cy<7> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<12>_cy<7>)
+     MUXCY:CI->O          54   0.023   1.852  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<12>_cy<8> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<12>)
+     LUT3:I2->O            3   0.254   1.196  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[24]_GND_12_o_MUX_1478_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[24]_GND_12_o_MUX_1478_o)
+     LUT5:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<11>_lutdi6 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<11>_lutdi6)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<11>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<11>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<11>_cy<7> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<11>_cy<7>)
+     MUXCY:CI->O          46   0.023   1.754  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<11>_cy<8> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<11>)
+     LUT6:I5->O            5   0.254   1.117  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[13]_GND_12_o_MUX_1575_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[13]_GND_12_o_MUX_1575_o)
+     LUT4:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<10>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<10>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<10>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<10>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<10>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<10>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<10>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<10>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<10>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<10>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<10>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<10>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<10>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<10>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<10>_cy<7> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<10>_cy<7>)
+     MUXCY:CI->O          62   0.023   1.914  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<10>_cy<8> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<10>)
+     LUT6:I5->O            3   0.254   1.042  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[12]_GND_12_o_MUX_1660_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[12]_GND_12_o_MUX_1660_o)
+     LUT4:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<9>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<9>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<9>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<9>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<9>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<9>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<9>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<9>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<9>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<9>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<9>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<9>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<9>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<9>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<9>_cy<7> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<9>_cy<7>)
+     MUXCY:CI->O          52   0.023   1.837  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<9>_cy<8> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<9>)
+     LUT6:I5->O            5   0.254   1.117  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[11]_GND_12_o_MUX_1743_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[11]_GND_12_o_MUX_1743_o)
+     LUT4:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_cy<7> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_cy<8> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_cy<8>)
+     MUXCY:CI->O          70   0.023   1.976  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<8>_cy<9> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<8>)
+     LUT6:I5->O            3   0.254   1.042  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[10]_GND_12_o_MUX_1824_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[10]_GND_12_o_MUX_1824_o)
+     LUT4:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_cy<7> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_cy<8> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_cy<8>)
+     MUXCY:CI->O          58   0.023   1.883  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<7>_cy<9> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<7>)
+     LUT6:I5->O            5   0.254   1.117  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[9]_GND_12_o_MUX_1903_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[9]_GND_12_o_MUX_1903_o)
+     LUT4:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_cy<7> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_cy<8> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_cy<8>)
+     MUXCY:CI->O          78   0.023   2.038  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<6>_cy<9> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<6>)
+     LUT6:I5->O            3   0.254   1.042  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[8]_GND_12_o_MUX_1980_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[8]_GND_12_o_MUX_1980_o)
+     LUT4:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<7> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<8> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<9> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<9>)
+     MUXCY:CI->O          64   0.023   1.930  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<5>_cy<10> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<5>)
+     LUT6:I5->O            5   0.254   1.117  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[7]_GND_12_o_MUX_2055_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[7]_GND_12_o_MUX_2055_o)
+     LUT4:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<7> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<8> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<9> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<9>)
+     MUXCY:CI->O          86   0.023   2.100  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<4>_cy<10> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<4>)
+     LUT6:I5->O            4   0.254   1.080  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[6]_GND_12_o_MUX_2128_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[6]_GND_12_o_MUX_2128_o)
+     LUT4:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<7> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<8> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<9> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<9>)
+     MUXCY:CI->O          91   0.023   2.139  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<3>_cy<10> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<3>)
+     LUT6:I5->O            3   0.254   1.042  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[5]_GND_12_o_MUX_2199_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[5]_GND_12_o_MUX_2199_o)
+     LUT4:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<7> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<8> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<9> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<9>)
+     MUXCY:CI->O          71   0.023   1.984  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<2>_cy<10> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<2>)
+     LUT6:I5->O            2   0.254   1.002  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[4]_GND_12_o_MUX_2268_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[4]_GND_12_o_MUX_2268_o)
+     LUT4:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<7> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<8> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<9> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<10> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<10>)
+     MUXCY:CI->O          25   0.023   1.403  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<1>_cy<11> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<1>)
+     LUT6:I5->O            2   0.254   1.002  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mmux_a[3]_GND_12_o_MUX_2335_o11 (Generator_0/PWR_6_o_Freq_d[31]_div_10/a[3]_GND_12_o_MUX_2335_o)
+     LUT4:I0->O            0   0.254   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_lutdi1 (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<1> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<2> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<3> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<4> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<5> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<6> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<7> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<8> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<9> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<10> (Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<10>)
+     MUXCY:CI->O           1   0.235   0.682  Generator_0/PWR_6_o_Freq_d[31]_div_10/Mcompar_o<0>_cy<11> (Generator_0/PWR_6_o_Freq_d[31]_div_10_OUT<0>)
+     LUT1:I0->O            1   0.254   0.000  Generator_0/Msub_n0023[25:0]_cy<0>_rt (Generator_0/Msub_n0023[25:0]_cy<0>_rt)
+     MUXCY:S->O            1   0.215   0.000  Generator_0/Msub_n0023[25:0]_cy<0> (Generator_0/Msub_n0023[25:0]_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<1> (Generator_0/Msub_n0023[25:0]_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<2> (Generator_0/Msub_n0023[25:0]_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<3> (Generator_0/Msub_n0023[25:0]_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<4> (Generator_0/Msub_n0023[25:0]_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<5> (Generator_0/Msub_n0023[25:0]_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<6> (Generator_0/Msub_n0023[25:0]_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<7> (Generator_0/Msub_n0023[25:0]_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<8> (Generator_0/Msub_n0023[25:0]_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<9> (Generator_0/Msub_n0023[25:0]_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<10> (Generator_0/Msub_n0023[25:0]_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<11> (Generator_0/Msub_n0023[25:0]_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<12> (Generator_0/Msub_n0023[25:0]_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<13> (Generator_0/Msub_n0023[25:0]_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<14> (Generator_0/Msub_n0023[25:0]_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<15> (Generator_0/Msub_n0023[25:0]_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<16> (Generator_0/Msub_n0023[25:0]_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<17> (Generator_0/Msub_n0023[25:0]_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<18> (Generator_0/Msub_n0023[25:0]_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<19> (Generator_0/Msub_n0023[25:0]_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<20> (Generator_0/Msub_n0023[25:0]_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Msub_n0023[25:0]_cy<21> (Generator_0/Msub_n0023[25:0]_cy<21>)
+     XORCY:CI->O           2   0.206   1.002  Generator_0/Msub_n0023[25:0]_xor<22> (Generator_0/n0023[25:0]<22>)
+     LUT4:I0->O            1   0.254   0.000  Generator_0/Mcompar_n0012_lut<11> (Generator_0/Mcompar_n0012_lut<11>)
+     MUXCY:S->O            1   0.215   0.000  Generator_0/Mcompar_n0012_cy<11> (Generator_0/Mcompar_n0012_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcompar_n0012_cy<12> (Generator_0/Mcompar_n0012_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Generator_0/Mcompar_n0012_cy<13> (Generator_0/Mcompar_n0012_cy<13>)
+     MUXCY:CI->O          26   0.262   1.420  Generator_0/Mcompar_n0012_cy<14> (Generator_0/Mcompar_n0012_cy<14>)
+     LUT2:I1->O            1   0.254   0.000  Generator_0/timer_24_rstpot (Generator_0/timer_24_rstpot)
+     FD:D                      0.074          Generator_0/timer_24
     ----------------------------------------
-    Total                      6.617ns (2.900ns logic, 3.717ns route)
-                                       (43.8% logic, 56.2% route)
+    Total                    110.219ns (39.334ns logic, 70.886ns route)
+                                       (35.7% logic, 64.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 215 / 215
+  Total number of paths / destination ports: 177 / 177
 -------------------------------------------------------------------------
-Offset:              5.225ns (Levels of Logic = 2)
+Offset:              5.109ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
-  Destination:       Freq_plus (FF)
+  Destination:       Freq_Key1_M (FF)
   Destination Clock: clk rising
 
-  Data Path: rst_n to Freq_plus
+  Data Path: rst_n to Freq_Key1_M
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   1.328   0.765  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O            209   0.255   2.418  rst_n_inv1_INV_0 (Counter_M10_0/rst_n_inv)
+     IBUF:I->O             1   1.328   0.681  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            173   0.255   2.386  rst_n_inv1_INV_0 (Counter_M10_0/rst_n_inv)
      FDC:CLR                   0.459          Counter_M10_0/co
     ----------------------------------------
-    Total                      5.225ns (2.042ns logic, 3.183ns route)
-                                       (39.1% logic, 60.9% route)
+    Total                      5.109ns (2.042ns logic, 3.067ns route)
+                                       (40.0% logic, 60.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 14 / 14
+  Total number of paths / destination ports: 15 / 15
 -------------------------------------------------------------------------
-Offset:              4.162ns (Levels of Logic = 1)
+Offset:              4.202ns (Levels of Logic = 1)
   Source:            Generator_0/Square (FF)
   Destination:       Square (PAD)
   Source Clock:      clk rising
@@ -647,11 +1077,11 @@ Offset:              4.162ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.525   0.725  Generator_0/Square (Generator_0/Square)
+     FDE:C->Q              3   0.525   0.765  Generator_0/Square (Generator_0/Square)
      OBUF:I->O                 2.912          Square_OBUF (Square)
     ----------------------------------------
-    Total                      4.162ns (3.437ns logic, 0.725ns route)
-                                       (82.6% logic, 17.4% route)
+    Total                      4.202ns (3.437ns logic, 0.765ns route)
+                                       (81.8% logic, 18.2% route)
 
 =========================================================================
 
@@ -663,20 +1093,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    6.617|         |         |         |
+clk            |  110.219|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.00 secs
+Total REAL time to Xst completion: 49.00 secs
+Total CPU time to Xst completion: 48.90 secs
  
 --> 
 
-Total memory usage is 4523240 kilobytes
+Total memory usage is 4573048 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   74 (   0 filtered)
+Number of warnings :   82 (   0 filtered)
 Number of infos    :   13 (   0 filtered)
 

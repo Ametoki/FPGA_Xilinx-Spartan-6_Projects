@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            06/16/2019 - 17:17
+SOURCE          D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SquareWaveGenerator_20190612\SquareWaveGenerator.mcs
+DEVICE          2048K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x1ADAF67C
+START_ADDRESS   0x00000000 END_ADDRESS 0x0005327B DIRECTION_UP   "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SquareWaveGenerator_20190612/generator_test.bit" 6slx9ftg256
