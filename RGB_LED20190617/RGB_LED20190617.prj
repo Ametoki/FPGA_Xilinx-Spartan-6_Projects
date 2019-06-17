@@ -1,0 +1,5 @@
+verilog work "SEG_Scan.v"
+verilog work "SEG_Decoder.v"
+verilog work "LED_PWM.v"
+verilog work "KEY_Debounce.v"
+verilog work "RGB_LED20190617.v"

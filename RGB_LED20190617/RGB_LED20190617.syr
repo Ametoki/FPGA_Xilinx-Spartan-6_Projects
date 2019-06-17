@@ -1,0 +1,762 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: RGB_LED20190617.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RGB_LED20190617.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RGB_LED20190617"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : RGB_LED20190617
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\SEG_Scan.v" into library work
+Parsing module <SEG_Scan>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\SEG_Decoder.v" into library work
+Parsing module <SEG_Decoder>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\LED_PWM.v" into library work
+Parsing module <LED_PWM>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\KEY_Debounce.v" into library work
+Parsing module <KEY_Debounce>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\RGB_LED20190617.v" into library work
+Parsing module <RGB_LED20190617>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <RGB_LED20190617>.
+
+Elaborating module <LED_PWM>.
+
+Elaborating module <SEG_Decoder>.
+
+Elaborating module <SEG_Scan>.
+
+Elaborating module <KEY_Debounce>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <RGB_LED20190617>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\RGB_LED20190617.v".
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\RGB_LED20190617.v" line 130: Output port <button_posedge> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\RGB_LED20190617.v" line 130: Output port <button_out> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\RGB_LED20190617.v" line 139: Output port <button_posedge> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\RGB_LED20190617.v" line 139: Output port <button_out> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\RGB_LED20190617.v" line 148: Output port <button_posedge> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\RGB_LED20190617.v" line 148: Output port <button_out> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\RGB_LED20190617.v" line 157: Output port <button_posedge> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\RGB_LED20190617.v" line 157: Output port <button_out> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
+    Found 8-bit register for signal <led2_pwm>.
+    Found 8-bit register for signal <led3_pwm>.
+    Found 8-bit register for signal <led1_pwm>.
+    Found 1-bit register for signal <PM_Mode>.
+    Found 8-bit subtractor for signal <led3_pwm[7]_GND_1_o_sub_11_OUT> created at line 191.
+    Found 8-bit subtractor for signal <led2_pwm[7]_GND_1_o_sub_18_OUT> created at line 208.
+    Found 8-bit subtractor for signal <led1_pwm[7]_GND_1_o_sub_25_OUT> created at line 225.
+    Found 8-bit adder for signal <led3_pwm[7]_GND_1_o_add_7_OUT> created at line 184.
+    Found 8-bit adder for signal <led2_pwm[7]_GND_1_o_add_14_OUT> created at line 201.
+    Found 8-bit adder for signal <led1_pwm[7]_GND_1_o_add_21_OUT> created at line 218.
+    Found 8-bit comparator lessequal for signal <led3_pwm[7]_GND_1_o_LessThan_7_o> created at line 183
+    Found 8-bit comparator lessequal for signal <GND_1_o_led3_pwm[7]_LessThan_10_o> created at line 190
+    Found 8-bit comparator lessequal for signal <led2_pwm[7]_GND_1_o_LessThan_14_o> created at line 200
+    Found 8-bit comparator lessequal for signal <GND_1_o_led2_pwm[7]_LessThan_17_o> created at line 207
+    Found 8-bit comparator lessequal for signal <led1_pwm[7]_GND_1_o_LessThan_21_o> created at line 217
+    Found 8-bit comparator lessequal for signal <GND_1_o_led1_pwm[7]_LessThan_24_o> created at line 224
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <RGB_LED20190617> synthesized.
+
+Synthesizing Unit <LED_PWM>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\LED_PWM.v".
+    Found 16-bit register for signal <clk_cnt>.
+    Found 1-bit register for signal <led>.
+    Found 16-bit adder for signal <clk_cnt[15]_GND_2_o_add_5_OUT> created at line 50.
+    Found 16-bit subtractor for signal <pwm_cnt> created at line 30.
+    Found 8x10-bit multiplier for signal <led_pwm[7]_PWR_2_o_MuLt_0_OUT> created at line 30.
+    Found 16-bit comparator lessequal for signal <n0003> created at line 38
+    Found 16-bit comparator greater for signal <pwm_cnt[15]_INV_22_o> created at line 43
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <LED_PWM> synthesized.
+
+Synthesizing Unit <mod_8u_4u>.
+    Related source file is "".
+    Found 12-bit adder for signal <n0241> created at line 0.
+    Found 12-bit adder for signal <GND_4_o_b[3]_add_1_OUT> created at line 0.
+    Found 11-bit adder for signal <n0245> created at line 0.
+    Found 11-bit adder for signal <GND_4_o_b[3]_add_3_OUT> created at line 0.
+    Found 10-bit adder for signal <n0249> created at line 0.
+    Found 10-bit adder for signal <GND_4_o_b[3]_add_5_OUT> created at line 0.
+    Found 9-bit adder for signal <n0253> created at line 0.
+    Found 9-bit adder for signal <GND_4_o_b[3]_add_7_OUT> created at line 0.
+    Found 8-bit adder for signal <n0257> created at line 0.
+    Found 8-bit adder for signal <a[7]_b[3]_add_9_OUT> created at line 0.
+    Found 8-bit adder for signal <n0261> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_4_o_add_11_OUT> created at line 0.
+    Found 8-bit adder for signal <n0265> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_4_o_add_13_OUT> created at line 0.
+    Found 8-bit adder for signal <n0269> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_4_o_add_15_OUT> created at line 0.
+    Found 8-bit adder for signal <n0273> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_4_o_add_17_OUT> created at line 0.
+    Found 12-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Summary:
+	inferred  18 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+	inferred  65 Multiplexer(s).
+Unit <mod_8u_4u> synthesized.
+
+Synthesizing Unit <div_8u_4u>.
+    Related source file is "".
+    Found 12-bit adder for signal <n0241> created at line 0.
+    Found 12-bit adder for signal <GND_5_o_b[3]_add_1_OUT> created at line 0.
+    Found 11-bit adder for signal <n0245> created at line 0.
+    Found 11-bit adder for signal <GND_5_o_b[3]_add_3_OUT> created at line 0.
+    Found 10-bit adder for signal <n0249> created at line 0.
+    Found 10-bit adder for signal <GND_5_o_b[3]_add_5_OUT> created at line 0.
+    Found 9-bit adder for signal <n0253> created at line 0.
+    Found 9-bit adder for signal <GND_5_o_b[3]_add_7_OUT> created at line 0.
+    Found 8-bit adder for signal <n0257> created at line 0.
+    Found 8-bit adder for signal <a[7]_b[3]_add_9_OUT> created at line 0.
+    Found 8-bit adder for signal <n0261> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_5_o_add_11_OUT[7:0]> created at line 0.
+    Found 8-bit adder for signal <n0265> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_5_o_add_13_OUT[7:0]> created at line 0.
+    Found 8-bit adder for signal <n0269> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_5_o_add_15_OUT[7:0]> created at line 0.
+    Found 12-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Summary:
+	inferred  16 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+	inferred  43 Multiplexer(s).
+Unit <div_8u_4u> synthesized.
+
+Synthesizing Unit <SEG_Decoder>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\SEG_Decoder.v".
+    Found 16x8-bit Read Only RAM for signal <seg_data>
+    Summary:
+	inferred   1 RAM(s).
+Unit <SEG_Decoder> synthesized.
+
+Synthesizing Unit <SEG_Scan>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\SEG_Scan.v".
+        SCAN_FREQ = 200
+        CLK_FREQ = 50000000
+        SCAN_COUNT = 41665
+    Found 6-bit register for signal <seg_sel>.
+    Found 8-bit register for signal <seg_data>.
+    Found 4-bit register for signal <scan_sel>.
+    Found 32-bit register for signal <scan_timer>.
+    Found 4-bit adder for signal <scan_sel[3]_GND_7_o_add_2_OUT> created at line 54.
+    Found 32-bit adder for signal <scan_timer[31]_GND_7_o_add_4_OUT> created at line 58.
+    Found 8x6-bit Read Only RAM for signal <_n0059>
+    Found 8-bit 7-to-1 multiplexer for signal <_n0072> created at line 70.
+    Found 32-bit comparator greater for signal <n0000> created at line 48
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  50 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <SEG_Scan> synthesized.
+
+Synthesizing Unit <KEY_Debounce>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\KEY_Debounce.v".
+        N = 32
+        FREQ = 50
+        MAX_TIME = 20
+    Found 1-bit register for signal <button_out_d0>.
+    Found 1-bit register for signal <button_out>.
+    Found 32-bit register for signal <q_reg>.
+    Found 1-bit register for signal <DFF2>.
+    Found 1-bit register for signal <button_posedge>.
+    Found 1-bit register for signal <button_negedge>.
+    Found 1-bit register for signal <DFF1>.
+    Found 32-bit adder for signal <q_reg[31]_GND_9_o_add_1_OUT> created at line 51.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  38 D-type flip-flop(s).
+Unit <KEY_Debounce> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 16x8-bit single-port Read Only RAM                    : 6
+ 8x6-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 3
+ 10x8-bit multiplier                                   : 3
+# Adders/Subtractors                                   : 117
+ 10-bit adder                                          : 12
+ 11-bit adder                                          : 12
+ 12-bit adder                                          : 12
+ 16-bit adder                                          : 3
+ 16-bit subtractor                                     : 3
+ 32-bit adder                                          : 5
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 54
+ 8-bit addsub                                          : 3
+ 9-bit adder                                           : 12
+# Registers                                            : 42
+ 1-bit register                                        : 28
+ 16-bit register                                       : 3
+ 32-bit register                                       : 5
+ 4-bit register                                        : 1
+ 6-bit register                                        : 1
+ 8-bit register                                        : 4
+# Comparators                                          : 67
+ 10-bit comparator lessequal                           : 6
+ 11-bit comparator lessequal                           : 6
+ 12-bit comparator lessequal                           : 6
+ 16-bit comparator greater                             : 3
+ 16-bit comparator lessequal                           : 3
+ 32-bit comparator greater                             : 1
+ 8-bit comparator lessequal                            : 36
+ 9-bit comparator lessequal                            : 6
+# Multiplexers                                         : 335
+ 1-bit 2-to-1 multiplexer                              : 315
+ 16-bit 2-to-1 multiplexer                             : 3
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 4
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 10
+ 8-bit 7-to-1 multiplexer                              : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <LED_PWM>.
+The following registers are absorbed into counter <clk_cnt>: 1 register on signal <clk_cnt>.
+	Multiplier <Mmult_led_pwm[7]_PWR_2_o_MuLt_0_OUT> in block <LED_PWM> and adder/subtractor <Msub_pwm_cnt> in block <LED_PWM> are combined into a MAC<Maddsub_led_pwm[7]_PWR_2_o_MuLt_0_OUT>.
+Unit <LED_PWM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SEG_Decoder>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_seg_data> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <bin_data>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <seg_data>      |          |
+    -----------------------------------------------------------------------
+Unit <SEG_Decoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SEG_Scan>.
+The following registers are absorbed into counter <scan_timer>: 1 register on signal <scan_timer>.
+The following registers are absorbed into counter <scan_sel>: 1 register on signal <scan_sel>.
+INFO:Xst:3217 - HDL ADVISOR - Register <seg_sel> currently described with an asynchronous reset, could be combined with distributed RAM <Mram__n0059> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 6-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <scan_sel<2:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <SEG_Scan> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 16x8-bit single-port distributed Read Only RAM        : 6
+ 8x6-bit single-port distributed Read Only RAM         : 1
+# MACs                                                 : 3
+ 10x8-to-16-bit MAC                                    : 3
+# Adders/Subtractors                                   : 58
+ 32-bit adder                                          : 4
+ 4-bit adder carry in                                  : 3
+ 8-bit adder carry in                                  : 48
+ 8-bit addsub                                          : 3
+# Counters                                             : 5
+ 16-bit up counter                                     : 3
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 194
+ Flip-Flops                                            : 194
+# Comparators                                          : 67
+ 10-bit comparator lessequal                           : 6
+ 11-bit comparator lessequal                           : 6
+ 12-bit comparator lessequal                           : 6
+ 16-bit comparator greater                             : 3
+ 16-bit comparator lessequal                           : 3
+ 32-bit comparator greater                             : 1
+ 8-bit comparator lessequal                            : 36
+ 9-bit comparator lessequal                            : 6
+# Multiplexers                                         : 330
+ 1-bit 2-to-1 multiplexer                              : 315
+ 4-bit 2-to-1 multiplexer                              : 3
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 10
+ 8-bit 7-to-1 multiplexer                              : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <RGB_LED20190617> ...
+
+Optimizing unit <SEG_Scan> ...
+
+Optimizing unit <KEY_Debounce> ...
+WARNING:Xst:2677 - Node <KEY_Debounce_3/button_posedge> of sequential type is unconnected in block <RGB_LED20190617>.
+WARNING:Xst:2677 - Node <KEY_Debounce_2/button_posedge> of sequential type is unconnected in block <RGB_LED20190617>.
+WARNING:Xst:2677 - Node <KEY_Debounce_1/button_posedge> of sequential type is unconnected in block <RGB_LED20190617>.
+WARNING:Xst:2677 - Node <KEY_Debounce_0/button_posedge> of sequential type is unconnected in block <RGB_LED20190617>.
+WARNING:Xst:1710 - FF/Latch <KEY_Debounce_1/q_reg_27> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_28> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_29> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_30> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_31> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_20> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_21> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_22> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_23> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_24> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_25> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_26> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_27> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_28> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_29> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_30> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_31> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_20> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_21> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_20> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_21> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_22> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_23> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_24> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_25> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_26> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_27> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_28> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_29> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_30> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_31> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_20> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_21> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_22> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_23> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_24> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_25> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_26> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_25> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_26> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_27> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_28> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_29> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_30> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_31> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_U2/clk_cnt_15> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_U3/clk_cnt_15> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_U1/clk_cnt_15> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <led1_pwm_7> has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <led1_pwm_6> has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <led1_pwm_5> has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <led3_pwm_7> has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <led3_pwm_6> has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <led3_pwm_5> has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <led2_pwm_7> has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <led2_pwm_6> has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <led2_pwm_5> has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_22> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_23> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_24> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_25> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_26> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_27> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_28> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_29> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_30> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_31> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_sel_3> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_16> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_17> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_18> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_19> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_20> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_21> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_22> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_23> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan/scan_timer_24> (without init value) has a constant value of 0 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <LED_U3/clk_cnt_10> in Unit <RGB_LED20190617> is equivalent to the following 2 FFs/Latches, which will be removed : <LED_U1/clk_cnt_10> <LED_U2/clk_cnt_10> 
+INFO:Xst:2261 - The FF/Latch <LED_U3/clk_cnt_11> in Unit <RGB_LED20190617> is equivalent to the following 2 FFs/Latches, which will be removed : <LED_U1/clk_cnt_11> <LED_U2/clk_cnt_11> 
+INFO:Xst:2261 - The FF/Latch <LED_U3/clk_cnt_12> in Unit <RGB_LED20190617> is equivalent to the following 2 FFs/Latches, which will be removed : <LED_U1/clk_cnt_12> <LED_U2/clk_cnt_12> 
+INFO:Xst:2261 - The FF/Latch <LED_U3/clk_cnt_13> in Unit <RGB_LED20190617> is equivalent to the following 2 FFs/Latches, which will be removed : <LED_U1/clk_cnt_13> <LED_U2/clk_cnt_13> 
+INFO:Xst:2261 - The FF/Latch <LED_U3/clk_cnt_14> in Unit <RGB_LED20190617> is equivalent to the following 2 FFs/Latches, which will be removed : <LED_U1/clk_cnt_14> <LED_U2/clk_cnt_14> 
+INFO:Xst:2261 - The FF/Latch <LED_U3/clk_cnt_0> in Unit <RGB_LED20190617> is equivalent to the following 2 FFs/Latches, which will be removed : <LED_U1/clk_cnt_0> <LED_U2/clk_cnt_0> 
+INFO:Xst:2261 - The FF/Latch <LED_U3/clk_cnt_1> in Unit <RGB_LED20190617> is equivalent to the following 2 FFs/Latches, which will be removed : <LED_U1/clk_cnt_1> <LED_U2/clk_cnt_1> 
+INFO:Xst:2261 - The FF/Latch <LED_U3/clk_cnt_2> in Unit <RGB_LED20190617> is equivalent to the following 2 FFs/Latches, which will be removed : <LED_U1/clk_cnt_2> <LED_U2/clk_cnt_2> 
+INFO:Xst:2261 - The FF/Latch <LED_U3/clk_cnt_3> in Unit <RGB_LED20190617> is equivalent to the following 2 FFs/Latches, which will be removed : <LED_U1/clk_cnt_3> <LED_U2/clk_cnt_3> 
+INFO:Xst:2261 - The FF/Latch <LED_U3/clk_cnt_4> in Unit <RGB_LED20190617> is equivalent to the following 2 FFs/Latches, which will be removed : <LED_U1/clk_cnt_4> <LED_U2/clk_cnt_4> 
+INFO:Xst:2261 - The FF/Latch <LED_U3/clk_cnt_5> in Unit <RGB_LED20190617> is equivalent to the following 2 FFs/Latches, which will be removed : <LED_U1/clk_cnt_5> <LED_U2/clk_cnt_5> 
+INFO:Xst:2261 - The FF/Latch <LED_U3/clk_cnt_6> in Unit <RGB_LED20190617> is equivalent to the following 2 FFs/Latches, which will be removed : <LED_U1/clk_cnt_6> <LED_U2/clk_cnt_6> 
+INFO:Xst:2261 - The FF/Latch <LED_U3/clk_cnt_7> in Unit <RGB_LED20190617> is equivalent to the following 2 FFs/Latches, which will be removed : <LED_U1/clk_cnt_7> <LED_U2/clk_cnt_7> 
+INFO:Xst:2261 - The FF/Latch <LED_U3/clk_cnt_8> in Unit <RGB_LED20190617> is equivalent to the following 2 FFs/Latches, which will be removed : <LED_U1/clk_cnt_8> <LED_U2/clk_cnt_8> 
+INFO:Xst:2261 - The FF/Latch <LED_U3/clk_cnt_9> in Unit <RGB_LED20190617> is equivalent to the following 2 FFs/Latches, which will be removed : <LED_U1/clk_cnt_9> <LED_U2/clk_cnt_9> 
+
+Mapping all equations...
+WARNING:Xst:1710 - FF/Latch <SEG_Scan/seg_data_7> (without init value) has a constant value of 1 in block <RGB_LED20190617>. This FF/Latch will be trimmed during the optimization process.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RGB_LED20190617, actual ratio is 8.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 166
+ Flip-Flops                                            : 166
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : RGB_LED20190617.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 611
+#      GND                         : 1
+#      INV                         : 11
+#      LUT1                        : 77
+#      LUT2                        : 8
+#      LUT3                        : 34
+#      LUT4                        : 60
+#      LUT5                        : 116
+#      LUT6                        : 49
+#      MUXCY                       : 139
+#      MUXF7                       : 4
+#      VCC                         : 1
+#      XORCY                       : 111
+# FlipFlops/Latches                : 166
+#      FDC                         : 126
+#      FDCE                        : 15
+#      FDE                         : 1
+#      FDP                         : 17
+#      FDPE                        : 7
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 25
+#      IBUF                        : 5
+#      OBUF                        : 20
+# DSPs                             : 3
+#      DSP48A1                     : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             166  out of  11440     1%  
+ Number of Slice LUTs:                  355  out of   5720     6%  
+    Number used as Logic:               355  out of   5720     6%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    373
+   Number with an unused Flip Flop:     207  out of    373    55%  
+   Number with an unused LUT:            18  out of    373     4%  
+   Number of fully used LUT-FF pairs:   148  out of    373    39%  
+   Number of unique control sets:        10
+
+IO Utilization: 
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of    186    13%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 166   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 8.896ns (Maximum Frequency: 112.410MHz)
+   Minimum input arrival time before clock: 5.145ns
+   Maximum output required time after clock: 4.162ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.896ns (frequency: 112.410MHz)
+  Total number of paths / destination ports: 10954 / 185
+-------------------------------------------------------------------------
+Delay:               8.896ns (Levels of Logic = 11)
+  Source:            led3_pwm_2 (FF)
+  Destination:       LED_U3/led (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: led3_pwm_2 to LED_U3/led
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            16   0.525   1.181  led3_pwm_2 (led3_pwm_2)
+     DSP48A1:A2->P0        2   5.220   1.002  LED_U3/Maddsub_led_pwm[7]_PWR_2_o_MuLt_0_OUT (LED_U3/pwm_cnt<0>)
+     LUT4:I0->O            1   0.254   0.000  LED_U3/Mcompar_pwm_cnt[15]_INV_22_o_lut<0> (LED_U3/Mcompar_pwm_cnt[15]_INV_22_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  LED_U3/Mcompar_pwm_cnt[15]_INV_22_o_cy<0> (LED_U3/Mcompar_pwm_cnt[15]_INV_22_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  LED_U3/Mcompar_pwm_cnt[15]_INV_22_o_cy<1> (LED_U3/Mcompar_pwm_cnt[15]_INV_22_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  LED_U3/Mcompar_pwm_cnt[15]_INV_22_o_cy<2> (LED_U3/Mcompar_pwm_cnt[15]_INV_22_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  LED_U3/Mcompar_pwm_cnt[15]_INV_22_o_cy<3> (LED_U3/Mcompar_pwm_cnt[15]_INV_22_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  LED_U3/Mcompar_pwm_cnt[15]_INV_22_o_cy<4> (LED_U3/Mcompar_pwm_cnt[15]_INV_22_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  LED_U3/Mcompar_pwm_cnt[15]_INV_22_o_cy<5> (LED_U3/Mcompar_pwm_cnt[15]_INV_22_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  LED_U3/Mcompar_pwm_cnt[15]_INV_22_o_cy<6> (LED_U3/Mcompar_pwm_cnt[15]_INV_22_o_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  LED_U3/Mcompar_pwm_cnt[15]_INV_22_o_cy<7> (LED_U3/Mcompar_pwm_cnt[15]_INV_22_o_cy<7>)
+     MUXCY:CI->O           1   0.262   0.000  LED_U3/Mmux_pwm_cnt[15]_PWR_2_o_MUX_33_o11_cy (LED_U3/pwm_cnt[15]_PWR_2_o_MUX_33_o)
+     FDC:D                     0.074          LED_U3/led
+    ----------------------------------------
+    Total                      8.896ns (6.713ns logic, 2.183ns route)
+                                       (75.5% logic, 24.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 170 / 170
+-------------------------------------------------------------------------
+Offset:              5.145ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       led2_pwm_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst_n to led2_pwm_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.328   0.725  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            165   0.255   2.378  LED_U1/rst_n_inv1_INV_0 (LED_U1/rst_n_inv)
+     FDC:CLR                   0.459          LED_U1/led
+    ----------------------------------------
+    Total                      5.145ns (2.042ns logic, 3.103ns route)
+                                       (39.7% logic, 60.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 19 / 19
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            LED_U3/led (FF)
+  Destination:       LED1 (PAD)
+  Source Clock:      clk rising
+
+  Data Path: LED_U3/led to LED1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.525   0.725  LED_U3/led (LED_U3/led)
+     OBUF:I->O                 2.912          LED1_OBUF (LED1)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    8.896|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.26 secs
+ 
+--> 
+
+Total memory usage is 4524336 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   82 (   0 filtered)
+Number of infos    :   25 (   0 filtered)
+

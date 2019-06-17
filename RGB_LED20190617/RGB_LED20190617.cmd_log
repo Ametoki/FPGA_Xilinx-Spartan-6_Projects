@@ -1,0 +1,57 @@
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.syr" 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.syr" 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.syr" 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-ftg256-2 RGB_LED20190617.ngc RGB_LED20190617.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RGB_LED20190617_map.ncd RGB_LED20190617.ngd RGB_LED20190617.pcf 
+par -w -intstyle ise -ol high -mt off RGB_LED20190617_map.ncd RGB_LED20190617.ncd RGB_LED20190617.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RGB_LED20190617.twx RGB_LED20190617.ncd -o RGB_LED20190617.twr RGB_LED20190617.pcf 
+bitgen -intstyle ise -f RGB_LED20190617.ut RGB_LED20190617.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RGB_LED.ucf -p xc6slx9-ftg256-2 RGB_LED20190617.ngc RGB_LED20190617.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RGB_LED20190617_map.ncd RGB_LED20190617.ngd RGB_LED20190617.pcf 
+par -w -intstyle ise -ol high -mt off RGB_LED20190617_map.ncd RGB_LED20190617.ncd RGB_LED20190617.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RGB_LED20190617.twx RGB_LED20190617.ncd -o RGB_LED20190617.twr RGB_LED20190617.pcf -ucf RGB_LED.ucf 
+bitgen -intstyle ise -f RGB_LED20190617.ut RGB_LED20190617.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RGB_LED.ucf -p xc6slx9-ftg256-2 RGB_LED20190617.ngc RGB_LED20190617.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RGB_LED20190617_map.ncd RGB_LED20190617.ngd RGB_LED20190617.pcf 
+par -w -intstyle ise -ol high -mt off RGB_LED20190617_map.ncd RGB_LED20190617.ncd RGB_LED20190617.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RGB_LED20190617.twx RGB_LED20190617.ncd -o RGB_LED20190617.twr RGB_LED20190617.pcf -ucf RGB_LED.ucf 
+bitgen -intstyle ise -f RGB_LED20190617.ut RGB_LED20190617.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RGB_LED.ucf -p xc6slx9-ftg256-2 RGB_LED20190617.ngc RGB_LED20190617.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RGB_LED20190617_map.ncd RGB_LED20190617.ngd RGB_LED20190617.pcf 
+par -w -intstyle ise -ol high -mt off RGB_LED20190617_map.ncd RGB_LED20190617.ncd RGB_LED20190617.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RGB_LED20190617.twx RGB_LED20190617.ncd -o RGB_LED20190617.twr RGB_LED20190617.pcf -ucf RGB_LED.ucf 
+bitgen -intstyle ise -f RGB_LED20190617.ut RGB_LED20190617.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RGB_LED.ucf -p xc6slx9-ftg256-2 RGB_LED20190617.ngc RGB_LED20190617.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RGB_LED20190617_map.ncd RGB_LED20190617.ngd RGB_LED20190617.pcf 
+par -w -intstyle ise -ol high -mt off RGB_LED20190617_map.ncd RGB_LED20190617.ncd RGB_LED20190617.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RGB_LED20190617.twx RGB_LED20190617.ncd -o RGB_LED20190617.twr RGB_LED20190617.pcf -ucf RGB_LED.ucf 
+bitgen -intstyle ise -f RGB_LED20190617.ut RGB_LED20190617.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RGB_LED.ucf -p xc6slx9-ftg256-2 RGB_LED20190617.ngc RGB_LED20190617.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RGB_LED20190617_map.ncd RGB_LED20190617.ngd RGB_LED20190617.pcf 
+par -w -intstyle ise -ol high -mt off RGB_LED20190617_map.ncd RGB_LED20190617.ncd RGB_LED20190617.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RGB_LED20190617.twx RGB_LED20190617.ncd -o RGB_LED20190617.twr RGB_LED20190617.pcf -ucf RGB_LED.ucf 
+bitgen -intstyle ise -f RGB_LED20190617.ut RGB_LED20190617.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RGB_LED.ucf -p xc6slx9-ftg256-2 RGB_LED20190617.ngc RGB_LED20190617.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RGB_LED20190617_map.ncd RGB_LED20190617.ngd RGB_LED20190617.pcf 
+par -w -intstyle ise -ol high -mt off RGB_LED20190617_map.ncd RGB_LED20190617.ncd RGB_LED20190617.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RGB_LED20190617.twx RGB_LED20190617.ncd -o RGB_LED20190617.twr RGB_LED20190617.pcf -ucf RGB_LED.ucf 
+bitgen -intstyle ise -f RGB_LED20190617.ut RGB_LED20190617.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RGB_LED.ucf -p xc6slx9-ftg256-2 RGB_LED20190617.ngc RGB_LED20190617.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RGB_LED20190617_map.ncd RGB_LED20190617.ngd RGB_LED20190617.pcf 
+par -w -intstyle ise -ol high -mt off RGB_LED20190617_map.ncd RGB_LED20190617.ncd RGB_LED20190617.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RGB_LED20190617.twx RGB_LED20190617.ncd -o RGB_LED20190617.twr RGB_LED20190617.pcf -ucf RGB_LED.ucf 
+bitgen -intstyle ise -f RGB_LED20190617.ut RGB_LED20190617.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/RGB_LED20190617.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RGB_LED.ucf -p xc6slx9-ftg256-2 RGB_LED20190617.ngc RGB_LED20190617.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RGB_LED20190617_map.ncd RGB_LED20190617.ngd RGB_LED20190617.pcf 
+par -w -intstyle ise -ol high -mt off RGB_LED20190617_map.ncd RGB_LED20190617.ncd RGB_LED20190617.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RGB_LED20190617.twx RGB_LED20190617.ncd -o RGB_LED20190617.twr RGB_LED20190617.pcf -ucf RGB_LED.ucf 
+bitgen -intstyle ise -f RGB_LED20190617.ut RGB_LED20190617.ncd 
