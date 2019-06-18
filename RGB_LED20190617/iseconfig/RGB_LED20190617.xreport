@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-06-17T23:54:01</DateModified>
+  <DateModified>2019-06-18T11:16:50</DateModified>
   <ModuleName>RGB_LED20190617</ModuleName>
   <SummaryTimeStamp>2019-06-17T23:53:29</SummaryTimeStamp>
   <SavedFilePath>D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617/iseconfig/RGB_LED20190617.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/RGB_LED20190617\</ImplementationReportsDirectory>
   <DateInitialized>2019-06-17T23:08:58</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

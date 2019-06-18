@@ -17,7 +17,7 @@
 </TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Project ID (random number)</B></TD>
-<TD><xtag-property name="RandomID">d0c1f15f0ea54cbdadd2649d0fa50a40</xtag-property>.<xtag-property name="ProjectID">5CCB1662465140638361CE4130AC4E61</xtag-property>.<xtag-property name="ProjectIteration">9</xtag-property></TD>
+<TD><xtag-property name="RandomID">d0c1f15f0ea54cbdadd2649d0fa50a40</xtag-property>.<xtag-property name="ProjectID">5CCB1662465140638361CE4130AC4E61</xtag-property>.<xtag-property name="ProjectIteration">10</xtag-property></TD>
 <TD BGCOLOR='#FFFF99'><B>Target Package:</B></TD>
 <TD><xtag-property name="TargetPackage">ftg256</xtag-property></TD>
 </TR>
@@ -29,7 +29,7 @@
 </TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Date Generated</B></TD>
-<TD><xtag-property name="Date Generated">2019-06-18T00:42:13</xtag-property></TD>
+<TD><xtag-property name="Date Generated">2019-06-18T09:28:19</xtag-property></TD>
 <TD BGCOLOR='#FFFF99'><B>Tool Flow</B></TD>
 <TD><xtag-property name="ToolFlow">ISE</xtag-property></TD>
 </TR>
@@ -926,6 +926,12 @@
 <LI><xtag-cmdline>par -w -intstyle ise -ol high -mt off &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
 <LI><xtag-cmdline>trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
 <LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc &lt;fname&gt;.ucf -p xc6slx9-ftg256-2 &lt;fname&gt;.ngc &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol high -mt off &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
 </xtag-section></UL></TD></TR>
 </TABLE>
 &nbsp;<BR><TABLE BORDER CELLSPACING=0 WIDTH='100%'><xtag-section name="RunStatistics"><TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD COLSPAN=8><B>Software Quality</B></TD></TR><TR ALIGN=LEFT><TD COLSPAN=8><B>Run Statistics</B></TD></TR><TR ALIGN=CENTER BGCOLOR='#FFFF99'><TD><B>Program Name</B></TD><TD><B>Runs Started</B></TD><TD><B>Runs Finished</B></TD><TD><B>Errors</B></TD><TD><B>Fatal Errors</B></TD><TD><B>Internal Errors</B></TD><TD><B>Exceptions</B></TD><TD><B>Core Dumps</B></TD></TR>
@@ -952,8 +958,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>bitgen</xtag-program-name></td>
-  <td><xtag-total-run-started>117</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>117</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>118</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>118</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -962,8 +968,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>map</xtag-program-name></td>
-  <td><xtag-total-run-started>124</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>121</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>125</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>122</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -982,8 +988,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>ngdbuild</xtag-program-name></td>
-  <td><xtag-total-run-started>131</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>131</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>132</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>132</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -992,8 +998,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>par</xtag-program-name></td>
-  <td><xtag-total-run-started>121</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>120</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>122</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>121</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -1002,8 +1008,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>trce</xtag-program-name></td>
-  <td><xtag-total-run-started>117</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>117</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>118</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>118</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -1012,8 +1018,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>xst</xtag-program-name></td>
-  <td><xtag-total-run-started>193</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>193</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>194</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>194</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -1048,27 +1054,28 @@
 <TD><xtag-design-property-name>PROP_intProjectCreationTimestamp</xtag-design-property-name>=<xtag-design-property-value>2019-06-17T23:08:37</xtag-design-property-value></TD>
 
 </TR><TR><TD><xtag-design-property-name>PROP_intWbtProjectID</xtag-design-property-name>=<xtag-design-property-value>5CCB1662465140638361CE4130AC4E61</xtag-design-property-value></TD>
-<TD><xtag-process-property-name>PROP_intWbtProjectIteration</xtag-process-property-name>=<xtag-process-property-value>9</xtag-process-property-value></TD>
+<TD><xtag-process-property-name>PROP_intWbtProjectIteration</xtag-process-property-name>=<xtag-process-property-value>10</xtag-process-property-value></TD>
 
 </TR><TR><TD><xtag-design-property-name>PROP_intWorkingDirLocWRTProjDir</xtag-design-property-name>=<xtag-design-property-value>Same</xtag-design-property-value></TD>
 <TD><xtag-design-property-name>PROP_intWorkingDirUsed</xtag-design-property-name>=<xtag-design-property-value>No</xtag-design-property-value></TD>
 
 </TR><TR><TD><xtag-process-property-name>PROP_lockPinsUcfFile</xtag-process-property-name>=<xtag-process-property-value>changed</xtag-process-property-value></TD>
-<TD><xtag-design-property-name>PROP_AutoTop</xtag-design-property-name>=<xtag-design-property-value>true</xtag-design-property-value></TD>
+<TD><xtag-process-property-name>PROP_xilxBitgStart_IntDone</xtag-process-property-name>=<xtag-process-property-value>true</xtag-process-property-value></TD>
 
-</TR><TR><TD><xtag-design-property-name>PROP_DevFamily</xtag-design-property-name>=<xtag-design-property-value>Spartan6</xtag-design-property-value></TD>
-<TD><xtag-design-property-name>PROP_DevDevice</xtag-design-property-name>=<xtag-design-property-value>xc6slx9</xtag-design-property-value></TD>
+</TR><TR><TD><xtag-design-property-name>PROP_AutoTop</xtag-design-property-name>=<xtag-design-property-value>true</xtag-design-property-value></TD>
+<TD><xtag-design-property-name>PROP_DevFamily</xtag-design-property-name>=<xtag-design-property-value>Spartan6</xtag-design-property-value></TD>
 
-</TR><TR><TD><xtag-design-property-name>PROP_DevFamilyPMName</xtag-design-property-name>=<xtag-design-property-value>spartan6</xtag-design-property-value></TD>
-<TD><xtag-design-property-name>PROP_DevPackage</xtag-design-property-name>=<xtag-design-property-value>ftg256</xtag-design-property-value></TD>
+</TR><TR><TD><xtag-design-property-name>PROP_DevDevice</xtag-design-property-name>=<xtag-design-property-value>xc6slx9</xtag-design-property-value></TD>
+<TD><xtag-design-property-name>PROP_DevFamilyPMName</xtag-design-property-name>=<xtag-design-property-value>spartan6</xtag-design-property-value></TD>
 
-</TR><TR><TD><xtag-design-property-name>PROP_Synthesis_Tool</xtag-design-property-name>=<xtag-design-property-value>XST (VHDL/Verilog)</xtag-design-property-value></TD>
-<TD><xtag-design-property-name>PROP_DevSpeed</xtag-design-property-name>=<xtag-design-property-value>-2</xtag-design-property-value></TD>
+</TR><TR><TD><xtag-design-property-name>PROP_DevPackage</xtag-design-property-name>=<xtag-design-property-value>ftg256</xtag-design-property-value></TD>
+<TD><xtag-design-property-name>PROP_Synthesis_Tool</xtag-design-property-name>=<xtag-design-property-value>XST (VHDL/Verilog)</xtag-design-property-value></TD>
 
-</TR><TR><TD><xtag-design-property-name>PROP_PreferredLanguage</xtag-design-property-name>=<xtag-design-property-value>Verilog</xtag-design-property-value></TD>
-<TD><xtag-source-property-name>FILE_UCF</xtag-source-property-name>=<xtag-source-property-value>1</xtag-source-property-value></TD>
+</TR><TR><TD><xtag-design-property-name>PROP_DevSpeed</xtag-design-property-name>=<xtag-design-property-value>-2</xtag-design-property-value></TD>
+<TD><xtag-design-property-name>PROP_PreferredLanguage</xtag-design-property-name>=<xtag-design-property-value>Verilog</xtag-design-property-value></TD>
 
-</TR><TR><TD><xtag-source-property-name>FILE_VERILOG</xtag-source-property-name>=<xtag-source-property-value>5</xtag-source-property-value></TD>
+</TR><TR><TD><xtag-source-property-name>FILE_UCF</xtag-source-property-name>=<xtag-source-property-value>1</xtag-source-property-value></TD>
+<TD><xtag-source-property-name>FILE_VERILOG</xtag-source-property-name>=<xtag-source-property-value>5</xtag-source-property-value></TD>
 </TR></xtag-section></TABLE>
 &nbsp;<BR><TABLE BORDER CELLSPACING=0 WIDTH='100%'>
 <xtag-section name="UnisimStatistics">

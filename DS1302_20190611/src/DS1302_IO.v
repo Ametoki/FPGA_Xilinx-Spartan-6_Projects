@@ -34,16 +34,16 @@ module DS1302_IO
 	output reg[7:0] read_data, 
 	input[7:0]      write_data
 );
-localparam S_IDLE       = 0;
-localparam S_CE_HIGH    = 1;
-localparam S_READ       = 2;
-localparam S_READ_ADDR  = 3;
-localparam S_READ_DATA  = 4;
-localparam S_WRITE      = 5;
-localparam S_WRITE_ADDR = 6;
-localparam S_WRITE_DATA = 7;
-localparam S_CE_LOW     = 8;
-localparam S_ACK        = 9;
+localparam S_IDLE       = 4'd0;
+localparam S_CE_HIGH    = 4'd1;
+localparam S_READ       = 4'd2;
+localparam S_READ_ADDR  = 4'd3;
+localparam S_READ_DATA  = 4'd4;
+localparam S_WRITE      = 4'd5;
+localparam S_WRITE_ADDR = 4'd6;
+localparam S_WRITE_DATA = 4'd7;
+localparam S_CE_LOW     = 4'd8;
+localparam S_ACK        = 4'd9;
 reg[3:0]   state, next_state;
 reg[19:0]  delay_cnt;
 reg        wr_req;
@@ -112,7 +112,8 @@ begin
 				next_state <= S_IDLE;
 			else
 				next_state <= S_CE_LOW;
-		default:next_state <= S_IDLE;
+		default:
+			next_state <= S_IDLE;
 	endcase
 end
 always@(posedge clk or posedge rst)
@@ -136,7 +137,7 @@ end
 always@(posedge clk or posedge rst)
 begin
 	if(rst)
-		wr_req <= 1'b0;
+		ds1302_io_dir <= 1'b0;
 	else
 		ds1302_io_dir <= (state == S_READ_DATA);
 end
@@ -149,7 +150,7 @@ begin
 	else if(state == S_CE_LOW)
 		CS_reg <= 1'b0;
 end
-always@(posedge clk or rst)
+always@(posedge clk or posedge rst)
 begin
 	if(rst)
 		read_data <= 8'h00;

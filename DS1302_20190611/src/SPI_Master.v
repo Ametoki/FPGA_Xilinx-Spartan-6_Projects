@@ -35,12 +35,12 @@ module SPI_Master
 	input[7:0]                  data_in,
 	output[7:0]                 data_out
 );
-localparam  IDLE            = 0;
-localparam  DCLK_EDGE       = 1;
-localparam  DCLK_IDLE       = 2;
-localparam  ACK             = 3;
-localparam  LAST_HALF_CYCLE = 4;
-localparam  ACK_WAIT        = 5;
+localparam  IDLE            = 3'd0;
+localparam  DCLK_EDGE       = 3'd1;
+localparam  DCLK_IDLE       = 3'd2;
+localparam  ACK             = 3'd3;
+localparam  LAST_HALF_CYCLE = 3'd4;
+localparam  ACK_WAIT        = 3'd5;
 reg         DCLK_reg;
 reg[7:0]    MOSI_shift;
 reg[7:0]    MISO_shift;

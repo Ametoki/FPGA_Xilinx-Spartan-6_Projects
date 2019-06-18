@@ -8,10 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/DS1302.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/src/DS1302_IO.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/src/DS1302_Test.v&quot; into library work</arg>
 </msg>
 
 </messages>

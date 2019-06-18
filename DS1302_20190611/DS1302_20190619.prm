@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611//DS1302_20190619 -s 2048 -u 0000 D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/ds1302_top.bit -spi 
+
+PROM D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\DS1302_20190619.prm map: Wed Jun 19 03:53:02 2019
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          2048K
+PROM start    0000:0000
+PROM end      001f:ffff
+PROM checksum 1ac632e8
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:327b     Jun 19 03:51:49 2019 D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/ds1302_top.bit

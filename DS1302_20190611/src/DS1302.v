@@ -136,28 +136,28 @@ begin
 	if(rst)
 		read_date <= 8'h00;
 	else if(state == S_RD_DATE && cmd_read_ack)
-		read_hour <= read_data;
+		read_date <= read_data;
 end
 always@(posedge clk or posedge rst)
 begin
 	if(rst)
 		read_week <= 8'h00;
 	else if(state == S_RD_WEEK && cmd_read_ack)
-		read_hour <= read_data;
+		read_week <= read_data;
 end
 always@(posedge clk or posedge rst)
 begin
 	if(rst)
 		read_month <= 8'h00;
 	else if(state == S_RD_MON && cmd_read_ack)
-		read_hour <= read_data;
+		read_month <= read_data;
 end
 always@(posedge clk or posedge rst)
 begin
 	if(rst)
 		read_year <= 8'h00;
 	else if(state == S_RD_YEAR && cmd_read_ack)
-		read_hour <= read_data;
+		read_year <= read_data;
 end
 
 always@(posedge clk or posedge rst)
@@ -196,7 +196,7 @@ begin
 			S_WR_WP:
 				begin
 					write_addr <= 8'h8e;
-					write_addr <= 8'h00;
+					write_data <= 8'h00;
 				end
 			S_WR_SEC:
 				begin

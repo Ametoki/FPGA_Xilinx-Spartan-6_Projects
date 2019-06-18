@@ -8,22 +8,22 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GsZoMuLu/ISE/Project/SEG_20190609/src/Counter_M24.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SEG_20190609/src/Counter_M24.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GsZoMuLu/ISE/Project/SEG_20190609/src/Counter_M60.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SEG_20190609/src/Counter_M60.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GsZoMuLu/ISE/Project/SEG_20190609/src/KEY_Debounce.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SEG_20190609/src/KEY_Debounce.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GsZoMuLu/ISE/Project/SEG_20190609/src/SEG_Decoder.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SEG_20190609/src/SEG_Decoder.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GsZoMuLu/ISE/Project/SEG_20190609/src/SEG_Scan.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SEG_20190609/src/SEG_Scan.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GsZoMuLu/ISE/Project/SEG_20190609/src/SEG_Test.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SEG_20190609/src/SEG_Test.v&quot; into library work</arg>
 </msg>
 
 </messages>

@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
 -n 3 -fastpaths -xml RGB_LED20190617.twx RGB_LED20190617.ncd -o
-RGB_LED20190617.twr RGB_LED20190617.pcf -ucf RGB_LED.ucf
+RGB_LED20190617.twr RGB_LED20190617.pcf
 
 Design file:              RGB_LED20190617.ncd
 Physical constraint file: RGB_LED20190617.pcf
@@ -556,14 +556,14 @@ Design statistics:
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Tue Jun 18 00:42:04 2019 
+Analysis completed Tue Jun 18 09:27:50 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4586 MB
+Peak Memory Usage: 4585 MB
 
 
 

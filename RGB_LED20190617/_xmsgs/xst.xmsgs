@@ -5,28 +5,28 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\RGB_LED20190617.v</arg>&quot; line <arg fmt="%s" index="2">130</arg>: Output port &lt;<arg fmt="%s" index="3">button_posedge</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">KEY_Debounce_0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\src\RGB_LED20190617.v</arg>&quot; line <arg fmt="%s" index="2">130</arg>: Output port &lt;<arg fmt="%s" index="3">button_posedge</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">KEY_Debounce_0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\RGB_LED20190617.v</arg>&quot; line <arg fmt="%s" index="2">130</arg>: Output port &lt;<arg fmt="%s" index="3">button_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">KEY_Debounce_0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\src\RGB_LED20190617.v</arg>&quot; line <arg fmt="%s" index="2">130</arg>: Output port &lt;<arg fmt="%s" index="3">button_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">KEY_Debounce_0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\RGB_LED20190617.v</arg>&quot; line <arg fmt="%s" index="2">139</arg>: Output port &lt;<arg fmt="%s" index="3">button_posedge</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">KEY_Debounce_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\src\RGB_LED20190617.v</arg>&quot; line <arg fmt="%s" index="2">139</arg>: Output port &lt;<arg fmt="%s" index="3">button_posedge</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">KEY_Debounce_1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\RGB_LED20190617.v</arg>&quot; line <arg fmt="%s" index="2">139</arg>: Output port &lt;<arg fmt="%s" index="3">button_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">KEY_Debounce_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\src\RGB_LED20190617.v</arg>&quot; line <arg fmt="%s" index="2">139</arg>: Output port &lt;<arg fmt="%s" index="3">button_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">KEY_Debounce_1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\RGB_LED20190617.v</arg>&quot; line <arg fmt="%s" index="2">148</arg>: Output port &lt;<arg fmt="%s" index="3">button_posedge</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">KEY_Debounce_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\src\RGB_LED20190617.v</arg>&quot; line <arg fmt="%s" index="2">148</arg>: Output port &lt;<arg fmt="%s" index="3">button_posedge</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">KEY_Debounce_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\RGB_LED20190617.v</arg>&quot; line <arg fmt="%s" index="2">148</arg>: Output port &lt;<arg fmt="%s" index="3">button_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">KEY_Debounce_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\src\RGB_LED20190617.v</arg>&quot; line <arg fmt="%s" index="2">148</arg>: Output port &lt;<arg fmt="%s" index="3">button_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">KEY_Debounce_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\RGB_LED20190617.v</arg>&quot; line <arg fmt="%s" index="2">157</arg>: Output port &lt;<arg fmt="%s" index="3">button_posedge</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">KEY_Debounce_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\src\RGB_LED20190617.v</arg>&quot; line <arg fmt="%s" index="2">157</arg>: Output port &lt;<arg fmt="%s" index="3">button_posedge</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">KEY_Debounce_3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\RGB_LED20190617.v</arg>&quot; line <arg fmt="%s" index="2">157</arg>: Output port &lt;<arg fmt="%s" index="3">button_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">KEY_Debounce_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\RGB_LED20190617\src\RGB_LED20190617.v</arg>&quot; line <arg fmt="%s" index="2">157</arg>: Output port &lt;<arg fmt="%s" index="3">button_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">KEY_Debounce_3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_seg_data</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
@@ -47,7 +47,7 @@
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">KEY_Debounce_0/button_posedge</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RGB_LED20190617</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">KEY_Debounce_1/q_reg_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">KEY_Debounce_1/q_reg_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">KEY_Debounce_1/q_reg_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -158,7 +158,7 @@
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">KEY_Debounce_1/q_reg_25</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">KEY_Debounce_1/q_reg_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">KEY_Debounce_1/q_reg_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">SEG_Scan/scan_timer_25</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -194,28 +194,28 @@
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led1_pwm_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led1_pwm_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led1_pwm_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led1_pwm_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led1_pwm_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led3_pwm_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led3_pwm_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led3_pwm_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led3_pwm_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led3_pwm_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led2_pwm_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led2_pwm_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led2_pwm_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led2_pwm_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">led2_pwm_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">KEY_Debounce_3/q_reg_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RGB_LED20190617</arg>&gt;. This FF/Latch will be trimmed during the optimization process.

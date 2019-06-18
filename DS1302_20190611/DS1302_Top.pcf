@@ -1,0 +1,367 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Jun 19 03:51:27 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "seg_data<0>" LOCATE = SITE "C7" LEVEL 1;
+COMP "seg_data<1>" LOCATE = SITE "E6" LEVEL 1;
+COMP "seg_data<2>" LOCATE = SITE "C5" LEVEL 1;
+COMP "seg_data<3>" LOCATE = SITE "F7" LEVEL 1;
+COMP "seg_data<4>" LOCATE = SITE "D6" LEVEL 1;
+COMP "seg_data<5>" LOCATE = SITE "E7" LEVEL 1;
+COMP "seg_data<6>" LOCATE = SITE "D5" LEVEL 1;
+COMP "seg_data<7>" LOCATE = SITE "C6" LEVEL 1;
+COMP "seg_sel<0>" LOCATE = SITE "D9" LEVEL 1;
+COMP "seg_sel<1>" LOCATE = SITE "E10" LEVEL 1;
+COMP "seg_sel<2>" LOCATE = SITE "F10" LEVEL 1;
+COMP "seg_sel<3>" LOCATE = SITE "F9" LEVEL 1;
+COMP "seg_sel<4>" LOCATE = SITE "E8" LEVEL 1;
+COMP "seg_sel<5>" LOCATE = SITE "D8" LEVEL 1;
+COMP "clk" LOCATE = SITE "T8" LEVEL 1;
+COMP "key1" LOCATE = SITE "C3" LEVEL 1;
+COMP "key2" LOCATE = SITE "D3" LEVEL 1;
+COMP "key3" LOCATE = SITE "E4" LEVEL 1;
+COMP "key4" LOCATE = SITE "E3" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "L3" LEVEL 1;
+COMP "rtc_ce" LOCATE = SITE "C13" LEVEL 1;
+COMP "rtc_data" LOCATE = SITE "D14" LEVEL 1;
+COMP "rtc_sclk" LOCATE = SITE "E13" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "write_minute_0" BEL "write_minute_1" BEL
+        "write_minute_2" BEL "write_minute_3" BEL "write_minute_4" BEL
+        "write_minute_5" BEL "write_minute_6" BEL "write_minute_7" BEL
+        "write_hour_0" BEL "write_hour_1" BEL "write_hour_2" BEL
+        "write_hour_3" BEL "write_hour_4" BEL "write_hour_5" BEL
+        "write_hour_6" BEL "write_hour_7" BEL "write_month_0" BEL
+        "write_month_1" BEL "write_month_2" BEL "write_month_3" BEL
+        "write_month_4" BEL "write_month_5" BEL "write_month_6" BEL
+        "write_month_7" BEL "write_second_0" BEL "write_second_1" BEL
+        "write_second_2" BEL "write_second_3" BEL "write_second_4" BEL
+        "write_second_5" BEL "write_second_6" BEL "write_second_7" BEL
+        "write_date_0" BEL "write_date_1" BEL "write_date_2" BEL
+        "write_date_3" BEL "write_date_4" BEL "write_date_5" BEL
+        "write_date_6" BEL "write_date_7" BEL "write_week_0" BEL
+        "write_week_1" BEL "write_week_2" BEL "write_week_3" BEL
+        "write_week_4" BEL "write_week_5" BEL "write_week_6" BEL
+        "write_week_7" BEL "write_year_0" BEL "write_year_1" BEL
+        "write_year_2" BEL "write_year_3" BEL "write_year_4" BEL
+        "write_year_5" BEL "write_year_6" BEL "write_year_7" BEL "RTC_Mode_0"
+        BEL "RTC_Mode_1" BEL "timer_cnt_0" BEL "timer_cnt_1" BEL "timer_cnt_2"
+        BEL "timer_cnt_3" BEL "timer_cnt_4" BEL "timer_cnt_5" BEL
+        "timer_cnt_6" BEL "timer_cnt_7" BEL "timer_cnt_8" BEL "timer_cnt_9"
+        BEL "timer_cnt_10" BEL "timer_cnt_11" BEL "timer_cnt_12" BEL
+        "timer_cnt_13" BEL "timer_cnt_14" BEL "timer_cnt_15" BEL
+        "timer_cnt_16" BEL "timer_cnt_17" BEL "timer_cnt_18" BEL
+        "timer_cnt_19" BEL "timer_cnt_20" BEL "timer_cnt_21" BEL
+        "timer_cnt_22" BEL "timer_cnt_23" BEL "DS1302_Test_U0/state_FSM_FFd1"
+        BEL "DS1302_Test_U0/state_FSM_FFd2" BEL
+        "DS1302_Test_U0/state_FSM_FFd3" BEL
+        "DS1302_Test_U0/write_second_reg_7" BEL
+        "DS1302_Test_U0/write_second_reg_6" BEL
+        "DS1302_Test_U0/write_second_reg_5" BEL
+        "DS1302_Test_U0/write_second_reg_4" BEL
+        "DS1302_Test_U0/write_second_reg_3" BEL
+        "DS1302_Test_U0/write_second_reg_2" BEL
+        "DS1302_Test_U0/write_second_reg_1" BEL
+        "DS1302_Test_U0/write_second_reg_0" BEL
+        "DS1302_Test_U0/write_year_reg_7" BEL
+        "DS1302_Test_U0/write_year_reg_6" BEL
+        "DS1302_Test_U0/write_year_reg_5" BEL
+        "DS1302_Test_U0/write_year_reg_4" BEL
+        "DS1302_Test_U0/write_year_reg_3" BEL
+        "DS1302_Test_U0/write_year_reg_2" BEL
+        "DS1302_Test_U0/write_year_reg_1" BEL
+        "DS1302_Test_U0/write_year_reg_0" BEL
+        "DS1302_Test_U0/write_month_reg_7" BEL
+        "DS1302_Test_U0/write_month_reg_6" BEL
+        "DS1302_Test_U0/write_month_reg_5" BEL
+        "DS1302_Test_U0/write_month_reg_4" BEL
+        "DS1302_Test_U0/write_month_reg_3" BEL
+        "DS1302_Test_U0/write_month_reg_2" BEL
+        "DS1302_Test_U0/write_month_reg_1" BEL
+        "DS1302_Test_U0/write_month_reg_0" BEL
+        "DS1302_Test_U0/write_date_reg_7" BEL
+        "DS1302_Test_U0/write_date_reg_6" BEL
+        "DS1302_Test_U0/write_date_reg_5" BEL
+        "DS1302_Test_U0/write_date_reg_4" BEL
+        "DS1302_Test_U0/write_date_reg_3" BEL
+        "DS1302_Test_U0/write_date_reg_2" BEL
+        "DS1302_Test_U0/write_date_reg_1" BEL
+        "DS1302_Test_U0/write_date_reg_0" BEL
+        "DS1302_Test_U0/write_week_reg_7" BEL
+        "DS1302_Test_U0/write_week_reg_6" BEL
+        "DS1302_Test_U0/write_week_reg_5" BEL
+        "DS1302_Test_U0/write_week_reg_4" BEL
+        "DS1302_Test_U0/write_week_reg_3" BEL
+        "DS1302_Test_U0/write_week_reg_2" BEL
+        "DS1302_Test_U0/write_week_reg_1" BEL
+        "DS1302_Test_U0/write_week_reg_0" BEL
+        "DS1302_Test_U0/write_minute_reg_7" BEL
+        "DS1302_Test_U0/write_minute_reg_6" BEL
+        "DS1302_Test_U0/write_minute_reg_5" BEL
+        "DS1302_Test_U0/write_minute_reg_4" BEL
+        "DS1302_Test_U0/write_minute_reg_3" BEL
+        "DS1302_Test_U0/write_minute_reg_2" BEL
+        "DS1302_Test_U0/write_minute_reg_1" BEL
+        "DS1302_Test_U0/write_minute_reg_0" BEL
+        "DS1302_Test_U0/write_hour_reg_7" BEL
+        "DS1302_Test_U0/write_hour_reg_6" BEL
+        "DS1302_Test_U0/write_hour_reg_5" BEL
+        "DS1302_Test_U0/write_hour_reg_4" BEL
+        "DS1302_Test_U0/write_hour_reg_3" BEL
+        "DS1302_Test_U0/write_hour_reg_2" BEL
+        "DS1302_Test_U0/write_hour_reg_1" BEL
+        "DS1302_Test_U0/write_hour_reg_0" BEL
+        "DS1302_Test_U0/DS1302_U1/state_FSM_FFd1" BEL
+        "DS1302_Test_U0/DS1302_U1/state_FSM_FFd2" BEL
+        "DS1302_Test_U0/DS1302_U1/state_FSM_FFd3" BEL
+        "DS1302_Test_U0/DS1302_U1/state_FSM_FFd4" BEL
+        "DS1302_Test_U0/DS1302_U1/state_FSM_FFd5" BEL
+        "DS1302_Test_U0/DS1302_U1/state_FSM_FFd6" BEL
+        "DS1302_Test_U0/DS1302_U1/state_FSM_FFd8" BEL
+        "DS1302_Test_U0/DS1302_U1/state_FSM_FFd9" BEL
+        "DS1302_Test_U0/DS1302_U1/state_FSM_FFd7" BEL
+        "DS1302_Test_U0/DS1302_U1/state_FSM_FFd10" BEL
+        "DS1302_Test_U0/DS1302_U1/state_FSM_FFd11" BEL
+        "DS1302_Test_U0/DS1302_U1/state_FSM_FFd12" BEL
+        "DS1302_Test_U0/DS1302_U1/state_FSM_FFd13" BEL
+        "DS1302_Test_U0/DS1302_U1/state_FSM_FFd14" BEL
+        "DS1302_Test_U0/DS1302_U1/state_FSM_FFd15" BEL
+        "DS1302_Test_U0/DS1302_U1/state_FSM_FFd17" BEL
+        "DS1302_Test_U0/DS1302_U1/state_FSM_FFd16" BEL
+        "DS1302_Test_U0/DS1302_U1/read_year_7" BEL
+        "DS1302_Test_U0/DS1302_U1/read_year_6" BEL
+        "DS1302_Test_U0/DS1302_U1/read_year_5" BEL
+        "DS1302_Test_U0/DS1302_U1/read_year_4" BEL
+        "DS1302_Test_U0/DS1302_U1/read_year_3" BEL
+        "DS1302_Test_U0/DS1302_U1/read_year_2" BEL
+        "DS1302_Test_U0/DS1302_U1/read_year_1" BEL
+        "DS1302_Test_U0/DS1302_U1/read_year_0" BEL
+        "DS1302_Test_U0/DS1302_U1/read_month_7" BEL
+        "DS1302_Test_U0/DS1302_U1/read_month_6" BEL
+        "DS1302_Test_U0/DS1302_U1/read_month_5" BEL
+        "DS1302_Test_U0/DS1302_U1/read_month_4" BEL
+        "DS1302_Test_U0/DS1302_U1/read_month_3" BEL
+        "DS1302_Test_U0/DS1302_U1/read_month_2" BEL
+        "DS1302_Test_U0/DS1302_U1/read_month_1" BEL
+        "DS1302_Test_U0/DS1302_U1/read_month_0" BEL
+        "DS1302_Test_U0/DS1302_U1/read_week_7" BEL
+        "DS1302_Test_U0/DS1302_U1/read_week_6" BEL
+        "DS1302_Test_U0/DS1302_U1/read_week_5" BEL
+        "DS1302_Test_U0/DS1302_U1/read_week_4" BEL
+        "DS1302_Test_U0/DS1302_U1/read_week_3" BEL
+        "DS1302_Test_U0/DS1302_U1/read_week_2" BEL
+        "DS1302_Test_U0/DS1302_U1/read_week_1" BEL
+        "DS1302_Test_U0/DS1302_U1/read_week_0" BEL
+        "DS1302_Test_U0/DS1302_U1/read_date_7" BEL
+        "DS1302_Test_U0/DS1302_U1/read_date_6" BEL
+        "DS1302_Test_U0/DS1302_U1/read_date_5" BEL
+        "DS1302_Test_U0/DS1302_U1/read_date_4" BEL
+        "DS1302_Test_U0/DS1302_U1/read_date_3" BEL
+        "DS1302_Test_U0/DS1302_U1/read_date_2" BEL
+        "DS1302_Test_U0/DS1302_U1/read_date_1" BEL
+        "DS1302_Test_U0/DS1302_U1/read_date_0" BEL
+        "DS1302_Test_U0/DS1302_U1/read_hour_7" BEL
+        "DS1302_Test_U0/DS1302_U1/read_hour_6" BEL
+        "DS1302_Test_U0/DS1302_U1/read_hour_5" BEL
+        "DS1302_Test_U0/DS1302_U1/read_hour_4" BEL
+        "DS1302_Test_U0/DS1302_U1/read_hour_3" BEL
+        "DS1302_Test_U0/DS1302_U1/read_hour_2" BEL
+        "DS1302_Test_U0/DS1302_U1/read_hour_1" BEL
+        "DS1302_Test_U0/DS1302_U1/read_hour_0" BEL
+        "DS1302_Test_U0/DS1302_U1/read_second_7" BEL
+        "DS1302_Test_U0/DS1302_U1/read_second_6" BEL
+        "DS1302_Test_U0/DS1302_U1/read_second_5" BEL
+        "DS1302_Test_U0/DS1302_U1/read_second_4" BEL
+        "DS1302_Test_U0/DS1302_U1/read_second_3" BEL
+        "DS1302_Test_U0/DS1302_U1/read_second_2" BEL
+        "DS1302_Test_U0/DS1302_U1/read_second_1" BEL
+        "DS1302_Test_U0/DS1302_U1/read_second_0" BEL
+        "DS1302_Test_U0/DS1302_U1/read_minute_7" BEL
+        "DS1302_Test_U0/DS1302_U1/read_minute_6" BEL
+        "DS1302_Test_U0/DS1302_U1/read_minute_5" BEL
+        "DS1302_Test_U0/DS1302_U1/read_minute_4" BEL
+        "DS1302_Test_U0/DS1302_U1/read_minute_3" BEL
+        "DS1302_Test_U0/DS1302_U1/read_minute_2" BEL
+        "DS1302_Test_U0/DS1302_U1/read_minute_1" BEL
+        "DS1302_Test_U0/DS1302_U1/read_minute_0" BEL
+        "DS1302_Test_U0/DS1302_U1/write_data_7" BEL
+        "DS1302_Test_U0/DS1302_U1/write_data_6" BEL
+        "DS1302_Test_U0/DS1302_U1/write_data_5" BEL
+        "DS1302_Test_U0/DS1302_U1/write_data_4" BEL
+        "DS1302_Test_U0/DS1302_U1/write_data_3" BEL
+        "DS1302_Test_U0/DS1302_U1/write_data_2" BEL
+        "DS1302_Test_U0/DS1302_U1/write_data_1" BEL
+        "DS1302_Test_U0/DS1302_U1/write_data_0" BEL
+        "DS1302_Test_U0/DS1302_U1/write_addr_3" BEL
+        "DS1302_Test_U0/DS1302_U1/write_addr_2" BEL
+        "DS1302_Test_U0/DS1302_U1/write_addr_1" BEL
+        "DS1302_Test_U0/DS1302_U1/read_addr_3" BEL
+        "DS1302_Test_U0/DS1302_U1/read_addr_2" BEL
+        "DS1302_Test_U0/DS1302_U1/read_addr_1" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/state_FSM_FFd1" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/state_FSM_FFd2" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/state_FSM_FFd3" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/state_FSM_FFd4" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_8" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_7" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_6" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_5" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_4" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_3" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_2" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_1" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_0" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/read_data_7" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/read_data_6" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/read_data_5" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/read_data_4" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/read_data_3" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/read_data_2" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/read_data_1" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/read_data_0" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/send_data_7" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/send_data_6" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/send_data_5" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/send_data_4" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/send_data_3" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/send_data_2" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/send_data_1" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/send_data_0" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_timer_15" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_timer_14" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_timer_13" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_timer_12" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_timer_11" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_timer_10" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_timer_9" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_timer_8" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_timer_7" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_timer_6" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_timer_5" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_timer_4" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_timer_3" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_timer_2" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_timer_1" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_timer_0" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_sel_2" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_sel_1" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_sel_0" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/seg_sel_5" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/seg_sel_4" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/seg_sel_3" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/seg_sel_2" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/seg_sel_1" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/seg_sel_0" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/seg_data_7" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/seg_data_6" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/seg_data_5" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/seg_data_4" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/seg_data_3" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/seg_data_2" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/seg_data_1" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/seg_data_0" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/state_FSM_FFd2" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_edge_cnt_4" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_edge_cnt_3" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_edge_cnt_2" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_edge_cnt_1" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_edge_cnt_0" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_cnt_15" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_cnt_14" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_cnt_13" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_cnt_12" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_cnt_11" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_cnt_10" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_cnt_9" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_cnt_8" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_cnt_7" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_cnt_6" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_cnt_5" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_cnt_4" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_cnt_3" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_cnt_2" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_cnt_1" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/clk_cnt_0" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/state_FSM_FFd1" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/state_FSM_FFd3" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/state_FSM_FFd4" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/state_FSM_FFd5" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/state_FSM_FFd6" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MISO_shift_7" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MISO_shift_6" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MISO_shift_5" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MISO_shift_4" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MISO_shift_3" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MISO_shift_2" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MISO_shift_1" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MISO_shift_0" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MOSI_shift_6" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MOSI_shift_5" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MOSI_shift_4" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MOSI_shift_3" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MOSI_shift_2" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MOSI_shift_1" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MOSI_shift_0" BEL
+        "KEY_Debounce_3/button_out_d0" BEL "KEY_Debounce_3/DFF2" BEL
+        "KEY_Debounce_3/DFF1" BEL "KEY_Debounce_3/button_negedge" BEL
+        "KEY_Debounce_3/q_reg_19" BEL "KEY_Debounce_3/q_reg_18" BEL
+        "KEY_Debounce_3/q_reg_17" BEL "KEY_Debounce_3/q_reg_16" BEL
+        "KEY_Debounce_3/q_reg_15" BEL "KEY_Debounce_3/q_reg_14" BEL
+        "KEY_Debounce_3/q_reg_13" BEL "KEY_Debounce_3/q_reg_12" BEL
+        "KEY_Debounce_3/q_reg_11" BEL "KEY_Debounce_3/q_reg_10" BEL
+        "KEY_Debounce_3/q_reg_9" BEL "KEY_Debounce_3/q_reg_8" BEL
+        "KEY_Debounce_3/q_reg_7" BEL "KEY_Debounce_3/q_reg_6" BEL
+        "KEY_Debounce_3/q_reg_5" BEL "KEY_Debounce_3/q_reg_4" BEL
+        "KEY_Debounce_3/q_reg_3" BEL "KEY_Debounce_3/q_reg_2" BEL
+        "KEY_Debounce_3/q_reg_1" BEL "KEY_Debounce_3/q_reg_0" BEL
+        "KEY_Debounce_2/button_out_d0" BEL "KEY_Debounce_2/DFF2" BEL
+        "KEY_Debounce_2/DFF1" BEL "KEY_Debounce_2/button_negedge" BEL
+        "KEY_Debounce_2/q_reg_19" BEL "KEY_Debounce_2/q_reg_18" BEL
+        "KEY_Debounce_2/q_reg_17" BEL "KEY_Debounce_2/q_reg_16" BEL
+        "KEY_Debounce_2/q_reg_15" BEL "KEY_Debounce_2/q_reg_14" BEL
+        "KEY_Debounce_2/q_reg_13" BEL "KEY_Debounce_2/q_reg_12" BEL
+        "KEY_Debounce_2/q_reg_11" BEL "KEY_Debounce_2/q_reg_10" BEL
+        "KEY_Debounce_2/q_reg_9" BEL "KEY_Debounce_2/q_reg_8" BEL
+        "KEY_Debounce_2/q_reg_7" BEL "KEY_Debounce_2/q_reg_6" BEL
+        "KEY_Debounce_2/q_reg_5" BEL "KEY_Debounce_2/q_reg_4" BEL
+        "KEY_Debounce_2/q_reg_3" BEL "KEY_Debounce_2/q_reg_2" BEL
+        "KEY_Debounce_2/q_reg_1" BEL "KEY_Debounce_2/q_reg_0" BEL
+        "KEY_Debounce_1/button_out_d0" BEL "KEY_Debounce_1/DFF2" BEL
+        "KEY_Debounce_1/DFF1" BEL "KEY_Debounce_1/button_negedge" BEL
+        "KEY_Debounce_1/q_reg_19" BEL "KEY_Debounce_1/q_reg_18" BEL
+        "KEY_Debounce_1/q_reg_17" BEL "KEY_Debounce_1/q_reg_16" BEL
+        "KEY_Debounce_1/q_reg_15" BEL "KEY_Debounce_1/q_reg_14" BEL
+        "KEY_Debounce_1/q_reg_13" BEL "KEY_Debounce_1/q_reg_12" BEL
+        "KEY_Debounce_1/q_reg_11" BEL "KEY_Debounce_1/q_reg_10" BEL
+        "KEY_Debounce_1/q_reg_9" BEL "KEY_Debounce_1/q_reg_8" BEL
+        "KEY_Debounce_1/q_reg_7" BEL "KEY_Debounce_1/q_reg_6" BEL
+        "KEY_Debounce_1/q_reg_5" BEL "KEY_Debounce_1/q_reg_4" BEL
+        "KEY_Debounce_1/q_reg_3" BEL "KEY_Debounce_1/q_reg_2" BEL
+        "KEY_Debounce_1/q_reg_1" BEL "KEY_Debounce_1/q_reg_0" BEL
+        "KEY_Debounce_0/button_out_d0" BEL "KEY_Debounce_0/DFF2" BEL
+        "KEY_Debounce_0/DFF1" BEL "KEY_Debounce_0/button_negedge" BEL
+        "KEY_Debounce_0/q_reg_19" BEL "KEY_Debounce_0/q_reg_18" BEL
+        "KEY_Debounce_0/q_reg_17" BEL "KEY_Debounce_0/q_reg_16" BEL
+        "KEY_Debounce_0/q_reg_15" BEL "KEY_Debounce_0/q_reg_14" BEL
+        "KEY_Debounce_0/q_reg_13" BEL "KEY_Debounce_0/q_reg_12" BEL
+        "KEY_Debounce_0/q_reg_11" BEL "KEY_Debounce_0/q_reg_10" BEL
+        "KEY_Debounce_0/q_reg_9" BEL "KEY_Debounce_0/q_reg_8" BEL
+        "KEY_Debounce_0/q_reg_7" BEL "KEY_Debounce_0/q_reg_6" BEL
+        "KEY_Debounce_0/q_reg_5" BEL "KEY_Debounce_0/q_reg_4" BEL
+        "KEY_Debounce_0/q_reg_3" BEL "KEY_Debounce_0/q_reg_2" BEL
+        "KEY_Debounce_0/q_reg_1" BEL "KEY_Debounce_0/q_reg_0" BEL
+        "DS1302_Test_U0/write_time_req" BEL "DS1302_Test_U0/read_time_req" BEL
+        "CH" BEL "DS1302_Test_U0/DS1302_U1/cmd_read" BEL
+        "DS1302_Test_U0/DS1302_U1/cmd_write" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/CS_reg" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/wr_req" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/DCLK_reg" BEL
+        "KEY_Debounce_3/button_out" BEL "KEY_Debounce_2/button_out" BEL
+        "KEY_Debounce_1/button_out" BEL "KEY_Debounce_0/button_out" BEL
+        "seg_en_0" BEL "RTC_Mode_1_1" BEL "RTC_Mode_0_1" BEL "RTC_Mode_1_2"
+        BEL "RTC_Mode_0_2" BEL "clk_BUFGP/BUFG" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/ds1302_io_dir" BEL
+        "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MOSI_shift_7";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

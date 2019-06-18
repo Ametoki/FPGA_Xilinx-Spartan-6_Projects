@@ -1,0 +1,530 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml DS1302_Top.twx DS1302_Top.ncd -o DS1302_Top.twr
+DS1302_Top.pcf
+
+Design file:              DS1302_Top.ncd
+Physical constraint file: DS1302_Top.pcf
+Device,package,speed:     xc6slx9,ftg256,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 12456 paths analyzed, 1878 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.666ns.
+--------------------------------------------------------------------------------
+
+Paths for end point write_hour_2 (SLICE_X15Y29.B1), 4 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.334ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               KEY_Debounce_3/button_negedge (FF)
+  Destination:          write_hour_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.571ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.060ns (0.687 - 0.747)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: KEY_Debounce_3/button_negedge to write_hour_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y42.DQ       Tcko                  0.525   KEY_Debounce_3/button_negedge
+                                                       KEY_Debounce_3/button_negedge
+    SLICE_X19Y38.B2      net (fanout=18)       2.612   KEY_Debounce_3/button_negedge
+    SLICE_X19Y38.B       Tilo                  0.259   write_month<4>
+                                                       key[3]_PWR_1_o_equal_66_o<3>1
+    SLICE_X15Y29.B1      net (fanout=7)        1.802   key[3]_write_hour[7]_select_70_OUT<1>3
+    SLICE_X15Y29.CLK     Tas                   0.373   write_hour<3>
+                                                       key[3]_write_hour[7]_select_70_OUT<2>3
+                                                       write_hour_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.571ns (1.157ns logic, 4.414ns route)
+                                                       (20.8% logic, 79.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.956ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               KEY_Debounce_0/button_negedge (FF)
+  Destination:          write_hour_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.945ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.064ns (0.687 - 0.751)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: KEY_Debounce_0/button_negedge to write_hour_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y35.BQ       Tcko                  0.476   KEY_Debounce_0/button_negedge
+                                                       KEY_Debounce_0/button_negedge
+    SLICE_X19Y38.B3      net (fanout=14)       2.035   KEY_Debounce_0/button_negedge
+    SLICE_X19Y38.B       Tilo                  0.259   write_month<4>
+                                                       key[3]_PWR_1_o_equal_66_o<3>1
+    SLICE_X15Y29.B1      net (fanout=7)        1.802   key[3]_write_hour[7]_select_70_OUT<1>3
+    SLICE_X15Y29.CLK     Tas                   0.373   write_hour<3>
+                                                       key[3]_write_hour[7]_select_70_OUT<2>3
+                                                       write_hour_2
+    -------------------------------------------------  ---------------------------
+    Total                                      4.945ns (1.108ns logic, 3.837ns route)
+                                                       (22.4% logic, 77.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     15.473ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               KEY_Debounce_2/button_negedge (FF)
+  Destination:          write_hour_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.428ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.064ns (0.687 - 0.751)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: KEY_Debounce_2/button_negedge to write_hour_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y35.AQ       Tcko                  0.476   KEY_Debounce_0/button_negedge
+                                                       KEY_Debounce_2/button_negedge
+    SLICE_X19Y38.B1      net (fanout=15)       1.518   KEY_Debounce_2/button_negedge
+    SLICE_X19Y38.B       Tilo                  0.259   write_month<4>
+                                                       key[3]_PWR_1_o_equal_66_o<3>1
+    SLICE_X15Y29.B1      net (fanout=7)        1.802   key[3]_write_hour[7]_select_70_OUT<1>3
+    SLICE_X15Y29.CLK     Tas                   0.373   write_hour<3>
+                                                       key[3]_write_hour[7]_select_70_OUT<2>3
+                                                       write_hour_2
+    -------------------------------------------------  ---------------------------
+    Total                                      4.428ns (1.108ns logic, 3.320ns route)
+                                                       (25.0% logic, 75.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point write_second_7 (SLICE_X4Y33.A3), 24 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.470ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               RTC_Mode_1 (FF)
+  Destination:          write_second_7 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.502ns (Levels of Logic = 3)
+  Clock Path Skew:      0.007ns (0.725 - 0.718)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: RTC_Mode_1 to write_second_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y31.BQ      Tcko                  0.430   RTC_Mode<1>
+                                                       RTC_Mode_1
+    SLICE_X9Y43.D1       net (fanout=61)       2.353   RTC_Mode<1>
+    SLICE_X9Y43.D        Tilo                  0.259   DS1302_Test_U0/DS1302_U1/read_second<7>
+                                                       key[3]_write_second[7]_select_72_OUT<7>2
+    SLICE_X4Y32.D6       net (fanout=2)        1.325   key[3]_write_second[7]_select_72_OUT<7>2
+    SLICE_X4Y32.D        Tilo                  0.254   N61
+                                                       key[3]_write_second[7]_select_72_OUT<7>6_SW2
+    SLICE_X4Y33.A3       net (fanout=1)        0.542   N61
+    SLICE_X4Y33.CLK      Tas                   0.339   write_second<7>
+                                                       key[3]_write_second[7]_select_72_OUT<7>8
+                                                       write_second_7
+    -------------------------------------------------  ---------------------------
+    Total                                      5.502ns (1.282ns logic, 4.220ns route)
+                                                       (23.3% logic, 76.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.695ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               RTC_Mode_0_2 (FF)
+  Destination:          write_second_7 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.278ns (Levels of Logic = 3)
+  Clock Path Skew:      0.008ns (0.725 - 0.717)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: RTC_Mode_0_2 to write_second_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y30.BQ      Tcko                  0.476   RTC_Mode_0_2
+                                                       RTC_Mode_0_2
+    SLICE_X9Y43.D2       net (fanout=15)       2.083   RTC_Mode_0_2
+    SLICE_X9Y43.D        Tilo                  0.259   DS1302_Test_U0/DS1302_U1/read_second<7>
+                                                       key[3]_write_second[7]_select_72_OUT<7>2
+    SLICE_X4Y32.D6       net (fanout=2)        1.325   key[3]_write_second[7]_select_72_OUT<7>2
+    SLICE_X4Y32.D        Tilo                  0.254   N61
+                                                       key[3]_write_second[7]_select_72_OUT<7>6_SW2
+    SLICE_X4Y33.A3       net (fanout=1)        0.542   N61
+    SLICE_X4Y33.CLK      Tas                   0.339   write_second<7>
+                                                       key[3]_write_second[7]_select_72_OUT<7>8
+                                                       write_second_7
+    -------------------------------------------------  ---------------------------
+    Total                                      5.278ns (1.328ns logic, 3.950ns route)
+                                                       (25.2% logic, 74.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     15.402ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               RTC_Mode_1_1 (FF)
+  Destination:          write_second_7 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.570ns (Levels of Logic = 4)
+  Clock Path Skew:      0.007ns (0.725 - 0.718)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: RTC_Mode_1_1 to write_second_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y31.CQ      Tcko                  0.476   RTC_Mode_1_2
+                                                       RTC_Mode_1_1
+    SLICE_X10Y33.B1      net (fanout=2)        1.314   RTC_Mode_1_1
+    SLICE_X10Y33.B       Tilo                  0.235   key[3]_write_minute[7]_select_71_OUT<3>1
+                                                       Mmux_write_minute[7]_write_minute[7]_mux_35_OUT12_SW0
+    SLICE_X4Y32.A5       net (fanout=4)        0.782   N25
+    SLICE_X4Y32.A        Tilo                  0.254   N61
+                                                       Mmux_write_second[7]_write_second[7]_mux_53_OUT721
+    SLICE_X4Y32.D3       net (fanout=4)        0.374   Mmux_write_second[7]_write_second[7]_mux_53_OUT72
+    SLICE_X4Y32.D        Tilo                  0.254   N61
+                                                       key[3]_write_second[7]_select_72_OUT<7>6_SW2
+    SLICE_X4Y33.A3       net (fanout=1)        0.542   N61
+    SLICE_X4Y33.CLK      Tas                   0.339   write_second<7>
+                                                       key[3]_write_second[7]_select_72_OUT<7>8
+                                                       write_second_7
+    -------------------------------------------------  ---------------------------
+    Total                                      4.570ns (1.558ns logic, 3.012ns route)
+                                                       (34.1% logic, 65.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point write_minute_0 (SLICE_X9Y33.A3), 14 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.471ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               KEY_Debounce_3/button_negedge (FF)
+  Destination:          write_minute_0 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.477ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.017ns (0.325 - 0.342)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: KEY_Debounce_3/button_negedge to write_minute_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y42.DQ       Tcko                  0.525   KEY_Debounce_3/button_negedge
+                                                       KEY_Debounce_3/button_negedge
+    SLICE_X14Y32.B6      net (fanout=18)       1.985   KEY_Debounce_3/button_negedge
+    SLICE_X14Y32.B       Tilo                  0.235   key[3]_write_hour[7]_select_70_OUT<3>1
+                                                       key[3]_GND_1_o_equal_69_o<3>1
+    SLICE_X9Y34.B2       net (fanout=15)       1.557   key[3]_GND_1_o_equal_69_o
+    SLICE_X9Y34.B        Tilo                  0.259   key[3]_write_minute[7]_select_71_OUT<6>1
+                                                       key[3]_write_minute[7]_select_71_OUT<0>1
+    SLICE_X9Y33.A3       net (fanout=1)        0.543   key[3]_write_minute[7]_select_71_OUT<0>2
+    SLICE_X9Y33.CLK      Tas                   0.373   write_minute<1>
+                                                       key[3]_write_minute[7]_select_71_OUT<0>4
+                                                       write_minute_0
+    -------------------------------------------------  ---------------------------
+    Total                                      5.477ns (1.392ns logic, 4.085ns route)
+                                                       (25.4% logic, 74.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.783ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               KEY_Debounce_1/button_negedge (FF)
+  Destination:          write_minute_0 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.169ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.013ns (0.325 - 0.338)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: KEY_Debounce_1/button_negedge to write_minute_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y39.DQ       Tcko                  0.430   KEY_Debounce_1/button_negedge
+                                                       KEY_Debounce_1/button_negedge
+    SLICE_X14Y32.B4      net (fanout=15)       1.772   KEY_Debounce_1/button_negedge
+    SLICE_X14Y32.B       Tilo                  0.235   key[3]_write_hour[7]_select_70_OUT<3>1
+                                                       key[3]_GND_1_o_equal_69_o<3>1
+    SLICE_X9Y34.B2       net (fanout=15)       1.557   key[3]_GND_1_o_equal_69_o
+    SLICE_X9Y34.B        Tilo                  0.259   key[3]_write_minute[7]_select_71_OUT<6>1
+                                                       key[3]_write_minute[7]_select_71_OUT<0>1
+    SLICE_X9Y33.A3       net (fanout=1)        0.543   key[3]_write_minute[7]_select_71_OUT<0>2
+    SLICE_X9Y33.CLK      Tas                   0.373   write_minute<1>
+                                                       key[3]_write_minute[7]_select_71_OUT<0>4
+                                                       write_minute_0
+    -------------------------------------------------  ---------------------------
+    Total                                      5.169ns (1.297ns logic, 3.872ns route)
+                                                       (25.1% logic, 74.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.971ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               KEY_Debounce_2/button_negedge (FF)
+  Destination:          write_minute_0 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.973ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.021ns (0.325 - 0.346)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: KEY_Debounce_2/button_negedge to write_minute_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y35.AQ       Tcko                  0.476   KEY_Debounce_0/button_negedge
+                                                       KEY_Debounce_2/button_negedge
+    SLICE_X14Y32.B2      net (fanout=15)       1.530   KEY_Debounce_2/button_negedge
+    SLICE_X14Y32.B       Tilo                  0.235   key[3]_write_hour[7]_select_70_OUT<3>1
+                                                       key[3]_GND_1_o_equal_69_o<3>1
+    SLICE_X9Y34.B2       net (fanout=15)       1.557   key[3]_GND_1_o_equal_69_o
+    SLICE_X9Y34.B        Tilo                  0.259   key[3]_write_minute[7]_select_71_OUT<6>1
+                                                       key[3]_write_minute[7]_select_71_OUT<0>1
+    SLICE_X9Y33.A3       net (fanout=1)        0.543   key[3]_write_minute[7]_select_71_OUT<0>2
+    SLICE_X9Y33.CLK      Tas                   0.373   write_minute<1>
+                                                       key[3]_write_minute[7]_select_71_OUT<0>4
+                                                       write_minute_0
+    -------------------------------------------------  ---------------------------
+    Total                                      4.973ns (1.343ns logic, 3.630ns route)
+                                                       (27.0% logic, 73.0% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point KEY_Debounce_0/button_out (SLICE_X2Y36.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.418ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               KEY_Debounce_0/button_out (FF)
+  Destination:          KEY_Debounce_0/button_out (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.418ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: KEY_Debounce_0/button_out to KEY_Debounce_0/button_out
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X2Y36.AQ       Tcko                  0.200   KEY_Debounce_0/button_out
+                                                       KEY_Debounce_0/button_out
+    SLICE_X2Y36.A6       net (fanout=3)        0.028   KEY_Debounce_0/button_out
+    SLICE_X2Y36.CLK      Tah         (-Th)    -0.190   KEY_Debounce_0/button_out
+                                                       KEY_Debounce_0/button_out_rstpot
+                                                       KEY_Debounce_0/button_out
+    -------------------------------------------------  ---------------------------
+    Total                                      0.418ns (0.390ns logic, 0.028ns route)
+                                                       (93.3% logic, 6.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point DS1302_Test_U0/DS1302_U1/state_FSM_FFd15 (SLICE_X22Y40.D6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.421ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               DS1302_Test_U0/DS1302_U1/state_FSM_FFd15 (FF)
+  Destination:          DS1302_Test_U0/DS1302_U1/state_FSM_FFd15 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.421ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: DS1302_Test_U0/DS1302_U1/state_FSM_FFd15 to DS1302_Test_U0/DS1302_U1/state_FSM_FFd15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X22Y40.DQ      Tcko                  0.200   DS1302_Test_U0/DS1302_U1/state_FSM_FFd15
+                                                       DS1302_Test_U0/DS1302_U1/state_FSM_FFd15
+    SLICE_X22Y40.D6      net (fanout=6)        0.031   DS1302_Test_U0/DS1302_U1/state_FSM_FFd15
+    SLICE_X22Y40.CLK     Tah         (-Th)    -0.190   DS1302_Test_U0/DS1302_U1/state_FSM_FFd15
+                                                       DS1302_Test_U0/DS1302_U1/state_FSM_FFd15-In1
+                                                       DS1302_Test_U0/DS1302_U1/state_FSM_FFd15
+    -------------------------------------------------  ---------------------------
+    Total                                      0.421ns (0.390ns logic, 0.031ns route)
+                                                       (92.6% logic, 7.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point KEY_Debounce_1/q_reg_8 (SLICE_X2Y44.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.422ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               KEY_Debounce_1/q_reg_8 (FF)
+  Destination:          KEY_Debounce_1/q_reg_8 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.422ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: KEY_Debounce_1/q_reg_8 to KEY_Debounce_1/q_reg_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X2Y44.AQ       Tcko                  0.200   KEY_Debounce_1/q_reg<11>
+                                                       KEY_Debounce_1/q_reg_8
+    SLICE_X2Y44.A6       net (fanout=3)        0.032   KEY_Debounce_1/q_reg<8>
+    SLICE_X2Y44.CLK      Tah         (-Th)    -0.190   KEY_Debounce_1/q_reg<11>
+                                                       KEY_Debounce_1/q_next<8>1
+                                                       KEY_Debounce_1/q_reg_8
+    -------------------------------------------------  ---------------------------
+    Total                                      0.422ns (0.390ns logic, 0.032ns route)
+                                                       (92.4% logic, 7.6% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 17.334ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: clk_BUFGP/BUFG/I0
+  Logical resource: clk_BUFGP/BUFG/I0
+  Location pin: BUFGMUX_X3Y13.I0
+  Clock network: clk_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+Slack: 19.520ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: SEG_BCD_U0/SEG_Scan_U0/scan_timer<3>/CLK
+  Logical resource: SEG_BCD_U0/SEG_Scan_U0/scan_timer_0/CK
+  Location pin: SLICE_X4Y49.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 19.520ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 0.240ns (Trpw)
+  Physical resource: SEG_BCD_U0/SEG_Scan_U0/scan_timer<3>/SR
+  Logical resource: SEG_BCD_U0/SEG_Scan_U0/scan_timer_0/SR
+  Location pin: SLICE_X4Y49.SR
+  Clock network: SEG_BCD_U0/SEG_Scan_U0/rst_n_inv
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.666|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 12456 paths, 0 nets, and 2670 connections
+
+Design statistics:
+   Minimum period:   5.666ns{1}   (Maximum frequency: 176.491MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed Jun 19 03:51:41 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4588 MB
+
+
+

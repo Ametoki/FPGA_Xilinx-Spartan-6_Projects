@@ -30,305 +30,59 @@ Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH
 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 31113 paths analyzed, 909 endpoints analyzed, 0 failing endpoints
+ 23820 paths analyzed, 988 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   5.801ns.
+ Minimum period is   5.815ns.
 --------------------------------------------------------------------------------
 
-Paths for end point SEG_Scan/scan_sel_1 (SLICE_X11Y58.CE), 30 paths
+Paths for end point SEG_Scan/scan_sel_0 (SLICE_X8Y56.CE), 30 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.185ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               SEG_Scan/scan_timer_8 (FF)
+  Destination:          SEG_Scan/scan_sel_0 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.813ns (Levels of Logic = 3)
+  Clock Path Skew:      0.033ns (0.767 - 0.734)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: SEG_Scan/scan_timer_8 to SEG_Scan/scan_sel_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y24.AQ       Tcko                  0.525   SEG_Scan/scan_timer<11>
+                                                       SEG_Scan/scan_timer_8
+    SLICE_X8Y20.B2       net (fanout=2)        0.988   SEG_Scan/scan_timer<8>
+    SLICE_X8Y20.COUT     Topcyb                0.483   SEG_Scan/Mcompar_n0000_cy<3>
+                                                       SEG_Scan/Mcompar_n0000_lut<1>
+                                                       SEG_Scan/Mcompar_n0000_cy<3>
+    SLICE_X8Y21.CIN      net (fanout=1)        0.003   SEG_Scan/Mcompar_n0000_cy<3>
+    SLICE_X8Y21.CMUX     Tcinc                 0.302   SEG_Scan/GND_5_o_scan_timer[31]_LessThan_1_o_inv
+                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv1_cy
+    SLICE_X8Y56.C3       net (fanout=17)       2.801   SEG_Scan/Mcompar_n0000_cy<6>
+    SLICE_X8Y56.C        Tilo                  0.255   SEG_Scan/scan_sel<2>
+                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv_INV_0
+    SLICE_X8Y56.CE       net (fanout=1)        0.143   SEG_Scan/Mcompar_n0000_cy<6>_inv
+    SLICE_X8Y56.CLK      Tceck                 0.313   SEG_Scan/scan_sel<2>
+                                                       SEG_Scan/scan_sel_0
+    -------------------------------------------------  ---------------------------
+    Total                                      5.813ns (1.878ns logic, 3.935ns route)
+                                                       (32.3% logic, 67.7% route)
+
 --------------------------------------------------------------------------------
 Slack (setup path):     14.199ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               SEG_Scan/scan_timer_0 (FF)
-  Destination:          SEG_Scan/scan_sel_1 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      5.795ns (Levels of Logic = 3)
-  Clock Path Skew:      0.029ns (0.683 - 0.654)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: SEG_Scan/scan_timer_0 to SEG_Scan/scan_sel_1
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X8Y32.AQ       Tcko                  0.525   SEG_Scan/scan_timer<3>
-                                                       SEG_Scan/scan_timer_0
-    SLICE_X8Y30.A2       net (fanout=2)        1.169   SEG_Scan/scan_timer<0>
-    SLICE_X8Y30.COUT     Topcya                0.474   SEG_Scan/Mcompar_n0000_cy<3>
-                                                       SEG_Scan/Mcompar_n0000_lut<0>
-                                                       SEG_Scan/Mcompar_n0000_cy<3>
-    SLICE_X8Y31.CIN      net (fanout=1)        0.003   SEG_Scan/Mcompar_n0000_cy<3>
-    SLICE_X8Y31.CMUX     Tcinc                 0.302   SEG_Scan/GND_5_o_scan_timer[31]_LessThan_1_o_inv
-                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv1_cy
-    SLICE_X11Y58.C3      net (fanout=17)       2.310   SEG_Scan/Mcompar_n0000_cy<6>
-    SLICE_X11Y58.C       Tilo                  0.259   SEG_Scan/scan_sel<2>
-                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv_INV_0
-    SLICE_X11Y58.CE      net (fanout=1)        0.348   SEG_Scan/Mcompar_n0000_cy<6>_inv
-    SLICE_X11Y58.CLK     Tceck                 0.405   SEG_Scan/scan_sel<2>
-                                                       SEG_Scan/scan_sel_1
-    -------------------------------------------------  ---------------------------
-    Total                                      5.795ns (1.965ns logic, 3.830ns route)
-                                                       (33.9% logic, 66.1% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     14.362ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               SEG_Scan/scan_timer_4 (FF)
-  Destination:          SEG_Scan/scan_sel_1 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      5.632ns (Levels of Logic = 3)
-  Clock Path Skew:      0.029ns (0.683 - 0.654)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: SEG_Scan/scan_timer_4 to SEG_Scan/scan_sel_1
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X8Y33.AQ       Tcko                  0.525   SEG_Scan/scan_timer<7>
-                                                       SEG_Scan/scan_timer_4
-    SLICE_X8Y30.A1       net (fanout=2)        0.998   SEG_Scan/scan_timer<4>
-    SLICE_X8Y30.COUT     Topcya                0.482   SEG_Scan/Mcompar_n0000_cy<3>
-                                                       SEG_Scan/Mcompar_n0000_lutdi
-                                                       SEG_Scan/Mcompar_n0000_cy<3>
-    SLICE_X8Y31.CIN      net (fanout=1)        0.003   SEG_Scan/Mcompar_n0000_cy<3>
-    SLICE_X8Y31.CMUX     Tcinc                 0.302   SEG_Scan/GND_5_o_scan_timer[31]_LessThan_1_o_inv
-                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv1_cy
-    SLICE_X11Y58.C3      net (fanout=17)       2.310   SEG_Scan/Mcompar_n0000_cy<6>
-    SLICE_X11Y58.C       Tilo                  0.259   SEG_Scan/scan_sel<2>
-                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv_INV_0
-    SLICE_X11Y58.CE      net (fanout=1)        0.348   SEG_Scan/Mcompar_n0000_cy<6>_inv
-    SLICE_X11Y58.CLK     Tceck                 0.405   SEG_Scan/scan_sel<2>
-                                                       SEG_Scan/scan_sel_1
-    -------------------------------------------------  ---------------------------
-    Total                                      5.632ns (1.973ns logic, 3.659ns route)
-                                                       (35.0% logic, 65.0% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     14.370ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               SEG_Scan/scan_timer_4 (FF)
-  Destination:          SEG_Scan/scan_sel_1 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      5.624ns (Levels of Logic = 3)
-  Clock Path Skew:      0.029ns (0.683 - 0.654)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: SEG_Scan/scan_timer_4 to SEG_Scan/scan_sel_1
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X8Y33.AQ       Tcko                  0.525   SEG_Scan/scan_timer<7>
-                                                       SEG_Scan/scan_timer_4
-    SLICE_X8Y30.A1       net (fanout=2)        0.998   SEG_Scan/scan_timer<4>
-    SLICE_X8Y30.COUT     Topcya                0.474   SEG_Scan/Mcompar_n0000_cy<3>
-                                                       SEG_Scan/Mcompar_n0000_lut<0>
-                                                       SEG_Scan/Mcompar_n0000_cy<3>
-    SLICE_X8Y31.CIN      net (fanout=1)        0.003   SEG_Scan/Mcompar_n0000_cy<3>
-    SLICE_X8Y31.CMUX     Tcinc                 0.302   SEG_Scan/GND_5_o_scan_timer[31]_LessThan_1_o_inv
-                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv1_cy
-    SLICE_X11Y58.C3      net (fanout=17)       2.310   SEG_Scan/Mcompar_n0000_cy<6>
-    SLICE_X11Y58.C       Tilo                  0.259   SEG_Scan/scan_sel<2>
-                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv_INV_0
-    SLICE_X11Y58.CE      net (fanout=1)        0.348   SEG_Scan/Mcompar_n0000_cy<6>_inv
-    SLICE_X11Y58.CLK     Tceck                 0.405   SEG_Scan/scan_sel<2>
-                                                       SEG_Scan/scan_sel_1
-    -------------------------------------------------  ---------------------------
-    Total                                      5.624ns (1.965ns logic, 3.659ns route)
-                                                       (34.9% logic, 65.1% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point SEG_Scan/scan_sel_2 (SLICE_X11Y58.CE), 30 paths
---------------------------------------------------------------------------------
-Slack (setup path):     14.214ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               SEG_Scan/scan_timer_0 (FF)
-  Destination:          SEG_Scan/scan_sel_2 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      5.780ns (Levels of Logic = 3)
-  Clock Path Skew:      0.029ns (0.683 - 0.654)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: SEG_Scan/scan_timer_0 to SEG_Scan/scan_sel_2
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X8Y32.AQ       Tcko                  0.525   SEG_Scan/scan_timer<3>
-                                                       SEG_Scan/scan_timer_0
-    SLICE_X8Y30.A2       net (fanout=2)        1.169   SEG_Scan/scan_timer<0>
-    SLICE_X8Y30.COUT     Topcya                0.474   SEG_Scan/Mcompar_n0000_cy<3>
-                                                       SEG_Scan/Mcompar_n0000_lut<0>
-                                                       SEG_Scan/Mcompar_n0000_cy<3>
-    SLICE_X8Y31.CIN      net (fanout=1)        0.003   SEG_Scan/Mcompar_n0000_cy<3>
-    SLICE_X8Y31.CMUX     Tcinc                 0.302   SEG_Scan/GND_5_o_scan_timer[31]_LessThan_1_o_inv
-                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv1_cy
-    SLICE_X11Y58.C3      net (fanout=17)       2.310   SEG_Scan/Mcompar_n0000_cy<6>
-    SLICE_X11Y58.C       Tilo                  0.259   SEG_Scan/scan_sel<2>
-                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv_INV_0
-    SLICE_X11Y58.CE      net (fanout=1)        0.348   SEG_Scan/Mcompar_n0000_cy<6>_inv
-    SLICE_X11Y58.CLK     Tceck                 0.390   SEG_Scan/scan_sel<2>
-                                                       SEG_Scan/scan_sel_2
-    -------------------------------------------------  ---------------------------
-    Total                                      5.780ns (1.950ns logic, 3.830ns route)
-                                                       (33.7% logic, 66.3% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     14.377ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               SEG_Scan/scan_timer_4 (FF)
-  Destination:          SEG_Scan/scan_sel_2 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      5.617ns (Levels of Logic = 3)
-  Clock Path Skew:      0.029ns (0.683 - 0.654)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: SEG_Scan/scan_timer_4 to SEG_Scan/scan_sel_2
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X8Y33.AQ       Tcko                  0.525   SEG_Scan/scan_timer<7>
-                                                       SEG_Scan/scan_timer_4
-    SLICE_X8Y30.A1       net (fanout=2)        0.998   SEG_Scan/scan_timer<4>
-    SLICE_X8Y30.COUT     Topcya                0.482   SEG_Scan/Mcompar_n0000_cy<3>
-                                                       SEG_Scan/Mcompar_n0000_lutdi
-                                                       SEG_Scan/Mcompar_n0000_cy<3>
-    SLICE_X8Y31.CIN      net (fanout=1)        0.003   SEG_Scan/Mcompar_n0000_cy<3>
-    SLICE_X8Y31.CMUX     Tcinc                 0.302   SEG_Scan/GND_5_o_scan_timer[31]_LessThan_1_o_inv
-                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv1_cy
-    SLICE_X11Y58.C3      net (fanout=17)       2.310   SEG_Scan/Mcompar_n0000_cy<6>
-    SLICE_X11Y58.C       Tilo                  0.259   SEG_Scan/scan_sel<2>
-                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv_INV_0
-    SLICE_X11Y58.CE      net (fanout=1)        0.348   SEG_Scan/Mcompar_n0000_cy<6>_inv
-    SLICE_X11Y58.CLK     Tceck                 0.390   SEG_Scan/scan_sel<2>
-                                                       SEG_Scan/scan_sel_2
-    -------------------------------------------------  ---------------------------
-    Total                                      5.617ns (1.958ns logic, 3.659ns route)
-                                                       (34.9% logic, 65.1% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     14.385ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               SEG_Scan/scan_timer_4 (FF)
-  Destination:          SEG_Scan/scan_sel_2 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      5.609ns (Levels of Logic = 3)
-  Clock Path Skew:      0.029ns (0.683 - 0.654)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: SEG_Scan/scan_timer_4 to SEG_Scan/scan_sel_2
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X8Y33.AQ       Tcko                  0.525   SEG_Scan/scan_timer<7>
-                                                       SEG_Scan/scan_timer_4
-    SLICE_X8Y30.A1       net (fanout=2)        0.998   SEG_Scan/scan_timer<4>
-    SLICE_X8Y30.COUT     Topcya                0.474   SEG_Scan/Mcompar_n0000_cy<3>
-                                                       SEG_Scan/Mcompar_n0000_lut<0>
-                                                       SEG_Scan/Mcompar_n0000_cy<3>
-    SLICE_X8Y31.CIN      net (fanout=1)        0.003   SEG_Scan/Mcompar_n0000_cy<3>
-    SLICE_X8Y31.CMUX     Tcinc                 0.302   SEG_Scan/GND_5_o_scan_timer[31]_LessThan_1_o_inv
-                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv1_cy
-    SLICE_X11Y58.C3      net (fanout=17)       2.310   SEG_Scan/Mcompar_n0000_cy<6>
-    SLICE_X11Y58.C       Tilo                  0.259   SEG_Scan/scan_sel<2>
-                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv_INV_0
-    SLICE_X11Y58.CE      net (fanout=1)        0.348   SEG_Scan/Mcompar_n0000_cy<6>_inv
-    SLICE_X11Y58.CLK     Tceck                 0.390   SEG_Scan/scan_sel<2>
-                                                       SEG_Scan/scan_sel_2
-    -------------------------------------------------  ---------------------------
-    Total                                      5.609ns (1.950ns logic, 3.659ns route)
-                                                       (34.8% logic, 65.2% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point SEG_Scan/scan_sel_0 (SLICE_X11Y58.CE), 30 paths
---------------------------------------------------------------------------------
-Slack (setup path):     14.239ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               SEG_Scan/scan_timer_0 (FF)
-  Destination:          SEG_Scan/scan_sel_0 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      5.755ns (Levels of Logic = 3)
-  Clock Path Skew:      0.029ns (0.683 - 0.654)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: SEG_Scan/scan_timer_0 to SEG_Scan/scan_sel_0
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X8Y32.AQ       Tcko                  0.525   SEG_Scan/scan_timer<3>
-                                                       SEG_Scan/scan_timer_0
-    SLICE_X8Y30.A2       net (fanout=2)        1.169   SEG_Scan/scan_timer<0>
-    SLICE_X8Y30.COUT     Topcya                0.474   SEG_Scan/Mcompar_n0000_cy<3>
-                                                       SEG_Scan/Mcompar_n0000_lut<0>
-                                                       SEG_Scan/Mcompar_n0000_cy<3>
-    SLICE_X8Y31.CIN      net (fanout=1)        0.003   SEG_Scan/Mcompar_n0000_cy<3>
-    SLICE_X8Y31.CMUX     Tcinc                 0.302   SEG_Scan/GND_5_o_scan_timer[31]_LessThan_1_o_inv
-                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv1_cy
-    SLICE_X11Y58.C3      net (fanout=17)       2.310   SEG_Scan/Mcompar_n0000_cy<6>
-    SLICE_X11Y58.C       Tilo                  0.259   SEG_Scan/scan_sel<2>
-                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv_INV_0
-    SLICE_X11Y58.CE      net (fanout=1)        0.348   SEG_Scan/Mcompar_n0000_cy<6>_inv
-    SLICE_X11Y58.CLK     Tceck                 0.365   SEG_Scan/scan_sel<2>
-                                                       SEG_Scan/scan_sel_0
-    -------------------------------------------------  ---------------------------
-    Total                                      5.755ns (1.925ns logic, 3.830ns route)
-                                                       (33.4% logic, 66.6% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     14.402ns (requirement - (data path - clock path skew + uncertainty))
   Source:               SEG_Scan/scan_timer_4 (FF)
   Destination:          SEG_Scan/scan_sel_0 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      5.592ns (Levels of Logic = 3)
-  Clock Path Skew:      0.029ns (0.683 - 0.654)
+  Data Path Delay:      5.799ns (Levels of Logic = 3)
+  Clock Path Skew:      0.033ns (0.767 - 0.734)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -343,32 +97,32 @@ Slack (setup path):     14.402ns (requirement - (data path - clock path skew + u
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X8Y33.AQ       Tcko                  0.525   SEG_Scan/scan_timer<7>
+    SLICE_X8Y23.AQ       Tcko                  0.525   SEG_Scan/scan_timer<7>
                                                        SEG_Scan/scan_timer_4
-    SLICE_X8Y30.A1       net (fanout=2)        0.998   SEG_Scan/scan_timer<4>
-    SLICE_X8Y30.COUT     Topcya                0.482   SEG_Scan/Mcompar_n0000_cy<3>
+    SLICE_X8Y20.A1       net (fanout=2)        0.975   SEG_Scan/scan_timer<4>
+    SLICE_X8Y20.COUT     Topcya                0.482   SEG_Scan/Mcompar_n0000_cy<3>
                                                        SEG_Scan/Mcompar_n0000_lutdi
                                                        SEG_Scan/Mcompar_n0000_cy<3>
-    SLICE_X8Y31.CIN      net (fanout=1)        0.003   SEG_Scan/Mcompar_n0000_cy<3>
-    SLICE_X8Y31.CMUX     Tcinc                 0.302   SEG_Scan/GND_5_o_scan_timer[31]_LessThan_1_o_inv
+    SLICE_X8Y21.CIN      net (fanout=1)        0.003   SEG_Scan/Mcompar_n0000_cy<3>
+    SLICE_X8Y21.CMUX     Tcinc                 0.302   SEG_Scan/GND_5_o_scan_timer[31]_LessThan_1_o_inv
                                                        SEG_Scan/Mcompar_n0000_cy<6>_inv1_cy
-    SLICE_X11Y58.C3      net (fanout=17)       2.310   SEG_Scan/Mcompar_n0000_cy<6>
-    SLICE_X11Y58.C       Tilo                  0.259   SEG_Scan/scan_sel<2>
+    SLICE_X8Y56.C3       net (fanout=17)       2.801   SEG_Scan/Mcompar_n0000_cy<6>
+    SLICE_X8Y56.C        Tilo                  0.255   SEG_Scan/scan_sel<2>
                                                        SEG_Scan/Mcompar_n0000_cy<6>_inv_INV_0
-    SLICE_X11Y58.CE      net (fanout=1)        0.348   SEG_Scan/Mcompar_n0000_cy<6>_inv
-    SLICE_X11Y58.CLK     Tceck                 0.365   SEG_Scan/scan_sel<2>
+    SLICE_X8Y56.CE       net (fanout=1)        0.143   SEG_Scan/Mcompar_n0000_cy<6>_inv
+    SLICE_X8Y56.CLK      Tceck                 0.313   SEG_Scan/scan_sel<2>
                                                        SEG_Scan/scan_sel_0
     -------------------------------------------------  ---------------------------
-    Total                                      5.592ns (1.933ns logic, 3.659ns route)
-                                                       (34.6% logic, 65.4% route)
+    Total                                      5.799ns (1.877ns logic, 3.922ns route)
+                                                       (32.4% logic, 67.6% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     14.410ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               SEG_Scan/scan_timer_4 (FF)
+Slack (setup path):     14.200ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               SEG_Scan/scan_timer_5 (FF)
   Destination:          SEG_Scan/scan_sel_0 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      5.584ns (Levels of Logic = 3)
-  Clock Path Skew:      0.029ns (0.683 - 0.654)
+  Data Path Delay:      5.798ns (Levels of Logic = 3)
+  Clock Path Skew:      0.033ns (0.767 - 0.734)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -379,114 +133,361 @@ Slack (setup path):     14.410ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: SEG_Scan/scan_timer_4 to SEG_Scan/scan_sel_0
+  Maximum Data Path at Slow Process Corner: SEG_Scan/scan_timer_5 to SEG_Scan/scan_sel_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X8Y33.AQ       Tcko                  0.525   SEG_Scan/scan_timer<7>
-                                                       SEG_Scan/scan_timer_4
-    SLICE_X8Y30.A1       net (fanout=2)        0.998   SEG_Scan/scan_timer<4>
-    SLICE_X8Y30.COUT     Topcya                0.474   SEG_Scan/Mcompar_n0000_cy<3>
-                                                       SEG_Scan/Mcompar_n0000_lut<0>
+    SLICE_X8Y23.BQ       Tcko                  0.525   SEG_Scan/scan_timer<7>
+                                                       SEG_Scan/scan_timer_5
+    SLICE_X8Y20.B4       net (fanout=2)        0.973   SEG_Scan/scan_timer<5>
+    SLICE_X8Y20.COUT     Topcyb                0.483   SEG_Scan/Mcompar_n0000_cy<3>
+                                                       SEG_Scan/Mcompar_n0000_lut<1>
                                                        SEG_Scan/Mcompar_n0000_cy<3>
-    SLICE_X8Y31.CIN      net (fanout=1)        0.003   SEG_Scan/Mcompar_n0000_cy<3>
-    SLICE_X8Y31.CMUX     Tcinc                 0.302   SEG_Scan/GND_5_o_scan_timer[31]_LessThan_1_o_inv
+    SLICE_X8Y21.CIN      net (fanout=1)        0.003   SEG_Scan/Mcompar_n0000_cy<3>
+    SLICE_X8Y21.CMUX     Tcinc                 0.302   SEG_Scan/GND_5_o_scan_timer[31]_LessThan_1_o_inv
                                                        SEG_Scan/Mcompar_n0000_cy<6>_inv1_cy
-    SLICE_X11Y58.C3      net (fanout=17)       2.310   SEG_Scan/Mcompar_n0000_cy<6>
-    SLICE_X11Y58.C       Tilo                  0.259   SEG_Scan/scan_sel<2>
+    SLICE_X8Y56.C3       net (fanout=17)       2.801   SEG_Scan/Mcompar_n0000_cy<6>
+    SLICE_X8Y56.C        Tilo                  0.255   SEG_Scan/scan_sel<2>
                                                        SEG_Scan/Mcompar_n0000_cy<6>_inv_INV_0
-    SLICE_X11Y58.CE      net (fanout=1)        0.348   SEG_Scan/Mcompar_n0000_cy<6>_inv
-    SLICE_X11Y58.CLK     Tceck                 0.365   SEG_Scan/scan_sel<2>
+    SLICE_X8Y56.CE       net (fanout=1)        0.143   SEG_Scan/Mcompar_n0000_cy<6>_inv
+    SLICE_X8Y56.CLK      Tceck                 0.313   SEG_Scan/scan_sel<2>
                                                        SEG_Scan/scan_sel_0
     -------------------------------------------------  ---------------------------
-    Total                                      5.584ns (1.925ns logic, 3.659ns route)
-                                                       (34.5% logic, 65.5% route)
+    Total                                      5.798ns (1.878ns logic, 3.920ns route)
+                                                       (32.4% logic, 67.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point SEG_Scan/scan_sel_1 (SLICE_X8Y56.CE), 30 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.210ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               SEG_Scan/scan_timer_8 (FF)
+  Destination:          SEG_Scan/scan_sel_1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.788ns (Levels of Logic = 3)
+  Clock Path Skew:      0.033ns (0.767 - 0.734)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: SEG_Scan/scan_timer_8 to SEG_Scan/scan_sel_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y24.AQ       Tcko                  0.525   SEG_Scan/scan_timer<11>
+                                                       SEG_Scan/scan_timer_8
+    SLICE_X8Y20.B2       net (fanout=2)        0.988   SEG_Scan/scan_timer<8>
+    SLICE_X8Y20.COUT     Topcyb                0.483   SEG_Scan/Mcompar_n0000_cy<3>
+                                                       SEG_Scan/Mcompar_n0000_lut<1>
+                                                       SEG_Scan/Mcompar_n0000_cy<3>
+    SLICE_X8Y21.CIN      net (fanout=1)        0.003   SEG_Scan/Mcompar_n0000_cy<3>
+    SLICE_X8Y21.CMUX     Tcinc                 0.302   SEG_Scan/GND_5_o_scan_timer[31]_LessThan_1_o_inv
+                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv1_cy
+    SLICE_X8Y56.C3       net (fanout=17)       2.801   SEG_Scan/Mcompar_n0000_cy<6>
+    SLICE_X8Y56.C        Tilo                  0.255   SEG_Scan/scan_sel<2>
+                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv_INV_0
+    SLICE_X8Y56.CE       net (fanout=1)        0.143   SEG_Scan/Mcompar_n0000_cy<6>_inv
+    SLICE_X8Y56.CLK      Tceck                 0.288   SEG_Scan/scan_sel<2>
+                                                       SEG_Scan/scan_sel_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.788ns (1.853ns logic, 3.935ns route)
+                                                       (32.0% logic, 68.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.224ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               SEG_Scan/scan_timer_4 (FF)
+  Destination:          SEG_Scan/scan_sel_1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.774ns (Levels of Logic = 3)
+  Clock Path Skew:      0.033ns (0.767 - 0.734)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: SEG_Scan/scan_timer_4 to SEG_Scan/scan_sel_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y23.AQ       Tcko                  0.525   SEG_Scan/scan_timer<7>
+                                                       SEG_Scan/scan_timer_4
+    SLICE_X8Y20.A1       net (fanout=2)        0.975   SEG_Scan/scan_timer<4>
+    SLICE_X8Y20.COUT     Topcya                0.482   SEG_Scan/Mcompar_n0000_cy<3>
+                                                       SEG_Scan/Mcompar_n0000_lutdi
+                                                       SEG_Scan/Mcompar_n0000_cy<3>
+    SLICE_X8Y21.CIN      net (fanout=1)        0.003   SEG_Scan/Mcompar_n0000_cy<3>
+    SLICE_X8Y21.CMUX     Tcinc                 0.302   SEG_Scan/GND_5_o_scan_timer[31]_LessThan_1_o_inv
+                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv1_cy
+    SLICE_X8Y56.C3       net (fanout=17)       2.801   SEG_Scan/Mcompar_n0000_cy<6>
+    SLICE_X8Y56.C        Tilo                  0.255   SEG_Scan/scan_sel<2>
+                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv_INV_0
+    SLICE_X8Y56.CE       net (fanout=1)        0.143   SEG_Scan/Mcompar_n0000_cy<6>_inv
+    SLICE_X8Y56.CLK      Tceck                 0.288   SEG_Scan/scan_sel<2>
+                                                       SEG_Scan/scan_sel_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.774ns (1.852ns logic, 3.922ns route)
+                                                       (32.1% logic, 67.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.225ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               SEG_Scan/scan_timer_5 (FF)
+  Destination:          SEG_Scan/scan_sel_1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.773ns (Levels of Logic = 3)
+  Clock Path Skew:      0.033ns (0.767 - 0.734)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: SEG_Scan/scan_timer_5 to SEG_Scan/scan_sel_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y23.BQ       Tcko                  0.525   SEG_Scan/scan_timer<7>
+                                                       SEG_Scan/scan_timer_5
+    SLICE_X8Y20.B4       net (fanout=2)        0.973   SEG_Scan/scan_timer<5>
+    SLICE_X8Y20.COUT     Topcyb                0.483   SEG_Scan/Mcompar_n0000_cy<3>
+                                                       SEG_Scan/Mcompar_n0000_lut<1>
+                                                       SEG_Scan/Mcompar_n0000_cy<3>
+    SLICE_X8Y21.CIN      net (fanout=1)        0.003   SEG_Scan/Mcompar_n0000_cy<3>
+    SLICE_X8Y21.CMUX     Tcinc                 0.302   SEG_Scan/GND_5_o_scan_timer[31]_LessThan_1_o_inv
+                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv1_cy
+    SLICE_X8Y56.C3       net (fanout=17)       2.801   SEG_Scan/Mcompar_n0000_cy<6>
+    SLICE_X8Y56.C        Tilo                  0.255   SEG_Scan/scan_sel<2>
+                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv_INV_0
+    SLICE_X8Y56.CE       net (fanout=1)        0.143   SEG_Scan/Mcompar_n0000_cy<6>_inv
+    SLICE_X8Y56.CLK      Tceck                 0.288   SEG_Scan/scan_sel<2>
+                                                       SEG_Scan/scan_sel_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.773ns (1.853ns logic, 3.920ns route)
+                                                       (32.1% logic, 67.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point SEG_Scan/scan_sel_2 (SLICE_X8Y56.CE), 30 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.245ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               SEG_Scan/scan_timer_8 (FF)
+  Destination:          SEG_Scan/scan_sel_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.753ns (Levels of Logic = 3)
+  Clock Path Skew:      0.033ns (0.767 - 0.734)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: SEG_Scan/scan_timer_8 to SEG_Scan/scan_sel_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y24.AQ       Tcko                  0.525   SEG_Scan/scan_timer<11>
+                                                       SEG_Scan/scan_timer_8
+    SLICE_X8Y20.B2       net (fanout=2)        0.988   SEG_Scan/scan_timer<8>
+    SLICE_X8Y20.COUT     Topcyb                0.483   SEG_Scan/Mcompar_n0000_cy<3>
+                                                       SEG_Scan/Mcompar_n0000_lut<1>
+                                                       SEG_Scan/Mcompar_n0000_cy<3>
+    SLICE_X8Y21.CIN      net (fanout=1)        0.003   SEG_Scan/Mcompar_n0000_cy<3>
+    SLICE_X8Y21.CMUX     Tcinc                 0.302   SEG_Scan/GND_5_o_scan_timer[31]_LessThan_1_o_inv
+                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv1_cy
+    SLICE_X8Y56.C3       net (fanout=17)       2.801   SEG_Scan/Mcompar_n0000_cy<6>
+    SLICE_X8Y56.C        Tilo                  0.255   SEG_Scan/scan_sel<2>
+                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv_INV_0
+    SLICE_X8Y56.CE       net (fanout=1)        0.143   SEG_Scan/Mcompar_n0000_cy<6>_inv
+    SLICE_X8Y56.CLK      Tceck                 0.253   SEG_Scan/scan_sel<2>
+                                                       SEG_Scan/scan_sel_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.753ns (1.818ns logic, 3.935ns route)
+                                                       (31.6% logic, 68.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.259ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               SEG_Scan/scan_timer_4 (FF)
+  Destination:          SEG_Scan/scan_sel_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.739ns (Levels of Logic = 3)
+  Clock Path Skew:      0.033ns (0.767 - 0.734)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: SEG_Scan/scan_timer_4 to SEG_Scan/scan_sel_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y23.AQ       Tcko                  0.525   SEG_Scan/scan_timer<7>
+                                                       SEG_Scan/scan_timer_4
+    SLICE_X8Y20.A1       net (fanout=2)        0.975   SEG_Scan/scan_timer<4>
+    SLICE_X8Y20.COUT     Topcya                0.482   SEG_Scan/Mcompar_n0000_cy<3>
+                                                       SEG_Scan/Mcompar_n0000_lutdi
+                                                       SEG_Scan/Mcompar_n0000_cy<3>
+    SLICE_X8Y21.CIN      net (fanout=1)        0.003   SEG_Scan/Mcompar_n0000_cy<3>
+    SLICE_X8Y21.CMUX     Tcinc                 0.302   SEG_Scan/GND_5_o_scan_timer[31]_LessThan_1_o_inv
+                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv1_cy
+    SLICE_X8Y56.C3       net (fanout=17)       2.801   SEG_Scan/Mcompar_n0000_cy<6>
+    SLICE_X8Y56.C        Tilo                  0.255   SEG_Scan/scan_sel<2>
+                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv_INV_0
+    SLICE_X8Y56.CE       net (fanout=1)        0.143   SEG_Scan/Mcompar_n0000_cy<6>_inv
+    SLICE_X8Y56.CLK      Tceck                 0.253   SEG_Scan/scan_sel<2>
+                                                       SEG_Scan/scan_sel_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.739ns (1.817ns logic, 3.922ns route)
+                                                       (31.7% logic, 68.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.260ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               SEG_Scan/scan_timer_5 (FF)
+  Destination:          SEG_Scan/scan_sel_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.738ns (Levels of Logic = 3)
+  Clock Path Skew:      0.033ns (0.767 - 0.734)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: SEG_Scan/scan_timer_5 to SEG_Scan/scan_sel_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y23.BQ       Tcko                  0.525   SEG_Scan/scan_timer<7>
+                                                       SEG_Scan/scan_timer_5
+    SLICE_X8Y20.B4       net (fanout=2)        0.973   SEG_Scan/scan_timer<5>
+    SLICE_X8Y20.COUT     Topcyb                0.483   SEG_Scan/Mcompar_n0000_cy<3>
+                                                       SEG_Scan/Mcompar_n0000_lut<1>
+                                                       SEG_Scan/Mcompar_n0000_cy<3>
+    SLICE_X8Y21.CIN      net (fanout=1)        0.003   SEG_Scan/Mcompar_n0000_cy<3>
+    SLICE_X8Y21.CMUX     Tcinc                 0.302   SEG_Scan/GND_5_o_scan_timer[31]_LessThan_1_o_inv
+                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv1_cy
+    SLICE_X8Y56.C3       net (fanout=17)       2.801   SEG_Scan/Mcompar_n0000_cy<6>
+    SLICE_X8Y56.C        Tilo                  0.255   SEG_Scan/scan_sel<2>
+                                                       SEG_Scan/Mcompar_n0000_cy<6>_inv_INV_0
+    SLICE_X8Y56.CE       net (fanout=1)        0.143   SEG_Scan/Mcompar_n0000_cy<6>_inv
+    SLICE_X8Y56.CLK      Tceck                 0.253   SEG_Scan/scan_sel<2>
+                                                       SEG_Scan/scan_sel_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.738ns (1.818ns logic, 3.920ns route)
+                                                       (31.7% logic, 68.3% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point en_1Hz (SLICE_X8Y48.CE), 1 path
+Paths for end point KEY_Debounce_3/q_reg_7 (SLICE_X18Y41.D6), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.326ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               clk_en (FF)
-  Destination:          en_1Hz (FF)
+Slack (hold path):      0.420ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               KEY_Debounce_3/q_reg_7 (FF)
+  Destination:          KEY_Debounce_3/q_reg_7 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.398ns (Levels of Logic = 0)
-  Clock Path Skew:      0.072ns (0.392 - 0.320)
-  Source Clock:         clk_BUFGP rising at 20.000ns
-  Destination Clock:    clk_BUFGP rising at 20.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: clk_en to en_1Hz
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X11Y44.BQ      Tcko                  0.198   clk_en
-                                                       clk_en
-    SLICE_X8Y48.CE       net (fanout=13)       0.292   clk_en
-    SLICE_X8Y48.CLK      Tckce       (-Th)     0.092   en_1Hz
-                                                       en_1Hz
-    -------------------------------------------------  ---------------------------
-    Total                                      0.398ns (0.106ns logic, 0.292ns route)
-                                                       (26.6% logic, 73.4% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point hour_set (SLICE_X10Y46.A6), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.416ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               hour_set (FF)
-  Destination:          hour_set (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.416ns (Levels of Logic = 1)
+  Data Path Delay:      0.420ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         clk_BUFGP rising at 20.000ns
   Destination Clock:    clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: hour_set to hour_set
+  Minimum Data Path at Fast Process Corner: KEY_Debounce_3/q_reg_7 to KEY_Debounce_3/q_reg_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X10Y46.AQ      Tcko                  0.200   hour_set
-                                                       hour_set
-    SLICE_X10Y46.A6      net (fanout=2)        0.026   hour_set
-    SLICE_X10Y46.CLK     Tah         (-Th)    -0.190   hour_set
-                                                       key[3]_hour_set_Select_17_o1
-                                                       hour_set
+    SLICE_X18Y41.DQ      Tcko                  0.200   KEY_Debounce_3/q_reg<7>
+                                                       KEY_Debounce_3/q_reg_7
+    SLICE_X18Y41.D6      net (fanout=3)        0.030   KEY_Debounce_3/q_reg<7>
+    SLICE_X18Y41.CLK     Tah         (-Th)    -0.190   KEY_Debounce_3/q_reg<7>
+                                                       KEY_Debounce_3/q_next<7>1
+                                                       KEY_Debounce_3/q_reg_7
     -------------------------------------------------  ---------------------------
-    Total                                      0.416ns (0.390ns logic, 0.026ns route)
-                                                       (93.8% logic, 6.3% route)
+    Total                                      0.420ns (0.390ns logic, 0.030ns route)
+                                                       (92.9% logic, 7.1% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point Counter_1/data_1_1 (SLICE_X9Y53.B5), 1 path
+Paths for end point KEY_Debounce_3/q_reg_11 (SLICE_X18Y42.D6), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.427ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Counter_1/data_1_2 (FF)
-  Destination:          Counter_1/data_1_1 (FF)
+Slack (hold path):      0.420ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               KEY_Debounce_3/q_reg_11 (FF)
+  Destination:          KEY_Debounce_3/q_reg_11 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.427ns (Levels of Logic = 1)
+  Data Path Delay:      0.420ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         clk_BUFGP rising at 20.000ns
   Destination Clock:    clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: Counter_1/data_1_2 to Counter_1/data_1_1
+  Minimum Data Path at Fast Process Corner: KEY_Debounce_3/q_reg_11 to KEY_Debounce_3/q_reg_11
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X9Y53.BQ       Tcko                  0.198   Counter_1/data_1<2>
-                                                       Counter_1/data_1_2
-    SLICE_X9Y53.B5       net (fanout=9)        0.074   Counter_1/data_1<2>
-    SLICE_X9Y53.CLK      Tah         (-Th)    -0.155   Counter_1/data_1<2>
-                                                       Counter_1/Mcount_data_1_xor<1>11
-                                                       Counter_1/data_1_1
+    SLICE_X18Y42.DQ      Tcko                  0.200   KEY_Debounce_3/q_reg<11>
+                                                       KEY_Debounce_3/q_reg_11
+    SLICE_X18Y42.D6      net (fanout=3)        0.030   KEY_Debounce_3/q_reg<11>
+    SLICE_X18Y42.CLK     Tah         (-Th)    -0.190   KEY_Debounce_3/q_reg<11>
+                                                       KEY_Debounce_3/q_next<11>1
+                                                       KEY_Debounce_3/q_reg_11
     -------------------------------------------------  ---------------------------
-    Total                                      0.427ns (0.353ns logic, 0.074ns route)
-                                                       (82.7% logic, 17.3% route)
+    Total                                      0.420ns (0.390ns logic, 0.030ns route)
+                                                       (92.9% logic, 7.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point KEY_Debounce_3/q_reg_15 (SLICE_X18Y43.D6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.420ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               KEY_Debounce_3/q_reg_15 (FF)
+  Destination:          KEY_Debounce_3/q_reg_15 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.420ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: KEY_Debounce_3/q_reg_15 to KEY_Debounce_3/q_reg_15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y43.DQ      Tcko                  0.200   KEY_Debounce_3/q_reg<15>
+                                                       KEY_Debounce_3/q_reg_15
+    SLICE_X18Y43.D6      net (fanout=3)        0.030   KEY_Debounce_3/q_reg<15>
+    SLICE_X18Y43.CLK     Tah         (-Th)    -0.190   KEY_Debounce_3/q_reg<15>
+                                                       KEY_Debounce_3/q_next<15>1
+                                                       KEY_Debounce_3/q_reg_15
+    -------------------------------------------------  ---------------------------
+    Total                                      0.420ns (0.390ns logic, 0.030ns route)
+                                                       (92.9% logic, 7.1% route)
 
 --------------------------------------------------------------------------------
 
@@ -505,7 +506,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: SEG_Scan/scan_timer<3>/CLK
   Logical resource: SEG_Scan/scan_timer_0/CK
-  Location pin: SLICE_X8Y32.CLK
+  Location pin: SLICE_X8Y22.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - (min high pulse limit / (high pulse / period)))
@@ -514,7 +515,7 @@ Slack: 19.520ns (period - (min high pulse limit / (high pulse / period)))
   High pulse limit: 0.240ns (Trpw)
   Physical resource: SEG_Scan/scan_timer<3>/SR
   Logical resource: SEG_Scan/scan_timer_0/SR
-  Location pin: SLICE_X8Y32.SR
+  Location pin: SLICE_X8Y22.SR
   Clock network: Counter_0/rst_n_inv
 --------------------------------------------------------------------------------
 
@@ -531,7 +532,7 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    5.801|         |         |         |
+clk            |    5.815|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -540,23 +541,23 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 31113 paths, 0 nets, and 1192 connections
+Constraints cover 23820 paths, 0 nets, and 1475 connections
 
 Design statistics:
-   Minimum period:   5.801ns{1}   (Maximum frequency: 172.384MHz)
+   Minimum period:   5.815ns{1}   (Maximum frequency: 171.969MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Tue Jun 11 16:40:18 2019 
+Analysis completed Tue Jun 18 23:36:58 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4573 MB
+Peak Memory Usage: 4585 MB
 
 
 

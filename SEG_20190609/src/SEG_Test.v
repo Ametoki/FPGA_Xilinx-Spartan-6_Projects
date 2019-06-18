@@ -29,23 +29,9 @@ module SEG_Test(
 	output[7:0] seg_data
     );
 
-reg[31:0] timer_lmt;
-reg clk_en;
-reg sec_set;
-reg min_set;
-reg hour_set;
-wire sec_set_n;
-wire min_set_n;
-wire hour_set_n;
-assign sec_set_n = sec_set || en_1Hz;
-assign min_set_n = min_set || t0;
-assign hour_set_n = hour_set || t1;
-initial
-begin
-	timer_lmt <= 32'd49_999_999;
-	clk_en <= 1;
-end
-
+localparam[31:0] timer_lmt = 32'd49_999_999;
+wire clk_en = !PM_Mode;
+reg en_1Hz_en;
 reg[31:0] timer_cnt;
 reg en_1Hz;
 always@(posedge clk or negedge rst_n)
@@ -71,37 +57,54 @@ begin
 end
 wire[3:0] count0;
 wire[3:0] count1;
-wire t0;
+wire co_0;
+wire do_0;
+reg Freq_Key1_P;
+reg Freq_Key1_M;
+reg Freq_Key2_P;
+reg Freq_Key2_M;
+reg Freq_Key3_P;
+reg Freq_Key3_M;
 Counter_M60 Counter_0(
 	.clk   (clk),
 	.rst_n (rst_n),
-	.en    (sec_set_n),
+	.en    (en_1Hz || Freq_Key1_P),
 	.clr   (1'b0),
 	.data_0(count0),
 	.data_1(count1),
-	.co    (t0)
+	.co    (co_0),
+	.di    (Freq_Key1_M),
+	.d0    (do_0)
 );
 wire[3:0] count2;
 wire[3:0] count3;
-wire t1;
+wire co_1;
+wire do_1;
 Counter_M60 Counter_1(
 	.clk   (clk),
 	.rst_n (rst_n),
-	.en    (min_set_n),
+	.en    (co_0 || Freq_Key2_P),
 	.clr   (1'b0),
 	.data_0(count2),
 	.data_1(count3),
-	.co    (t1)
+	.co    (co_1),
+	.di    (do_0 || Freq_Key2_M),
+	.d0    (do_1)
 );
 wire[3:0] count4;
 wire[3:0] count5;
+wire co_2;
+wire do_2;
 Counter_M24 Counter_2(
     .clk   (clk),
     .rst_n (rst_n),
-    .en    (hour_set_n),
+    .en    (co_1 || Freq_Key3_P),
     .clr   (1'b0),
     .data_0(count4),
-	.data_1(count5)
+	.data_1(count5),
+	.co    (co_2),
+	.di    (d0_1 || Freq_Key3_M),
+	.d0    (do_2)
 );
 wire[7:0] seg_data_0;
 SEG_Decoder SEG_Decoder_0(
@@ -188,43 +191,70 @@ KEY_Debounce KEY_Debounce_3
     .button_out      ()
 );
 wire[3:0] key = {~key4_n, ~key3_n, ~key2_n, ~key1_n};
-always@(posedge clk)
+reg PM_Mode;
+always@(posedge clk or negedge rst_n)
 begin
-	case(key)
+	if(!rst_n)
+	begin
+		Freq_Key1_P <= 0;
+		Freq_Key1_M <= 0;
+		Freq_Key2_P <= 0;
+		Freq_Key2_M <= 0;
+		Freq_Key3_P <= 0;
+		Freq_Key3_M <= 0;
+		PM_Mode <= 0;
+	end
+	else
+	begin
+		case(key)
 		4'b1110:
-		if(!clk_en)
 		begin
-			hour_set <= 1;
-		end
-		else
-		begin
-			if(timer_lmt == 32'd49_999_999)
+			if(!PM_Mode)
 			begin
-				timer_lmt <= 32'd49_999;//change clk rate to 1000 times
+				Freq_Key3_P <= 1'b1;
 			end
 			else
 			begin
-				timer_lmt <= 32'd49_999_999;
+				Freq_Key3_M <= 1'b1;
 			end
 		end
 		4'b1101:
-		if(!clk_en)
 		begin
-			min_set <= 1;
+			if(!PM_Mode)
+			begin
+				Freq_Key2_P <= 1'b1;
+			end
+			else
+			begin
+				Freq_Key2_M <= 1'b1;
+			end
 		end
 		4'b1011:
-		if(!clk_en)
 		begin
-			sec_set <= 1;
+			if(!PM_Mode)
+			begin
+				Freq_Key1_P <= 1'b1;
+			end
+			else
+			begin
+				Freq_Key1_M <= 1'b1;
+			end
 		end
 		4'b0111:
-			clk_en = !clk_en;//pause or continue
+		begin
+			PM_Mode <= !PM_Mode;
+		end
 		default:
 		begin
-			sec_set <= 0;
-			min_set <= 0;
-			hour_set <= 0;
+			Freq_Key1_P <= 0;
+			Freq_Key1_M <= 0;
+			Freq_Key2_P <= 0;
+			Freq_Key2_M <= 0;
+			Freq_Key3_P <= 0;
+			Freq_Key3_M <= 0;
+			PM_Mode <= PM_Mode;
 		end
-	endcase
+		endcase
+	end
 end
 endmodule

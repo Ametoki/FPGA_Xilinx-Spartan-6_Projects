@@ -1,0 +1,914 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: DS1302_Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DS1302_Top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DS1302_Top"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : DS1302_Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\SPI_Master.v" into library work
+Parsing module <SPI_Master>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_IO.v" into library work
+Parsing module <DS1302_IO>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\SEG_Scan.v" into library work
+Parsing module <SEG_Scan>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\SEG_Decoder.v" into library work
+Parsing module <SEG_Decoder>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302.v" into library work
+Parsing module <DS1302>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\SEG_BCD.v" into library work
+Parsing module <SEG_BCD>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\KEY_Debounce.v" into library work
+Parsing module <KEY_Debounce>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Test.v" into library work
+Parsing module <DS1302_Test>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" into library work
+Parsing module <DS1302_Top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <DS1302_Top>.
+
+Elaborating module <SEG_BCD>.
+
+Elaborating module <SEG_Decoder>.
+
+Elaborating module <SEG_Scan>.
+
+Elaborating module <DS1302_Test>.
+
+Elaborating module <DS1302>.
+
+Elaborating module <DS1302_IO>.
+
+Elaborating module <SPI_Master>.
+
+Elaborating module <KEY_Debounce>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <DS1302_Top>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v".
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 86: Output port <button_posedge> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 86: Output port <button_out> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 95: Output port <button_posedge> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 95: Output port <button_out> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 104: Output port <button_posedge> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 104: Output port <button_out> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 113: Output port <button_posedge> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 113: Output port <button_out> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
+    Found 2-bit register for signal <RTC_Mode>.
+    Found 1-bit register for signal <CH>.
+    Found 8-bit register for signal <write_hour>.
+    Found 8-bit register for signal <write_minute>.
+    Found 8-bit register for signal <write_second>.
+    Found 8-bit register for signal <write_date>.
+    Found 8-bit register for signal <write_month>.
+    Found 8-bit register for signal <write_week>.
+    Found 8-bit register for signal <write_year>.
+    Found 32-bit register for signal <timer_cnt>.
+    Found 8-bit register for signal <seg_en>.
+    Found 4-bit subtractor for signal <write_hour[7]_GND_1_o_sub_13_OUT> created at line 168.
+    Found 4-bit subtractor for signal <write_hour[3]_GND_1_o_sub_14_OUT> created at line 174.
+    Found 4-bit subtractor for signal <write_minute[7]_GND_1_o_sub_31_OUT> created at line 207.
+    Found 4-bit subtractor for signal <write_minute[3]_GND_1_o_sub_32_OUT> created at line 213.
+    Found 4-bit subtractor for signal <write_second[7]_GND_1_o_sub_49_OUT> created at line 246.
+    Found 4-bit subtractor for signal <write_second[3]_GND_1_o_sub_50_OUT> created at line 252.
+    Found 4-bit adder for signal <write_hour[7]_GND_1_o_add_4_OUT> created at line 150.
+    Found 4-bit adder for signal <write_hour[3]_GND_1_o_add_5_OUT> created at line 156.
+    Found 4-bit adder for signal <write_minute[7]_GND_1_o_add_22_OUT> created at line 189.
+    Found 4-bit adder for signal <write_minute[3]_GND_1_o_add_23_OUT> created at line 195.
+    Found 4-bit adder for signal <write_second[7]_GND_1_o_add_40_OUT> created at line 228.
+    Found 4-bit adder for signal <write_second[3]_GND_1_o_add_41_OUT> created at line 234.
+    Found 2-bit adder for signal <RTC_Mode[1]_GND_1_o_add_55_OUT> created at line 271.
+    Found 32-bit adder for signal <timer_cnt[31]_GND_1_o_add_99_OUT> created at line 365.
+    Found 8-bit 4-to-1 multiplexer for signal <write_hour[7]_write_hour[7]_mux_17_OUT> created at line 159.
+    Found 8-bit 4-to-1 multiplexer for signal <write_minute[7]_write_minute[7]_mux_35_OUT> created at line 198.
+    Found 8-bit 4-to-1 multiplexer for signal <write_second[7]_write_second[7]_mux_53_OUT> created at line 237.
+    Found 32-bit comparator greater for signal <n0100> created at line 358
+    Summary:
+	inferred  14 Adder/Subtractor(s).
+	inferred  99 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  19 Multiplexer(s).
+Unit <DS1302_Top> synthesized.
+
+Synthesizing Unit <SEG_BCD>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\SEG_BCD.v".
+    Summary:
+	no macro.
+Unit <SEG_BCD> synthesized.
+
+Synthesizing Unit <SEG_Decoder>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\SEG_Decoder.v".
+    Found 16x8-bit Read Only RAM for signal <seg_data>
+    Summary:
+	inferred   1 RAM(s).
+Unit <SEG_Decoder> synthesized.
+
+Synthesizing Unit <SEG_Scan>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\SEG_Scan.v".
+        SCAN_FREQ = 200
+        CLK_FREQ = 50000000
+        SCAN_COUNT = 41665
+    Found 6-bit register for signal <seg_sel>.
+    Found 8-bit register for signal <seg_data>.
+    Found 4-bit register for signal <scan_sel>.
+    Found 32-bit register for signal <scan_timer>.
+    Found 4-bit adder for signal <scan_sel[3]_GND_4_o_add_2_OUT> created at line 54.
+    Found 32-bit adder for signal <scan_timer[31]_GND_4_o_add_4_OUT> created at line 58.
+    Found 8x6-bit Read Only RAM for signal <_n0059>
+    Found 8-bit 7-to-1 multiplexer for signal <_n0072> created at line 70.
+    Found 32-bit comparator greater for signal <n0000> created at line 48
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  50 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <SEG_Scan> synthesized.
+
+Synthesizing Unit <DS1302_Test>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Test.v".
+    Found 3-bit register for signal <state>.
+    Found 8-bit register for signal <write_second_reg>.
+    Found 8-bit register for signal <write_minute_reg>.
+    Found 8-bit register for signal <write_hour_reg>.
+    Found 8-bit register for signal <write_date_reg>.
+    Found 8-bit register for signal <write_month_reg>.
+    Found 8-bit register for signal <write_week_reg>.
+    Found 8-bit register for signal <write_year_reg>.
+    Found 1-bit register for signal <read_time_req>.
+    Found 1-bit register for signal <write_time_req>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  58 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <DS1302_Test> synthesized.
+
+Synthesizing Unit <DS1302>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302.v".
+    Found 8-bit register for signal <read_second>.
+    Found 8-bit register for signal <read_minute>.
+    Found 8-bit register for signal <read_hour>.
+    Found 8-bit register for signal <read_date>.
+    Found 8-bit register for signal <read_week>.
+    Found 8-bit register for signal <read_month>.
+    Found 8-bit register for signal <read_year>.
+    Found 8-bit register for signal <read_addr>.
+    Found 8-bit register for signal <write_addr>.
+    Found 8-bit register for signal <write_data>.
+    Found 5-bit register for signal <state>.
+    Found 1-bit register for signal <cmd_read>.
+    Found 1-bit register for signal <cmd_write>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 17                                             |
+    | Transitions        | 34                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 16                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00000                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  82 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <DS1302> synthesized.
+
+Synthesizing Unit <DS1302_IO>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_IO.v".
+WARNING:Xst:647 - Input <read_addr<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <read_addr<7:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <write_addr<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <write_addr<7:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 20-bit register for signal <delay_cnt>.
+    Found 8-bit register for signal <read_data>.
+    Found 8-bit register for signal <send_data>.
+    Found 4-bit register for signal <state>.
+    Found 1-bit register for signal <wr_req>.
+    Found 1-bit register for signal <ds1302_io_dir>.
+    Found 1-bit register for signal <CS_reg>.
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 18                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 12                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 20-bit adder for signal <delay_cnt[19]_GND_8_o_add_16_OUT> created at line 124.
+    Found 1-bit tristate buffer for signal <ds1302_io> created at line 59
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  39 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <DS1302_IO> synthesized.
+
+Synthesizing Unit <SPI_Master>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\SPI_Master.v".
+    Found 16-bit register for signal <clk_cnt>.
+    Found 5-bit register for signal <clk_edge_cnt>.
+    Found 8-bit register for signal <MOSI_shift>.
+    Found 8-bit register for signal <MISO_shift>.
+    Found 3-bit register for signal <state>.
+    Found 1-bit register for signal <DCLK_reg>.
+    Found finite state machine <FSM_3> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 8                                              |
+    | Clock              | sys_clk (rising_edge)                          |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <clk_cnt[15]_GND_10_o_add_16_OUT> created at line 117.
+    Found 5-bit adder for signal <clk_edge_cnt[4]_GND_10_o_add_20_OUT> created at line 127.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  38 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <SPI_Master> synthesized.
+
+Synthesizing Unit <KEY_Debounce>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\KEY_Debounce.v".
+        N = 32
+        FREQ = 50
+        MAX_TIME = 20
+    Found 1-bit register for signal <button_out_d0>.
+    Found 1-bit register for signal <button_out>.
+    Found 32-bit register for signal <q_reg>.
+    Found 1-bit register for signal <DFF2>.
+    Found 1-bit register for signal <button_posedge>.
+    Found 1-bit register for signal <button_negedge>.
+    Found 1-bit register for signal <DFF1>.
+    Found 32-bit adder for signal <q_reg[31]_GND_11_o_add_1_OUT> created at line 51.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  38 D-type flip-flop(s).
+Unit <KEY_Debounce> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 16x8-bit single-port Read Only RAM                    : 6
+ 8x6-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 23
+ 16-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 20-bit adder                                          : 1
+ 32-bit adder                                          : 6
+ 4-bit adder                                           : 7
+ 4-bit subtractor                                      : 6
+ 5-bit adder                                           : 1
+# Registers                                            : 75
+ 1-bit register                                        : 33
+ 16-bit register                                       : 1
+ 2-bit register                                        : 1
+ 20-bit register                                       : 1
+ 32-bit register                                       : 6
+ 4-bit register                                        : 1
+ 5-bit register                                        : 1
+ 6-bit register                                        : 1
+ 8-bit register                                        : 30
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 32
+ 1-bit 2-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 1
+ 20-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 20
+ 8-bit 4-to-1 multiplexer                              : 3
+ 8-bit 7-to-1 multiplexer                              : 1
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+# FSMs                                                 : 4
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <write_addr_0> in Unit <DS1302_U1> is equivalent to the following 3 FFs/Latches, which will be removed : <write_addr_4> <write_addr_5> <write_addr_6> 
+WARNING:Xst:1710 - FF/Latch <read_addr_4> (without init value) has a constant value of 0 in block <DS1302_U1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <read_addr_5> (without init value) has a constant value of 0 in block <DS1302_U1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <read_addr_6> (without init value) has a constant value of 0 in block <DS1302_U1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <write_addr_0> (without init value) has a constant value of 0 in block <DS1302_U1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <read_addr_0> of sequential type is unconnected in block <DS1302_U1>.
+WARNING:Xst:2677 - Node <read_addr_7> of sequential type is unconnected in block <DS1302_U1>.
+WARNING:Xst:2677 - Node <write_addr_7> of sequential type is unconnected in block <DS1302_U1>.
+
+Synthesizing (advanced) Unit <DS1302_IO>.
+The following registers are absorbed into counter <delay_cnt>: 1 register on signal <delay_cnt>.
+Unit <DS1302_IO> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DS1302_Top>.
+The following registers are absorbed into counter <RTC_Mode>: 1 register on signal <RTC_Mode>.
+The following registers are absorbed into counter <timer_cnt>: 1 register on signal <timer_cnt>.
+Unit <DS1302_Top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SEG_Decoder>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_seg_data> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <bin_data>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <seg_data>      |          |
+    -----------------------------------------------------------------------
+Unit <SEG_Decoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SEG_Scan>.
+The following registers are absorbed into counter <scan_timer>: 1 register on signal <scan_timer>.
+The following registers are absorbed into counter <scan_sel>: 1 register on signal <scan_sel>.
+INFO:Xst:3217 - HDL ADVISOR - Register <seg_sel> currently described with an asynchronous reset, could be combined with distributed RAM <Mram__n0059> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 6-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <scan_sel<2:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <SEG_Scan> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SPI_Master>.
+The following registers are absorbed into counter <clk_cnt>: 1 register on signal <clk_cnt>.
+The following registers are absorbed into counter <clk_edge_cnt>: 1 register on signal <clk_edge_cnt>.
+Unit <SPI_Master> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 16x8-bit single-port distributed Read Only RAM        : 6
+ 8x6-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 16
+ 32-bit adder                                          : 4
+ 4-bit adder                                           : 6
+ 4-bit subtractor                                      : 6
+# Counters                                             : 7
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 20-bit up counter                                     : 1
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 407
+ Flip-Flops                                            : 407
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 33
+ 1-bit 2-to-1 multiplexer                              : 9
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 19
+ 8-bit 4-to-1 multiplexer                              : 3
+ 8-bit 7-to-1 multiplexer                              : 1
+# FSMs                                                 : 4
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <read_addr_4> (without init value) has a constant value of 0 in block <DS1302>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <read_addr_5> (without init value) has a constant value of 0 in block <DS1302>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <read_addr_6> (without init value) has a constant value of 0 in block <DS1302>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <write_addr_0> (without init value) has a constant value of 0 in block <DS1302>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <write_addr_4> (without init value) has a constant value of 0 in block <DS1302>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <write_addr_5> (without init value) has a constant value of 0 in block <DS1302>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <write_addr_6> (without init value) has a constant value of 0 in block <DS1302>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <DS1302_Test_U0/FSM_0> on signal <state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 011   | 011
+ 001   | 001
+ 100   | 100
+ 101   | 101
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <DS1302_Test_U0/DS1302_U1/FSM_1> on signal <state[1:17]> with one-hot encoding.
+----------------------------
+ State | Encoding
+----------------------------
+ 00000 | 00000000000000001
+ 01010 | 00000000000000010
+ 00010 | 00000000000000100
+ 00011 | 00000000000001000
+ 00100 | 00000000000010000
+ 00101 | 00000000000100000
+ 00110 | 00000000001000000
+ 01000 | 00000000010000000
+ 00111 | 00000000100000000
+ 01001 | 00000001000000000
+ 00001 | 00000010000000000
+ 01011 | 00000100000000000
+ 01100 | 00001000000000000
+ 01101 | 00010000000000000
+ 01111 | 00100000000000000
+ 01110 | 01000000000000000
+ 10000 | 10000000000000000
+----------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <DS1302_Test_U0/DS1302_U1/DS1302_IO/FSM_2> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0101  | 0101
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 1001  | 1001
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/FSM_3> on signal <state[1:6]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000001
+ 010   | 000010
+ 100   | 000100
+ 001   | 001000
+ 101   | 010000
+ 011   | 100000
+-------------------
+WARNING:Xst:2677 - Node <DS1302_Test_U0/DS1302_U1/write_addr_7> of sequential type is unconnected in block <DS1302_Top>.
+WARNING:Xst:2677 - Node <DS1302_Test_U0/DS1302_U1/read_addr_7> of sequential type is unconnected in block <DS1302_Top>.
+WARNING:Xst:2677 - Node <DS1302_Test_U0/DS1302_U1/read_addr_0> of sequential type is unconnected in block <DS1302_Top>.
+
+Optimizing unit <DS1302_Top> ...
+
+Optimizing unit <SEG_BCD> ...
+
+Optimizing unit <SEG_Scan> ...
+
+Optimizing unit <SPI_Master> ...
+
+Optimizing unit <KEY_Debounce> ...
+WARNING:Xst:2677 - Node <KEY_Debounce_3/button_posedge> of sequential type is unconnected in block <DS1302_Top>.
+WARNING:Xst:2677 - Node <KEY_Debounce_2/button_posedge> of sequential type is unconnected in block <DS1302_Top>.
+WARNING:Xst:2677 - Node <KEY_Debounce_1/button_posedge> of sequential type is unconnected in block <DS1302_Top>.
+WARNING:Xst:2677 - Node <KEY_Debounce_0/button_posedge> of sequential type is unconnected in block <DS1302_Top>.
+WARNING:Xst:1710 - FF/Latch <KEY_Debounce_1/q_reg_29> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_30> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_31> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_20> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_21> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_22> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_23> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_24> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_25> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_26> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_27> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_28> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_29> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_30> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_2/q_reg_31> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_20> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_21> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_22> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_23> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_24> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_25> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_20> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_21> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_22> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_23> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_24> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_25> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_26> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_27> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_28> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_29> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_30> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_0/q_reg_31> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_20> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_21> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_22> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_23> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_24> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_25> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_26> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_27> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_1/q_reg_28> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_BCD_U0/SEG_Scan_U0/scan_timer_30> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_BCD_U0/SEG_Scan_U0/scan_timer_31> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_9> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_10> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_11> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_12> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_13> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_14> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_15> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_16> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_17> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_18> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DS1302_Test_U0/DS1302_U1/DS1302_IO/delay_cnt_19> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_cnt_31> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_cnt_30> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_cnt_29> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_cnt_28> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_cnt_27> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_cnt_26> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_cnt_25> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_cnt_24> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_26> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_27> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_28> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_29> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_30> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_3/q_reg_31> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_BCD_U0/SEG_Scan_U0/scan_sel_3> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_BCD_U0/SEG_Scan_U0/scan_timer_16> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_BCD_U0/SEG_Scan_U0/scan_timer_17> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_BCD_U0/SEG_Scan_U0/scan_timer_18> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_BCD_U0/SEG_Scan_U0/scan_timer_19> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_BCD_U0/SEG_Scan_U0/scan_timer_20> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_BCD_U0/SEG_Scan_U0/scan_timer_21> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_BCD_U0/SEG_Scan_U0/scan_timer_22> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_BCD_U0/SEG_Scan_U0/scan_timer_23> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_BCD_U0/SEG_Scan_U0/scan_timer_24> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_BCD_U0/SEG_Scan_U0/scan_timer_25> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_BCD_U0/SEG_Scan_U0/scan_timer_26> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_BCD_U0/SEG_Scan_U0/scan_timer_27> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_BCD_U0/SEG_Scan_U0/scan_timer_28> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_BCD_U0/SEG_Scan_U0/scan_timer_29> (without init value) has a constant value of 0 in block <DS1302_Top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <seg_en_0> in Unit <DS1302_Top> is equivalent to the following 7 FFs/Latches, which will be removed : <seg_en_1> <seg_en_2> <seg_en_3> <seg_en_4> <seg_en_5> <seg_en_6> <seg_en_7> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DS1302_Top, actual ratio is 14.
+FlipFlop RTC_Mode_0 has been replicated 2 time(s)
+FlipFlop RTC_Mode_1 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 447
+ Flip-Flops                                            : 447
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : DS1302_Top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 945
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 100
+#      LUT2                        : 38
+#      LUT3                        : 94
+#      LUT4                        : 76
+#      LUT5                        : 172
+#      LUT6                        : 154
+#      MUXCY                       : 153
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 145
+# FlipFlops/Latches                : 447
+#      FD                          : 1
+#      FDC                         : 183
+#      FDCE                        : 157
+#      FDE                         : 56
+#      FDP                         : 24
+#      FDR                         : 2
+#      FDRE                        : 24
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 30
+#      IBUF                        : 5
+#      IOBUF                       : 1
+#      OBUF                        : 24
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             447  out of  11440     3%  
+ Number of Slice LUTs:                  642  out of   5720    11%  
+    Number used as Logic:               642  out of   5720    11%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    770
+   Number with an unused Flip Flop:     323  out of    770    41%  
+   Number with an unused LUT:           128  out of    770    16%  
+   Number of fully used LUT-FF pairs:   319  out of    770    41%  
+   Number of unique control sets:        21
+
+IO Utilization: 
+ Number of IOs:                          31
+ Number of bonded IOBs:                  31  out of    186    16%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 447   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.631ns (Maximum Frequency: 177.588MHz)
+   Minimum input arrival time before clock: 5.903ns
+   Maximum output required time after clock: 5.273ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.631ns (frequency: 177.588MHz)
+  Total number of paths / destination ports: 12456 / 682
+-------------------------------------------------------------------------
+Delay:               5.631ns (Levels of Logic = 4)
+  Source:            write_hour_4 (FF)
+  Destination:       write_hour_3 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: write_hour_4 to write_hour_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             16   0.525   1.410  write_hour_4 (write_hour_4)
+     LUT3:I0->O            2   0.235   0.726  write_hour[7]_write_hour[3]_AND_53_o_SW0 (N29)
+     LUT6:I5->O           10   0.254   1.008  write_hour[7]_write_hour[3]_AND_53_o (write_hour[7]_write_hour[3]_AND_53_o)
+     LUT5:I4->O            1   0.254   0.910  key[3]_write_hour[7]_select_70_OUT<3>4 (key[3]_write_hour[7]_select_70_OUT<3>4)
+     LUT6:I3->O            1   0.235   0.000  key[3]_write_hour[7]_select_70_OUT<3>5 (key[3]_write_hour[7]_select_70_OUT<3>)
+     FDE:D                     0.074          write_hour_3
+    ----------------------------------------
+    Total                      5.631ns (1.577ns logic, 4.054ns route)
+                                       (28.0% logic, 72.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 425 / 425
+-------------------------------------------------------------------------
+Offset:              5.903ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       RTC_Mode_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst_n to RTC_Mode_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            26   1.328   1.419  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            364   0.255   2.442  rst_n_inv1_INV_0 (SEG_BCD_U0/SEG_Scan_U0/rst_n_inv)
+     FDP:PRE                   0.459          SEG_BCD_U0/SEG_Scan_U0/seg_data_0
+    ----------------------------------------
+    Total                      5.903ns (2.042ns logic, 3.861ns route)
+                                       (34.6% logic, 65.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 26 / 25
+-------------------------------------------------------------------------
+Offset:              5.273ns (Levels of Logic = 1)
+  Source:            seg_en_0 (FF)
+  Destination:       seg_en<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: seg_en_0 to seg_en<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              52   0.525   1.836  seg_en_0 (seg_en_0)
+     OBUF:I->O                 2.912          seg_en_7_OBUF (seg_en<7>)
+    ----------------------------------------
+    Total                      5.273ns (3.437ns logic, 1.836ns route)
+                                       (65.2% logic, 34.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.631|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.93 secs
+ 
+--> 
+
+Total memory usage is 4523240 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  109 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
+

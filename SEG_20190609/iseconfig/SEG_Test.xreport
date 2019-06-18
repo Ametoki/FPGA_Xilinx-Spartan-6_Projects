@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-06-11T16:39:49</DateModified>
+  <DateModified>2019-06-18T23:41:04</DateModified>
   <ModuleName>SEG_Test</ModuleName>
   <SummaryTimeStamp>2019-06-11T16:39:26</SummaryTimeStamp>
-  <SavedFilePath>D:/GsZoMuLu/ISE/Project/SEG_20190609/iseconfig/SEG_Test.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/GsZoMuLu/ISE/Project/SEG_20190609\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SEG_20190609/iseconfig/SEG_Test.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SEG_20190609\</ImplementationReportsDirectory>
   <DateInitialized>2019-06-09T23:23:49</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
