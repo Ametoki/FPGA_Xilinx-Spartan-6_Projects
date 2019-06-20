@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: DS1302_Top.prj
 
@@ -152,48 +152,86 @@ Elaborating module <KEY_Debounce>.
 
 Synthesizing Unit <DS1302_Top>.
     Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v".
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 86: Output port <button_posedge> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 86: Output port <button_out> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 95: Output port <button_posedge> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 95: Output port <button_out> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 104: Output port <button_posedge> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 104: Output port <button_out> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 113: Output port <button_posedge> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 113: Output port <button_out> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
-    Found 2-bit register for signal <RTC_Mode>.
-    Found 1-bit register for signal <CH>.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 127: Output port <button_posedge> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 127: Output port <button_out> of the instance <KEY_Debounce_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 136: Output port <button_posedge> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 136: Output port <button_out> of the instance <KEY_Debounce_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 145: Output port <button_posedge> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 145: Output port <button_out> of the instance <KEY_Debounce_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 154: Output port <button_posedge> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_Top.v" line 154: Output port <button_out> of the instance <KEY_Debounce_3> is unconnected or connected to loadless signal.
+    Found 4-bit register for signal <state>.
+    Found 4-bit register for signal <next_state>.
+    Found 8-bit register for signal <write_year>.
+    Found 8-bit register for signal <write_month>.
     Found 8-bit register for signal <write_hour>.
     Found 8-bit register for signal <write_minute>.
-    Found 8-bit register for signal <write_second>.
     Found 8-bit register for signal <write_date>.
-    Found 8-bit register for signal <write_month>.
+    Found 8-bit register for signal <write_second>.
     Found 8-bit register for signal <write_week>.
-    Found 8-bit register for signal <write_year>.
-    Found 32-bit register for signal <timer_cnt>.
+    Found 1-bit register for signal <CH>.
     Found 8-bit register for signal <seg_en>.
-    Found 4-bit subtractor for signal <write_hour[7]_GND_1_o_sub_13_OUT> created at line 168.
-    Found 4-bit subtractor for signal <write_hour[3]_GND_1_o_sub_14_OUT> created at line 174.
-    Found 4-bit subtractor for signal <write_minute[7]_GND_1_o_sub_31_OUT> created at line 207.
-    Found 4-bit subtractor for signal <write_minute[3]_GND_1_o_sub_32_OUT> created at line 213.
-    Found 4-bit subtractor for signal <write_second[7]_GND_1_o_sub_49_OUT> created at line 246.
-    Found 4-bit subtractor for signal <write_second[3]_GND_1_o_sub_50_OUT> created at line 252.
-    Found 4-bit adder for signal <write_hour[7]_GND_1_o_add_4_OUT> created at line 150.
-    Found 4-bit adder for signal <write_hour[3]_GND_1_o_add_5_OUT> created at line 156.
-    Found 4-bit adder for signal <write_minute[7]_GND_1_o_add_22_OUT> created at line 189.
-    Found 4-bit adder for signal <write_minute[3]_GND_1_o_add_23_OUT> created at line 195.
-    Found 4-bit adder for signal <write_second[7]_GND_1_o_add_40_OUT> created at line 228.
-    Found 4-bit adder for signal <write_second[3]_GND_1_o_add_41_OUT> created at line 234.
-    Found 2-bit adder for signal <RTC_Mode[1]_GND_1_o_add_55_OUT> created at line 271.
-    Found 32-bit adder for signal <timer_cnt[31]_GND_1_o_add_99_OUT> created at line 365.
-    Found 8-bit 4-to-1 multiplexer for signal <write_hour[7]_write_hour[7]_mux_17_OUT> created at line 159.
-    Found 8-bit 4-to-1 multiplexer for signal <write_minute[7]_write_minute[7]_mux_35_OUT> created at line 198.
-    Found 8-bit 4-to-1 multiplexer for signal <write_second[7]_write_second[7]_mux_53_OUT> created at line 237.
-    Found 32-bit comparator greater for signal <n0100> created at line 358
+    Found 32-bit register for signal <timer_cnt>.
+    Found 4-bit subtractor for signal <write_hour[7]_GND_1_o_sub_11_OUT> created at line 205.
+    Found 4-bit subtractor for signal <write_hour[3]_GND_1_o_sub_12_OUT> created at line 211.
+    Found 4-bit subtractor for signal <write_month[7]_GND_1_o_sub_25_OUT> created at line 237.
+    Found 4-bit subtractor for signal <write_month[3]_GND_1_o_sub_26_OUT> created at line 243.
+    Found 4-bit subtractor for signal <write_year[7]_GND_1_o_sub_39_OUT> created at line 269.
+    Found 4-bit subtractor for signal <write_year[3]_GND_1_o_sub_40_OUT> created at line 275.
+    Found 4-bit subtractor for signal <write_minute[7]_GND_1_o_sub_57_OUT> created at line 306.
+    Found 4-bit subtractor for signal <write_minute[3]_GND_1_o_sub_58_OUT> created at line 312.
+    Found 4-bit subtractor for signal <write_date[7]_GND_1_o_sub_106_OUT> created at line 396.
+    Found 4-bit subtractor for signal <write_date[3]_GND_1_o_sub_107_OUT> created at line 402.
+    Found 4-bit subtractor for signal <write_second[7]_GND_1_o_sub_162_OUT> created at line 483.
+    Found 4-bit subtractor for signal <write_second[3]_GND_1_o_sub_163_OUT> created at line 489.
+    Found 8-bit subtractor for signal <write_week[7]_GND_1_o_sub_170_OUT> created at line 500.
+    Found 4-bit adder for signal <write_hour[7]_GND_1_o_add_3_OUT> created at line 189.
+    Found 4-bit adder for signal <write_hour[3]_GND_1_o_add_4_OUT> created at line 195.
+    Found 4-bit adder for signal <write_month[7]_GND_1_o_add_17_OUT> created at line 221.
+    Found 4-bit adder for signal <write_month[3]_GND_1_o_add_18_OUT> created at line 227.
+    Found 4-bit adder for signal <write_year[7]_GND_1_o_add_31_OUT> created at line 253.
+    Found 4-bit adder for signal <write_year[3]_GND_1_o_add_32_OUT> created at line 259.
+    Found 4-bit adder for signal <write_minute[7]_GND_1_o_add_49_OUT> created at line 290.
+    Found 4-bit adder for signal <write_minute[3]_GND_1_o_add_50_OUT> created at line 296.
+    Found 4-bit adder for signal <write_date[7]_GND_1_o_add_63_OUT> created at line 325.
+    Found 4-bit adder for signal <write_date[3]_GND_1_o_add_64_OUT> created at line 331.
+    Found 4-bit adder for signal <write_second[7]_GND_1_o_add_154_OUT> created at line 467.
+    Found 4-bit adder for signal <write_second[3]_GND_1_o_add_155_OUT> created at line 473.
+    Found 8-bit adder for signal <write_week[7]_GND_1_o_add_166_OUT> created at line 495.
+    Found 32-bit adder for signal <timer_cnt[31]_GND_1_o_add_226_OUT> created at line 561.
+    Found 16x18-bit Read Only RAM for signal <_n0516>
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit comparator greater for signal <n0175> created at line 554
     Summary:
-	inferred  14 Adder/Subtractor(s).
-	inferred  99 D-type flip-flop(s).
+	inferred   1 RAM(s).
+	inferred  27 Adder/Subtractor(s).
+	inferred 105 D-type flip-flop(s).
+	inferred  24 Latch(s).
 	inferred   1 Comparator(s).
-	inferred  19 Multiplexer(s).
+	inferred  95 Multiplexer(s).
 Unit <DS1302_Top> synthesized.
 
 Synthesizing Unit <SEG_BCD>.
@@ -382,40 +420,41 @@ Unit <KEY_Debounce> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 7
+# RAMs                                                 : 8
+ 16x18-bit single-port Read Only RAM                   : 1
  16x8-bit single-port Read Only RAM                    : 6
  8x6-bit single-port Read Only RAM                     : 1
-# Adders/Subtractors                                   : 23
+# Adders/Subtractors                                   : 36
  16-bit adder                                          : 1
- 2-bit adder                                           : 1
  20-bit adder                                          : 1
  32-bit adder                                          : 6
- 4-bit adder                                           : 7
- 4-bit subtractor                                      : 6
+ 4-bit adder                                           : 13
+ 4-bit subtractor                                      : 12
  5-bit adder                                           : 1
-# Registers                                            : 75
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+# Registers                                            : 76
  1-bit register                                        : 33
  16-bit register                                       : 1
- 2-bit register                                        : 1
  20-bit register                                       : 1
  32-bit register                                       : 6
- 4-bit register                                        : 1
+ 4-bit register                                        : 3
  5-bit register                                        : 1
  6-bit register                                        : 1
  8-bit register                                        : 30
+# Latches                                              : 24
+ 1-bit latch                                           : 24
 # Comparators                                          : 2
  32-bit comparator greater                             : 2
-# Multiplexers                                         : 32
- 1-bit 2-to-1 multiplexer                              : 1
+# Multiplexers                                         : 108
+ 1-bit 2-to-1 multiplexer                              : 49
  16-bit 2-to-1 multiplexer                             : 1
- 2-bit 2-to-1 multiplexer                              : 1
  20-bit 2-to-1 multiplexer                             : 1
  32-bit 2-to-1 multiplexer                             : 1
- 4-bit 2-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 5
  5-bit 2-to-1 multiplexer                              : 1
  6-bit 2-to-1 multiplexer                              : 1
- 8-bit 2-to-1 multiplexer                              : 20
- 8-bit 4-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 48
  8-bit 7-to-1 multiplexer                              : 1
 # Tristates                                            : 1
  1-bit tristate buffer                                 : 1
@@ -443,8 +482,18 @@ The following registers are absorbed into counter <delay_cnt>: 1 register on sig
 Unit <DS1302_IO> synthesized (advanced).
 
 Synthesizing (advanced) Unit <DS1302_Top>.
-The following registers are absorbed into counter <RTC_Mode>: 1 register on signal <RTC_Mode>.
 The following registers are absorbed into counter <timer_cnt>: 1 register on signal <timer_cnt>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0516> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 18-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <state>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
 Unit <DS1302_Top> synthesized (advanced).
 
 Synthesizing (advanced) Unit <SEG_Decoder>.
@@ -486,29 +535,31 @@ Unit <SPI_Master> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 7
+# RAMs                                                 : 8
+ 16x18-bit single-port distributed Read Only RAM       : 1
  16x8-bit single-port distributed Read Only RAM        : 6
  8x6-bit single-port distributed Read Only RAM         : 1
-# Adders/Subtractors                                   : 16
+# Adders/Subtractors                                   : 30
  32-bit adder                                          : 4
- 4-bit adder                                           : 6
- 4-bit subtractor                                      : 6
-# Counters                                             : 7
+ 4-bit adder                                           : 12
+ 4-bit subtractor                                      : 12
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 6
  16-bit up counter                                     : 1
- 2-bit up counter                                      : 1
  20-bit up counter                                     : 1
  32-bit up counter                                     : 2
  4-bit up counter                                      : 1
  5-bit up counter                                      : 1
-# Registers                                            : 407
- Flip-Flops                                            : 407
+# Registers                                            : 415
+ Flip-Flops                                            : 415
 # Comparators                                          : 2
  32-bit comparator greater                             : 2
-# Multiplexers                                         : 33
- 1-bit 2-to-1 multiplexer                              : 9
+# Multiplexers                                         : 110
+ 1-bit 2-to-1 multiplexer                              : 57
+ 4-bit 2-to-1 multiplexer                              : 4
  6-bit 2-to-1 multiplexer                              : 1
- 8-bit 2-to-1 multiplexer                              : 19
- 8-bit 4-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 47
  8-bit 7-to-1 multiplexer                              : 1
 # FSMs                                                 : 4
 # Xors                                                 : 4
@@ -693,9 +744,17 @@ INFO:Xst:2261 - The FF/Latch <seg_en_0> in Unit <DS1302_Top> is equivalent to th
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block DS1302_Top, actual ratio is 14.
-FlipFlop RTC_Mode_0 has been replicated 2 time(s)
-FlipFlop RTC_Mode_1 has been replicated 2 time(s)
+Found area constraint ratio of 100 (+ 5) on block DS1302_Top, actual ratio is 17.
+FlipFlop KEY_Debounce_0/button_negedge has been replicated 2 time(s)
+FlipFlop KEY_Debounce_1/button_negedge has been replicated 3 time(s)
+FlipFlop KEY_Debounce_2/button_negedge has been replicated 3 time(s)
+FlipFlop KEY_Debounce_3/button_negedge has been replicated 2 time(s)
+FlipFlop state_0 has been replicated 3 time(s)
+FlipFlop state_1 has been replicated 3 time(s)
+FlipFlop state_2 has been replicated 4 time(s)
+FlipFlop state_3 has been replicated 3 time(s)
+FlipFlop write_month_0 has been replicated 1 time(s)
+FlipFlop write_month_1 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -703,8 +762,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 447
- Flip-Flops                                            : 447
+# Registers                                            : 474
+ Flip-Flops                                            : 474
 
 =========================================================================
 
@@ -727,33 +786,35 @@ Top Level Output File Name         : DS1302_Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 945
+# BELS                             : 1145
 #      GND                         : 1
 #      INV                         : 8
 #      LUT1                        : 100
 #      LUT2                        : 38
-#      LUT3                        : 94
-#      LUT4                        : 76
-#      LUT5                        : 172
-#      LUT6                        : 154
+#      LUT3                        : 70
+#      LUT4                        : 152
+#      LUT5                        : 203
+#      LUT6                        : 264
 #      MUXCY                       : 153
-#      MUXF7                       : 3
+#      MUXF7                       : 10
 #      VCC                         : 1
 #      XORCY                       : 145
-# FlipFlops/Latches                : 447
-#      FD                          : 1
-#      FDC                         : 183
-#      FDCE                        : 157
-#      FDE                         : 56
+# FlipFlops/Latches                : 498
+#      FD                          : 2
+#      FDC                         : 213
+#      FDCE                        : 151
+#      FDE                         : 58
 #      FDP                         : 24
 #      FDR                         : 2
 #      FDRE                        : 24
-# Clock Buffers                    : 1
+#      LD                          : 24
+# Clock Buffers                    : 2
+#      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 30
+# IO Buffers                       : 22
 #      IBUF                        : 5
 #      IOBUF                       : 1
-#      OBUF                        : 24
+#      OBUF                        : 16
 
 Device utilization summary:
 ---------------------------
@@ -762,23 +823,23 @@ Selected Device : 6slx9ftg256-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             447  out of  11440     3%  
- Number of Slice LUTs:                  642  out of   5720    11%  
-    Number used as Logic:               642  out of   5720    11%  
+ Number of Slice Registers:             498  out of  11440     4%  
+ Number of Slice LUTs:                  835  out of   5720    14%  
+    Number used as Logic:               835  out of   5720    14%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    770
-   Number with an unused Flip Flop:     323  out of    770    41%  
-   Number with an unused LUT:           128  out of    770    16%  
-   Number of fully used LUT-FF pairs:   319  out of    770    41%  
-   Number of unique control sets:        21
+ Number of LUT Flip Flop pairs used:    974
+   Number with an unused Flip Flop:     476  out of    974    48%  
+   Number with an unused LUT:           139  out of    974    14%  
+   Number of fully used LUT-FF pairs:   359  out of    974    36%  
+   Number of unique control sets:        20
 
 IO Utilization: 
- Number of IOs:                          31
- Number of bonded IOBs:                  31  out of    186    16%  
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    186    12%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
 
 ---------------------------
 Partition Resource Summary:
@@ -801,8 +862,12 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 447   |
+clk                                | BUFGP                  | 474   |
+Mram__n05161(Mram__n0516111:O)     | BUFG(*)(seg_bcd_15)    | 24    |
 -----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -812,9 +877,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 5.631ns (Maximum Frequency: 177.588MHz)
-   Minimum input arrival time before clock: 5.903ns
-   Maximum output required time after clock: 5.273ns
+   Minimum period: 6.015ns (Maximum Frequency: 166.251MHz)
+   Minimum input arrival time before clock: 6.377ns
+   Maximum output required time after clock: 4.202ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -823,92 +888,102 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 5.631ns (frequency: 177.588MHz)
-  Total number of paths / destination ports: 12456 / 682
+  Clock period: 6.015ns (frequency: 166.251MHz)
+  Total number of paths / destination ports: 15285 / 671
 -------------------------------------------------------------------------
-Delay:               5.631ns (Levels of Logic = 4)
-  Source:            write_hour_4 (FF)
-  Destination:       write_hour_3 (FF)
+Delay:               6.015ns (Levels of Logic = 5)
+  Source:            write_date_3 (FF)
+  Destination:       write_date_2 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: write_hour_4 to write_hour_3
+  Data Path: write_date_3 to write_date_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             16   0.525   1.410  write_hour_4 (write_hour_4)
-     LUT3:I0->O            2   0.235   0.726  write_hour[7]_write_hour[3]_AND_53_o_SW0 (N29)
-     LUT6:I5->O           10   0.254   1.008  write_hour[7]_write_hour[3]_AND_53_o (write_hour[7]_write_hour[3]_AND_53_o)
-     LUT5:I4->O            1   0.254   0.910  key[3]_write_hour[7]_select_70_OUT<3>4 (key[3]_write_hour[7]_select_70_OUT<3>4)
-     LUT6:I3->O            1   0.235   0.000  key[3]_write_hour[7]_select_70_OUT<3>5 (key[3]_write_hour[7]_select_70_OUT<3>)
-     FDE:D                     0.074          write_hour_3
+     FDE:C->Q             13   0.525   1.374  write_date_3 (write_date_3)
+     LUT4:I0->O            4   0.254   0.804  write_date[3]_GND_1_o_equal_76_o<3>1 (write_date[3]_GND_1_o_equal_76_o)
+     LUT5:I4->O            2   0.254   0.954  key[3]_write_date[7]_select_204_OUT<3>14 (key[3]_write_date[7]_select_204_OUT<3>14)
+     LUT6:I3->O            1   0.235   1.112  key[3]_write_date[7]_select_204_OUT<2>4 (key[3]_write_date[7]_select_204_OUT<2>4)
+     LUT6:I1->O            1   0.254   0.000  key[3]_write_date[7]_select_204_OUT<2>5_G (N144)
+     MUXF7:I1->O           1   0.175   0.000  key[3]_write_date[7]_select_204_OUT<2>5 (key[3]_write_date[7]_select_204_OUT<2>)
+     FDE:D                     0.074          write_date_2
     ----------------------------------------
-    Total                      5.631ns (1.577ns logic, 4.054ns route)
-                                       (28.0% logic, 72.0% route)
+    Total                      6.015ns (1.771ns logic, 4.244ns route)
+                                       (29.4% logic, 70.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 425 / 425
+  Total number of paths / destination ports: 451 / 451
 -------------------------------------------------------------------------
-Offset:              5.903ns (Levels of Logic = 2)
+Offset:              6.377ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
-  Destination:       RTC_Mode_0 (FF)
+  Destination:       next_state_0 (FF)
   Destination Clock: clk rising
 
-  Data Path: rst_n to RTC_Mode_0
+  Data Path: rst_n to next_state_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            26   1.328   1.419  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O            364   0.255   2.442  rst_n_inv1_INV_0 (SEG_BCD_U0/SEG_Scan_U0/rst_n_inv)
+     IBUF:I->O            59   1.328   1.890  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            388   0.255   2.445  rst_n_inv1_INV_0 (SEG_BCD_U0/SEG_Scan_U0/rst_n_inv)
      FDP:PRE                   0.459          SEG_BCD_U0/SEG_Scan_U0/seg_data_0
     ----------------------------------------
-    Total                      5.903ns (2.042ns logic, 3.861ns route)
-                                       (34.6% logic, 65.4% route)
+    Total                      6.377ns (2.042ns logic, 4.335ns route)
+                                       (32.0% logic, 68.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 26 / 25
+  Total number of paths / destination ports: 18 / 17
 -------------------------------------------------------------------------
-Offset:              5.273ns (Levels of Logic = 1)
-  Source:            seg_en_0 (FF)
-  Destination:       seg_en<7> (PAD)
+Offset:              4.202ns (Levels of Logic = 1)
+  Source:            DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MOSI_shift_7 (FF)
+  Destination:       rtc_data (PAD)
   Source Clock:      clk rising
 
-  Data Path: seg_en_0 to seg_en<7>
+  Data Path: DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MOSI_shift_7 to rtc_data
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              52   0.525   1.836  seg_en_0 (seg_en_0)
-     OBUF:I->O                 2.912          seg_en_7_OBUF (seg_en<7>)
+     FDC:C->Q              3   0.525   0.765  DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MOSI_shift_7 (DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MOSI_shift_7)
+     IOBUF:I->IO               2.912          rtc_data_IOBUF (rtc_data)
     ----------------------------------------
-    Total                      5.273ns (3.437ns logic, 1.836ns route)
-                                       (65.2% logic, 34.8% route)
+    Total                      4.202ns (3.437ns logic, 0.765ns route)
+                                       (81.8% logic, 18.2% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock Mram__n05161
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    4.765|         |
+---------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock clk
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    5.631|         |         |         |
+Mram__n05161   |         |    4.631|         |         |
+clk            |    6.015|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.93 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.11 secs
  
 --> 
 
-Total memory usage is 4523240 kilobytes
+Total memory usage is 4522792 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  109 (   0 filtered)
-Number of infos    :   12 (   0 filtered)
+Number of warnings :  133 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
 

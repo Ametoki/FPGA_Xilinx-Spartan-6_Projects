@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Wed Jun 19 03:51:29 2019">
+<application name="pn" timeStamp="Fri Jun 21 02:33:22 2019">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="D82B9DD9F8C9476F80156CCFFCA27B7E" type="project"/>
-<property name="ProjectIteration" value="16" type="project"/>
+<property name="ProjectIteration" value="38" type="project"/>
 <property name="ProjectFile" value="D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/DS1302_20190611.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2019-06-11T14:09:24" type="project"/>
 </section>
@@ -26,10 +26,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserEditorPreference" value="Custom" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2019-06-11T14:09:24" type="design"/>
 <property name="PROP_intWbtProjectID" value="D82B9DD9F8C9476F80156CCFFCA27B7E" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="16" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="38" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_lockPinsUcfFile" value="changed" type="process"/>
+<property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>
 <property name="PROP_AutoTop" value="true" type="design"/>
 <property name="PROP_DevFamily" value="Spartan6" type="design"/>
 <property name="PROP_DevDevice" value="xc6slx9" type="design"/>

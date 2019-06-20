@@ -23,6 +23,14 @@ module SEG_BCD
 	input  clk,
 	input  rst_n,
 	input[7:0] EN,
+	input[7:0] EN_0,
+	input[7:0] EN_1,
+	input[7:0] EN_2,
+	input[7:0] EN_3,
+	input[7:0] EN_4,
+	input[7:0] EN_5,
+	input[7:0] DP_0,
+	input[7:0] DP_1,
 	output[5:0] seg_sel,
 	output[7:0] seg_data,
 	input[23:0] seg_bcd
@@ -68,11 +76,11 @@ SEG_Scan SEG_Scan_U0(
 	.rst_n      (rst_n),
 	.seg_sel    (seg_sel),
 	.seg_data   (seg_data),
-	.seg_data_0 (seg_data_0 | EN),
-	.seg_data_1 ((seg_data_1 & 8'h7f) | EN),
-	.seg_data_2 (seg_data_2 | EN),
-	.seg_data_3 ((seg_data_3 & 8'h7f) | EN),
-	.seg_data_4 (seg_data_4 | EN),
-	.seg_data_5 (seg_data_5 | EN)
+	.seg_data_0 (seg_data_0 | EN_0 | EN),
+	.seg_data_1 ((seg_data_1 & DP_0) | EN_1 | EN),
+	.seg_data_2 (seg_data_2 | EN_2 | EN),
+	.seg_data_3 ((seg_data_3 & DP_1) | EN_3 | EN),
+	.seg_data_4 (seg_data_4 | EN_4 | EN),
+	.seg_data_5 (seg_data_5 | EN_5 | EN)
 );
 endmodule
