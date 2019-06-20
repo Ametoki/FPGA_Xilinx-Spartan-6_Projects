@@ -33,6 +33,16 @@ module DS1302_Top
 	output[5:0]     seg_sel,
 	output[7:0]     seg_data
 );
+localparam S_DISP_TIME    = 4'd0;
+localparam S_DISP_DATE    = 4'd1;
+localparam S_DISP_YEAR    = 4'd2;
+localparam S_WRITE_TIME_P = 4'd3;
+localparam S_WRITE_TIME_M = 4'd4;
+localparam S_WRITE_DATE_P = 4'd5;
+localparam S_WRITE_DATE_M = 4'd6;
+localparam S_WRITE_YEAR_P = 4'd7;
+localparam S_WRITE_YEAR_M = 4'd8;
+reg[3:0]   state, next_state;
 wire[7:0] read_second;
 wire[7:0] read_minute;
 wire[7:0] read_hour;
@@ -47,6 +57,7 @@ reg[7:0]  write_date;
 reg[7:0]  write_month;
 reg[7:0]  write_week;
 reg[7:0]  write_year;
+reg[23:0] seg_bcd;
 reg       CH;
 SEG_BCD SEG_BCD_U0
 (
@@ -137,124 +148,145 @@ begin
 	begin
 		case(key)
 		4'b1110:
-		begin
-			if(RTC_Mode == 2'd1)
-			begin
-				if(write_hour[7:4] == 4'h2 && write_hour[3:0] == 4'h3)
-				begin
-					write_hour[7:4] <= 4'h0;
-					write_hour[3:0] <= 4'h0;
-				end
-				else if(write_hour[3:0] == 4'h9)
-				begin
-					write_hour[7:4] <= write_hour[7:4] + 4'h1;
-					write_hour[3:0] <= 4'h0;
-				end
-				else
-				begin
-					write_hour[7:4] <= write_hour[7:4];
-					write_hour[3:0] <= write_hour[3:0] + 4'h1;
-				end
-			end
-			else if(RTC_Mode == 2'd2)
-			begin
-				if(write_hour[7:4] == 4'h0 && write_hour[3:0] == 4'h0)
-				begin
-					write_hour[7:4] <= 4'h2;
-					write_hour[3:0] <= 4'h3;
-				end
-				else if(write_hour[3:0] == 4'h0)
-				begin
-					write_hour[7:4] <= write_hour[7:4] - 4'h1;
-					write_hour[3:0] <= 4'h9;
-				end
-				else
-				begin
-					write_hour[7:4] <= write_hour[7:4];
-					write_hour[3:0] <= write_hour[3:0] - 4'h1;
-				end
-			end
-		end
+			case(state)
+				S_DISP_TIME:
+					next_state <= S_DISP_DATE;
+				S_DISP_DATE:
+					next_state <= S_DISP_YEAR;
+				S_DISP_YEAR:
+					next_state <= S_DISP_TIME;
+				S_WRITE_TIME_P:
+					if(write_hour[7:4] == 4'h2 && write_hour[3:0] == 4'h3)
+					begin
+						write_hour[7:4] <= 4'h0;
+						write_hour[3:0] <= 4'h0;
+					end
+					else if(write_hour[3:0] == 4'h9)
+					begin
+						write_hour[7:4] <= write_hour[7:4] + 4'h1;
+						write_hour[3:0] <= 4'h0;
+					end
+					else
+					begin
+						write_hour[7:4] <= write_hour[7:4];
+						write_hour[3:0] <= write_hour[3:0] + 4'h1;
+					end
+				S_WRITE_TIME_M:
+					if(write_hour[7:4] == 4'h0 && write_hour[3:0] == 4'h0)
+					begin
+						write_hour[7:4] <= 4'h2;
+						write_hour[3:0] <= 4'h3;
+					end
+					else if(write_hour[3:0] == 4'h0)
+					begin
+						write_hour[7:4] <= write_hour[7:4] - 4'h1;
+						write_hour[3:0] <= 4'h9;
+					end
+					else
+					begin
+						write_hour[7:4] <= write_hour[7:4];
+						write_hour[3:0] <= write_hour[3:0] - 4'h1;
+					end
+				S_WRITE_DATE_P:
+				S_WRITE_YEAR_P:
+				default:
+					next_state <= state;
+			endcase
 		4'b1101:
-		begin
-			if(RTC_Mode == 2'd1)
-			begin
-				if(write_minute[7:4] == 4'h5 && write_minute[3:0] == 4'h9)
-				begin
-					write_minute[7:4] <= 4'h0;
-					write_minute[3:0] <= 4'h0;
-				end
-				else if(write_minute[3:0] == 4'h9)
-				begin
-					write_minute[7:4] <= write_minute[7:4] + 4'h1;
-					write_minute[3:0] <= 4'h0;
-				end
-				else
-				begin
-					write_minute[7:4] <= write_minute[7:4];
-					write_minute[3:0] <= write_minute[3:0] + 4'h1;
-				end
-			end
-			else if(RTC_Mode == 2'd2)
-			begin
-				if(write_minute[7:4] == 4'h0 && write_minute[3:0] == 4'h0)
-				begin
-					write_minute[7:4] <= 4'h5;
-					write_minute[3:0] <= 4'h9;
-				end
-				else if(write_minute[3:0] == 4'h0)
-				begin
-					write_minute[7:4] <= write_minute[7:4] - 4'h1;
-					write_minute[3:0] <= 4'h9;
-				end
-				else
-				begin
-					write_minute[7:4] <= write_minute[7:4];
-					write_minute[3:0] <= write_minute[3:0] - 4'h1;
-				end
-			end
-		end
+			case(state)
+				S_WRITE_TIME_P:
+					if(write_minute[7:4] == 4'h5 && write_minute[3:0] == 4'h9)
+					begin
+						write_minute[7:4] <= 4'h0;
+						write_minute[3:0] <= 4'h0;
+					end
+					else if(write_minute[3:0] == 4'h9)
+					begin
+						write_minute[7:4] <= write_minute[7:4] + 4'h1;
+						write_minute[3:0] <= 4'h0;
+					end
+					else
+					begin
+						write_minute[7:4] <= write_minute[7:4];
+						write_minute[3:0] <= write_minute[3:0] + 4'h1;
+					end
+				S_WRITE_TIME_M:
+					if(write_minute[7:4] == 4'h0 && write_minute[3:0] == 4'h0)
+					begin
+						write_minute[7:4] <= 4'h5;
+						write_minute[3:0] <= 4'h9;
+					end
+					else if(write_minute[3:0] == 4'h0)
+					begin
+						write_minute[7:4] <= write_minute[7:4] - 4'h1;
+						write_minute[3:0] <= 4'h9;
+					end
+					else
+					begin
+						write_minute[7:4] <= write_minute[7:4];
+						write_minute[3:0] <= write_minute[3:0] - 4'h1;
+					end
+				S_WRITE_DATE_M:
+				S_WRITE_YEAR_M:
+				default:
+					next_state <= state;
+			endcase
 		4'b1011:
-		begin
-			if(RTC_Mode == 2'd1)
-			begin
-				if(write_second[7:4] == 4'h5 && write_second[3:0] == 4'h9)
-				begin
-					write_second[7:4] <= 4'h0;
-					write_second[3:0] <= 4'h0;
-				end
-				else if(write_second[3:0] == 4'h9)
-				begin
-					write_second[7:4] <= write_second[7:4] + 4'h1;
-					write_second[3:0] <= 4'h0;
-				end
-				else
-				begin
-					write_second[7:4] <= write_second[7:4];
-					write_second[3:0] <= write_second[3:0] + 4'h1;
-				end
-			end
-			else if(RTC_Mode == 2'd2)
-			begin
-				if(write_second[7:4] == 4'h0 && write_second[3:0] == 4'h0)
-				begin
-					write_second[7:4] <= 4'h5;
-					write_second[3:0] <= 4'h9;
-				end
-				else if(write_second[3:0] == 4'h0)
-				begin
-					write_second[7:4] <= write_second[7:4] - 4'h1;
-					write_second[3:0] <= 4'h9;
-				end
-				else
-				begin
-					write_second[7:4] <= write_second[7:4];
-					write_second[3:0] <= write_second[3:0] - 4'h1;
-				end
-			end
-		end
+			case(state)
+				S_WRITE_TIME_P:
+					if(write_second[7:4] == 4'h5 && write_second[3:0] == 4'h9)
+					begin
+						write_second[7:4] <= 4'h0;
+						write_second[3:0] <= 4'h0;
+					end
+					else if(write_second[3:0] == 4'h9)
+					begin
+						write_second[7:4] <= write_second[7:4] + 4'h1;
+						write_second[3:0] <= 4'h0;
+					end
+					else
+					begin
+						write_second[7:4] <= write_second[7:4];
+						write_second[3:0] <= write_second[3:0] + 4'h1;
+					end
+				S_WRITE_TIME_M:
+					if(write_second[7:4] == 4'h0 && write_second[3:0] == 4'h0)
+					begin
+						write_second[7:4] <= 4'h5;
+						write_second[3:0] <= 4'h9;
+					end
+					else if(write_second[3:0] == 4'h0)
+					begin
+						write_second[7:4] <= write_second[7:4] - 4'h1;
+						write_second[3:0] <= 4'h9;
+					end
+					else
+					begin
+						write_second[7:4] <= write_second[7:4];
+						write_second[3:0] <= write_second[3:0] - 4'h1;
+					end
+				default:
+					next_state <= state;
+			endcase
 		4'b0111:
-		case(RTC_Mode)
+		case(state)
+			S_DISP_TIME:
+				next_state <= S_WRITE_TIME_P;
+			S_WRITE_TIME_P:
+				next_state <= S_WRITE_TIME_M;
+			S_WRITE_TIME_M:
+				next_state <= S_WRITE_DATE_P;
+			S_WRITE_DATE_P:
+				next_state <= S_WRITE_DATE_M;
+			S_WRITE_DATE_M:
+				next_state <= S_WRITE_YEAR_P;
+			S_WRITE_YEAR_P:
+				next_state <= S_WRITE_YEAR_M;
+			S_WRITE_YEAR_M:
+				next_state <= S_DISP_TIME;
+			default:
+				next_state <= S_DISP_TIME;
+		/*
 			2'd0:
 				begin
 					write_second <= read_second;
@@ -274,6 +306,7 @@ begin
 					CH <= 1'b0;
 					RTC_Mode <= 2'b0;
 				end
+		*/
 		endcase
 		default:
 		begin
@@ -288,6 +321,13 @@ begin
 		end
 		endcase
 	end
+end
+always@(posedge clk or negedge rst_n)
+begin
+	if(!rst_n)
+		state <= S_DISP_TIME;
+	else
+		state <= next_state;
 end
 /*
 always@(posedge clk)

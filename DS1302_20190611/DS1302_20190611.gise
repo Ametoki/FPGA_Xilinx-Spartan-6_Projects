@@ -77,6 +77,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1560874742" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1560874742">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1560874742" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-3435871681435744028" xil_pn:start_ts="1560874742">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -106,7 +107,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="DS1302_Top.lso"/>
       <outfile xil_pn:name="DS1302_Top.ngc"/>
@@ -127,6 +130,7 @@
     <transform xil_pn:end_ts="1560887478" xil_pn:in_ck="2215306407384674642" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5507163987311410541" xil_pn:start_ts="1560887473">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="DS1302_Top.bld"/>
       <outfile xil_pn:name="DS1302_Top.ngd"/>
       <outfile xil_pn:name="DS1302_Top_ngdbuild.xrpt"/>
@@ -137,6 +141,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="DS1302_Top.pcf"/>
@@ -152,6 +157,7 @@
     <transform xil_pn:end_ts="1560887502" xil_pn:in_ck="3523813684281277932" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1560887489">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="DS1302_Top.ncd"/>
       <outfile xil_pn:name="DS1302_Top.pad"/>
       <outfile xil_pn:name="DS1302_Top.par"/>
@@ -163,9 +169,10 @@
       <outfile xil_pn:name="DS1302_Top_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1560887513" xil_pn:in_ck="-8527122276302059758" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1560887502">
+    <transform xil_pn:end_ts="1560927944" xil_pn:in_ck="-8527122276302059758" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1560927917">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="DS1302_Top.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="ds1302_top.bgn"/>
@@ -175,13 +182,15 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1560887515" xil_pn:in_ck="-1644249189663518404" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="2682241697568822907" xil_pn:start_ts="1560887515">
+    <transform xil_pn:end_ts="1560935843" xil_pn:in_ck="-1644249189663518404" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="2682241697568822907" xil_pn:start_ts="1560935842">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1560887502" xil_pn:in_ck="-8637976196840350193" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1560887497">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="DS1302_Top.twr"/>
       <outfile xil_pn:name="DS1302_Top.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
