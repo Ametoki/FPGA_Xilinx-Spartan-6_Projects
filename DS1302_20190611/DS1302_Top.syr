@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: DS1302_Top.prj
 
@@ -199,39 +199,14 @@ INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\
     Found 4-bit adder for signal <write_second[3]_GND_1_o_add_155_OUT> created at line 473.
     Found 8-bit adder for signal <write_week[7]_GND_1_o_add_166_OUT> created at line 495.
     Found 32-bit adder for signal <timer_cnt[31]_GND_1_o_add_226_OUT> created at line 561.
-    Found 16x18-bit Read Only RAM for signal <_n0516>
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <seg_bcd<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 16x17-bit Read Only RAM for signal <_n0473>
     Found 32-bit comparator greater for signal <n0175> created at line 554
     Summary:
 	inferred   1 RAM(s).
 	inferred  27 Adder/Subtractor(s).
 	inferred 105 D-type flip-flop(s).
-	inferred  24 Latch(s).
 	inferred   1 Comparator(s).
-	inferred  95 Multiplexer(s).
+	inferred  49 Multiplexer(s).
 Unit <DS1302_Top> synthesized.
 
 Synthesizing Unit <SEG_BCD>.
@@ -421,7 +396,7 @@ HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 8
- 16x18-bit single-port Read Only RAM                   : 1
+ 16x17-bit single-port Read Only RAM                   : 1
  16x8-bit single-port Read Only RAM                    : 6
  8x6-bit single-port Read Only RAM                     : 1
 # Adders/Subtractors                                   : 36
@@ -442,14 +417,13 @@ Macro Statistics
  5-bit register                                        : 1
  6-bit register                                        : 1
  8-bit register                                        : 30
-# Latches                                              : 24
- 1-bit latch                                           : 24
 # Comparators                                          : 2
  32-bit comparator greater                             : 2
-# Multiplexers                                         : 108
- 1-bit 2-to-1 multiplexer                              : 49
+# Multiplexers                                         : 62
+ 1-bit 2-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 1
  20-bit 2-to-1 multiplexer                             : 1
+ 24-bit 2-to-1 multiplexer                             : 2
  32-bit 2-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 5
  5-bit 2-to-1 multiplexer                              : 1
@@ -483,12 +457,12 @@ Unit <DS1302_IO> synthesized (advanced).
 
 Synthesizing (advanced) Unit <DS1302_Top>.
 The following registers are absorbed into counter <timer_cnt>: 1 register on signal <timer_cnt>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0516> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0473> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 16-word x 18-bit                    |          |
+    |     aspect ratio   | 16-word x 17-bit                    |          |
     |     weA            | connected to signal <GND>           | high     |
     |     addrA          | connected to signal <state>         |          |
     |     diA            | connected to signal <GND>           |          |
@@ -536,7 +510,7 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 8
- 16x18-bit single-port distributed Read Only RAM       : 1
+ 16x17-bit single-port distributed Read Only RAM       : 1
  16x8-bit single-port distributed Read Only RAM        : 6
  8x6-bit single-port distributed Read Only RAM         : 1
 # Adders/Subtractors                                   : 30
@@ -555,8 +529,9 @@ Macro Statistics
  Flip-Flops                                            : 415
 # Comparators                                          : 2
  32-bit comparator greater                             : 2
-# Multiplexers                                         : 110
- 1-bit 2-to-1 multiplexer                              : 57
+# Multiplexers                                         : 64
+ 1-bit 2-to-1 multiplexer                              : 9
+ 24-bit 2-to-1 multiplexer                             : 2
  4-bit 2-to-1 multiplexer                              : 4
  6-bit 2-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 47
@@ -744,15 +719,17 @@ INFO:Xst:2261 - The FF/Latch <seg_en_0> in Unit <DS1302_Top> is equivalent to th
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block DS1302_Top, actual ratio is 17.
+Found area constraint ratio of 100 (+ 5) on block DS1302_Top, actual ratio is 16.
 FlipFlop KEY_Debounce_0/button_negedge has been replicated 2 time(s)
-FlipFlop KEY_Debounce_1/button_negedge has been replicated 3 time(s)
+FlipFlop KEY_Debounce_1/button_negedge has been replicated 2 time(s)
 FlipFlop KEY_Debounce_2/button_negedge has been replicated 3 time(s)
 FlipFlop KEY_Debounce_3/button_negedge has been replicated 2 time(s)
-FlipFlop state_0 has been replicated 3 time(s)
+FlipFlop SEG_BCD_U0/SEG_Scan_U0/scan_sel_1 has been replicated 1 time(s)
+FlipFlop SEG_BCD_U0/SEG_Scan_U0/scan_sel_2 has been replicated 1 time(s)
+FlipFlop state_0 has been replicated 2 time(s)
 FlipFlop state_1 has been replicated 3 time(s)
-FlipFlop state_2 has been replicated 4 time(s)
-FlipFlop state_3 has been replicated 3 time(s)
+FlipFlop state_2 has been replicated 3 time(s)
+FlipFlop state_3 has been replicated 4 time(s)
 FlipFlop write_month_0 has been replicated 1 time(s)
 FlipFlop write_month_1 has been replicated 1 time(s)
 
@@ -786,30 +763,28 @@ Top Level Output File Name         : DS1302_Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1145
+# BELS                             : 1195
 #      GND                         : 1
 #      INV                         : 8
 #      LUT1                        : 100
-#      LUT2                        : 38
+#      LUT2                        : 39
 #      LUT3                        : 70
-#      LUT4                        : 152
-#      LUT5                        : 203
-#      LUT6                        : 264
+#      LUT4                        : 169
+#      LUT5                        : 209
+#      LUT6                        : 287
 #      MUXCY                       : 153
-#      MUXF7                       : 10
+#      MUXF7                       : 13
 #      VCC                         : 1
 #      XORCY                       : 145
-# FlipFlops/Latches                : 498
+# FlipFlops/Latches                : 474
 #      FD                          : 2
-#      FDC                         : 213
-#      FDCE                        : 151
+#      FDC                         : 211
+#      FDCE                        : 153
 #      FDE                         : 58
 #      FDP                         : 24
 #      FDR                         : 2
 #      FDRE                        : 24
-#      LD                          : 24
-# Clock Buffers                    : 2
-#      BUFG                        : 1
+# Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 22
 #      IBUF                        : 5
@@ -823,23 +798,23 @@ Selected Device : 6slx9ftg256-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             498  out of  11440     4%  
- Number of Slice LUTs:                  835  out of   5720    14%  
-    Number used as Logic:               835  out of   5720    14%  
+ Number of Slice Registers:             474  out of  11440     4%  
+ Number of Slice LUTs:                  882  out of   5720    15%  
+    Number used as Logic:               882  out of   5720    15%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    974
-   Number with an unused Flip Flop:     476  out of    974    48%  
-   Number with an unused LUT:           139  out of    974    14%  
-   Number of fully used LUT-FF pairs:   359  out of    974    36%  
-   Number of unique control sets:        20
+ Number of LUT Flip Flop pairs used:   1036
+   Number with an unused Flip Flop:     562  out of   1036    54%  
+   Number with an unused LUT:           154  out of   1036    14%  
+   Number of fully used LUT-FF pairs:   320  out of   1036    30%  
+   Number of unique control sets:        19
 
 IO Utilization: 
  Number of IOs:                          23
  Number of bonded IOBs:                  23  out of    186    12%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -863,11 +838,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
 clk                                | BUFGP                  | 474   |
-Mram__n05161(Mram__n0516111:O)     | BUFG(*)(seg_bcd_15)    | 24    |
 -----------------------------------+------------------------+-------+
-(*) This 1 clock signal(s) are generated by combinatorial logic,
-and XST is not able to identify which are the primary clock signals.
-Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -889,7 +860,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 6.015ns (frequency: 166.251MHz)
-  Total number of paths / destination ports: 15285 / 671
+  Total number of paths / destination ports: 16346 / 673
 -------------------------------------------------------------------------
 Delay:               6.015ns (Levels of Logic = 5)
   Source:            write_date_3 (FF)
@@ -905,7 +876,7 @@ Delay:               6.015ns (Levels of Logic = 5)
      LUT4:I0->O            4   0.254   0.804  write_date[3]_GND_1_o_equal_76_o<3>1 (write_date[3]_GND_1_o_equal_76_o)
      LUT5:I4->O            2   0.254   0.954  key[3]_write_date[7]_select_204_OUT<3>14 (key[3]_write_date[7]_select_204_OUT<3>14)
      LUT6:I3->O            1   0.235   1.112  key[3]_write_date[7]_select_204_OUT<2>4 (key[3]_write_date[7]_select_204_OUT<2>4)
-     LUT6:I1->O            1   0.254   0.000  key[3]_write_date[7]_select_204_OUT<2>5_G (N144)
+     LUT6:I1->O            1   0.254   0.000  key[3]_write_date[7]_select_204_OUT<2>5_G (N247)
      MUXF7:I1->O           1   0.175   0.000  key[3]_write_date[7]_select_204_OUT<2>5 (key[3]_write_date[7]_select_204_OUT<2>)
      FDE:D                     0.074          write_date_2
     ----------------------------------------
@@ -956,34 +927,25 @@ Offset:              4.202ns (Levels of Logic = 1)
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock Mram__n05161
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    4.765|         |
----------------+---------+---------+---------+---------+
-
 Clock to Setup on destination clock clk
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mram__n05161   |         |    4.631|         |         |
 clk            |    6.015|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 11.11 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.63 secs
  
 --> 
 
-Total memory usage is 4522792 kilobytes
+Total memory usage is 4523816 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  133 (   0 filtered)
+Number of warnings :  109 (   0 filtered)
 Number of infos    :   13 (   0 filtered)
 

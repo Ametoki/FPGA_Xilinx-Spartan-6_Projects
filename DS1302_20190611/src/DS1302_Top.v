@@ -604,7 +604,7 @@ begin
 		S_DISP_YEAR, S_WRITE_YEAR_P, S_WRITE_YEAR_M:
 			seg_bcd <= {4'h0, 8'h20, read_year, 4'h0};
 		default:
-			seg_bcd <= seg_bcd;
+			seg_bcd <= {read_hour, read_minute, read_second};
 	endcase
 end
 always@(*)

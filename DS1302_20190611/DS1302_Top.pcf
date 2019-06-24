@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Jun 21 02:33:20 2019
+// Written by: Map P.20131013 on Fri Jun 21 21:47:38 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -27,23 +27,23 @@ COMP "rtc_ce" LOCATE = SITE "C13" LEVEL 1;
 COMP "rtc_data" LOCATE = SITE "D14" LEVEL 1;
 COMP "rtc_sclk" LOCATE = SITE "E13" LEVEL 1;
 TIMEGRP sys_clk_pin = BEL "next_state_0" BEL "next_state_1" BEL "next_state_2"
-        BEL "next_state_3" BEL "write_year_0" BEL "write_year_1" BEL
-        "write_year_2" BEL "write_year_3" BEL "write_year_4" BEL
-        "write_year_5" BEL "write_year_6" BEL "write_year_7" BEL
-        "write_month_0" BEL "write_month_1" BEL "write_month_2" BEL
-        "write_month_3" BEL "write_month_4" BEL "write_month_5" BEL
-        "write_month_6" BEL "write_month_7" BEL "write_date_0" BEL
-        "write_date_1" BEL "write_date_2" BEL "write_date_3" BEL
-        "write_date_4" BEL "write_date_5" BEL "write_date_6" BEL
-        "write_date_7" BEL "write_hour_0" BEL "write_hour_1" BEL
+        BEL "next_state_3" BEL "write_hour_0" BEL "write_hour_1" BEL
         "write_hour_2" BEL "write_hour_3" BEL "write_hour_4" BEL
         "write_hour_5" BEL "write_hour_6" BEL "write_hour_7" BEL
+        "write_year_0" BEL "write_year_1" BEL "write_year_2" BEL
+        "write_year_3" BEL "write_year_4" BEL "write_year_5" BEL
+        "write_year_6" BEL "write_year_7" BEL "write_month_0" BEL
+        "write_month_1" BEL "write_month_2" BEL "write_month_3" BEL
+        "write_month_4" BEL "write_month_5" BEL "write_month_6" BEL
+        "write_month_7" BEL "write_second_0" BEL "write_second_1" BEL
+        "write_second_2" BEL "write_second_3" BEL "write_second_4" BEL
+        "write_second_5" BEL "write_second_6" BEL "write_second_7" BEL
         "write_minute_0" BEL "write_minute_1" BEL "write_minute_2" BEL
         "write_minute_3" BEL "write_minute_4" BEL "write_minute_5" BEL
-        "write_minute_6" BEL "write_minute_7" BEL "write_second_0" BEL
-        "write_second_1" BEL "write_second_2" BEL "write_second_3" BEL
-        "write_second_4" BEL "write_second_5" BEL "write_second_6" BEL
-        "write_second_7" BEL "write_week_0" BEL "write_week_1" BEL
+        "write_minute_6" BEL "write_minute_7" BEL "write_date_0" BEL
+        "write_date_1" BEL "write_date_2" BEL "write_date_3" BEL
+        "write_date_4" BEL "write_date_5" BEL "write_date_6" BEL
+        "write_date_7" BEL "write_week_0" BEL "write_week_1" BEL
         "write_week_2" BEL "write_week_3" BEL "write_week_4" BEL
         "write_week_5" BEL "write_week_6" BEL "write_week_7" BEL "state_0" BEL
         "state_1" BEL "state_2" BEL "state_3" BEL "CH" BEL "timer_cnt_0" BEL
@@ -363,14 +363,15 @@ TIMEGRP sys_clk_pin = BEL "next_state_0" BEL "next_state_1" BEL "next_state_2"
         "KEY_Debounce_3/button_negedge_1" BEL
         "KEY_Debounce_1/button_negedge_1" BEL
         "KEY_Debounce_2/button_negedge_1" BEL "state_1_1" BEL "state_2_1" BEL
-        "state_0_1" BEL "state_3_1" BEL "KEY_Debounce_0/button_negedge_2" BEL
+        "state_3_1" BEL "state_0_1" BEL "KEY_Debounce_0/button_negedge_2" BEL
         "KEY_Debounce_3/button_negedge_2" BEL
         "KEY_Debounce_1/button_negedge_2" BEL
-        "KEY_Debounce_2/button_negedge_2" BEL "state_1_2" BEL "state_2_2" BEL
-        "state_0_2" BEL "state_3_2" BEL "state_2_3" BEL "state_1_3" BEL
-        "state_3_3" BEL "state_0_3" BEL "KEY_Debounce_1/button_negedge_3" BEL
-        "KEY_Debounce_2/button_negedge_3" BEL "state_2_4" BEL
-        "write_month_1_1" BEL "write_month_0_1" BEL "clk_BUFGP/BUFG" BEL
+        "KEY_Debounce_2/button_negedge_2" BEL "state_3_2" BEL "state_2_2" BEL
+        "state_1_2" BEL "state_0_2" BEL "state_1_3" BEL "state_2_3" BEL
+        "state_3_3" BEL "KEY_Debounce_2/button_negedge_3" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_sel_1_1" BEL
+        "SEG_BCD_U0/SEG_Scan_U0/scan_sel_2_1" BEL "write_month_1_1" BEL
+        "state_3_4" BEL "write_month_0_1" BEL "clk_BUFGP/BUFG" BEL
         "DS1302_Test_U0/DS1302_U1/DS1302_IO/ds1302_io_dir" BEL
         "DS1302_Test_U0/DS1302_U1/DS1302_IO/SPI_Master/MOSI_shift_7";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;

@@ -251,3 +251,27 @@ map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -reg
 par -w -intstyle ise -ol high -mt off DS1302_Top_map.ncd DS1302_Top.ncd DS1302_Top.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml DS1302_Top.twx DS1302_Top.ncd -o DS1302_Top.twr DS1302_Top.pcf 
 bitgen -intstyle ise -f DS1302_Top.ut DS1302_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/DS1302_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/DS1302_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/DS1302_UCF.ucf -p xc6slx9-ftg256-2 DS1302_Top.ngc DS1302_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DS1302_Top_map.ncd DS1302_Top.ngd DS1302_Top.pcf 
+par -w -intstyle ise -ol high -mt off DS1302_Top_map.ncd DS1302_Top.ncd DS1302_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml DS1302_Top.twx DS1302_Top.ncd -o DS1302_Top.twr DS1302_Top.pcf 
+bitgen -intstyle ise -f DS1302_Top.ut DS1302_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/DS1302_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/DS1302_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/DS1302_UCF.ucf -p xc6slx9-ftg256-2 DS1302_Top.ngc DS1302_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DS1302_Top_map.ncd DS1302_Top.ngd DS1302_Top.pcf 
+par -w -intstyle ise -ol high -mt off DS1302_Top_map.ncd DS1302_Top.ncd DS1302_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml DS1302_Top.twx DS1302_Top.ncd -o DS1302_Top.twr DS1302_Top.pcf 
+bitgen -intstyle ise -f DS1302_Top.ut DS1302_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/DS1302_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/DS1302_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/DS1302_UCF.ucf -p xc6slx9-ftg256-2 DS1302_Top.ngc DS1302_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DS1302_Top_map.ncd DS1302_Top.ngd DS1302_Top.pcf 
+par -w -intstyle ise -ol high -mt off DS1302_Top_map.ncd DS1302_Top.ncd DS1302_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml DS1302_Top.twx DS1302_Top.ncd -o DS1302_Top.twr DS1302_Top.pcf 
+bitgen -intstyle ise -f DS1302_Top.ut DS1302_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/DS1302_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/DS1302_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/DS1302_UCF.ucf -p xc6slx9-ftg256-2 DS1302_Top.ngc DS1302_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DS1302_Top_map.ncd DS1302_Top.ngd DS1302_Top.pcf 
+par -w -intstyle ise -ol high -mt off DS1302_Top_map.ncd DS1302_Top.ncd DS1302_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml DS1302_Top.twx DS1302_Top.ncd -o DS1302_Top.twr DS1302_Top.pcf 
+bitgen -intstyle ise -f DS1302_Top.ut DS1302_Top.ncd 

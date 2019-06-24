@@ -166,7 +166,7 @@ begin
 	else if(state == S_WRITE_ADDR)
 		send_data <= {1'b0, write_addr[1], write_addr[2], write_addr[3], write_addr[4], write_addr[5], write_addr[6], 1'b1};
 	else if(state == S_WRITE_DATA)
-		send_data <= {write_data[0],write_data[1],write_data[2],write_data[3],write_data[4],write_data[5],write_data[6],write_data[7]};
+		send_data <= {write_data[0], write_data[1], write_data[2], write_data[3], write_data[4], write_data[5], write_data[6], write_data[7]};
 end
 SPI_Master SPI_Master
 (

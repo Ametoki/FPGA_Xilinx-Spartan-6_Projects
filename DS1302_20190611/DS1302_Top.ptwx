@@ -329,4 +329,4 @@
 <!ELEMENT twName (#PCDATA)>
 <!ELEMENT twValue (#PCDATA)>
 ]>
-<twReport><twBody><twSumRpt><twConstSummaryTable><twConstSummary><twConstName UCFConstName="" ScopeName="">TS_sys_clk_pin = PERIOD TIMEGRP &quot;sys_clk_pin&quot; 50 MHz HIGH 50%</twConstName><twConstData type="SETUP" slack="13.748" best="6.252" units="ns" errors="0" score="0"/><twConstData type="HOLD" slack="0.412" units="ns" errors="0" score="0"/></twConstSummary></twConstSummaryTable><twUnmetConstCnt anchorID="4">0</twUnmetConstCnt></twSumRpt></twBody></twReport>
+<twReport><twBody><twSumRpt><twConstSummaryTable><twConstSummary><twConstName UCFConstName="" ScopeName="">TS_sys_clk_pin = PERIOD TIMEGRP &quot;sys_clk_pin&quot; 50 MHz HIGH 50%</twConstName><twConstData type="SETUP" slack="13.089" best="6.911" units="ns" errors="0" score="0"/><twConstData type="HOLD" slack="0.411" units="ns" errors="0" score="0"/></twConstSummary></twConstSummaryTable><twUnmetConstCnt anchorID="4">0</twUnmetConstCnt></twSumRpt></twBody></twReport>
