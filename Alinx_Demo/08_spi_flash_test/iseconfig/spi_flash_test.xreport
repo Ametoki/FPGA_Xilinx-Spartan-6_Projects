@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-11-17T15:34:27</DateModified>
+  <DateModified>2019-07-06T21:17:18</DateModified>
   <ModuleName>spi_flash_test</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/spi_flash_test/iseconfig/spi_flash_test.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/spi_flash_test\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/Alinx_Demo/08_spi_flash_test/iseconfig/spi_flash_test.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/Alinx_Demo/08_spi_flash_test\</ImplementationReportsDirectory>
   <DateInitialized>2017-11-17T15:25:46</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
