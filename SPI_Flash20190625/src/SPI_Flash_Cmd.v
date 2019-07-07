@@ -18,6 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
+`include "spi_flash_defines.v"
 module SPI_Flash_Cmd
 (
 	input           sys_clk,
@@ -63,32 +64,81 @@ begin
 end
 always@(posedge sys_clk or posedge rst)
 begin
-	if(rst == 1'b1)
+	if(rst)
 		wr_req <= 1'b0;
 	else
 		wr_req <= (state == S_READ_BYTES || state == S_WR_CMD_CODE || state == S_WRITE_BYTES) ? 1'b1 : 1'b0;
 end
 always@(posedge sys_clk or posedge rst)
 begin
-	if(rst == 1'b1)
+	if(rst)
 		data_req <= 1'b0;
 	else
 		data_req <= ((state == S_WRITE_BYTES ) && (byte_cnt >= 9'd2) && (byte_cnt != byte_size - 9'd1) && wr_ack_d0 == 1'b1) ? 1'b1 : 1'b0;
 end
 always@(posedge sys_clk or posedge rst)
 begin
-	if(rst == 1'b1)
+	if(rst)
 		state <= S_IDLE;
 	else
 		state <= next_state;
 end
 always@(posedge sys_clk or posedge rst)
 begin
-	if(rst == 1'b1)
+	if(rst)
 		CS_reg <= 1'b0;
 	else if(state == S_CS_LOW)
 		CS_reg <= 1'b0;
 	else if(state == S_CS_HIGH || state == S_IDLE)
 		CS_reg <= 1'b1;
+end
+always@(posedge sys_clk or posedge rst)
+begin
+	if(rst)
+		data_valid <= 1'b0;
+	else if(state == S_READ_BYTES && byte_cnt >= 9'd3 && wr_ack == 1'b1 && cmd == `CMD_READ)
+		data_valid <= 1'b1;
+	else if(state == S_READ_BYTES && byte_cnt >= 9'd0 && wr_ack == 1'b1 && (cmd == `CMD_RDID || cmd == `CMD_RDSR))
+		data_valid <= 1'b1;
+	else
+		data_valid <= 1'b0;
+end
+always@(posedge sys_clk or posedge rst)
+begin
+	if(rst)
+		data_out <= 8'd0;
+	else if(state == S_READ_BYTES && byte_cnt >= 9'd3 && wr_ack == 1'b1 && cmd == `CMD_READ)
+		data_out <= data_recv;
+	else if(state == S_READ_BYTES && byte_cnt >= 9'd0 && wr_ack == 1'b1 && (cmd == CMD_RDID || cmd == CMD_RDSR))
+		data_out <= data_recv;
+	else
+		data_out <= data_out;
+end
+always@(posedge sys_clk or posedge rst)
+begin
+	if(rst)
+		send_data <= 8'd0;
+	else if(state == S_WR_CMD_CODE)
+		send_data <= cmd_code;
+	else if(state == S_READ_BYTES)
+		if(byte_cnt == 8'd0)
+			send_data <= addr[23:16];
+		else if(byte_cnt == 8'd1)
+			send_data <= addr[15:8];
+		else if(byte_cnt == 8'd2)
+			send_data <= addr[7:0];
+		else
+			send_data <= 8'd0;
+	else if(state == S_WRITE_BYTES)
+		if(byte_cnt == 8'd0)
+			send_data <= addr[23:16];
+		else if(byte_cnt == 8'd1)
+			send_data <= addr[15:8];
+		else if(byte_cnt == 8'd2)
+			send_data <= addr[7:0];
+		else
+			send_data <= data_in;
+	else
+		send_data <= 8'd0;
 end
 endmodule
