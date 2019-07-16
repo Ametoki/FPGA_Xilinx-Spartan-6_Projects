@@ -141,4 +141,84 @@ begin
 	else
 		send_data <= 8'd0;
 end
+always@(posedge sys_clk or posedge rst)
+begin
+	if(rst == 1'b1)
+		byte_cnt <= 9'd0;
+	else if(state == S_READ_BYTES || state == S_WRITE_BYTES)
+		if(wr_ack == 1'b1)
+			byte_cnt <= byte_cnt + 9'd1;
+		else
+			byte_cnt <= byte_cnt;
+	else
+		byte_cnt <= 9'd0;
+end
+always@(posedge sys_clk or posedge rst)
+begin
+	if(rst == 1'b1)
+		byte_size <= 9'd0;
+	else if(state == S_CMD_LATCH)
+		case(cmd)
+			`CMD_RDID      : byte_size <= size;
+			`CMD_RDSR      : byte_size <= size;
+			`CMD_WRSR      : byte_size <= 9'd1;
+			`CMD_READ      : byte_size <= 9'd3 + size;
+			`CMD_FAST_READ : byte_size <= 9'd3 + size;
+			`CMD_PP        : byte_size <= 9'd3 + size;
+			`CMD_SE        : byte_size <= 9'd3 + size;
+			default        : byte_size <= 9'd0;
+		endcase
+	else
+		byte_size <= byte_size;
+end
+always@(posedge sys_clk or posedge rst)
+begin
+	if(rst == 1'b1)
+		cmd_code <= 8'd0;
+	else if(state == S_CMD_LATCH)
+		cmd_code <= cmd;
+	else
+		cmd_code <= cmd_code;
+end
+always@(*)
+begin
+	case(state)
+		S_IDLE:
+			if(cmd_valid == 1'b1)
+				next_state <= S_CMD_LATCH;
+			else
+				next_state <= S_IDLE;
+		S_CMD_LATCH:
+			next_state <= S_CS_LOW;
+		S_CS_LOW:
+			next_state <= S_WR_CMD_CODE;
+		S_WR_CMD_CODE:
+			if(wr_ack == 1'b1 && ((cmd == `CMD_WREN) || (cmd == `CMD_WRDI) || (cmd == `CMD_BE)))
+				next_state <= S_KEEP_CS_LOW;
+			else if(wr_ack == 1'b1 && ((cmd == `CMD_RDSR) || (cmd == `CMD_RDID) || (cmd == `CMD_READ) || (cmd == `CMD_FAST_READ)))
+				next_state <= S_READ_BYTES;
+			else if(wr_ack == 1'b1 && ((cmd == `CMD_WRSR) || (cmd == `CMD_PP) || (cmd == `CMD_SE)))
+				next_state <= S_WRITE_BYTES;
+			else
+				next_state <= S_WR_CMD_CODE;
+		S_READ_BYTES:
+			if(wr_ack == 1'b1 && byte_cnt == byte_size - 9'd1;
+				next_state <= S_KEEP_CS_lOW;
+			else
+				next_state <= S_READ_BYTES;
+		S_WRITE_BYTES:
+			if(wr_ack == 1'b1 && byte_cnt == byte_size - 9'd1)
+				next_state <= S_KEEP_CS_LOW;
+			else
+				next_state <= S_WRITE_BYTES;
+		S_KEEP_CS_LOW:
+			next_state <= S_CS_HIGH;
+		S_CS_HIGH:
+			next_state <= S_CMD_ACK;
+		S_CMD_ACK:
+			next_state <= S_IDLE;
+		default:
+			next_state <= S_IDLE;
+		endcase
+end
 endmodule

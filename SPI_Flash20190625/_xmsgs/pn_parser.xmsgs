@@ -11,5 +11,71 @@
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v&quot; into library work</arg>
 </msg>
 
+<msg type="error" file="ProjectMgmt" num="281" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Cannot open include file &quot;spi_flash_defines.v&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="870" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">99</arg>. <arg fmt="%s" index="3">Macro &lt;CMD_READ&gt; is not defined.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">99</arg>. <arg fmt="%s" index="3">Syntax error near &quot;)&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">101</arg>. <arg fmt="%s" index="3">Syntax error near &quot;else&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="870" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">101</arg>. <arg fmt="%s" index="3">Macro &lt;CMD_RDID&gt; is not defined.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">103</arg>. <arg fmt="%s" index="3">Syntax error near &quot;else&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">110</arg>. <arg fmt="%s" index="3">Syntax error near &quot;)&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">112</arg>. <arg fmt="%s" index="3">Syntax error near &quot;else&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">162</arg>. <arg fmt="%s" index="3">Syntax error near &quot;:&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">163</arg>. <arg fmt="%s" index="3">Syntax error near &quot;:&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="870" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">164</arg>. <arg fmt="%s" index="3">Macro &lt;CMD_WRSR&gt; is not defined.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">164</arg>. <arg fmt="%s" index="3">Syntax error near &quot;:&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">165</arg>. <arg fmt="%s" index="3">Syntax error near &quot;:&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="870" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">166</arg>. <arg fmt="%s" index="3">Macro &lt;CMD_FAST_READ&gt; is not defined.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">166</arg>. <arg fmt="%s" index="3">Syntax error near &quot;:&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="870" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">167</arg>. <arg fmt="%s" index="3">Macro &lt;CMD_PP&gt; is not defined.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">167</arg>. <arg fmt="%s" index="3">Syntax error near &quot;:&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="870" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">168</arg>. <arg fmt="%s" index="3">Macro &lt;CMD_SE&gt; is not defined.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">168</arg>. <arg fmt="%s" index="3">Syntax error near &quot;:&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="870" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">196</arg>. <arg fmt="%s" index="3">Macro &lt;CMD_WREN&gt; is not defined.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">196</arg>. <arg fmt="%s" index="3">Syntax error near &quot;)&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/SPI_Flash20190625/src/SPI_Flash_Cmd.v</arg>&quot; Line <arg fmt="%d" index="2">205</arg>. <arg fmt="%s" index="3">Syntax error near &quot;;&quot;.</arg>
+</msg>
+
 </messages>
 
