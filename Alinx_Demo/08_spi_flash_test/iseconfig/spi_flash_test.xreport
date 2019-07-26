@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-07-12T21:55:19</DateModified>
+  <DateModified>2019-07-18T10:10:15</DateModified>
   <ModuleName>spi_flash_test</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/Alinx_Demo/08_spi_flash_test/iseconfig/spi_flash_test.xreport</SavedFilePath>

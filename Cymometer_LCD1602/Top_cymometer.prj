@@ -1,0 +1,6 @@
+verilog work "ipcore_dir/PLL_CLK.v"
+verilog work "src/LCD1602_Master.v"
+verilog work "src/PLL_clk_high.v"
+verilog work "src/LCD1602_Top.v"
+verilog work "src/Cymometer.v"
+verilog work "src/Top_cymometer.v"

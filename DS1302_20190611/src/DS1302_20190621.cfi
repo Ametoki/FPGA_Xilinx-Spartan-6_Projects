@@ -2,10 +2,10 @@
 # Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 SOFTWARE_VERSION P.20131013
-DATE            06/21/2019 - 02:35
+DATE            07/19/2019 - 17:59
 SOURCE          D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_20190621.mcs
 DEVICE          2048K
 DATA_WIDTH      1
 FILL_DATA       0xFF
-SIGNATURE       0x1ACB4C91
+SIGNATURE       0x1ACC3345
 START_ADDRESS   0x00000000 END_ADDRESS 0x0005327B DIRECTION_UP   "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/ds1302_top.bit" 6slx9ftg256

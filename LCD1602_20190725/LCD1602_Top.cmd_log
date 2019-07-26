@@ -1,0 +1,347 @@
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 
+xst -intstyle ise -ifn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.xst" -ofn "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/LCD1602_20190725/LCD1602_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/LCD1602_20190723.ucf -p xc6slx9-ftg256-2 LCD1602_Top.ngc LCD1602_Top.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD1602_Top_map.ncd LCD1602_Top.ngd LCD1602_Top.pcf 
+par -w -intstyle ise -ol high -mt off LCD1602_Top_map.ncd LCD1602_Top.ncd LCD1602_Top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD1602_Top.twx LCD1602_Top.ncd -o LCD1602_Top.twr LCD1602_Top.pcf 
+bitgen -intstyle ise -f LCD1602_Top.ut LCD1602_Top.ncd 

@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Fri Jul 19 19:43:22 2019
+
+drc -z I2C_E2PROM_Test.ncd I2C_E2PROM_Test.pcf
+
+DRC detected 0 errors and 0 warnings.

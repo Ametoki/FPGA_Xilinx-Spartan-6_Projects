@@ -1,0 +1,8 @@
+verilog work "ipcore_dir/PLL_CLK.v"
+verilog work "src/SEG_Scan.v"
+verilog work "src/SEG_Decoder.v"
+verilog work "src/SEG_Data.v"
+verilog work "src/PLL_clk_high.v"
+verilog work "src/Cymometer.v"
+verilog work "src/Clk_fx_generator.v"
+verilog work "src/Top_cymometer.v"

@@ -1,0 +1,148 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Jul 22 18:50:12 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "seg_data<0>" LOCATE = SITE "C7" LEVEL 1;
+COMP "seg_data<1>" LOCATE = SITE "E6" LEVEL 1;
+COMP "seg_data<2>" LOCATE = SITE "C5" LEVEL 1;
+COMP "seg_data<3>" LOCATE = SITE "F7" LEVEL 1;
+COMP "seg_data<4>" LOCATE = SITE "D6" LEVEL 1;
+COMP "seg_data<5>" LOCATE = SITE "E7" LEVEL 1;
+COMP "seg_data<6>" LOCATE = SITE "D5" LEVEL 1;
+COMP "seg_data<7>" LOCATE = SITE "C6" LEVEL 1;
+COMP "seg_sel<0>" LOCATE = SITE "D9" LEVEL 1;
+COMP "seg_sel<1>" LOCATE = SITE "E10" LEVEL 1;
+COMP "seg_sel<2>" LOCATE = SITE "F10" LEVEL 1;
+COMP "seg_sel<3>" LOCATE = SITE "F9" LEVEL 1;
+COMP "seg_sel<4>" LOCATE = SITE "E8" LEVEL 1;
+COMP "seg_sel<5>" LOCATE = SITE "D8" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "L3" LEVEL 1;
+COMP "sys_clk" LOCATE = SITE "T8" LEVEL 1;
+TIMEGRP PLL_Clk_PLL_Inst_clkfx = BEL "Clk_fx/clk_fx" BEL "Clk_fx/clk_cnt_0"
+        BEL "Clk_fx/clk_cnt_1" BEL "Clk_fx/clk_cnt_2" BEL "Clk_fx/clk_cnt_3"
+        BEL "Clk_fx/clk_cnt_4" BEL "Clk_fx/clk_cnt_5" BEL "Clk_fx/clk_cnt_6"
+        BEL "Clk_fx/clk_cnt_7" BEL "Clk_fx/clk_cnt_8" BEL
+        "PLL_Clk/PLL_Inst/clkout1_buf" BEL "Cymometer/fs_cnt_temp_31" BEL
+        "Cymometer/fs_cnt_temp_30" BEL "Cymometer/fs_cnt_temp_29" BEL
+        "Cymometer/fs_cnt_temp_28" BEL "Cymometer/fs_cnt_temp_27" BEL
+        "Cymometer/fs_cnt_temp_26" BEL "Cymometer/fs_cnt_temp_25" BEL
+        "Cymometer/fs_cnt_temp_24" BEL "Cymometer/fs_cnt_temp_23" BEL
+        "Cymometer/fs_cnt_temp_22" BEL "Cymometer/fs_cnt_temp_21" BEL
+        "Cymometer/fs_cnt_temp_20" BEL "Cymometer/fs_cnt_temp_19" BEL
+        "Cymometer/fs_cnt_temp_18" BEL "Cymometer/fs_cnt_temp_17" BEL
+        "Cymometer/fs_cnt_temp_16" BEL "Cymometer/fs_cnt_temp_15" BEL
+        "Cymometer/fs_cnt_temp_14" BEL "Cymometer/fs_cnt_temp_13" BEL
+        "Cymometer/fs_cnt_temp_12" BEL "Cymometer/fs_cnt_temp_11" BEL
+        "Cymometer/fs_cnt_temp_10" BEL "Cymometer/fs_cnt_temp_9" BEL
+        "Cymometer/fs_cnt_temp_8" BEL "Cymometer/fs_cnt_temp_7" BEL
+        "Cymometer/fs_cnt_temp_6" BEL "Cymometer/fs_cnt_temp_5" BEL
+        "Cymometer/fs_cnt_temp_4" BEL "Cymometer/fs_cnt_temp_3" BEL
+        "Cymometer/fs_cnt_temp_2" BEL "Cymometer/fs_cnt_temp_1" BEL
+        "Cymometer/fs_cnt_temp_0" BEL "Cymometer/data_fx_19" BEL
+        "Cymometer/data_fx_18" BEL "Cymometer/data_fx_17" BEL
+        "Cymometer/data_fx_16" BEL "Cymometer/data_fx_15" BEL
+        "Cymometer/data_fx_14" BEL "Cymometer/data_fx_13" BEL
+        "Cymometer/data_fx_12" BEL "Cymometer/data_fx_11" BEL
+        "Cymometer/data_fx_10" BEL "Cymometer/data_fx_9" BEL
+        "Cymometer/data_fx_8" BEL "Cymometer/data_fx_7" BEL
+        "Cymometer/data_fx_6" BEL "Cymometer/data_fx_5" BEL
+        "Cymometer/data_fx_4" BEL "Cymometer/data_fx_3" BEL
+        "Cymometer/data_fx_2" BEL "Cymometer/data_fx_1" BEL
+        "Cymometer/data_fx_0" BEL "Cymometer/fs_cnt_31" BEL
+        "Cymometer/fs_cnt_30" BEL "Cymometer/fs_cnt_29" BEL
+        "Cymometer/fs_cnt_28" BEL "Cymometer/fs_cnt_27" BEL
+        "Cymometer/fs_cnt_26" BEL "Cymometer/fs_cnt_25" BEL
+        "Cymometer/fs_cnt_24" BEL "Cymometer/fs_cnt_23" BEL
+        "Cymometer/fs_cnt_22" BEL "Cymometer/fs_cnt_21" BEL
+        "Cymometer/fs_cnt_20" BEL "Cymometer/fs_cnt_19" BEL
+        "Cymometer/fs_cnt_18" BEL "Cymometer/fs_cnt_17" BEL
+        "Cymometer/fs_cnt_16" BEL "Cymometer/fs_cnt_15" BEL
+        "Cymometer/fs_cnt_14" BEL "Cymometer/fs_cnt_13" BEL
+        "Cymometer/fs_cnt_12" BEL "Cymometer/fs_cnt_11" BEL
+        "Cymometer/fs_cnt_10" BEL "Cymometer/fs_cnt_9" BEL
+        "Cymometer/fs_cnt_8" BEL "Cymometer/fs_cnt_7" BEL "Cymometer/fs_cnt_6"
+        BEL "Cymometer/fs_cnt_5" BEL "Cymometer/fs_cnt_4" BEL
+        "Cymometer/fs_cnt_3" BEL "Cymometer/fs_cnt_2" BEL "Cymometer/fs_cnt_1"
+        BEL "Cymometer/fs_cnt_0" BEL "Cymometer/gate_fs_d1" BEL
+        "Cymometer/gate_fs_d0" BEL "Cymometer/gate_fs" BEL
+        "Cymometer/gate_fs_reg" BEL "Seg_top/Seg_scan/scan_timer_15" BEL
+        "Seg_top/Seg_scan/scan_timer_14" BEL "Seg_top/Seg_scan/scan_timer_13"
+        BEL "Seg_top/Seg_scan/scan_timer_12" BEL
+        "Seg_top/Seg_scan/scan_timer_11" BEL "Seg_top/Seg_scan/scan_timer_10"
+        BEL "Seg_top/Seg_scan/scan_timer_9" BEL
+        "Seg_top/Seg_scan/scan_timer_8" BEL "Seg_top/Seg_scan/scan_timer_7"
+        BEL "Seg_top/Seg_scan/scan_timer_6" BEL
+        "Seg_top/Seg_scan/scan_timer_5" BEL "Seg_top/Seg_scan/scan_timer_4"
+        BEL "Seg_top/Seg_scan/scan_timer_3" BEL
+        "Seg_top/Seg_scan/scan_timer_2" BEL "Seg_top/Seg_scan/scan_timer_1"
+        BEL "Seg_top/Seg_scan/scan_timer_0" BEL "Seg_top/Seg_scan/scan_sel_3"
+        BEL "Seg_top/Seg_scan/scan_sel_2" BEL "Seg_top/Seg_scan/scan_sel_1"
+        BEL "Seg_top/Seg_scan/scan_sel_0" BEL "Seg_top/Seg_scan/seg_sel_5" BEL
+        "Seg_top/Seg_scan/seg_sel_4" BEL "Seg_top/Seg_scan/seg_sel_3" BEL
+        "Seg_top/Seg_scan/seg_sel_2" BEL "Seg_top/Seg_scan/seg_sel_1" BEL
+        "Seg_top/Seg_scan/seg_sel_0" BEL "Seg_top/Seg_scan/seg_data_6" BEL
+        "Seg_top/Seg_scan/seg_data_5" BEL "Seg_top/Seg_scan/seg_data_4" BEL
+        "Seg_top/Seg_scan/seg_data_3" BEL "Seg_top/Seg_scan/seg_data_2" BEL
+        "Seg_top/Seg_scan/seg_data_1" BEL "Seg_top/Seg_scan/seg_data_0" BEL
+        "Cymometer/fs_cnt_29_1" BEL "Cymometer/fs_cnt_30_1" BEL
+        "Cymometer/fs_cnt_31_1" BEL "Cymometer/fs_cnt_0_1" BEL
+        "Cymometer/fs_cnt_1_1" BEL "Cymometer/fs_cnt_2_1" BEL
+        "Cymometer/fs_cnt_3_1" BEL "Cymometer/fs_cnt_4_1" BEL
+        "Cymometer/fs_cnt_5_1" BEL "Cymometer/fs_cnt_6_1" BEL
+        "Cymometer/fs_cnt_7_1" BEL "Cymometer/fs_cnt_8_1" BEL
+        "Cymometer/fs_cnt_9_1" BEL "Cymometer/fs_cnt_10_1" BEL
+        "Cymometer/fs_cnt_11_1" BEL "Cymometer/fs_cnt_12_1" BEL
+        "Cymometer/fs_cnt_13_1" BEL "Cymometer/fs_cnt_14_1" BEL
+        "Cymometer/fs_cnt_15_1" BEL "Cymometer/fs_cnt_16_1" BEL
+        "Cymometer/fs_cnt_17_1" BEL "Cymometer/fs_cnt_18_1" BEL
+        "Cymometer/fs_cnt_19_1" BEL "Cymometer/fs_cnt_20_1" BEL
+        "Cymometer/fs_cnt_21_1" BEL "Cymometer/fs_cnt_22_1" BEL
+        "Cymometer/fs_cnt_23_1" BEL "Cymometer/fs_cnt_24_1" BEL
+        "Cymometer/fs_cnt_25_1" BEL "Cymometer/fs_cnt_26_1" BEL
+        "Cymometer/fs_cnt_27_1" BEL "Cymometer/fs_cnt_28_1" BEL
+        "Cymometer/fs_cnt_29_2" BEL "Cymometer/fs_cnt_31_2" BEL
+        "Cymometer/fs_cnt_30_2" BEL "Cymometer/fs_cnt_0_2" BEL
+        "Cymometer/fs_cnt_1_2" BEL "Cymometer/fs_cnt_2_2" BEL
+        "Cymometer/fs_cnt_3_2" BEL "Cymometer/fs_cnt_4_2" BEL
+        "Cymometer/fs_cnt_5_2" BEL "Cymometer/fs_cnt_6_2" BEL
+        "Cymometer/fs_cnt_7_2" BEL "Cymometer/fs_cnt_8_2" BEL
+        "Cymometer/fs_cnt_9_2" BEL "Cymometer/fs_cnt_10_2" BEL
+        "Cymometer/fs_cnt_11_2" BEL "Cymometer/fs_cnt_12_2" BEL
+        "Cymometer/fs_cnt_13_2" BEL "Cymometer/fs_cnt_14_2" BEL
+        "Cymometer/fs_cnt_15_2" BEL "Cymometer/fs_cnt_16_2" BEL
+        "Cymometer/fs_cnt_17_2" BEL "Cymometer/fs_cnt_18_2" BEL
+        "Cymometer/fs_cnt_19_2" BEL "Cymometer/fs_cnt_20_2" BEL
+        "Cymometer/fs_cnt_21_2" BEL "Cymometer/fs_cnt_22_2" BEL
+        "Cymometer/fs_cnt_23_2" BEL "Cymometer/fs_cnt_24_2" BEL
+        "Cymometer/fs_cnt_25_2" BEL "Cymometer/fs_cnt_26_2" BEL
+        "Cymometer/fs_cnt_27_2" BEL "Cymometer/fs_cnt_28_2" BEL
+        "Cymometer/fs_cnt_29_3" BEL "Cymometer/fs_cnt_30_3" BEL
+        "Cymometer/fs_cnt_31_3" BEL "Cymometer/fs_cnt_0_3" BEL
+        "Cymometer/fs_cnt_1_3" BEL "Cymometer/fs_cnt_2_3" BEL
+        "Cymometer/fs_cnt_3_3" BEL "Cymometer/fs_cnt_4_3" BEL
+        "Cymometer/fs_cnt_5_3" BEL "Cymometer/fs_cnt_6_3" BEL
+        "Cymometer/fs_cnt_7_3" BEL "Cymometer/fs_cnt_8_3" BEL
+        "Cymometer/fs_cnt_9_3" BEL "Cymometer/fs_cnt_10_3" BEL
+        "Cymometer/fs_cnt_11_3" BEL "Cymometer/fs_cnt_12_3" BEL
+        "Cymometer/fs_cnt_13_3" BEL "Cymometer/fs_cnt_14_3" BEL
+        "Cymometer/fs_cnt_15_3" BEL "Cymometer/fs_cnt_16_3" BEL
+        "Cymometer/fs_cnt_17_3" BEL "Cymometer/fs_cnt_18_3" BEL
+        "Cymometer/fs_cnt_19_3" BEL "Cymometer/fs_cnt_20_3" BEL
+        "Cymometer/fs_cnt_21_3" BEL "Cymometer/fs_cnt_22_3" BEL
+        "Cymometer/fs_cnt_23_3" BEL "Cymometer/fs_cnt_24_3" BEL
+        "Cymometer/fs_cnt_25_3" BEL "Cymometer/fs_cnt_26_3" BEL
+        "Cymometer/fs_cnt_27_3" BEL "Cymometer/fs_cnt_28_3" BEL
+        "Cymometer/fs_cnt_0_4" BEL "Cymometer/fs_cnt_1_4" BEL
+        "Cymometer/fs_cnt_2_4";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN PLL_Clk/PLL_Inst/dcm_sp_inst_pins<3> = BEL "PLL_Clk/PLL_Inst/dcm_sp_inst"
+        PINNAME CLKIN;
+TIMEGRP sys_clk_pin = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "PLL_Clk/PLL_Inst/dcm_sp_inst_pins<3>";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+TS_PLL_Clk_PLL_Inst_clkfx = PERIOD TIMEGRP "PLL_Clk_PLL_Inst_clkfx"
+        TS_sys_clk_pin * 6 HIGH 50%;
+SCHEMATIC END;
+

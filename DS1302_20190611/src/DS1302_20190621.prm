@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 promgen -w -p mcs -c FF -o D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src//DS1302_20190621 -s 2048 -u 0000 D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/ds1302_top.bit -spi 
 
-PROM D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_20190621.prm map: Fri Jun 21 02:35:19 2019
+PROM D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\DS1302_20190611\src\DS1302_20190621.prm map: Fri Jul 19 17:59:14 2019
 
 Calculating PROM checksum with fill value ff
 
@@ -11,7 +11,7 @@ Format        Mcs86 (32-bit)
 Size          2048K
 PROM start    0000:0000
 PROM end      001f:ffff
-PROM checksum 1acb4c91
+PROM checksum 1acc3345
 
         Addr1        Addr2                     Date File(s)
-    0000:0000    0005:327b     Jun 21 02:33:42 2019 D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/ds1302_top.bit
+    0000:0000    0005:327b     Jun 21 21:48:02 2019 D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/ds1302_top.bit

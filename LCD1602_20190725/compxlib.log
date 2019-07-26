@@ -1,0 +1,264 @@
+    ____  ____
+   /   /\/   /
+  /___/  \  /    VENDOR      : Xilinx Inc.
+  \   \   \/     VERSION     : 14.7 (P.20131013)
+   \   \         APPLICATION : C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\compxlib.exe
+   /   /         CONTENTS    : Compilation Log
+  /___/   /\     FILENAME    : compxlib.log
+  \   \  /  \    
+   \___\/\___\
+
+Release 14.7 - C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\compxlib.exe 14.7 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Processing command line ...
+Library Source Paths => 'C:/Xilinx/14.7/ISE_DS/ISE'
+Current Working Directory => 'D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\LCD1602_20190725'
+Compilation Mode = FAST
+Execute Mode = ON
+Scheduling library installation & compilation for architectures: spartan3adsp
+
+Scheduling library installation & compilation for libraries: simprim unisim xilinxcorelib
+
+Signature:-
+------------------------------------------------------------------------------
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\compxlib.exe -s mti_se -l all -p C:/modeltech64_10.7/win64 -arch spartan3adsp -lib unisim -lib simprim -lib xilinxcorelib -intstyle ise 
+------------------------------------------------------------------------------
+
+Setting up the simulator 'mti_se' for compilation ...
+The executable path is set to 'C:/modeltech64_10.7/win64' ...
+Setting up the source libraries for simulator 'mti_se' ...
+
+
+
+Compiling Xilinx HDL Libraries for 'mti_se' simulator
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+Language => 'vhdl,verilog'
+The modelsim.ini file not found, create it.
+Output directory => 'C:\Xilinx\14.7\ISE_DS\ISE'
+
+WARNING:Compxlib:312 - Output directory 'C:\Xilinx\14.7\ISE_DS\ISE\vhdl\mti_se\10.7\nt64' does not exist, it will be created.
+Directory 'C:\Xilinx\14.7\ISE_DS\ISE\vhdl\mti_se\10.7\nt64' is created.
+
+Library vhdl.unisim will be compiled, because no precompiled info.
+--> Compiling vhdl.unisim library ...
+    > vhdl.unisim library compiled from C:/Xilinx/14.7/ISE_DS/ISE/vhdl/src/unisims
+    > vhdl.unisim library compiled to C:\Xilinx\14.7\ISE_DS\ISE\vhdl\mti_se\10.7\nt64/unisim
+==============================================================================
+BEGIN_COMPILATION_MESSAGES(mti_se:vhdl:unisim)
+Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+vmap unisim C:\Xilinx\14.7\ISE_DS\ISE\vhdl\mti_se\10.7\nt64/unisim 
+Modifying modelsim.ini
+
+** Warning: (vcom-159) Mode option -32 is not supported in this context and will be ignored.
+Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
+** Error (suppressible): (vcom-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+Errors: 1, Warnings: 1
+
+
+END_COMPILATION_MESSAGES(mti_se:vhdl:unisim)
+==============================================================================
+    > Log file 'C:\Xilinx\14.7\ISE_DS\ISE\vhdl\mti_se\10.7\nt64/unisim/.cxl.vhdl.unisim.unisim.nt64.log' generated
+
+Library vhdl.unisim:vhdl.unimacro will be compiled, because no precompiled info.
+--> Compiling vhdl.unisim:vhdl.unimacro library ...
+    > vhdl.unisim:vhdl.unimacro library compiled from C:/Xilinx/14.7/ISE_DS/ISE/vhdl/src/unimacro
+    > vhdl.unisim:vhdl.unimacro library compiled to C:\Xilinx\14.7\ISE_DS\ISE\vhdl\mti_se\10.7\nt64/unimacro
+==============================================================================
+BEGIN_COMPILATION_MESSAGES(mti_se:vhdl:unimacro)
+Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+vmap unimacro C:\Xilinx\14.7\ISE_DS\ISE\vhdl\mti_se\10.7\nt64/unimacro 
+Modifying modelsim.ini
+
+** Warning: (vcom-159) Mode option -32 is not supported in this context and will be ignored.
+Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
+** Error (suppressible): (vcom-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+Errors: 1, Warnings: 1
+
+
+END_COMPILATION_MESSAGES(mti_se:vhdl:unimacro)
+==============================================================================
+    > Log file 'C:\Xilinx\14.7\ISE_DS\ISE\vhdl\mti_se\10.7\nt64/unimacro/.cxl.vhdl.unimacro.unimacro.nt64.log' generated
+compxlib[vhdl.unisim:vhdl.unimacro]: 1 error(s), 1 warning(s)
+
+INFO:Compxlib - Please refer to the messages between 'BEGIN_COMPILATION_MESSAGES(mti_se:vhdl:unimacro)' and 'END_COMPILATION_MESSAGES(mti_se:vhdl:unimacro)' in the log file compxlib.log for details of compilation error(s).
+
+compxlib[vhdl.unisim]: 2 error(s), 2 warning(s), 16.67 % complete
+
+
+INFO:Compxlib - Please refer to the messages between 'BEGIN_COMPILATION_MESSAGES(mti_se:vhdl:unisim)' and 'END_COMPILATION_MESSAGES(mti_se:vhdl:unisim)' in the log file compxlib.log for details of compilation error(s).
+
+WARNING:Compxlib:312 - Output directory 'C:\Xilinx\14.7\ISE_DS\ISE\verilog\mti_se\10.7\nt64' does not exist, it will be created.
+Directory 'C:\Xilinx\14.7\ISE_DS\ISE\verilog\mti_se\10.7\nt64' is created.
+
+Library verilog.unisim will be compiled, because no precompiled info.
+--> Compiling verilog.unisim library ...
+    > verilog.unisim library compiled from C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/unisims
+    > verilog.unisim library compiled to C:\Xilinx\14.7\ISE_DS\ISE\verilog\mti_se\10.7\nt64/unisims_ver
+==============================================================================
+BEGIN_COMPILATION_MESSAGES(mti_se:verilog:unisim)
+Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+vmap unisims_ver C:\Xilinx\14.7\ISE_DS\ISE\verilog\mti_se\10.7\nt64/unisims_ver 
+Modifying modelsim.ini
+
+** Warning: (vlog-159) Mode option -32 is not supported in this context and will be ignored.
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+** Error (suppressible): (vlog-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+Errors: 1, Warnings: 1
+
+
+END_COMPILATION_MESSAGES(mti_se:verilog:unisim)
+==============================================================================
+    > Log file 'C:\Xilinx\14.7\ISE_DS\ISE\verilog\mti_se\10.7\nt64/unisims_ver/.cxl.verilog.unisim.unisims_ver.nt64.log' generated
+
+Library verilog.unisim:verilog.unimacro will be compiled, because no precompiled info.
+--> Compiling verilog.unisim:verilog.unimacro library ...
+    > verilog.unisim:verilog.unimacro library compiled from C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/unimacro
+    > verilog.unisim:verilog.unimacro library compiled to C:\Xilinx\14.7\ISE_DS\ISE\verilog\mti_se\10.7\nt64/unimacro_ver
+==============================================================================
+BEGIN_COMPILATION_MESSAGES(mti_se:verilog:unimacro)
+Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+vmap unimacro_ver C:\Xilinx\14.7\ISE_DS\ISE\verilog\mti_se\10.7\nt64/unimacro_ver 
+Modifying modelsim.ini
+
+** Warning: (vlog-159) Mode option -32 is not supported in this context and will be ignored.
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+** Error (suppressible): (vlog-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+Errors: 1, Warnings: 1
+
+
+END_COMPILATION_MESSAGES(mti_se:verilog:unimacro)
+==============================================================================
+    > Log file 'C:\Xilinx\14.7\ISE_DS\ISE\verilog\mti_se\10.7\nt64/unimacro_ver/.cxl.verilog.unimacro.unimacro_ver.nt64.log' generated
+compxlib[verilog.unisim:verilog.unimacro]: 1 error(s), 1 warning(s)
+
+INFO:Compxlib - Please refer to the messages between 'BEGIN_COMPILATION_MESSAGES(mti_se:verilog:unimacro)' and 'END_COMPILATION_MESSAGES(mti_se:verilog:unimacro)' in the log file compxlib.log for details of compilation error(s).
+
+compxlib[verilog.unisim]: 2 error(s), 2 warning(s), 33.33 % complete
+
+
+INFO:Compxlib - Please refer to the messages between 'BEGIN_COMPILATION_MESSAGES(mti_se:verilog:unisim)' and 'END_COMPILATION_MESSAGES(mti_se:verilog:unisim)' in the log file compxlib.log for details of compilation error(s).
+
+
+Library vhdl.simprim will be compiled, because no precompiled info.
+--> Compiling vhdl.simprim library ...
+    > vhdl.simprim library compiled from C:/Xilinx/14.7/ISE_DS/ISE/vhdl/src/simprims
+    > vhdl.simprim library compiled to C:\Xilinx\14.7\ISE_DS\ISE\vhdl\mti_se\10.7\nt64/simprim
+==============================================================================
+BEGIN_COMPILATION_MESSAGES(mti_se:vhdl:simprim)
+Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+vmap simprim C:\Xilinx\14.7\ISE_DS\ISE\vhdl\mti_se\10.7\nt64/simprim 
+Modifying modelsim.ini
+
+** Warning: (vcom-159) Mode option -32 is not supported in this context and will be ignored.
+Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
+** Error (suppressible): (vcom-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+Errors: 1, Warnings: 1
+
+
+END_COMPILATION_MESSAGES(mti_se:vhdl:simprim)
+==============================================================================
+    > Log file 'C:\Xilinx\14.7\ISE_DS\ISE\vhdl\mti_se\10.7\nt64/simprim/.cxl.vhdl.simprim.simprim.nt64.log' generated
+compxlib[vhdl.simprim]: 1 error(s), 1 warning(s), 50.00 % complete
+
+
+INFO:Compxlib - Please refer to the messages between 'BEGIN_COMPILATION_MESSAGES(mti_se:vhdl:simprim)' and 'END_COMPILATION_MESSAGES(mti_se:vhdl:simprim)' in the log file compxlib.log for details of compilation error(s).
+
+
+Library verilog.simprim will be compiled, because no precompiled info.
+--> Compiling verilog.simprim library ...
+    > verilog.simprim library compiled from C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/simprims
+    > verilog.simprim library compiled to C:\Xilinx\14.7\ISE_DS\ISE\verilog\mti_se\10.7\nt64/simprims_ver
+==============================================================================
+BEGIN_COMPILATION_MESSAGES(mti_se:verilog:simprim)
+Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+vmap simprims_ver C:\Xilinx\14.7\ISE_DS\ISE\verilog\mti_se\10.7\nt64/simprims_ver 
+Modifying modelsim.ini
+
+** Warning: (vlog-159) Mode option -32 is not supported in this context and will be ignored.
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+** Error (suppressible): (vlog-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+Errors: 1, Warnings: 1
+
+
+END_COMPILATION_MESSAGES(mti_se:verilog:simprim)
+==============================================================================
+    > Log file 'C:\Xilinx\14.7\ISE_DS\ISE\verilog\mti_se\10.7\nt64/simprims_ver/.cxl.verilog.simprim.simprims_ver.nt64.log' generated
+compxlib[verilog.simprim]: 1 error(s), 1 warning(s), 66.67 % complete
+
+
+INFO:Compxlib - Please refer to the messages between 'BEGIN_COMPILATION_MESSAGES(mti_se:verilog:simprim)' and 'END_COMPILATION_MESSAGES(mti_se:verilog:simprim)' in the log file compxlib.log for details of compilation error(s).
+
+
+Library vhdl.xilinxcorelib will be compiled, because no precompiled info.
+--> Compiling vhdl.xilinxcorelib library ...
+    > vhdl.xilinxcorelib library compiled from C:/Xilinx/14.7/ISE_DS/ISE/vhdl/src/XilinxCoreLib
+    > vhdl.xilinxcorelib library compiled to C:\Xilinx\14.7\ISE_DS\ISE\vhdl\mti_se\10.7\nt64/xilinxcorelib
+==============================================================================
+BEGIN_COMPILATION_MESSAGES(mti_se:vhdl:xilinxcorelib)
+Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+vmap xilinxcorelib C:\Xilinx\14.7\ISE_DS\ISE\vhdl\mti_se\10.7\nt64/xilinxcorelib 
+Modifying modelsim.ini
+
+** Warning: (vcom-159) Mode option -32 is not supported in this context and will be ignored.
+Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
+** Error (suppressible): (vcom-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+Errors: 1, Warnings: 1
+
+
+END_COMPILATION_MESSAGES(mti_se:vhdl:xilinxcorelib)
+==============================================================================
+    > Log file 'C:\Xilinx\14.7\ISE_DS\ISE\vhdl\mti_se\10.7\nt64/xilinxcorelib/.cxl.vhdl.xilinxcorelib.xilinxcorelib.nt64.log' generated
+compxlib[vhdl.xilinxcorelib]: 1 error(s), 1 warning(s), 83.33 % complete
+
+
+INFO:Compxlib - Please refer to the messages between 'BEGIN_COMPILATION_MESSAGES(mti_se:vhdl:xilinxcorelib)' and 'END_COMPILATION_MESSAGES(mti_se:vhdl:xilinxcorelib)' in the log file compxlib.log for details of compilation error(s).
+
+
+Library verilog.xilinxcorelib will be compiled, because no precompiled info.
+--> Compiling verilog.xilinxcorelib library ...
+    > verilog.xilinxcorelib library compiled from C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/XilinxCoreLib
+    > verilog.xilinxcorelib library compiled to C:\Xilinx\14.7\ISE_DS\ISE\verilog\mti_se\10.7\nt64/xilinxcorelib_ver
+==============================================================================
+BEGIN_COMPILATION_MESSAGES(mti_se:verilog:xilinxcorelib)
+Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+vmap xilinxcorelib_ver C:\Xilinx\14.7\ISE_DS\ISE\verilog\mti_se\10.7\nt64/xilinxcorelib_ver 
+Modifying modelsim.ini
+
+** Warning: (vlog-159) Mode option -32 is not supported in this context and will be ignored.
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+** Error (suppressible): (vlog-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+Errors: 1, Warnings: 1
+
+
+END_COMPILATION_MESSAGES(mti_se:verilog:xilinxcorelib)
+==============================================================================
+    > Log file 'C:\Xilinx\14.7\ISE_DS\ISE\verilog\mti_se\10.7\nt64/xilinxcorelib_ver/.cxl.verilog.xilinxcorelib.xilinxcorelib_ver.nt64.log' generated
+compxlib[verilog.xilinxcorelib]: 1 error(s), 1 warning(s), 100.00 % complete
+
+
+INFO:Compxlib - Please refer to the messages between 'BEGIN_COMPILATION_MESSAGES(mti_se:verilog:xilinxcorelib)' and 'END_COMPILATION_MESSAGES(mti_se:verilog:xilinxcorelib)' in the log file compxlib.log for details of compilation error(s).
+
+Copying setup file 'modelsim.ini' to 'C:\Xilinx\14.7\ISE_DS\ISE\vhdl\mti_se\10.7\nt64/modelsim.ini' ...
+**********************************************************************************************
+*                                   COMPILATION SUMMARY                                      *
+*                                                                                            *
+*  Simulator used: mti_se                                                                    *
+*  Compiled on: Thu Jul 25 15:15:52 2019                                                     *
+*                                                                                            *
+**********************************************************************************************
+*               Library                |  Lang   |  Mapped Name(s)   | Err#(s)  |  Warn#(s)  *
+*--------------------------------------------------------------------------------------------*
+*  unisim                              | vhdl    | unisim            | 2        | 2          *
+*--------------------------------------------------------------------------------------------*
+*  unisim                              | verilog | unisims_ver       | 2        | 2          *
+*--------------------------------------------------------------------------------------------*
+*  simprim                             | vhdl    | simprim           | 1        | 1          *
+*--------------------------------------------------------------------------------------------*
+*  simprim                             | verilog | simprims_ver      | 1        | 1          *
+*--------------------------------------------------------------------------------------------*
+*  xilinxcorelib                       | vhdl    | xilinxcorelib     | 1        | 1          *
+*--------------------------------------------------------------------------------------------*
+*  xilinxcorelib                       | verilog | xilinxcorelib_ver | 1        | 1          *
+*--------------------------------------------------------------------------------------------*
+

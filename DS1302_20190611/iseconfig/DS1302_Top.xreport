@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-06-25T00:56:48</DateModified>
+  <DateModified>2019-07-20T19:17:51</DateModified>
   <ModuleName>DS1302_Top</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/media/chiyouametoki/Super Huge Storage/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/iseconfig/DS1302_Top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/media/chiyouametoki/Super Huge Storage/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/</ImplementationReportsDirectory>
+  <SavedFilePath>D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611/iseconfig/DS1302_Top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/DS1302_20190611\</ImplementationReportsDirectory>
   <DateInitialized>2019-06-19T14:05:29</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

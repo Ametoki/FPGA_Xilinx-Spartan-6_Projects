@@ -1,0 +1,28 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Jul 26 11:55:04 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "LCD_DATA<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "LCD_DATA<1>" LOCATE = SITE "P15" LEVEL 1;
+COMP "LCD_DATA<2>" LOCATE = SITE "R15" LEVEL 1;
+COMP "LCD_DATA<3>" LOCATE = SITE "R14" LEVEL 1;
+COMP "sys_clk" LOCATE = SITE "T8" LEVEL 1;
+COMP "LCD_DATA<4>" LOCATE = SITE "T13" LEVEL 1;
+COMP "LCD_DATA<5>" LOCATE = SITE "T12" LEVEL 1;
+COMP "LCD_DATA<6>" LOCATE = SITE "T9" LEVEL 1;
+COMP "LCD_DATA<7>" LOCATE = SITE "T7" LEVEL 1;
+COMP "LCD_RS" LOCATE = SITE "J16" LEVEL 1;
+COMP "LCD_RW" LOCATE = SITE "K15" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "L3" LEVEL 1;
+COMP "LCD_EN" LOCATE = SITE "M16" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "data_display_0" BEL "data_display_1" BEL
+        "data_display_2" BEL "data_display_3" BEL "data_display_4" BEL
+        "data_display_5" BEL "data_display_6" BEL "count_0" BEL "count_1" BEL
+        "count_2" BEL "count_3" BEL "count_4" BEL "count_5" BEL "count_6" BEL
+        "count_7" BEL "count_8" BEL "count_9" BEL "count_10" BEL "count_11"
+        BEL "count_12" BEL "count_13" BEL "count_14" BEL "lcd_clk" BEL
+        "sys_clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

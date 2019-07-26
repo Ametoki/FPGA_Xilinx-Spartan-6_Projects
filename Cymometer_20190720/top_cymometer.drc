@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sun Jul 21 19:03:06 2019
+
+drc -z Top_cymometer.ncd Top_cymometer.pcf
+
+DRC detected 0 errors and 0 warnings.

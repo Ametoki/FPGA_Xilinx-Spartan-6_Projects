@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\ipcore_dir\PLL_CLK.v" Line 128: Assignment to <arg fmt="%s" index="1">status_int</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\PLL_clk_high.v" Line 41: Assignment to <arg fmt="%s" index="1">locked</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\Cymometer.v" Line 151: Result of <arg fmt="%d" index="1">28</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">22</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Top.v" Line 47: Result of <arg fmt="%d" index="1">22</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Top.v" Line 48: Result of <arg fmt="%d" index="1">22</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Top.v" Line 49: Result of <arg fmt="%d" index="1">22</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Top.v" Line 50: Result of <arg fmt="%d" index="1">22</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Top.v" Line 51: Result of <arg fmt="%d" index="1">22</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Top.v" Line 52: Result of <arg fmt="%d" index="1">22</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Top.v" Line 53: Result of <arg fmt="%d" index="1">22</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Top.v" Line 54: Result of <arg fmt="%d" index="1">24</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\PLL_clk_high.v</arg>&quot; line <arg fmt="%s" index="2">36</arg>: Output port &lt;<arg fmt="%s" index="3">locked</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">PLL_Inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">1000000000</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mmult_n00603</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cymometer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">check_0_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">LCD1602_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2254" delta="new" >Area constraint could not be met for block &lt;<arg fmt="%s" index="1">Top_cymometer</arg>&gt;, final ratio is <arg fmt="%i" index="2">116</arg>.
+</msg>
+
+</messages>
+

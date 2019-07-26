@@ -1,0 +1,20 @@
+NET "sys_clk" LOC = T8 | TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+
+##
+NET rst_n                  LOC = L3 | IOSTANDARD = "LVCMOS33"; ## reset pushbutton
+##
+##################################################################################
+#LCD1602 Pin define
+##################################################################################
+NET LCD_RS                 LOC = J16 | IOSTANDARD = "LVCMOS33";          ## 
+NET LCD_RW                 LOC = K15 | IOSTANDARD = "LVCMOS33";          ## 
+NET LCD_EN                 LOC = M16 | IOSTANDARD = "LVCMOS33";          ## 
+NET LCD_DATA<0>            LOC = N16 | IOSTANDARD = "LVCMOS33";          ##  
+NET LCD_DATA<1>            LOC = P15 | IOSTANDARD = "LVCMOS33";          ##  
+NET LCD_DATA<2>            LOC = R15 | IOSTANDARD = "LVCMOS33";          ##  
+NET LCD_DATA<3>            LOC = R14 | IOSTANDARD = "LVCMOS33";          ##  
+NET LCD_DATA<4>            LOC = T13 | IOSTANDARD = "LVCMOS33";          ## 
+NET LCD_DATA<5>            LOC = T12 | IOSTANDARD = "LVCMOS33";          ## 
+NET LCD_DATA<6>            LOC = T9  | IOSTANDARD = "LVCMOS33";          ## 
+NET LCD_DATA<7>            LOC = T7  | IOSTANDARD = "LVCMOS33";          ## 

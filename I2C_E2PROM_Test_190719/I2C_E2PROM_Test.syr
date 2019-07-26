@@ -1,0 +1,881 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: I2C_E2PROM_Test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "I2C_E2PROM_Test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "I2C_E2PROM_Test"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : I2C_E2PROM_Test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\i2c\i2c_master_bit_ctrl.v" into library work
+Parsing verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\i2c\/i2c_master_defines.v" included at line 146.
+Parsing module <i2c_master_bit_ctrl>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\i2c\i2c_master_byte_ctrl.v" into library work
+Parsing verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\i2c\/i2c_master_defines.v" included at line 73.
+Parsing module <i2c_master_byte_ctrl>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\SEG_Scan.v" into library work
+Parsing module <SEG_Scan>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\SEG_Decoder.v" into library work
+Parsing module <SEG_Decoder>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\KEY_Debounce.v" into library work
+Parsing module <KEY_Debounce>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\i2c\i2c_master_top.v" into library work
+Parsing module <i2c_master_top>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\I2C_E2PROM_Test.v" into library work
+Parsing module <I2C_E2PROM_Test>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <I2C_E2PROM_Test>.
+
+Elaborating module <KEY_Debounce>.
+
+Elaborating module <SEG_Decoder>.
+
+Elaborating module <SEG_Scan>.
+
+Elaborating module <i2c_master_top>.
+WARNING:HDLCompiler:413 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\i2c\i2c_master_top.v" Line 121: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\i2c\i2c_master_top.v" Line 150: Result of 32-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <i2c_master_byte_ctrl>.
+
+Elaborating module <i2c_master_bit_ctrl>.
+WARNING:HDLCompiler:413 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\i2c\i2c_master_bit_ctrl.v" Line 263: Result of 32-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:1308 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\i2c\i2c_master_bit_ctrl.v" Line 412: Found full_case directive in module i2c_master_bit_ctrl. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1309 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\i2c\i2c_master_byte_ctrl.v" Line 236: Found full_case directive. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1127 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\i2c\i2c_master_top.v" Line 281: Assignment to i2c_busy ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\i2c\i2c_master_top.v" Line 282: Assignment to i2c_al ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <I2C_E2PROM_Test>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\I2C_E2PROM_Test.v".
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\I2C_E2PROM_Test.v" line 57: Output port <button_negedge> of the instance <KEY_Debounce_U0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\I2C_E2PROM_Test.v" line 57: Output port <button_out> of the instance <KEY_Debounce_U0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\I2C_E2PROM_Test.v" line 159: Output port <error> of the instance <i2c_master_top_m0> is unconnected or connected to loadless signal.
+    Found 8-bit register for signal <read_data>.
+    Found 8-bit register for signal <i2c_write_data>.
+    Found 32-bit register for signal <timer>.
+    Found 16-bit register for signal <i2c_slave_reg_addr>.
+    Found 4-bit register for signal <state>.
+    Found 8-bit register for signal <i2c_slave_dev_addr>.
+    Found 1-bit register for signal <i2c_write_req>.
+    Found 1-bit register for signal <i2c_read_req>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <timer[31]_GND_1_o_add_2_OUT> created at line 111.
+    Found 8-bit adder for signal <read_data[7]_GND_1_o_add_9_OUT> created at line 133.
+    Found 1-bit tristate buffer for signal <i2c_sda> created at line 155
+    Found 1-bit tristate buffer for signal <i2c_scl> created at line 157
+    Found 32-bit comparator greater for signal <n0002> created at line 108
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  58 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+	inferred   2 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <I2C_E2PROM_Test> synthesized.
+
+Synthesizing Unit <KEY_Debounce>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\KEY_Debounce.v".
+        N = 32
+        FREQ = 50
+        MAX_TIME = 20
+    Found 1-bit register for signal <button_out_d0>.
+    Found 1-bit register for signal <button_out>.
+    Found 32-bit register for signal <q_reg>.
+    Found 1-bit register for signal <DFF2>.
+    Found 1-bit register for signal <button_posedge>.
+    Found 1-bit register for signal <button_negedge>.
+    Found 1-bit register for signal <DFF1>.
+    Found 32-bit adder for signal <q_reg[31]_GND_2_o_add_1_OUT> created at line 51.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  38 D-type flip-flop(s).
+Unit <KEY_Debounce> synthesized.
+
+Synthesizing Unit <SEG_Decoder>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\SEG_Decoder.v".
+    Found 16x8-bit Read Only RAM for signal <seg_data>
+    Summary:
+	inferred   1 RAM(s).
+Unit <SEG_Decoder> synthesized.
+
+Synthesizing Unit <SEG_Scan>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\SEG_Scan.v".
+        SCAN_FREQ = 200
+        CLK_FREQ = 50000000
+        SCAN_COUNT = 41665
+    Found 6-bit register for signal <seg_sel>.
+    Found 8-bit register for signal <seg_data>.
+    Found 4-bit register for signal <scan_sel>.
+    Found 32-bit register for signal <scan_timer>.
+    Found 4-bit adder for signal <scan_sel[3]_GND_5_o_add_2_OUT> created at line 54.
+    Found 32-bit adder for signal <scan_timer[31]_GND_5_o_add_4_OUT> created at line 58.
+    Found 8x6-bit Read Only RAM for signal <_n0059>
+    Found 32-bit comparator greater for signal <n0000> created at line 48
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  50 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   7 Multiplexer(s).
+Unit <SEG_Scan> synthesized.
+
+Synthesizing Unit <i2c_master_top>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\i2c\i2c_master_top.v".
+WARNING:Xst:647 - Input <i2c_slave_dev_addr<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\i2c\i2c_master_top.v" line 265: Output port <i2c_busy> of the instance <byte_controller> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\i2c\i2c_master_top.v" line 265: Output port <i2c_al> of the instance <byte_controller> is unconnected or connected to loadless signal.
+    Found 8-bit register for signal <i2c_read_data>.
+    Found 8-bit register for signal <txr>.
+    Found 4-bit register for signal <state>.
+    Found 1-bit register for signal <error>.
+    Found 1-bit register for signal <start>.
+    Found 1-bit register for signal <stop>.
+    Found 1-bit register for signal <ack_in>.
+    Found 1-bit register for signal <write>.
+    Found 1-bit register for signal <read>.
+INFO:Xst:1799 - State 1101 is never reached in FSM <state>.
+INFO:Xst:1799 - State 1110 is never reached in FSM <state>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 16                                             |
+    | Transitions        | 27                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 14                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <i2c_master_top> synthesized.
+
+Synthesizing Unit <i2c_master_byte_ctrl>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\i2c\i2c_master_byte_ctrl.v".
+        ST_IDLE = 5'b00000
+        ST_START = 5'b00001
+        ST_READ = 5'b00010
+        ST_WRITE = 5'b00100
+        ST_ACK = 5'b01000
+        ST_STOP = 5'b10000
+    Found 3-bit register for signal <dcnt>.
+    Found 4-bit register for signal <core_cmd>.
+    Found 1-bit register for signal <core_txd>.
+    Found 1-bit register for signal <shift>.
+    Found 1-bit register for signal <ld>.
+    Found 1-bit register for signal <cmd_ack>.
+    Found 5-bit register for signal <c_state>.
+    Found 1-bit register for signal <ack_out>.
+    Found 8-bit register for signal <sr>.
+    Found finite state machine <FSM_2> for signal <c_state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 20                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_i2c_al_OR_233_o (positive)                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00000                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit subtractor for signal <dcnt[2]_GND_10_o_sub_6_OUT> created at line 198.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred  13 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <i2c_master_byte_ctrl> synthesized.
+
+Synthesizing Unit <i2c_master_bit_ctrl>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\I2C_E2PROM_Test_190719\src\i2c\i2c_master_bit_ctrl.v".
+        idle = 18'b000000000000000000
+        start_a = 18'b000000000000000001
+        start_b = 18'b000000000000000010
+        start_c = 18'b000000000000000100
+        start_d = 18'b000000000000001000
+        start_e = 18'b000000000000010000
+        stop_a = 18'b000000000000100000
+        stop_b = 18'b000000000001000000
+        stop_c = 18'b000000000010000000
+        stop_d = 18'b000000000100000000
+        rd_a = 18'b000000001000000000
+        rd_b = 18'b000000010000000000
+        rd_c = 18'b000000100000000000
+        rd_d = 18'b000001000000000000
+        wr_a = 18'b000010000000000000
+        wr_b = 18'b000100000000000000
+        wr_c = 18'b001000000000000000
+        wr_d = 18'b010000000000000000
+    Found 1-bit register for signal <slave_wait>.
+    Found 16-bit register for signal <cnt>.
+    Found 2-bit register for signal <cSCL>.
+    Found 2-bit register for signal <cSDA>.
+    Found 14-bit register for signal <filter_cnt>.
+    Found 3-bit register for signal <fSCL>.
+    Found 3-bit register for signal <fSDA>.
+    Found 1-bit register for signal <sSCL>.
+    Found 1-bit register for signal <sSDA>.
+    Found 1-bit register for signal <dSCL>.
+    Found 1-bit register for signal <dSDA>.
+    Found 1-bit register for signal <sta_condition>.
+    Found 1-bit register for signal <sto_condition>.
+    Found 1-bit register for signal <busy>.
+    Found 1-bit register for signal <cmd_stop>.
+    Found 1-bit register for signal <al>.
+    Found 1-bit register for signal <dout>.
+    Found 18-bit register for signal <c_state>.
+    Found 1-bit register for signal <cmd_ack>.
+    Found 1-bit register for signal <scl_oen>.
+    Found 1-bit register for signal <sda_oen>.
+    Found 1-bit register for signal <sda_chk>.
+    Found 1-bit register for signal <dscl_oen>.
+    Found 1-bit register for signal <clk_en>.
+    Found finite state machine <FSM_3> for signal <c_state>.
+    -----------------------------------------------------------------------
+    | States             | 18                                             |
+    | Transitions        | 40                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 35                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_al_OR_141_o (positive)                     |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000000000000000000                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit subtractor for signal <cnt[15]_GND_11_o_sub_3_OUT> created at line 231.
+    Found 14-bit subtractor for signal <GND_11_o_GND_11_o_sub_12_OUT<13:0>> created at line 263.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  57 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <i2c_master_bit_ctrl> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x8-bit single-port Read Only RAM                    : 2
+ 8x6-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 8
+ 14-bit subtractor                                     : 1
+ 16-bit subtractor                                     : 1
+ 3-bit subtractor                                      : 1
+ 32-bit adder                                          : 3
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 56
+ 1-bit register                                        : 36
+ 14-bit register                                       : 1
+ 16-bit register                                       : 1
+ 2-bit register                                        : 2
+ 3-bit register                                        : 3
+ 32-bit register                                       : 3
+ 4-bit register                                        : 2
+ 6-bit register                                        : 1
+ 8-bit register                                        : 7
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 21
+ 1-bit 2-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 9
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 6
+# Tristates                                            : 2
+ 1-bit tristate buffer                                 : 2
+# FSMs                                                 : 4
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <i2c_slave_dev_addr_1> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_slave_dev_addr_2> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_slave_dev_addr_3> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_slave_dev_addr_4> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_slave_dev_addr_5> (without init value) has a constant value of 1 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_slave_dev_addr_6> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_slave_dev_addr_7> (without init value) has a constant value of 1 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <i2c_slave_dev_addr_0> of sequential type is unconnected in block <I2C_E2PROM_Test>.
+
+Synthesizing (advanced) Unit <I2C_E2PROM_Test>.
+The following registers are absorbed into counter <read_data>: 1 register on signal <read_data>.
+The following registers are absorbed into counter <timer>: 1 register on signal <timer>.
+Unit <I2C_E2PROM_Test> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SEG_Decoder>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_seg_data> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <bin_data>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <seg_data>      |          |
+    -----------------------------------------------------------------------
+Unit <SEG_Decoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SEG_Scan>.
+The following registers are absorbed into counter <scan_timer>: 1 register on signal <scan_timer>.
+The following registers are absorbed into counter <scan_sel>: 1 register on signal <scan_sel>.
+INFO:Xst:3217 - HDL ADVISOR - Register <seg_sel> currently described with an asynchronous reset, could be combined with distributed RAM <Mram__n0059> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 6-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <scan_sel<2:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <SEG_Scan> synthesized (advanced).
+
+Synthesizing (advanced) Unit <i2c_master_bit_ctrl>.
+The following registers are absorbed into counter <filter_cnt>: 1 register on signal <filter_cnt>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <i2c_master_bit_ctrl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <i2c_master_byte_ctrl>.
+The following registers are absorbed into counter <dcnt>: 1 register on signal <dcnt>.
+Unit <i2c_master_byte_ctrl> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x8-bit single-port distributed Read Only RAM        : 2
+ 8x6-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 7
+ 14-bit down counter                                   : 1
+ 16-bit down counter                                   : 1
+ 3-bit down counter                                    : 1
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 136
+ Flip-Flops                                            : 136
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 25
+ 1-bit 2-to-1 multiplexer                              : 12
+ 4-bit 2-to-1 multiplexer                              : 8
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 4
+# FSMs                                                 : 4
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <i2c_slave_dev_addr_0> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_slave_dev_addr_1> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_slave_dev_addr_2> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_slave_dev_addr_3> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_slave_dev_addr_4> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_slave_dev_addr_5> (without init value) has a constant value of 1 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_slave_dev_addr_6> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_slave_dev_addr_7> (without init value) has a constant value of 1 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 00
+ 0001  | 01
+ 0010  | 10
+ 0011  | 11
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <i2c_master_top_m0/FSM_1> on signal <state[1:14]> with one-hot encoding.
+-------------------------
+ State | Encoding
+-------------------------
+ 0000  | 00000000000001
+ 0110  | 00000000000010
+ 0001  | 00000000000100
+ 0010  | 00000000001000
+ 0101  | 00000000010000
+ 0011  | 00000000100000
+ 1011  | 00000001000000
+ 1100  | 00000010000000
+ 0111  | 00000100000000
+ 1000  | 00001000000000
+ 1001  | 00010000000000
+ 1010  | 00100000000000
+ 1111  | 01000000000000
+ 0100  | 10000000000000
+ 1101  | unreached
+ 1110  | unreached
+-------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <i2c_master_top_m0/byte_controller/FSM_2> on signal <c_state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00000 | 000
+ 00001 | 001
+ 00100 | 011
+ 00010 | 010
+ 01000 | 110
+ 10000 | 111
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <i2c_master_top_m0/byte_controller/bit_controller/FSM_3> on signal <c_state[1:18]> with one-hot encoding.
+------------------------------------------
+ State              | Encoding
+------------------------------------------
+ 000000000000000000 | 000000000000000001
+ 000000000000000001 | 000000000000000010
+ 000000000000000010 | 000000000000000100
+ 000000000000000100 | 000000000000001000
+ 000000000000001000 | 000000000000010000
+ 000000000000010000 | 000000000000100000
+ 000000000000100000 | 000000000001000000
+ 000000000001000000 | 000000000010000000
+ 000000000010000000 | 000000000100000000
+ 000000000100000000 | 000000001000000000
+ 000000001000000000 | 000000010000000000
+ 000000010000000000 | 000000100000000000
+ 000000100000000000 | 000001000000000000
+ 000001000000000000 | 000010000000000000
+ 000010000000000000 | 000100000000000000
+ 000100000000000000 | 001000000000000000
+ 001000000000000000 | 010000000000000000
+ 010000000000000000 | 100000000000000000
+------------------------------------------
+
+Optimizing unit <I2C_E2PROM_Test> ...
+
+Optimizing unit <KEY_Debounce> ...
+
+Optimizing unit <SEG_Scan> ...
+
+Optimizing unit <i2c_master_top> ...
+
+Optimizing unit <i2c_master_byte_ctrl> ...
+
+Optimizing unit <i2c_master_bit_ctrl> ...
+WARNING:Xst:2677 - Node <KEY_Debounce_U0/button_negedge> of sequential type is unconnected in block <I2C_E2PROM_Test>.
+WARNING:Xst:2677 - Node <i2c_master_top_m0/error> of sequential type is unconnected in block <I2C_E2PROM_Test>.
+WARNING:Xst:2677 - Node <i2c_master_top_m0/byte_controller/bit_controller/busy> of sequential type is unconnected in block <I2C_E2PROM_Test>.
+WARNING:Xst:2677 - Node <i2c_master_top_m0/byte_controller/bit_controller/sta_condition> of sequential type is unconnected in block <I2C_E2PROM_Test>.
+WARNING:Xst:1710 - FF/Latch <SEG_Scan_U0/scan_timer_24> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan_U0/scan_timer_23> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan_U0/scan_timer_22> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan_U0/scan_timer_21> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan_U0/scan_timer_20> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan_U0/scan_timer_19> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan_U0/scan_timer_18> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan_U0/scan_timer_17> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan_U0/scan_timer_16> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/filter_cnt_12> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/filter_cnt_11> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/filter_cnt_13> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/filter_cnt_9> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/filter_cnt_8> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/filter_cnt_10> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/filter_cnt_6> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/filter_cnt_5> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/filter_cnt_7> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/cnt_15> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/cnt_13> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/cnt_12> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/cnt_14> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/cnt_10> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/cnt_9> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/cnt_11> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/cnt_7> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/cnt_8> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_24> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_25> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_26> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_27> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_28> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_29> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_30> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <timer_31> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_U0/q_reg_31> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_U0/q_reg_30> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_U0/q_reg_29> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_U0/q_reg_28> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_U0/q_reg_27> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_U0/q_reg_26> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_U0/q_reg_25> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_U0/q_reg_24> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_U0/q_reg_23> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_U0/q_reg_22> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_U0/q_reg_21> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <KEY_Debounce_U0/q_reg_20> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan_U0/scan_sel_3> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan_U0/scan_timer_31> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan_U0/scan_timer_30> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan_U0/scan_timer_29> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan_U0/scan_timer_28> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan_U0/scan_timer_27> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan_U0/scan_timer_26> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEG_Scan_U0/scan_timer_25> (without init value) has a constant value of 0 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <i2c_master_top_m0/byte_controller/bit_controller/c_state_FSM_FFd1> in Unit <I2C_E2PROM_Test> is equivalent to the following FF/Latch, which will be removed : <i2c_master_top_m0/byte_controller/bit_controller/sda_chk> 
+
+Mapping all equations...
+WARNING:Xst:1710 - FF/Latch <SEG_Scan_U0/seg_data_7> (without init value) has a constant value of 1 in block <I2C_E2PROM_Test>. This FF/Latch will be trimmed during the optimization process.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block I2C_E2PROM_Test, actual ratio is 6.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 213
+ Flip-Flops                                            : 213
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : I2C_E2PROM_Test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 477
+#      GND                         : 1
+#      INV                         : 17
+#      LUT1                        : 45
+#      LUT2                        : 28
+#      LUT3                        : 86
+#      LUT4                        : 26
+#      LUT5                        : 55
+#      LUT6                        : 38
+#      MUXCY                       : 89
+#      MUXF7                       : 11
+#      VCC                         : 1
+#      XORCY                       : 80
+# FlipFlops/Latches                : 213
+#      FD                          : 5
+#      FDC                         : 69
+#      FDCE                        : 51
+#      FDP                         : 16
+#      FDR                         : 44
+#      FDRE                        : 11
+#      FDS                         : 5
+#      FDSE                        : 12
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 2
+#      IOBUF                       : 2
+#      OBUF                        : 14
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             213  out of  11440     1%  
+ Number of Slice LUTs:                  295  out of   5720     5%  
+    Number used as Logic:               295  out of   5720     5%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    322
+   Number with an unused Flip Flop:     109  out of    322    33%  
+   Number with an unused LUT:            27  out of    322     8%  
+   Number of fully used LUT-FF pairs:   186  out of    322    57%  
+   Number of unique control sets:        14
+
+IO Utilization: 
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    186    10%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 213   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.217ns (Maximum Frequency: 191.672MHz)
+   Minimum input arrival time before clock: 5.296ns
+   Maximum output required time after clock: 4.277ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.217ns (frequency: 191.672MHz)
+  Total number of paths / destination ports: 7829 / 325
+-------------------------------------------------------------------------
+Delay:               5.217ns (Levels of Logic = 8)
+  Source:            timer_5 (FF)
+  Destination:       timer_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: timer_5 to timer_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.525   1.234  timer_5 (timer_5)
+     LUT5:I0->O            1   0.254   0.000  Mcompar_n0002_lut<1> (Mcompar_n0002_lut<1>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_n0002_cy<1> (Mcompar_n0002_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_n0002_cy<2> (Mcompar_n0002_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_n0002_cy<3> (Mcompar_n0002_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_n0002_cy<4> (Mcompar_n0002_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_n0002_cy<5> (Mcompar_n0002_cy<5>)
+     MUXCY:CI->O           2   0.235   0.725  Mcompar_n0002_cy<6> (Mcompar_n0002_cy<6>)
+     INV:I->O             24   0.255   1.379  _n0138_inv1_cepot_INV_0 (_n0138_inv1_cepot)
+     FDCE:CE                   0.302          timer_0
+    ----------------------------------------
+    Total                      5.217ns (1.879ns logic, 3.338ns route)
+                                       (36.0% logic, 64.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 215 / 215
+-------------------------------------------------------------------------
+Offset:              5.296ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       i2c_write_data_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst_n to i2c_write_data_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.328   0.875  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            166   0.255   2.379  rst_n_inv1_INV_0 (SEG_Scan_U0/rst_n_inv)
+     FDP:PRE                   0.459          SEG_Scan_U0/seg_sel_0
+    ----------------------------------------
+    Total                      5.296ns (2.042ns logic, 3.254ns route)
+                                       (38.6% logic, 61.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 15 / 15
+-------------------------------------------------------------------------
+Offset:              4.277ns (Levels of Logic = 1)
+  Source:            i2c_master_top_m0/byte_controller/bit_controller/scl_oen (FF)
+  Destination:       i2c_scl (PAD)
+  Source Clock:      clk rising
+
+  Data Path: i2c_master_top_m0/byte_controller/bit_controller/scl_oen to i2c_scl
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q             5   0.525   0.840  i2c_master_top_m0/byte_controller/bit_controller/scl_oen (i2c_master_top_m0/byte_controller/bit_controller/scl_oen)
+     IOBUF:T->IO               2.912          i2c_scl_IOBUF (i2c_scl)
+    ----------------------------------------
+    Total                      4.277ns (3.437ns logic, 0.840ns route)
+                                       (80.4% logic, 19.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.217|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.79 secs
+ 
+--> 
+
+Total memory usage is 4511160 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   84 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

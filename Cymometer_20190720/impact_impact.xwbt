@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_20190720\impact.xsl
+OUTFILE=D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_20190720\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_20190720
+LICENSE=iMPACT
+USER_INFO=iMPACT
