@@ -1,0 +1,121 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Aug 02 15:27:40 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "LCD_DATA<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "LCD_DATA<1>" LOCATE = SITE "P15" LEVEL 1;
+COMP "LCD_DATA<2>" LOCATE = SITE "R15" LEVEL 1;
+COMP "LCD_DATA<3>" LOCATE = SITE "R14" LEVEL 1;
+COMP "LCD_DATA<4>" LOCATE = SITE "T13" LEVEL 1;
+COMP "LCD_DATA<5>" LOCATE = SITE "T12" LEVEL 1;
+COMP "LCD_DATA<6>" LOCATE = SITE "T9" LEVEL 1;
+COMP "LCD_DATA<7>" LOCATE = SITE "T7" LEVEL 1;
+COMP "SCK" LOCATE = SITE "H16" LEVEL 1;
+COMP "nCS" LOCATE = SITE "D11" LEVEL 1;
+COMP "MISO" LOCATE = SITE "F15" LEVEL 1;
+COMP "MOSI" LOCATE = SITE "G16" LEVEL 1;
+COMP "key1" LOCATE = SITE "C3" LEVEL 1;
+COMP "key2" LOCATE = SITE "D3" LEVEL 1;
+COMP "key3" LOCATE = SITE "E4" LEVEL 1;
+COMP "key4" LOCATE = SITE "E3" LEVEL 1;
+COMP "SCK_2" LOCATE = SITE "E11" LEVEL 1;
+COMP "nCS_2" LOCATE = SITE "C16" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "L3" LEVEL 1;
+COMP "sys_clk" LOCATE = SITE "T8" LEVEL 1;
+COMP "LCD_EN" LOCATE = SITE "M16" LEVEL 1;
+COMP "LCD_RS" LOCATE = SITE "J16" LEVEL 1;
+COMP "LCD_RW" LOCATE = SITE "K15" LEVEL 1;
+COMP "MISO_2" LOCATE = SITE "E15" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "ncs_r0" BEL "ncs_r1" BEL "data_0" BEL "data_1" BEL
+        "data_2" BEL "data_3" BEL "data_4" BEL "data_5" BEL "data_6" BEL
+        "data_7" BEL "key_state_FSM_FFd2" BEL "key_state_FSM_FFd1" BEL
+        "LCD1602_Top/count_15" BEL "LCD1602_Top/count_14" BEL
+        "LCD1602_Top/count_13" BEL "LCD1602_Top/count_12" BEL
+        "LCD1602_Top/count_11" BEL "LCD1602_Top/count_10" BEL
+        "LCD1602_Top/count_9" BEL "LCD1602_Top/count_8" BEL
+        "LCD1602_Top/count_7" BEL "LCD1602_Top/count_6" BEL
+        "LCD1602_Top/count_5" BEL "LCD1602_Top/count_4" BEL
+        "LCD1602_Top/count_3" BEL "LCD1602_Top/count_2" BEL
+        "LCD1602_Top/count_1" BEL "LCD1602_Top/count_0" BEL
+        "SPI_Slave_Ctrl/bit_recv_cnt_3" BEL "SPI_Slave_Ctrl/bit_recv_cnt_2"
+        BEL "SPI_Slave_Ctrl/bit_recv_cnt_1" BEL
+        "SPI_Slave_Ctrl/bit_recv_cnt_0" BEL
+        "SPI_Slave_Ctrl/send_state_FSM_FFd1" BEL
+        "SPI_Slave_Ctrl/bit_sended_cnt_3" BEL
+        "SPI_Slave_Ctrl/bit_sended_cnt_2" BEL
+        "SPI_Slave_Ctrl/bit_sended_cnt_1" BEL
+        "SPI_Slave_Ctrl/bit_sended_cnt_0" BEL
+        "SPI_Slave_Ctrl/send_state_FSM_FFd2" BEL "SPI_Slave_Ctrl/RECV_DATA_7"
+        BEL "SPI_Slave_Ctrl/RECV_DATA_6" BEL "SPI_Slave_Ctrl/RECV_DATA_5" BEL
+        "SPI_Slave_Ctrl/RECV_DATA_4" BEL "SPI_Slave_Ctrl/RECV_DATA_3" BEL
+        "SPI_Slave_Ctrl/RECV_DATA_2" BEL "SPI_Slave_Ctrl/RECV_DATA_1" BEL
+        "SPI_Slave_Ctrl/RECV_DATA_0" BEL "SPI_Slave_Ctrl/byte_recv_7" BEL
+        "SPI_Slave_Ctrl/byte_recv_6" BEL "SPI_Slave_Ctrl/byte_recv_5" BEL
+        "SPI_Slave_Ctrl/byte_recv_4" BEL "SPI_Slave_Ctrl/byte_recv_3" BEL
+        "SPI_Slave_Ctrl/byte_recv_2" BEL "SPI_Slave_Ctrl/byte_recv_1" BEL
+        "SPI_Slave_Ctrl/byte_recv_0" BEL "SPI_Slave_Ctrl/byte_sended_7" BEL
+        "SPI_Slave_Ctrl/byte_sended_6" BEL "SPI_Slave_Ctrl/byte_sended_5" BEL
+        "SPI_Slave_Ctrl/byte_sended_4" BEL "SPI_Slave_Ctrl/byte_sended_3" BEL
+        "SPI_Slave_Ctrl/byte_sended_2" BEL "SPI_Slave_Ctrl/byte_sended_1" BEL
+        "SPI_Slave_Ctrl/byte_sended_0" BEL "SPI_Slave_Ctrl/sck_edge_2" BEL
+        "KEY_Debounce_3/button_out_d0" BEL "KEY_Debounce_3/DFF2" BEL
+        "KEY_Debounce_3/DFF1" BEL "KEY_Debounce_3/button_negedge" BEL
+        "KEY_Debounce_3/q_reg_19" BEL "KEY_Debounce_3/q_reg_18" BEL
+        "KEY_Debounce_3/q_reg_17" BEL "KEY_Debounce_3/q_reg_16" BEL
+        "KEY_Debounce_3/q_reg_15" BEL "KEY_Debounce_3/q_reg_14" BEL
+        "KEY_Debounce_3/q_reg_13" BEL "KEY_Debounce_3/q_reg_12" BEL
+        "KEY_Debounce_3/q_reg_11" BEL "KEY_Debounce_3/q_reg_10" BEL
+        "KEY_Debounce_3/q_reg_9" BEL "KEY_Debounce_3/q_reg_8" BEL
+        "KEY_Debounce_3/q_reg_7" BEL "KEY_Debounce_3/q_reg_6" BEL
+        "KEY_Debounce_3/q_reg_5" BEL "KEY_Debounce_3/q_reg_4" BEL
+        "KEY_Debounce_3/q_reg_3" BEL "KEY_Debounce_3/q_reg_2" BEL
+        "KEY_Debounce_3/q_reg_1" BEL "KEY_Debounce_3/q_reg_0" BEL
+        "KEY_Debounce_2/button_out_d0" BEL "KEY_Debounce_2/DFF2" BEL
+        "KEY_Debounce_2/DFF1" BEL "KEY_Debounce_2/button_negedge" BEL
+        "KEY_Debounce_2/q_reg_19" BEL "KEY_Debounce_2/q_reg_18" BEL
+        "KEY_Debounce_2/q_reg_17" BEL "KEY_Debounce_2/q_reg_16" BEL
+        "KEY_Debounce_2/q_reg_15" BEL "KEY_Debounce_2/q_reg_14" BEL
+        "KEY_Debounce_2/q_reg_13" BEL "KEY_Debounce_2/q_reg_12" BEL
+        "KEY_Debounce_2/q_reg_11" BEL "KEY_Debounce_2/q_reg_10" BEL
+        "KEY_Debounce_2/q_reg_9" BEL "KEY_Debounce_2/q_reg_8" BEL
+        "KEY_Debounce_2/q_reg_7" BEL "KEY_Debounce_2/q_reg_6" BEL
+        "KEY_Debounce_2/q_reg_5" BEL "KEY_Debounce_2/q_reg_4" BEL
+        "KEY_Debounce_2/q_reg_3" BEL "KEY_Debounce_2/q_reg_2" BEL
+        "KEY_Debounce_2/q_reg_1" BEL "KEY_Debounce_2/q_reg_0" BEL
+        "KEY_Debounce_1/button_out_d0" BEL "KEY_Debounce_1/DFF2" BEL
+        "KEY_Debounce_1/DFF1" BEL "KEY_Debounce_1/button_negedge" BEL
+        "KEY_Debounce_1/q_reg_19" BEL "KEY_Debounce_1/q_reg_18" BEL
+        "KEY_Debounce_1/q_reg_17" BEL "KEY_Debounce_1/q_reg_16" BEL
+        "KEY_Debounce_1/q_reg_15" BEL "KEY_Debounce_1/q_reg_14" BEL
+        "KEY_Debounce_1/q_reg_13" BEL "KEY_Debounce_1/q_reg_12" BEL
+        "KEY_Debounce_1/q_reg_11" BEL "KEY_Debounce_1/q_reg_10" BEL
+        "KEY_Debounce_1/q_reg_9" BEL "KEY_Debounce_1/q_reg_8" BEL
+        "KEY_Debounce_1/q_reg_7" BEL "KEY_Debounce_1/q_reg_6" BEL
+        "KEY_Debounce_1/q_reg_5" BEL "KEY_Debounce_1/q_reg_4" BEL
+        "KEY_Debounce_1/q_reg_3" BEL "KEY_Debounce_1/q_reg_2" BEL
+        "KEY_Debounce_1/q_reg_1" BEL "KEY_Debounce_1/q_reg_0" BEL
+        "KEY_Debounce_0/button_out_d0" BEL "KEY_Debounce_0/DFF2" BEL
+        "KEY_Debounce_0/DFF1" BEL "KEY_Debounce_0/button_negedge" BEL
+        "KEY_Debounce_0/q_reg_19" BEL "KEY_Debounce_0/q_reg_18" BEL
+        "KEY_Debounce_0/q_reg_17" BEL "KEY_Debounce_0/q_reg_16" BEL
+        "KEY_Debounce_0/q_reg_15" BEL "KEY_Debounce_0/q_reg_14" BEL
+        "KEY_Debounce_0/q_reg_13" BEL "KEY_Debounce_0/q_reg_12" BEL
+        "KEY_Debounce_0/q_reg_11" BEL "KEY_Debounce_0/q_reg_10" BEL
+        "KEY_Debounce_0/q_reg_9" BEL "KEY_Debounce_0/q_reg_8" BEL
+        "KEY_Debounce_0/q_reg_7" BEL "KEY_Debounce_0/q_reg_6" BEL
+        "KEY_Debounce_0/q_reg_5" BEL "KEY_Debounce_0/q_reg_4" BEL
+        "KEY_Debounce_0/q_reg_3" BEL "KEY_Debounce_0/q_reg_2" BEL
+        "KEY_Debounce_0/q_reg_1" BEL "KEY_Debounce_0/q_reg_0" BEL
+        "LCD1602_Top/lcd_clk" BEL "SPI_Slave_Ctrl/MISO" BEL
+        "SPI_Slave_Ctrl/sending_flag" BEL "KEY_Debounce_3/button_out" BEL
+        "KEY_Debounce_2/button_out" BEL "KEY_Debounce_1/button_out" BEL
+        "KEY_Debounce_0/button_out" BEL "sys_clk_BUFGP/BUFG" BEL
+        "SPI_Slave_Ctrl/Mshreg_sck_edge_1" BEL "SPI_Slave_Ctrl/sck_edge_11"
+        BEL "LCD1602_Top/LCD1602_U1/rst_n_inv_shift1" BEL
+        "LCD1602_Top/LCD1602_U1/rst_n_inv_shift2" BEL
+        "LCD1602_Top/LCD1602_U1/rst_n_inv_shift3" BEL
+        "SPI_Slave_Ctrl/sck_edge_1";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-07-26T20:24:05</DateModified>
+  <DateModified>2019-08-05T20:17:12</DateModified>
   <ModuleName>Top_cymometer</ModuleName>
-  <SummaryTimeStamp>2019-07-26T18:43:47</SummaryTimeStamp>
+  <SummaryTimeStamp>2019-08-05T19:31:23</SummaryTimeStamp>
   <SavedFilePath>D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/Cymometer_LCD1602/iseconfig/Top_cymometer.xreport</SavedFilePath>
   <ImplementationReportsDirectory>D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/Cymometer_LCD1602\</ImplementationReportsDirectory>
   <DateInitialized>2019-07-26T12:33:39</DateInitialized>

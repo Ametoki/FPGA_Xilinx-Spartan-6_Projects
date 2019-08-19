@@ -37,8 +37,7 @@ PLL_CLK PLL_Inst
 (
 	.clk_in     (clk_bufg),
 	.sys_clk_h  (sys_clk_h),
-	.rst        (~rst_n),
-	.locked     (locked)
+	.rst        (~rst_n)
 );
 
 endmodule

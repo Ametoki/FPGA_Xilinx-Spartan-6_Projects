@@ -42,6 +42,8 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Top_cymometer.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="Top_cymometer.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Top_cymometer.xst"/>
+    <file xil_pn:fileType="FILE_BLIF" xil_pn:name="Top_cymometer_cs.blc"/>
+    <file xil_pn:fileType="FILE_NGC" xil_pn:name="Top_cymometer_cs.ngc"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Top_cymometer_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="Top_cymometer_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Top_cymometer_map.map" xil_pn:subbranch="Map"/>
@@ -64,7 +66,7 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
-    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ipcore_dir/Multiplier.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="top_cymometer.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="top_cymometer.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="top_cymometer.drc" xil_pn:subbranch="FPGAConfiguration"/>
@@ -76,36 +78,40 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1564156137" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1564156137">
+    <transform xil_pn:end_ts="1564922126" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1564922126">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1564156137" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6062004330048271172" xil_pn:start_ts="1564156137">
+    <transform xil_pn:end_ts="1564922126" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6062004330048271172" xil_pn:start_ts="1564922126">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1564159543" xil_pn:in_ck="3935045974378182536" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4700920588421391740" xil_pn:start_ts="1564159543">
+    <transform xil_pn:end_ts="1564922126" xil_pn:in_ck="6917388024384229452" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4700920588421391740" xil_pn:start_ts="1564922126">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/Divider_V3.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/Divider_V3.v"/>
+      <outfile xil_pn:name="ipcore_dir/Multiplier.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/Multiplier.v"/>
       <outfile xil_pn:name="ipcore_dir/PLL_CLK.v"/>
     </transform>
-    <transform xil_pn:end_ts="1564156137" xil_pn:in_ck="729308638513169143" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1564156137">
+    <transform xil_pn:end_ts="1564922126" xil_pn:in_ck="186158773183168345" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1564922126">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1564156137" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="6653628874293264382" xil_pn:start_ts="1564156137">
+    <transform xil_pn:end_ts="1564922126" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="6653628874293264382" xil_pn:start_ts="1564922126">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1564156137" xil_pn:in_ck="729308638513169143" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745411629038" xil_pn:start_ts="1564156137">
+    <transform xil_pn:end_ts="1564922126" xil_pn:in_ck="186158773183168345" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745411629038" xil_pn:start_ts="1564922126">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1564156137" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="2072433121010134158" xil_pn:start_ts="1564156137">
+    <transform xil_pn:end_ts="1564922126" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="2072433121010134158" xil_pn:start_ts="1564922126">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1564161236" xil_pn:in_ck="-3484722425566912532" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-2797687603435736301" xil_pn:start_ts="1564161195">
+    <transform xil_pn:end_ts="1565007491" xil_pn:in_ck="8866635055146643672" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-2797687603435736301" xil_pn:start_ts="1565007476">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -123,11 +129,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1564159587" xil_pn:in_ck="-8385283733874953934" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8398084841567844265" xil_pn:start_ts="1564159587">
+    <transform xil_pn:end_ts="1564916909" xil_pn:in_ck="-8385283733874953934" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8398084841567844265" xil_pn:start_ts="1564916909">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1564161243" xil_pn:in_ck="-5520112875257250589" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8118092677043392389" xil_pn:start_ts="1564161236">
+    <transform xil_pn:end_ts="1565007501" xil_pn:in_ck="-4378466889004909693" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8118092677043392389" xil_pn:start_ts="1565007491">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Top_cymometer.bld"/>
@@ -136,7 +142,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1564161324" xil_pn:in_ck="-444077259304497180" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="111412226054857016" xil_pn:start_ts="1564161243">
+    <transform xil_pn:end_ts="1565007522" xil_pn:in_ck="-444077259304497180" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="111412226054857016" xil_pn:start_ts="1565007501">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -152,7 +158,7 @@
       <outfile xil_pn:name="Top_cymometer_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1564161503" xil_pn:in_ck="-2788101637745245955" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1564161324">
+    <transform xil_pn:end_ts="1565007559" xil_pn:in_ck="-2788101637745245955" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1565007522">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -167,8 +173,9 @@
       <outfile xil_pn:name="Top_cymometer_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1564161524" xil_pn:in_ck="3386809526158136042" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1564161503">
+    <transform xil_pn:end_ts="1565007574" xil_pn:in_ck="3386809526158136042" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1565007559">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Top_cymometer.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
@@ -179,23 +186,14 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1564148127" xil_pn:in_ck="-8343257078406799148" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1564148043">
+    <transform xil_pn:end_ts="1565004809" xil_pn:in_ck="-8343257078406799148" xil_pn:name="TRAN_genImpactFile" xil_pn:prop_ck="-7047989797201823252" xil_pn:start_ts="1565004806">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1564152833" xil_pn:in_ck="-8343257078406799148" xil_pn:name="TRAN_genImpactFile" xil_pn:prop_ck="-7047989797201823252" xil_pn:start_ts="1564152832">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-    </transform>
-    <transform xil_pn:end_ts="1564161503" xil_pn:in_ck="-6397991911524088992" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1564161496">
+    <transform xil_pn:end_ts="1565007559" xil_pn:in_ck="-6397991911524088992" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1565007553">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Top_cymometer.twr"/>

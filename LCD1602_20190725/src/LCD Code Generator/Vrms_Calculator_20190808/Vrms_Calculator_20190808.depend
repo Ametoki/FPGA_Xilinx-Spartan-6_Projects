@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1565271811 source:d:\gszomulu\ise\fpga_xilinx-spartan-6_projects\lcd1602_20190725\src\lcd code generator\vrms_calculator_20190808\main.c
+	<stdio.h>
+	<stdlib.h>
+

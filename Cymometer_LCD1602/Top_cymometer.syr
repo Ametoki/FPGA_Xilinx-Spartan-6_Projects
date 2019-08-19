@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: Top_cymometer.prj
 
@@ -110,14 +110,18 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\ipcore_dir\PLL_CLK.v" into library work
 Parsing module <PLL_CLK>.
-Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Master.v" into library work
-Parsing module <LCD1602_Master>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\SPI_Slave.v" into library work
+Parsing module <SPI_Slave>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\SPI_Top.v" into library work
+Parsing module <SPI_Top>.
 Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\PLL_clk_high.v" into library work
 Parsing module <PLL_clk_high>.
-Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Top.v" into library work
-Parsing module <LCD1602_Top>.
 Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\Cymometer.v" into library work
 Parsing module <Cymometer>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\chipscope_ila.v" into library work
+Parsing module <chipscope_ila>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\chipscope_icon.v" into library work
+Parsing module <chipscope_icon>.
 Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\Top_cymometer.v" into library work
 Parsing module <Top_cymometer>.
 
@@ -134,23 +138,17 @@ Elaborating module <IBUFG>.
 Elaborating module <PLL_CLK>.
 
 Elaborating module <DCM_SP(CLKDV_DIVIDE=2.0,CLKFX_DIVIDE=1,CLKFX_MULTIPLY=4,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=20.0,CLKOUT_PHASE_SHIFT="NONE",CLK_FEEDBACK="1X",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
-WARNING:HDLCompiler:1127 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\ipcore_dir\PLL_CLK.v" Line 128: Assignment to status_int ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\PLL_clk_high.v" Line 41: Assignment to locked ignored, since the identifier is never used
 
 Elaborating module <Cymometer>.
-WARNING:HDLCompiler:413 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\Cymometer.v" Line 151: Result of 28-bit expression is truncated to fit in 22-bit target.
 
-Elaborating module <LCD1602_Top>.
-WARNING:HDLCompiler:413 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Top.v" Line 47: Result of 22-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Top.v" Line 48: Result of 22-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Top.v" Line 49: Result of 22-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Top.v" Line 50: Result of 22-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Top.v" Line 51: Result of 22-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Top.v" Line 52: Result of 22-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Top.v" Line 53: Result of 22-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Top.v" Line 54: Result of 24-bit expression is truncated to fit in 8-bit target.
+Elaborating module <SPI_Top>.
 
-Elaborating module <LCD1602_Master>.
+Elaborating module <SPI_Slave>.
+
+Elaborating module <chipscope_icon>.
+
+Elaborating module <chipscope_ila>.
+WARNING:HDLCompiler:634 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\Top_cymometer.v" Line 77: Net <TRIG0[255]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -158,13 +156,13 @@ Elaborating module <LCD1602_Master>.
 
 Synthesizing Unit <Top_cymometer>.
     Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\Top_cymometer.v".
+WARNING:Xst:653 - Signal <TRIG0<255:3>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <Top_cymometer> synthesized.
 
 Synthesizing Unit <PLL_clk_high>.
     Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\PLL_clk_high.v".
-INFO:Xst:3210 - "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\PLL_clk_high.v" line 36: Output port <locked> of the instance <PLL_Inst> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <PLL_clk_high> synthesized.
@@ -177,12 +175,19 @@ Unit <PLL_CLK> synthesized.
 
 Synthesizing Unit <Cymometer>.
     Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\Cymometer.v".
-    Found 22-bit register for signal <fs_cnt_temp>.
-    Found 22-bit register for signal <fs_cnt>.
-    Found 22-bit register for signal <fx_cnt_temp>.
-    Found 22-bit register for signal <fx_cnt>.
-    Found 22-bit register for signal <data_fx>.
-    Found 5-bit register for signal <gate_cnt>.
+    Found 32-bit register for signal <fs_cnt_temp>.
+    Found 32-bit register for signal <fs_cnt>.
+    Found 32-bit register for signal <fx_cnt_temp>.
+    Found 32-bit register for signal <fx_cnt>.
+    Found 32-bit register for signal <fs_cnt_out>.
+    Found 32-bit register for signal <fx_cnt_out>.
+    Found 26-bit register for signal <fs_output_cnt>.
+    Found 26-bit register for signal <fx_output_cnt>.
+    Found 3-bit register for signal <fx_edge>.
+    Found 28-bit register for signal <clk_cnt>.
+    Found 31-bit register for signal <fx_cnt_predict>.
+    Found 31-bit register for signal <fx_cnt_predict_temp>.
+    Found 11-bit register for signal <gate_cnt>.
     Found 1-bit register for signal <gate_fx>.
     Found 1-bit register for signal <gate_fs_reg>.
     Found 1-bit register for signal <gate_fs>.
@@ -190,802 +195,160 @@ Synthesizing Unit <Cymometer>.
     Found 1-bit register for signal <gate_fs_d1>.
     Found 1-bit register for signal <gate_fx_d0>.
     Found 1-bit register for signal <gate_fx_d1>.
-    Found 5-bit adder for signal <gate_cnt[4]_GND_6_o_add_2_OUT> created at line 55.
-    Found 22-bit adder for signal <fs_cnt_temp[21]_GND_6_o_add_9_OUT> created at line 122.
-    Found 22-bit adder for signal <fx_cnt_temp[21]_GND_6_o_add_16_OUT> created at line 138.
-    Found 28x22-bit multiplier for signal <n0060> created at line 151.
-    Found 5-bit comparator lessequal for signal <gate_cnt[4]_PWR_6_o_LessThan_2_o> created at line 54
-    Found 5-bit comparator greater for signal <gate_cnt[4]_GND_6_o_LessThan_7_o> created at line 62
-    Found 5-bit comparator greater for signal <gate_cnt[4]_PWR_6_o_LessThan_8_o> created at line 64
+    Found 32-bit register for signal <GATE_TIME>.
+    Found 32-bit register for signal <GATE_TIME_NEXT>.
+    Found 32-bit adder for signal <GATE_TIME[31]_GND_6_o_add_2_OUT> created at line 106.
+    Found 11-bit adder for signal <gate_cnt[10]_GND_6_o_add_4_OUT> created at line 107.
+    Found 32-bit adder for signal <GATE_TIME[31]_GND_6_o_add_11_OUT> created at line 117.
+    Found 32-bit adder for signal <fs_cnt_temp[31]_GND_6_o_add_15_OUT> created at line 175.
+    Found 32-bit adder for signal <fx_cnt_temp[31]_GND_6_o_add_22_OUT> created at line 191.
+    Found 26-bit adder for signal <fs_output_cnt[25]_GND_6_o_add_30_OUT> created at line 215.
+    Found 26-bit adder for signal <fx_output_cnt[25]_GND_6_o_add_36_OUT> created at line 233.
+    Found 28-bit adder for signal <clk_cnt[27]_GND_6_o_add_44_OUT> created at line 267.
+    Found 31-bit adder for signal <fx_cnt_predict_temp[30]_GND_6_o_add_45_OUT> created at line 269.
+    Found 32-bit comparator lessequal for signal <n0004> created at line 102
+    Found 11-bit comparator greater for signal <gate_cnt[10]_GND_6_o_LessThan_11_o> created at line 115
+    Found 32-bit comparator greater for signal <GND_6_o_GATE_TIME[31]_LessThan_13_o> created at line 117
+    Found 26-bit comparator greater for signal <n0040> created at line 207
+    Found 26-bit comparator greater for signal <n0047> created at line 225
+    Found 28-bit comparator greater for signal <n0056> created at line 259
     Summary:
-	inferred   1 Multiplier(s).
-	inferred   3 Adder/Subtractor(s).
-	inferred 122 D-type flip-flop(s).
-	inferred   3 Comparator(s).
-	inferred   4 Multiplexer(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred 419 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred   8 Multiplexer(s).
 Unit <Cymometer> synthesized.
 
-Synthesizing Unit <div_28u_22u>.
-    Related source file is "".
-    Found 49-bit adder for signal <n2371> created at line 0.
-    Found 49-bit adder for signal <GND_7_o_b[21]_add_3_OUT> created at line 0.
-    Found 48-bit adder for signal <n2375> created at line 0.
-    Found 48-bit adder for signal <GND_7_o_b[21]_add_5_OUT> created at line 0.
-    Found 47-bit adder for signal <n2379> created at line 0.
-    Found 47-bit adder for signal <GND_7_o_b[21]_add_7_OUT> created at line 0.
-    Found 46-bit adder for signal <n2383> created at line 0.
-    Found 46-bit adder for signal <GND_7_o_b[21]_add_9_OUT> created at line 0.
-    Found 45-bit adder for signal <n2387> created at line 0.
-    Found 45-bit adder for signal <GND_7_o_b[21]_add_11_OUT> created at line 0.
-    Found 44-bit adder for signal <n2391> created at line 0.
-    Found 44-bit adder for signal <GND_7_o_b[21]_add_13_OUT> created at line 0.
-    Found 43-bit adder for signal <n2395> created at line 0.
-    Found 43-bit adder for signal <GND_7_o_b[21]_add_15_OUT> created at line 0.
-    Found 42-bit adder for signal <n2399> created at line 0.
-    Found 42-bit adder for signal <GND_7_o_b[21]_add_17_OUT> created at line 0.
-    Found 41-bit adder for signal <n2403> created at line 0.
-    Found 41-bit adder for signal <GND_7_o_b[21]_add_19_OUT> created at line 0.
-    Found 40-bit adder for signal <n2407> created at line 0.
-    Found 40-bit adder for signal <GND_7_o_b[21]_add_21_OUT> created at line 0.
-    Found 39-bit adder for signal <n2411> created at line 0.
-    Found 39-bit adder for signal <GND_7_o_b[21]_add_23_OUT> created at line 0.
-    Found 38-bit adder for signal <n2415> created at line 0.
-    Found 38-bit adder for signal <GND_7_o_b[21]_add_25_OUT> created at line 0.
-    Found 37-bit adder for signal <n2419> created at line 0.
-    Found 37-bit adder for signal <GND_7_o_b[21]_add_27_OUT> created at line 0.
-    Found 36-bit adder for signal <n2423> created at line 0.
-    Found 36-bit adder for signal <GND_7_o_b[21]_add_29_OUT> created at line 0.
-    Found 35-bit adder for signal <n2427> created at line 0.
-    Found 35-bit adder for signal <GND_7_o_b[21]_add_31_OUT> created at line 0.
-    Found 34-bit adder for signal <n2431> created at line 0.
-    Found 34-bit adder for signal <GND_7_o_b[21]_add_33_OUT> created at line 0.
-    Found 33-bit adder for signal <n2435> created at line 0.
-    Found 33-bit adder for signal <GND_7_o_b[21]_add_35_OUT> created at line 0.
-    Found 32-bit adder for signal <n2439> created at line 0.
-    Found 32-bit adder for signal <GND_7_o_b[21]_add_37_OUT> created at line 0.
-    Found 31-bit adder for signal <n2443> created at line 0.
-    Found 31-bit adder for signal <GND_7_o_b[21]_add_39_OUT> created at line 0.
-    Found 30-bit adder for signal <n2447> created at line 0.
-    Found 30-bit adder for signal <GND_7_o_b[21]_add_41_OUT> created at line 0.
-    Found 29-bit adder for signal <n2451> created at line 0.
-    Found 29-bit adder for signal <GND_7_o_b[21]_add_43_OUT> created at line 0.
-    Found 28-bit adder for signal <n2455> created at line 0.
-    Found 28-bit adder for signal <a[27]_b[21]_add_45_OUT> created at line 0.
-    Found 28-bit adder for signal <n2459> created at line 0.
-    Found 28-bit adder for signal <a[27]_GND_7_o_add_47_OUT> created at line 0.
-    Found 28-bit adder for signal <n2463> created at line 0.
-    Found 28-bit adder for signal <a[27]_GND_7_o_add_49_OUT> created at line 0.
-    Found 28-bit adder for signal <n2467> created at line 0.
-    Found 28-bit adder for signal <a[27]_GND_7_o_add_51_OUT[27:0]> created at line 0.
-    Found 28-bit adder for signal <n2471> created at line 0.
-    Found 28-bit adder for signal <a[27]_GND_7_o_add_53_OUT[27:0]> created at line 0.
-    Found 28-bit adder for signal <n2475> created at line 0.
-    Found 28-bit adder for signal <a[27]_GND_7_o_add_55_OUT[27:0]> created at line 0.
-    Found 50-bit adder for signal <GND_7_o_b[21]_add_1_OUT> created at line 0.
-    Found 50-bit comparator lessequal for signal <BUS_0001> created at line 0
-    Found 49-bit comparator lessequal for signal <BUS_0002> created at line 0
-    Found 48-bit comparator lessequal for signal <BUS_0003> created at line 0
-    Found 47-bit comparator lessequal for signal <BUS_0004> created at line 0
-    Found 46-bit comparator lessequal for signal <BUS_0005> created at line 0
-    Found 45-bit comparator lessequal for signal <BUS_0006> created at line 0
-    Found 44-bit comparator lessequal for signal <BUS_0007> created at line 0
-    Found 43-bit comparator lessequal for signal <BUS_0008> created at line 0
-    Found 42-bit comparator lessequal for signal <BUS_0009> created at line 0
-    Found 41-bit comparator lessequal for signal <BUS_0010> created at line 0
-    Found 40-bit comparator lessequal for signal <BUS_0011> created at line 0
-    Found 39-bit comparator lessequal for signal <BUS_0012> created at line 0
-    Found 38-bit comparator lessequal for signal <BUS_0013> created at line 0
-    Found 37-bit comparator lessequal for signal <BUS_0014> created at line 0
-    Found 36-bit comparator lessequal for signal <BUS_0015> created at line 0
-    Found 35-bit comparator lessequal for signal <BUS_0016> created at line 0
-    Found 34-bit comparator lessequal for signal <BUS_0017> created at line 0
-    Found 33-bit comparator lessequal for signal <BUS_0018> created at line 0
-    Found 32-bit comparator lessequal for signal <BUS_0019> created at line 0
-    Found 31-bit comparator lessequal for signal <BUS_0020> created at line 0
-    Found 30-bit comparator lessequal for signal <BUS_0021> created at line 0
-    Found 29-bit comparator lessequal for signal <BUS_0022> created at line 0
-    Found 28-bit comparator lessequal for signal <BUS_0023> created at line 0
-    Found 28-bit comparator lessequal for signal <BUS_0024> created at line 0
-    Found 28-bit comparator lessequal for signal <BUS_0025> created at line 0
-    Found 28-bit comparator lessequal for signal <BUS_0026> created at line 0
-    Found 28-bit comparator lessequal for signal <BUS_0027> created at line 0
-    Found 28-bit comparator lessequal for signal <BUS_0028> created at line 0
-    Found 28-bit comparator lessequal for signal <BUS_0029> created at line 0
+Synthesizing Unit <SPI_Top>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\SPI_Top.v".
+    Found 96-bit register for signal <data>.
+    Found 1-bit register for signal <sck_r1>.
+    Found 1-bit register for signal <ncs_r0>.
+    Found 1-bit register for signal <ncs_r1>.
+    Found 1-bit register for signal <sck_r0>.
     Summary:
-	inferred  55 Adder/Subtractor(s).
-	inferred  29 Comparator(s).
-	inferred 703 Multiplexer(s).
-Unit <div_28u_22u> synthesized.
+	inferred 100 D-type flip-flop(s).
+Unit <SPI_Top> synthesized.
 
-Synthesizing Unit <LCD1602_Top>.
-    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Top.v".
-    Found 8-bit register for signal <check_0>.
-    Found 16-bit register for signal <count>.
-    Found 5-bit register for signal <char_cnt>.
-    Found 1-bit register for signal <lcd_clk>.
-    Found 7-bit adder for signal <n0121[6:0]> created at line 47.
-    Found 7-bit adder for signal <n0123[6:0]> created at line 48.
-    Found 7-bit adder for signal <n0125[6:0]> created at line 49.
-    Found 7-bit adder for signal <n0127[6:0]> created at line 50.
-    Found 7-bit adder for signal <n0129[6:0]> created at line 51.
-    Found 7-bit adder for signal <n0131[6:0]> created at line 52.
-    Found 7-bit adder for signal <n0133[6:0]> created at line 53.
-    Found 7-bit adder for signal <n0135[6:0]> created at line 54.
-    Found 16-bit adder for signal <count[15]_GND_9_o_add_46_OUT> created at line 96.
-    Found 5-bit adder for signal <char_cnt[4]_GND_9_o_add_50_OUT> created at line 106.
-    Found 22-bit comparator greater for signal <data_fx[21]_GND_9_o_LessThan_33_o> created at line 65
-    Found 22-bit comparator greater for signal <data_fx[21]_GND_9_o_LessThan_34_o> created at line 67
-    Found 22-bit comparator greater for signal <data_fx[21]_GND_9_o_LessThan_35_o> created at line 69
-    Found 22-bit comparator greater for signal <data_fx[21]_GND_9_o_LessThan_36_o> created at line 71
-    Found 22-bit comparator greater for signal <data_fx[21]_GND_9_o_LessThan_37_o> created at line 73
-    Found 22-bit comparator greater for signal <data_fx[21]_GND_9_o_LessThan_38_o> created at line 75
-    Found 5-bit comparator greater for signal <char_cnt[4]_PWR_8_o_LessThan_50_o> created at line 105
-    Summary:
-	inferred  10 Adder/Subtractor(s).
-	inferred  30 D-type flip-flop(s).
-	inferred   7 Comparator(s).
-	inferred  28 Multiplexer(s).
-Unit <LCD1602_Top> synthesized.
-
-Synthesizing Unit <mod_22u_4u>.
-    Related source file is "".
-    Found 26-bit adder for signal <n1221> created at line 0.
-    Found 26-bit adder for signal <GND_10_o_b[3]_add_1_OUT> created at line 0.
-    Found 25-bit adder for signal <n1225> created at line 0.
-    Found 25-bit adder for signal <GND_10_o_b[3]_add_3_OUT> created at line 0.
-    Found 24-bit adder for signal <n1229> created at line 0.
-    Found 24-bit adder for signal <GND_10_o_b[3]_add_5_OUT> created at line 0.
-    Found 23-bit adder for signal <n1233> created at line 0.
-    Found 23-bit adder for signal <GND_10_o_b[3]_add_7_OUT> created at line 0.
-    Found 22-bit adder for signal <n1237> created at line 0.
-    Found 22-bit adder for signal <a[21]_b[3]_add_9_OUT> created at line 0.
-    Found 22-bit adder for signal <n1241> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_10_o_add_11_OUT> created at line 0.
-    Found 22-bit adder for signal <n1245> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_10_o_add_13_OUT> created at line 0.
-    Found 22-bit adder for signal <n1249> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_10_o_add_15_OUT> created at line 0.
-    Found 22-bit adder for signal <n1253> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_10_o_add_17_OUT> created at line 0.
-    Found 22-bit adder for signal <n1257> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_10_o_add_19_OUT> created at line 0.
-    Found 22-bit adder for signal <n1261> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_10_o_add_21_OUT> created at line 0.
-    Found 22-bit adder for signal <n1265> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_10_o_add_23_OUT> created at line 0.
-    Found 22-bit adder for signal <n1269> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_10_o_add_25_OUT> created at line 0.
-    Found 22-bit adder for signal <n1273> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_10_o_add_27_OUT> created at line 0.
-    Found 22-bit adder for signal <n1277> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_10_o_add_29_OUT> created at line 0.
-    Found 22-bit adder for signal <n1281> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_10_o_add_31_OUT> created at line 0.
-    Found 22-bit adder for signal <n1285> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_10_o_add_33_OUT> created at line 0.
-    Found 22-bit adder for signal <n1289> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_10_o_add_35_OUT> created at line 0.
-    Found 22-bit adder for signal <n1293> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_10_o_add_37_OUT> created at line 0.
-    Found 22-bit adder for signal <n1297> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_10_o_add_39_OUT> created at line 0.
-    Found 22-bit adder for signal <n1301> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_10_o_add_41_OUT> created at line 0.
-    Found 22-bit adder for signal <n1305> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_10_o_add_43_OUT> created at line 0.
-    Found 22-bit adder for signal <n1309> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_10_o_add_45_OUT> created at line 0.
-    Found 26-bit comparator lessequal for signal <BUS_0001> created at line 0
-    Found 25-bit comparator lessequal for signal <BUS_0002> created at line 0
-    Found 24-bit comparator lessequal for signal <BUS_0003> created at line 0
-    Found 23-bit comparator lessequal for signal <BUS_0004> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0005> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0006> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0007> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0008> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0009> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0010> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0011> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0012> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0013> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0014> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0015> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0016> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0017> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0018> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0019> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0020> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0021> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0022> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0023> created at line 0
-    Summary:
-	inferred  46 Adder/Subtractor(s).
-	inferred  23 Comparator(s).
-	inferred 485 Multiplexer(s).
-Unit <mod_22u_4u> synthesized.
-
-Synthesizing Unit <div_22u_4u>.
-    Related source file is "".
-    Found 26-bit adder for signal <GND_11_o_b[3]_add_1_OUT> created at line 0.
-    Found 25-bit adder for signal <GND_11_o_b[3]_add_3_OUT> created at line 0.
-    Found 24-bit adder for signal <GND_11_o_b[3]_add_5_OUT> created at line 0.
-    Found 23-bit adder for signal <GND_11_o_b[3]_add_7_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_b[3]_add_9_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_11_o_add_11_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_11_o_add_13_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_11_o_add_15_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_11_o_add_17_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_11_o_add_19_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_11_o_add_21_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_11_o_add_23_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_11_o_add_25_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_11_o_add_27_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_11_o_add_29_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_11_o_add_31_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_11_o_add_33_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_11_o_add_35_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_11_o_add_37_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_11_o_add_39_OUT[21:0]> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_11_o_add_41_OUT[21:0]> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_11_o_add_43_OUT[21:0]> created at line 0.
-    Found 26-bit comparator lessequal for signal <BUS_0001> created at line 0
-    Found 25-bit comparator lessequal for signal <BUS_0002> created at line 0
-    Found 24-bit comparator lessequal for signal <BUS_0003> created at line 0
-    Found 23-bit comparator lessequal for signal <BUS_0004> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0005> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0006> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0007> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0008> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0009> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0010> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0011> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0012> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0013> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0014> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0015> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0016> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0017> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0018> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0019> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0020> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0021> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0022> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0023> created at line 0
-    Summary:
-	inferred  22 Adder/Subtractor(s).
-	inferred  23 Comparator(s).
-	inferred 421 Multiplexer(s).
-Unit <div_22u_4u> synthesized.
-
-Synthesizing Unit <div_22u_7u>.
-    Related source file is "".
-    Found 29-bit adder for signal <GND_12_o_b[6]_add_1_OUT> created at line 0.
-    Found 28-bit adder for signal <GND_12_o_b[6]_add_3_OUT> created at line 0.
-    Found 27-bit adder for signal <GND_12_o_b[6]_add_5_OUT> created at line 0.
-    Found 26-bit adder for signal <GND_12_o_b[6]_add_7_OUT> created at line 0.
-    Found 25-bit adder for signal <GND_12_o_b[6]_add_9_OUT> created at line 0.
-    Found 24-bit adder for signal <GND_12_o_b[6]_add_11_OUT> created at line 0.
-    Found 23-bit adder for signal <GND_12_o_b[6]_add_13_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_b[6]_add_15_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_12_o_add_17_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_12_o_add_19_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_12_o_add_21_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_12_o_add_23_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_12_o_add_25_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_12_o_add_27_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_12_o_add_29_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_12_o_add_31_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_12_o_add_33_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_12_o_add_35_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_12_o_add_37_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_12_o_add_39_OUT[21:0]> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_12_o_add_41_OUT[21:0]> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_12_o_add_43_OUT[21:0]> created at line 0.
-    Found 29-bit comparator lessequal for signal <BUS_0001> created at line 0
-    Found 28-bit comparator lessequal for signal <BUS_0002> created at line 0
-    Found 27-bit comparator lessequal for signal <BUS_0003> created at line 0
-    Found 26-bit comparator lessequal for signal <BUS_0004> created at line 0
-    Found 25-bit comparator lessequal for signal <BUS_0005> created at line 0
-    Found 24-bit comparator lessequal for signal <BUS_0006> created at line 0
-    Found 23-bit comparator lessequal for signal <BUS_0007> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0008> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0009> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0010> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0011> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0012> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0013> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0014> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0015> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0016> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0017> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0018> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0019> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0020> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0021> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0022> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0023> created at line 0
-    Summary:
-	inferred  22 Adder/Subtractor(s).
-	inferred  23 Comparator(s).
-	inferred 421 Multiplexer(s).
-Unit <div_22u_7u> synthesized.
-
-Synthesizing Unit <div_22u_10u>.
-    Related source file is "".
-    Found 32-bit adder for signal <GND_13_o_b[9]_add_1_OUT> created at line 0.
-    Found 31-bit adder for signal <GND_13_o_b[9]_add_3_OUT> created at line 0.
-    Found 30-bit adder for signal <GND_13_o_b[9]_add_5_OUT> created at line 0.
-    Found 29-bit adder for signal <GND_13_o_b[9]_add_7_OUT> created at line 0.
-    Found 28-bit adder for signal <GND_13_o_b[9]_add_9_OUT> created at line 0.
-    Found 27-bit adder for signal <GND_13_o_b[9]_add_11_OUT> created at line 0.
-    Found 26-bit adder for signal <GND_13_o_b[9]_add_13_OUT> created at line 0.
-    Found 25-bit adder for signal <GND_13_o_b[9]_add_15_OUT> created at line 0.
-    Found 24-bit adder for signal <GND_13_o_b[9]_add_17_OUT> created at line 0.
-    Found 23-bit adder for signal <GND_13_o_b[9]_add_19_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_b[9]_add_21_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_13_o_add_23_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_13_o_add_25_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_13_o_add_27_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_13_o_add_29_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_13_o_add_31_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_13_o_add_33_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_13_o_add_35_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_13_o_add_37_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_13_o_add_39_OUT[21:0]> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_13_o_add_41_OUT[21:0]> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_13_o_add_43_OUT[21:0]> created at line 0.
-    Found 32-bit comparator lessequal for signal <BUS_0001> created at line 0
-    Found 31-bit comparator lessequal for signal <BUS_0002> created at line 0
-    Found 30-bit comparator lessequal for signal <BUS_0003> created at line 0
-    Found 29-bit comparator lessequal for signal <BUS_0004> created at line 0
-    Found 28-bit comparator lessequal for signal <BUS_0005> created at line 0
-    Found 27-bit comparator lessequal for signal <BUS_0006> created at line 0
-    Found 26-bit comparator lessequal for signal <BUS_0007> created at line 0
-    Found 25-bit comparator lessequal for signal <BUS_0008> created at line 0
-    Found 24-bit comparator lessequal for signal <BUS_0009> created at line 0
-    Found 23-bit comparator lessequal for signal <BUS_0010> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0011> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0012> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0013> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0014> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0015> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0016> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0017> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0018> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0019> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0020> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0021> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0022> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0023> created at line 0
-    Summary:
-	inferred  22 Adder/Subtractor(s).
-	inferred  23 Comparator(s).
-	inferred 421 Multiplexer(s).
-Unit <div_22u_10u> synthesized.
-
-Synthesizing Unit <div_22u_14u>.
-    Related source file is "".
-    Found 36-bit adder for signal <GND_14_o_b[13]_add_1_OUT> created at line 0.
-    Found 35-bit adder for signal <GND_14_o_b[13]_add_3_OUT> created at line 0.
-    Found 34-bit adder for signal <GND_14_o_b[13]_add_5_OUT> created at line 0.
-    Found 33-bit adder for signal <GND_14_o_b[13]_add_7_OUT> created at line 0.
-    Found 32-bit adder for signal <GND_14_o_b[13]_add_9_OUT> created at line 0.
-    Found 31-bit adder for signal <GND_14_o_b[13]_add_11_OUT> created at line 0.
-    Found 30-bit adder for signal <GND_14_o_b[13]_add_13_OUT> created at line 0.
-    Found 29-bit adder for signal <GND_14_o_b[13]_add_15_OUT> created at line 0.
-    Found 28-bit adder for signal <GND_14_o_b[13]_add_17_OUT> created at line 0.
-    Found 27-bit adder for signal <GND_14_o_b[13]_add_19_OUT> created at line 0.
-    Found 26-bit adder for signal <GND_14_o_b[13]_add_21_OUT> created at line 0.
-    Found 25-bit adder for signal <GND_14_o_b[13]_add_23_OUT> created at line 0.
-    Found 24-bit adder for signal <GND_14_o_b[13]_add_25_OUT> created at line 0.
-    Found 23-bit adder for signal <GND_14_o_b[13]_add_27_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_b[13]_add_29_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_14_o_add_31_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_14_o_add_33_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_14_o_add_35_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_14_o_add_37_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_14_o_add_39_OUT[21:0]> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_14_o_add_41_OUT[21:0]> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_14_o_add_43_OUT[21:0]> created at line 0.
-    Found 36-bit comparator lessequal for signal <BUS_0001> created at line 0
-    Found 35-bit comparator lessequal for signal <BUS_0002> created at line 0
-    Found 34-bit comparator lessequal for signal <BUS_0003> created at line 0
-    Found 33-bit comparator lessequal for signal <BUS_0004> created at line 0
-    Found 32-bit comparator lessequal for signal <BUS_0005> created at line 0
-    Found 31-bit comparator lessequal for signal <BUS_0006> created at line 0
-    Found 30-bit comparator lessequal for signal <BUS_0007> created at line 0
-    Found 29-bit comparator lessequal for signal <BUS_0008> created at line 0
-    Found 28-bit comparator lessequal for signal <BUS_0009> created at line 0
-    Found 27-bit comparator lessequal for signal <BUS_0010> created at line 0
-    Found 26-bit comparator lessequal for signal <BUS_0011> created at line 0
-    Found 25-bit comparator lessequal for signal <BUS_0012> created at line 0
-    Found 24-bit comparator lessequal for signal <BUS_0013> created at line 0
-    Found 23-bit comparator lessequal for signal <BUS_0014> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0015> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0016> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0017> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0018> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0019> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0020> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0021> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0022> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0023> created at line 0
-    Summary:
-	inferred  22 Adder/Subtractor(s).
-	inferred  23 Comparator(s).
-	inferred 421 Multiplexer(s).
-Unit <div_22u_14u> synthesized.
-
-Synthesizing Unit <div_22u_17u>.
-    Related source file is "".
-    Found 39-bit adder for signal <GND_15_o_b[16]_add_1_OUT> created at line 0.
-    Found 38-bit adder for signal <GND_15_o_b[16]_add_3_OUT> created at line 0.
-    Found 37-bit adder for signal <GND_15_o_b[16]_add_5_OUT> created at line 0.
-    Found 36-bit adder for signal <GND_15_o_b[16]_add_7_OUT> created at line 0.
-    Found 35-bit adder for signal <GND_15_o_b[16]_add_9_OUT> created at line 0.
-    Found 34-bit adder for signal <GND_15_o_b[16]_add_11_OUT> created at line 0.
-    Found 33-bit adder for signal <GND_15_o_b[16]_add_13_OUT> created at line 0.
-    Found 32-bit adder for signal <GND_15_o_b[16]_add_15_OUT> created at line 0.
-    Found 31-bit adder for signal <GND_15_o_b[16]_add_17_OUT> created at line 0.
-    Found 30-bit adder for signal <GND_15_o_b[16]_add_19_OUT> created at line 0.
-    Found 29-bit adder for signal <GND_15_o_b[16]_add_21_OUT> created at line 0.
-    Found 28-bit adder for signal <GND_15_o_b[16]_add_23_OUT> created at line 0.
-    Found 27-bit adder for signal <GND_15_o_b[16]_add_25_OUT> created at line 0.
-    Found 26-bit adder for signal <GND_15_o_b[16]_add_27_OUT> created at line 0.
-    Found 25-bit adder for signal <GND_15_o_b[16]_add_29_OUT> created at line 0.
-    Found 24-bit adder for signal <GND_15_o_b[16]_add_31_OUT> created at line 0.
-    Found 23-bit adder for signal <GND_15_o_b[16]_add_33_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_b[16]_add_35_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_15_o_add_37_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_15_o_add_39_OUT[21:0]> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_15_o_add_41_OUT[21:0]> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_15_o_add_43_OUT[21:0]> created at line 0.
-    Found 39-bit comparator lessequal for signal <BUS_0001> created at line 0
-    Found 38-bit comparator lessequal for signal <BUS_0002> created at line 0
-    Found 37-bit comparator lessequal for signal <BUS_0003> created at line 0
-    Found 36-bit comparator lessequal for signal <BUS_0004> created at line 0
-    Found 35-bit comparator lessequal for signal <BUS_0005> created at line 0
-    Found 34-bit comparator lessequal for signal <BUS_0006> created at line 0
-    Found 33-bit comparator lessequal for signal <BUS_0007> created at line 0
-    Found 32-bit comparator lessequal for signal <BUS_0008> created at line 0
-    Found 31-bit comparator lessequal for signal <BUS_0009> created at line 0
-    Found 30-bit comparator lessequal for signal <BUS_0010> created at line 0
-    Found 29-bit comparator lessequal for signal <BUS_0011> created at line 0
-    Found 28-bit comparator lessequal for signal <BUS_0012> created at line 0
-    Found 27-bit comparator lessequal for signal <BUS_0013> created at line 0
-    Found 26-bit comparator lessequal for signal <BUS_0014> created at line 0
-    Found 25-bit comparator lessequal for signal <BUS_0015> created at line 0
-    Found 24-bit comparator lessequal for signal <BUS_0016> created at line 0
-    Found 23-bit comparator lessequal for signal <BUS_0017> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0018> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0019> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0020> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0021> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0022> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0023> created at line 0
-    Summary:
-	inferred  22 Adder/Subtractor(s).
-	inferred  23 Comparator(s).
-	inferred 421 Multiplexer(s).
-Unit <div_22u_17u> synthesized.
-
-Synthesizing Unit <div_22u_20u>.
-    Related source file is "".
-    Found 42-bit adder for signal <GND_16_o_b[19]_add_1_OUT> created at line 0.
-    Found 41-bit adder for signal <GND_16_o_b[19]_add_3_OUT> created at line 0.
-    Found 40-bit adder for signal <GND_16_o_b[19]_add_5_OUT> created at line 0.
-    Found 39-bit adder for signal <GND_16_o_b[19]_add_7_OUT> created at line 0.
-    Found 38-bit adder for signal <GND_16_o_b[19]_add_9_OUT> created at line 0.
-    Found 37-bit adder for signal <GND_16_o_b[19]_add_11_OUT> created at line 0.
-    Found 36-bit adder for signal <GND_16_o_b[19]_add_13_OUT> created at line 0.
-    Found 35-bit adder for signal <GND_16_o_b[19]_add_15_OUT> created at line 0.
-    Found 34-bit adder for signal <GND_16_o_b[19]_add_17_OUT> created at line 0.
-    Found 33-bit adder for signal <GND_16_o_b[19]_add_19_OUT> created at line 0.
-    Found 32-bit adder for signal <GND_16_o_b[19]_add_21_OUT> created at line 0.
-    Found 31-bit adder for signal <GND_16_o_b[19]_add_23_OUT> created at line 0.
-    Found 30-bit adder for signal <GND_16_o_b[19]_add_25_OUT> created at line 0.
-    Found 29-bit adder for signal <GND_16_o_b[19]_add_27_OUT> created at line 0.
-    Found 28-bit adder for signal <GND_16_o_b[19]_add_29_OUT> created at line 0.
-    Found 27-bit adder for signal <GND_16_o_b[19]_add_31_OUT> created at line 0.
-    Found 26-bit adder for signal <GND_16_o_b[19]_add_33_OUT> created at line 0.
-    Found 25-bit adder for signal <GND_16_o_b[19]_add_35_OUT> created at line 0.
-    Found 24-bit adder for signal <GND_16_o_b[19]_add_37_OUT> created at line 0.
-    Found 23-bit adder for signal <GND_16_o_b[19]_add_39_OUT> created at line 0.
-    Found 22-bit adder for signal <a[21]_b[19]_add_41_OUT[21:0]> created at line 0.
-    Found 22-bit adder for signal <a[21]_GND_16_o_add_43_OUT[21:0]> created at line 0.
-    Found 42-bit comparator lessequal for signal <BUS_0001> created at line 0
-    Found 41-bit comparator lessequal for signal <BUS_0002> created at line 0
-    Found 40-bit comparator lessequal for signal <BUS_0003> created at line 0
-    Found 39-bit comparator lessequal for signal <BUS_0004> created at line 0
-    Found 38-bit comparator lessequal for signal <BUS_0005> created at line 0
-    Found 37-bit comparator lessequal for signal <BUS_0006> created at line 0
-    Found 36-bit comparator lessequal for signal <BUS_0007> created at line 0
-    Found 35-bit comparator lessequal for signal <BUS_0008> created at line 0
-    Found 34-bit comparator lessequal for signal <BUS_0009> created at line 0
-    Found 33-bit comparator lessequal for signal <BUS_0010> created at line 0
-    Found 32-bit comparator lessequal for signal <BUS_0011> created at line 0
-    Found 31-bit comparator lessequal for signal <BUS_0012> created at line 0
-    Found 30-bit comparator lessequal for signal <BUS_0013> created at line 0
-    Found 29-bit comparator lessequal for signal <BUS_0014> created at line 0
-    Found 28-bit comparator lessequal for signal <BUS_0015> created at line 0
-    Found 27-bit comparator lessequal for signal <BUS_0016> created at line 0
-    Found 26-bit comparator lessequal for signal <BUS_0017> created at line 0
-    Found 25-bit comparator lessequal for signal <BUS_0018> created at line 0
-    Found 24-bit comparator lessequal for signal <BUS_0019> created at line 0
-    Found 23-bit comparator lessequal for signal <BUS_0020> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0021> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0022> created at line 0
-    Found 22-bit comparator lessequal for signal <BUS_0023> created at line 0
-    Summary:
-	inferred  22 Adder/Subtractor(s).
-	inferred  23 Comparator(s).
-	inferred 421 Multiplexer(s).
-Unit <div_22u_20u> synthesized.
-
-Synthesizing Unit <div_22u_24u>.
-    Related source file is "".
-    Found 46-bit adder for signal <GND_17_o_b[23]_add_1_OUT> created at line 0.
-    Found 45-bit adder for signal <GND_17_o_b[23]_add_3_OUT> created at line 0.
-    Found 44-bit adder for signal <GND_17_o_b[23]_add_5_OUT> created at line 0.
-    Found 43-bit adder for signal <GND_17_o_b[23]_add_7_OUT> created at line 0.
-    Found 42-bit adder for signal <GND_17_o_b[23]_add_9_OUT> created at line 0.
-    Found 41-bit adder for signal <GND_17_o_b[23]_add_11_OUT> created at line 0.
-    Found 40-bit adder for signal <GND_17_o_b[23]_add_13_OUT> created at line 0.
-    Found 39-bit adder for signal <GND_17_o_b[23]_add_15_OUT> created at line 0.
-    Found 38-bit adder for signal <GND_17_o_b[23]_add_17_OUT> created at line 0.
-    Found 37-bit adder for signal <GND_17_o_b[23]_add_19_OUT> created at line 0.
-    Found 36-bit adder for signal <GND_17_o_b[23]_add_21_OUT> created at line 0.
-    Found 35-bit adder for signal <GND_17_o_b[23]_add_23_OUT> created at line 0.
-    Found 34-bit adder for signal <GND_17_o_b[23]_add_25_OUT> created at line 0.
-    Found 33-bit adder for signal <GND_17_o_b[23]_add_27_OUT> created at line 0.
-    Found 32-bit adder for signal <GND_17_o_b[23]_add_29_OUT> created at line 0.
-    Found 31-bit adder for signal <GND_17_o_b[23]_add_31_OUT> created at line 0.
-    Found 30-bit adder for signal <GND_17_o_b[23]_add_33_OUT> created at line 0.
-    Found 29-bit adder for signal <GND_17_o_b[23]_add_35_OUT> created at line 0.
-    Found 28-bit adder for signal <GND_17_o_b[23]_add_37_OUT> created at line 0.
-    Found 27-bit adder for signal <GND_17_o_b[23]_add_39_OUT> created at line 0.
-    Found 26-bit adder for signal <GND_17_o_b[23]_add_41_OUT> created at line 0.
-    Found 25-bit adder for signal <GND_17_o_b[23]_add_43_OUT> created at line 0.
-    Found 46-bit comparator lessequal for signal <BUS_0001> created at line 0
-    Found 45-bit comparator lessequal for signal <BUS_0002> created at line 0
-    Found 44-bit comparator lessequal for signal <BUS_0003> created at line 0
-    Found 43-bit comparator lessequal for signal <BUS_0004> created at line 0
-    Found 42-bit comparator lessequal for signal <BUS_0005> created at line 0
-    Found 41-bit comparator lessequal for signal <BUS_0006> created at line 0
-    Found 40-bit comparator lessequal for signal <BUS_0007> created at line 0
-    Found 39-bit comparator lessequal for signal <BUS_0008> created at line 0
-    Found 38-bit comparator lessequal for signal <BUS_0009> created at line 0
-    Found 37-bit comparator lessequal for signal <BUS_0010> created at line 0
-    Found 36-bit comparator lessequal for signal <BUS_0011> created at line 0
-    Found 35-bit comparator lessequal for signal <BUS_0012> created at line 0
-    Found 34-bit comparator lessequal for signal <BUS_0013> created at line 0
-    Found 33-bit comparator lessequal for signal <BUS_0014> created at line 0
-    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
-    Found 31-bit comparator lessequal for signal <BUS_0016> created at line 0
-    Found 30-bit comparator lessequal for signal <BUS_0017> created at line 0
-    Found 29-bit comparator lessequal for signal <BUS_0018> created at line 0
-    Found 28-bit comparator lessequal for signal <BUS_0019> created at line 0
-    Found 27-bit comparator lessequal for signal <BUS_0020> created at line 0
-    Found 26-bit comparator lessequal for signal <BUS_0021> created at line 0
-    Found 25-bit comparator lessequal for signal <BUS_0022> created at line 0
-    Found 24-bit comparator lessequal for signal <BUS_0023> created at line 0
-    Summary:
-	inferred  22 Adder/Subtractor(s).
-	inferred  23 Comparator(s).
-	inferred 484 Multiplexer(s).
-Unit <div_22u_24u> synthesized.
-
-Synthesizing Unit <LCD1602_Master>.
-    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\LCD1602_Master.v".
-        IDLE = 10'b0000000000
-        CLEAR = 10'b0000000001
-        RETURN = 10'b0000000010
-        MODE = 10'b0000000100
-        DISPLAY = 10'b0000001000
-        SHIFT = 10'b0000010000
-        FUNCTION = 10'b0000100000
-        CGRAM = 10'b0001000000
-        DDRAM = 10'b0010000000
-        WRITE = 10'b0100000000
-        WAIT = 10'b1000000000
-    Found 8-bit register for signal <LCD_DATA>.
-    Found 10-bit register for signal <state>.
-    Found 1-bit register for signal <LCD_WE>.
-    Found 1-bit register for signal <LCD_RS>.
-INFO:Xst:1799 - State 1000000000 is never reached in FSM <state>.
-    Found finite state machine <FSM_0> for signal <state>.
+Synthesizing Unit <SPI_Slave>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602\src\SPI_Slave.v".
+    Found 96-bit register for signal <byte_sended>.
+    Found 7-bit register for signal <bit_sended_cnt>.
+    Found 3-bit register for signal <sck_edge>.
+    Found 1-bit register for signal <MISO>.
+    Found 1-bit register for signal <sending_flag>.
+    Found 2-bit register for signal <send_state>.
+    Found finite state machine <FSM_0> for signal <send_state>.
     -----------------------------------------------------------------------
-    | States             | 10                                             |
+    | States             | 3                                              |
     | Transitions        | 9                                              |
-    | Inputs             | 1                                              |
-    | Outputs            | 9                                              |
-    | Clock              | lcd_clk (rising_edge)                          |
-    | Reset              | rst_n (negative)                               |
-    | Reset type         | asynchronous                                   |
-    | Reset State        | 0000000000                                     |
+    | Inputs             | 4                                              |
+    | Outputs            | 3                                              |
+    | Clock              | sys_clk (rising_edge)                          |
+    | Reset              | _n0074 (positive)                              |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 8-bit adder for signal <PWR_17_o_GND_18_o_add_2_OUT> created at line 113.
-    Found 8-bit adder for signal <PWR_17_o_GND_18_o_sub_5_OUT> created at line 115.
-    Found 5-bit comparator lessequal for signal <n0005> created at line 112
+    Found 7-bit adder for signal <bit_sended_cnt[6]_GND_8_o_add_6_OUT> created at line 128.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  10 D-type flip-flop(s).
-	inferred   1 Comparator(s).
-	inferred   1 Multiplexer(s).
+	inferred 108 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
-Unit <LCD1602_Master> synthesized.
+Unit <SPI_Slave> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Multipliers                                          : 1
- 28x22-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 591
- 16-bit adder                                          : 1
- 22-bit adder                                          : 366
- 23-bit adder                                          : 22
- 24-bit adder                                          : 22
- 25-bit adder                                          : 23
- 26-bit adder                                          : 23
- 27-bit adder                                          : 6
- 28-bit adder                                          : 18
- 29-bit adder                                          : 8
- 30-bit adder                                          : 7
- 31-bit adder                                          : 7
- 32-bit adder                                          : 7
- 33-bit adder                                          : 6
- 34-bit adder                                          : 6
- 35-bit adder                                          : 6
- 36-bit adder                                          : 6
- 37-bit adder                                          : 5
- 38-bit adder                                          : 5
- 39-bit adder                                          : 5
- 40-bit adder                                          : 4
- 41-bit adder                                          : 4
- 42-bit adder                                          : 4
- 43-bit adder                                          : 3
- 44-bit adder                                          : 3
- 45-bit adder                                          : 3
- 46-bit adder                                          : 3
- 47-bit adder                                          : 2
- 48-bit adder                                          : 2
- 49-bit adder                                          : 2
- 5-bit adder                                           : 2
- 50-bit adder                                          : 1
- 7-bit adder                                           : 8
- 8-bit adder                                           : 1
-# Registers                                            : 20
- 1-bit register                                        : 10
- 16-bit register                                       : 1
- 22-bit register                                       : 5
- 5-bit register                                        : 2
- 8-bit register                                        : 2
-# Comparators                                          : 385
- 22-bit comparator greater                             : 6
- 22-bit comparator lessequal                           : 218
- 23-bit comparator lessequal                           : 14
- 24-bit comparator lessequal                           : 15
- 25-bit comparator lessequal                           : 15
- 26-bit comparator lessequal                           : 15
- 27-bit comparator lessequal                           : 6
- 28-bit comparator lessequal                           : 13
- 29-bit comparator lessequal                           : 7
- 30-bit comparator lessequal                           : 6
- 31-bit comparator lessequal                           : 6
- 32-bit comparator lessequal                           : 6
- 33-bit comparator lessequal                           : 5
- 34-bit comparator lessequal                           : 5
- 35-bit comparator lessequal                           : 5
- 36-bit comparator lessequal                           : 5
- 37-bit comparator lessequal                           : 4
- 38-bit comparator lessequal                           : 4
- 39-bit comparator lessequal                           : 4
- 40-bit comparator lessequal                           : 3
- 41-bit comparator lessequal                           : 3
- 42-bit comparator lessequal                           : 3
- 43-bit comparator lessequal                           : 2
- 44-bit comparator lessequal                           : 2
- 45-bit comparator lessequal                           : 2
- 46-bit comparator lessequal                           : 2
- 47-bit comparator lessequal                           : 1
- 48-bit comparator lessequal                           : 1
- 49-bit comparator lessequal                           : 1
- 5-bit comparator greater                              : 3
- 5-bit comparator lessequal                            : 2
- 50-bit comparator lessequal                           : 1
-# Multiplexers                                         : 7626
- 1-bit 2-to-1 multiplexer                              : 7565
- 16-bit 2-to-1 multiplexer                             : 1
- 22-bit 2-to-1 multiplexer                             : 27
- 24-bit 2-to-1 multiplexer                             : 1
- 28-bit 2-to-1 multiplexer                             : 3
- 4-bit 2-to-1 multiplexer                              : 8
- 5-bit 2-to-1 multiplexer                              : 2
- 8-bit 2-to-1 multiplexer                              : 19
+# Adders/Subtractors                                   : 10
+ 11-bit adder                                          : 1
+ 26-bit adder                                          : 2
+ 28-bit adder                                          : 1
+ 31-bit adder                                          : 1
+ 32-bit adder                                          : 4
+ 7-bit adder                                           : 1
+# Registers                                            : 32
+ 1-bit register                                        : 13
+ 11-bit register                                       : 1
+ 26-bit register                                       : 2
+ 28-bit register                                       : 1
+ 3-bit register                                        : 2
+ 31-bit register                                       : 2
+ 32-bit register                                       : 8
+ 7-bit register                                        : 1
+ 96-bit register                                       : 2
+# Comparators                                          : 6
+ 11-bit comparator greater                             : 1
+ 26-bit comparator greater                             : 2
+ 28-bit comparator greater                             : 1
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 10
+ 1-bit 2-to-1 multiplexer                              : 1
+ 11-bit 2-to-1 multiplexer                             : 1
+ 26-bit 2-to-1 multiplexer                             : 2
+ 28-bit 2-to-1 multiplexer                             : 1
+ 31-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 2
+ 7-bit 2-to-1 multiplexer                              : 1
+ 96-bit 2-to-1 multiplexer                             : 1
 # FSMs                                                 : 1
 
 =========================================================================
-INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+Reading core <chipscope_ila.ngc>.
+Reading core <chipscope_icon.ngc>.
+Loading core <chipscope_ila> for timing and area information for instance <ila_filter_debug>.
+Loading core <chipscope_icon> for timing and area information for instance <icon_debug>.
+INFO:Xst:2261 - The FF/Latch <data_9> in Unit <SPI_ctrl_top> is equivalent to the following 11 FFs/Latches, which will be removed : <data_14> <data_15> <data_16> <data_17> <data_19> <data_21> <data_22> <data_23> <data_24> <data_25> <data_27> 
+INFO:Xst:2261 - The FF/Latch <data_0> in Unit <SPI_ctrl_top> is equivalent to the following 19 FFs/Latches, which will be removed : <data_1> <data_2> <data_3> <data_4> <data_5> <data_6> <data_7> <data_8> <data_10> <data_11> <data_12> <data_13> <data_18> <data_20> <data_26> <data_28> <data_29> <data_30> <data_31> 
+WARNING:Xst:1710 - FF/Latch <data_0> (without init value) has a constant value of 0 in block <SPI_ctrl_top>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <Cymometer>.
+The following registers are absorbed into counter <fs_output_cnt>: 1 register on signal <fs_output_cnt>.
+The following registers are absorbed into counter <fx_output_cnt>: 1 register on signal <fx_output_cnt>.
+The following registers are absorbed into counter <clk_cnt>: 1 register on signal <clk_cnt>.
+The following registers are absorbed into counter <fx_cnt_predict_temp>: 1 register on signal <fx_cnt_predict_temp>.
 The following registers are absorbed into counter <fs_cnt_temp>: 1 register on signal <fs_cnt_temp>.
-The following registers are absorbed into counter <fx_cnt_temp>: 1 register on signal <fx_cnt_temp>.
 The following registers are absorbed into counter <gate_cnt>: 1 register on signal <gate_cnt>.
+The following registers are absorbed into counter <fx_cnt_temp>: 1 register on signal <fx_cnt_temp>.
 Unit <Cymometer> synthesized (advanced).
 
-Synthesizing (advanced) Unit <LCD1602_Top>.
-The following registers are absorbed into counter <count>: 1 register on signal <count>.
-The following registers are absorbed into counter <char_cnt>: 1 register on signal <char_cnt>.
-Unit <LCD1602_Top> synthesized (advanced).
+Synthesizing (advanced) Unit <SPI_Slave>.
+The following registers are absorbed into counter <bit_sended_cnt>: 1 register on signal <bit_sended_cnt>.
+Unit <SPI_Slave> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Multipliers                                          : 1
- 28x22-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 375
- 22-bit adder                                          : 154
- 22-bit adder carry in                                 : 176
- 28-bit adder                                          : 1
- 28-bit adder carry in                                 : 27
- 4-bit adder carry in                                  : 8
- 7-bit adder                                           : 8
- 8-bit adder                                           : 1
-# Counters                                             : 5
- 16-bit up counter                                     : 1
- 22-bit up counter                                     : 2
- 5-bit up counter                                      : 2
-# Registers                                            : 92
- Flip-Flops                                            : 92
-# Comparators                                          : 385
- 22-bit comparator greater                             : 6
- 22-bit comparator lessequal                           : 218
- 23-bit comparator lessequal                           : 14
- 24-bit comparator lessequal                           : 15
- 25-bit comparator lessequal                           : 15
- 26-bit comparator lessequal                           : 15
- 27-bit comparator lessequal                           : 6
- 28-bit comparator lessequal                           : 13
- 29-bit comparator lessequal                           : 7
- 30-bit comparator lessequal                           : 6
- 31-bit comparator lessequal                           : 6
- 32-bit comparator lessequal                           : 6
- 33-bit comparator lessequal                           : 5
- 34-bit comparator lessequal                           : 5
- 35-bit comparator lessequal                           : 5
- 36-bit comparator lessequal                           : 5
- 37-bit comparator lessequal                           : 4
- 38-bit comparator lessequal                           : 4
- 39-bit comparator lessequal                           : 4
- 40-bit comparator lessequal                           : 3
- 41-bit comparator lessequal                           : 3
- 42-bit comparator lessequal                           : 3
- 43-bit comparator lessequal                           : 2
- 44-bit comparator lessequal                           : 2
- 45-bit comparator lessequal                           : 2
- 46-bit comparator lessequal                           : 2
- 47-bit comparator lessequal                           : 1
- 48-bit comparator lessequal                           : 1
- 49-bit comparator lessequal                           : 1
- 5-bit comparator greater                              : 3
- 5-bit comparator lessequal                            : 2
- 50-bit comparator lessequal                           : 1
-# Multiplexers                                         : 7620
- 1-bit 2-to-1 multiplexer                              : 7565
- 22-bit 2-to-1 multiplexer                             : 25
- 24-bit 2-to-1 multiplexer                             : 1
- 28-bit 2-to-1 multiplexer                             : 3
- 4-bit 2-to-1 multiplexer                              : 8
- 8-bit 2-to-1 multiplexer                              : 18
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Counters                                             : 8
+ 11-bit up counter                                     : 1
+ 26-bit up counter                                     : 2
+ 28-bit up counter                                     : 1
+ 31-bit up counter                                     : 1
+ 32-bit up counter                                     : 2
+ 7-bit up counter                                      : 1
+# Registers                                            : 434
+ Flip-Flops                                            : 434
+# Comparators                                          : 6
+ 11-bit comparator greater                             : 1
+ 26-bit comparator greater                             : 2
+ 28-bit comparator greater                             : 1
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 2
+ 1-bit 2-to-1 multiplexer                              : 1
+ 96-bit 2-to-1 multiplexer                             : 1
 # FSMs                                                 : 1
 
 =========================================================================
@@ -993,73 +356,98 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1710 - FF/Latch <data_31> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_30> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_29> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_28> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_26> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_20> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_18> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_13> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_12> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_11> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_10> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_8> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_7> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_6> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_5> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_4> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_3> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_2> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_1> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_0> (without init value) has a constant value of 0 in block <SPI_Top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <data_9> in Unit <SPI_Top> is equivalent to the following 11 FFs/Latches, which will be removed : <data_14> <data_15> <data_16> <data_17> <data_19> <data_21> <data_22> <data_23> <data_24> <data_25> <data_27> 
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <LCD1602_U1/LCD1602_U1/FSM_0> on signal <state[1:9]> with one-hot encoding.
--------------------------
- State      | Encoding
--------------------------
- 0000000000 | 000000001
- 0000000001 | 000000010
- 0000000010 | 000000100
- 0000000100 | 000001000
- 0000001000 | 000010000
- 0000010000 | 000100000
- 0000100000 | 001000000
- 0010000000 | 010000000
- 0100000000 | 100000000
- 1000000000 | unreached
--------------------------
-WARNING:Xst:2677 - Node <Mmult_n00603> of sequential type is unconnected in block <Cymometer>.
-WARNING:Xst:1293 - FF/Latch <check_0_0> has a constant value of 1 in block <LCD1602_Top>. This FF/Latch will be trimmed during the optimization process.
+Optimizing FSM <SPI_ctrl_top/SPI_Slave_Ctrl/FSM_0> on signal <send_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 11    | 11
+-------------------
+WARNING:Xst:1710 - FF/Latch <byte_sended_0> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <byte_sended_1> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <byte_sended_2> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <byte_sended_3> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <byte_sended_4> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <byte_sended_5> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <byte_sended_6> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <byte_sended_7> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <byte_sended_8> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <Top_cymometer> ...
 
 Optimizing unit <Cymometer> ...
 
-Optimizing unit <div_28u_22u> ...
+Optimizing unit <SPI_Top> ...
 
-Optimizing unit <LCD1602_Top> ...
-
-Optimizing unit <mod_22u_4u> ...
-
-Optimizing unit <LCD1602_Master> ...
+Optimizing unit <SPI_Slave> ...
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_0> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_0> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_1> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_1> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_2> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_2> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_3> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_3> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_4> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_4> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_5> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_5> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_6> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_6> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_7> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_7> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_8> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_8> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_9> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_9> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_10> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_10> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_11> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_11> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_12> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_12> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_13> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_13> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_14> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_14> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_20> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_20> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_15> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_15> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_21> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_21> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_16> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_16> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_22> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_22> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_17> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_17> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_23> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_23> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_18> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_18> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_24> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_24> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_19> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_19> 
+INFO:Xst:2261 - The FF/Latch <Cymometer/fx_output_cnt_25> in Unit <Top_cymometer> is equivalent to the following FF/Latch, which will be removed : <Cymometer/fs_output_cnt_25> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Top_cymometer, actual ratio is 109.
-Optimizing block <Top_cymometer> to meet ratio 100 (+ 5) of 1430 slices :
-WARNING:Xst:2254 - Area constraint could not be met for block <Top_cymometer>, final ratio is 116.
-FlipFlop Cymometer/fs_cnt_0 has been replicated 4 time(s)
-FlipFlop Cymometer/fs_cnt_1 has been replicated 4 time(s)
-FlipFlop Cymometer/fs_cnt_10 has been replicated 3 time(s)
-FlipFlop Cymometer/fs_cnt_11 has been replicated 3 time(s)
-FlipFlop Cymometer/fs_cnt_12 has been replicated 3 time(s)
-FlipFlop Cymometer/fs_cnt_13 has been replicated 3 time(s)
-FlipFlop Cymometer/fs_cnt_14 has been replicated 3 time(s)
-FlipFlop Cymometer/fs_cnt_15 has been replicated 3 time(s)
-FlipFlop Cymometer/fs_cnt_16 has been replicated 3 time(s)
-FlipFlop Cymometer/fs_cnt_17 has been replicated 3 time(s)
-FlipFlop Cymometer/fs_cnt_18 has been replicated 3 time(s)
-FlipFlop Cymometer/fs_cnt_19 has been replicated 3 time(s)
-FlipFlop Cymometer/fs_cnt_2 has been replicated 4 time(s)
-FlipFlop Cymometer/fs_cnt_20 has been replicated 3 time(s)
-FlipFlop Cymometer/fs_cnt_21 has been replicated 3 time(s)
-FlipFlop Cymometer/fs_cnt_3 has been replicated 3 time(s)
-FlipFlop Cymometer/fs_cnt_4 has been replicated 3 time(s)
-FlipFlop Cymometer/fs_cnt_5 has been replicated 3 time(s)
-FlipFlop Cymometer/fs_cnt_6 has been replicated 3 time(s)
-FlipFlop Cymometer/fs_cnt_7 has been replicated 3 time(s)
-FlipFlop Cymometer/fs_cnt_8 has been replicated 3 time(s)
-FlipFlop Cymometer/fs_cnt_9 has been replicated 3 time(s)
+Found area constraint ratio of 100 (+ 5) on block Top_cymometer, actual ratio is 31.
 
 Final Macro Processing ...
+
+Processing Unit <Top_cymometer> :
+	Found 4-bit shift register for signal <SPI_ctrl_top/SPI_Slave_Ctrl/sck_edge_1>.
+Unit <Top_cymometer> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 239
- Flip-Flops                                            : 239
+# Registers                                            : 559
+ Flip-Flops                                            : 559
+# Shift Registers                                      : 1
+ 4-bit shift register                                  : 1
 
 =========================================================================
 
@@ -1082,34 +470,50 @@ Top Level Output File Name         : Top_cymometer.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 8949
-#      GND                         : 1
-#      INV                         : 103
-#      LUT1                        : 54
-#      LUT2                        : 158
-#      LUT3                        : 816
-#      LUT4                        : 735
-#      LUT5                        : 1720
-#      LUT6                        : 1292
-#      MUXCY                       : 2188
-#      MUXF7                       : 18
-#      VCC                         : 1
-#      XORCY                       : 1863
-# FlipFlops/Latches                : 239
-#      FDC                         : 33
-#      FDCE                        : 190
-#      FDP                         : 16
+# BELS                             : 1436
+#      GND                         : 3
+#      INV                         : 13
+#      LUT1                        : 118
+#      LUT2                        : 188
+#      LUT3                        : 115
+#      LUT4                        : 110
+#      LUT5                        : 29
+#      LUT6                        : 121
+#      MUXCY                       : 246
+#      MUXCY_L                     : 196
+#      MUXF5                       : 2
+#      MUXF6                       : 1
+#      MUXF7                       : 10
+#      MUXF8                       : 2
+#      VCC                         : 3
+#      XORCY                       : 279
+# FlipFlops/Latches                : 1793
+#      FD                          : 513
+#      FDC                         : 152
+#      FDCE                        : 368
+#      FDE                         : 65
+#      FDP                         : 514
+#      FDR                         : 85
+#      FDRE                        : 84
+#      FDS                         : 11
+#      LDC                         : 1
+# RAMS                             : 29
+#      RAMB16BWER                  : 29
+# Shift Registers                  : 419
+#      SRL16                       : 256
+#      SRL16E                      : 1
+#      SRLC16E                     : 40
+#      SRLC32E                     : 122
 # Clock Buffers                    : 4
-#      BUFG                        : 3
-#      BUFGP                       : 1
-# IO Buffers                       : 14
-#      IBUF                        : 1
+#      BUFG                        : 4
+# IO Buffers                       : 9
+#      IBUF                        : 4
 #      IBUFG                       : 1
-#      OBUF                        : 12
+#      OBUF                        : 4
 # DCMs                             : 1
 #      DCM_SP                      : 1
-# DSPs                             : 3
-#      DSP48A1                     : 3
+# Others                           : 1
+#      BSCAN_SPARTAN6              : 1
 
 Device utilization summary:
 ---------------------------
@@ -1118,24 +522,27 @@ Selected Device : 6slx9ftg256-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             239  out of  11440     2%  
- Number of Slice LUTs:                 4878  out of   5720    85%  
-    Number used as Logic:              4878  out of   5720    85%  
+ Number of Slice Registers:            1793  out of  11440    15%  
+ Number of Slice LUTs:                 1113  out of   5720    19%  
+    Number used as Logic:               694  out of   5720    12%  
+    Number used as Memory:              419  out of   1440    29%  
+       Number used as SRL:              419
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   4991
-   Number with an unused Flip Flop:    4752  out of   4991    95%  
-   Number with an unused LUT:           113  out of   4991     2%  
-   Number of fully used LUT-FF pairs:   126  out of   4991     2%  
-   Number of unique control sets:        11
+ Number of LUT Flip Flop pairs used:   2313
+   Number with an unused Flip Flop:     520  out of   2313    22%  
+   Number with an unused LUT:          1200  out of   2313    51%  
+   Number of fully used LUT-FF pairs:   593  out of   2313    25%  
+   Number of unique control sets:        67
 
 IO Utilization: 
- Number of IOs:                          15
- Number of bonded IOBs:                  15  out of    186     8%  
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of    186     4%  
 
 Specific Feature Utilization:
+ Number of Block RAM/FIFO:               29  out of     32    90%  
+    Number using Block RAM only:         29
  Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
- Number of DSP48A1s:                      3  out of     16    18%  
 
 ---------------------------
 Partition Resource Summary:
@@ -1155,13 +562,19 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-clk_fx                             | BUFGP                  | 52    |
-sys_clk                            | DCM_SP:CLKFX           | 163   |
-LCD1602_U1/lcd_clk                 | BUFG                   | 24    |
------------------------------------+------------------------+-------+
+----------------------------------------------------------------------------------+-------------------------------------------------------------+-------+
+Clock Signal                                                                      | Clock buffer(FF name)                                       | Load  |
+----------------------------------------------------------------------------------+-------------------------------------------------------------+-------+
+clk_fx                                                                            | IBUF+BUFG                                                   | 110   |
+sys_clk                                                                           | DCM_SP:CLKFX                                                | 1876  |
+icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL                                 | BUFG                                                        | 282   |
+icon_debug/CONTROL0<13>(icon_debug/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE:O)| NONE(*)(ila_filter_debug/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC)| 1     |
+icon_debug/U0/iUPDATE_OUT                                                         | NONE(icon_debug/U0/U_ICON/U_iDATA_CMD)                      | 1     |
+----------------------------------------------------------------------------------+-------------------------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -1171,10 +584,10 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 451.195ns (Maximum Frequency: 2.216MHz)
-   Minimum input arrival time before clock: 5.150ns
-   Maximum output required time after clock: 4.162ns
-   Maximum combinational path delay: No path found
+   Minimum period: 24.093ns (Maximum Frequency: 41.505MHz)
+   Minimum input arrival time before clock: 6.596ns
+   Maximum output required time after clock: 4.240ns
+   Maximum combinational path delay: 5.005ns
 
 Timing Details:
 ---------------
@@ -1182,482 +595,343 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_fx'
-  Clock period: 4.076ns (frequency: 245.329MHz)
-  Total number of paths / destination ports: 738 / 101
+  Clock period: 6.747ns (frequency: 148.214MHz)
+  Total number of paths / destination ports: 45814 / 142
 -------------------------------------------------------------------------
-Delay:               4.076ns (Levels of Logic = 1)
-  Source:            Cymometer/gate_fx (FF)
-  Destination:       Cymometer/fx_cnt_temp_21 (FF)
+Delay:               6.747ns (Levels of Logic = 39)
+  Source:            Cymometer/GATE_TIME_2 (FF)
+  Destination:       Cymometer/gate_cnt_10 (FF)
   Source Clock:      clk_fx rising
   Destination Clock: clk_fx rising
 
-  Data Path: Cymometer/gate_fx to Cymometer/fx_cnt_temp_21
+  Data Path: Cymometer/GATE_TIME_2 to Cymometer/gate_cnt_10
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             28   0.525   1.681  Cymometer/gate_fx (Cymometer/gate_fx)
-     LUT3:I0->O           22   0.235   1.333  Cymometer/_n0083_inv1 (Cymometer/_n0083_inv)
-     FDCE:CE                   0.302          Cymometer/fx_cnt_temp_0
+     FDE:C->Q              2   0.525   0.725  Cymometer/GATE_TIME_2 (Cymometer/GATE_TIME_2)
+     INV:I->O              1   0.255   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_lut<2>_INV_0 (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_lut<2>)
+     MUXCY:S->O            1   0.215   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<2> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<3> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<4> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<5> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<6> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<7> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<8> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<9> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<10> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<11> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<12> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<13> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<14> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<15> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<16> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<17> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<18> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<19> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<20> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<21> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<22> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<23> (Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_cy<23>)
+     XORCY:CI->O           1   0.206   1.112  Cymometer/Madd_GATE_TIME[31]_GND_6_o_add_2_OUT_xor<24> (Cymometer/GATE_TIME[31]_GND_6_o_add_2_OUT<24>)
+     LUT5:I0->O            1   0.254   0.000  Cymometer/Mcompar_GATE_TIME[31]_GND_6_o_LessThan_2_o_lut<8> (Cymometer/Mcompar_GATE_TIME[31]_GND_6_o_LessThan_2_o_lut<8>)
+     MUXCY:S->O            1   0.215   0.000  Cymometer/Mcompar_GATE_TIME[31]_GND_6_o_LessThan_2_o_cy<8> (Cymometer/Mcompar_GATE_TIME[31]_GND_6_o_LessThan_2_o_cy<8>)
+     MUXCY:CI->O          12   0.235   1.068  Cymometer/Mcompar_GATE_TIME[31]_GND_6_o_LessThan_2_o_cy<9> (Cymometer/GATE_TIME[31]_GND_6_o_LessThan_2_o)
+     INV:I->O              1   0.255   0.681  Cymometer/GATE_TIME[31]_GND_6_o_LessThan_2_o_inv1_INV_0 (Cymometer/GATE_TIME[31]_GND_6_o_LessThan_2_o_inv)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Mcount_gate_cnt_cy<0> (Cymometer/Mcount_gate_cnt_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Mcount_gate_cnt_cy<1> (Cymometer/Mcount_gate_cnt_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Mcount_gate_cnt_cy<2> (Cymometer/Mcount_gate_cnt_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Mcount_gate_cnt_cy<3> (Cymometer/Mcount_gate_cnt_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Mcount_gate_cnt_cy<4> (Cymometer/Mcount_gate_cnt_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Mcount_gate_cnt_cy<5> (Cymometer/Mcount_gate_cnt_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Mcount_gate_cnt_cy<6> (Cymometer/Mcount_gate_cnt_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Mcount_gate_cnt_cy<7> (Cymometer/Mcount_gate_cnt_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Cymometer/Mcount_gate_cnt_cy<8> (Cymometer/Mcount_gate_cnt_cy<8>)
+     MUXCY:CI->O           0   0.023   0.000  Cymometer/Mcount_gate_cnt_cy<9> (Cymometer/Mcount_gate_cnt_cy<9>)
+     XORCY:CI->O           1   0.206   0.000  Cymometer/Mcount_gate_cnt_xor<10> (Cymometer/Mcount_gate_cnt10)
+     FDC:D                     0.074          Cymometer/gate_cnt_10
     ----------------------------------------
-    Total                      4.076ns (1.062ns logic, 3.014ns route)
-                                       (26.1% logic, 73.9% route)
+    Total                      6.747ns (3.161ns logic, 3.586ns route)
+                                       (46.9% logic, 53.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sys_clk'
-  Clock period: 451.195ns (frequency: 2.216MHz)
-  Total number of paths / destination ports: 4312922686465760600000000000000000000000000000 / 297
+  Clock period: 24.093ns (frequency: 41.505MHz)
+  Total number of paths / destination ports: 40941 / 2693
 -------------------------------------------------------------------------
-Delay:               112.799ns (Levels of Logic = 271)
-  Source:            Cymometer/fs_cnt_5_1 (FF)
-  Destination:       Cymometer/data_fx_21 (FF)
+Delay:               6.023ns (Levels of Logic = 3)
+  Source:            Cymometer/clk_cnt_24 (FF)
+  Destination:       Cymometer/fx_cnt_predict_temp_30 (FF)
   Source Clock:      sys_clk rising 4.0X
   Destination Clock: sys_clk rising 4.0X
 
-  Data Path: Cymometer/fs_cnt_5_1 to Cymometer/data_fx_21
+  Data Path: Cymometer/clk_cnt_24 to Cymometer/fx_cnt_predict_temp_30
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             1   0.525   1.112  Cymometer/fs_cnt_5_1 (Cymometer/fs_cnt_5_1)
-     LUT5:I0->O            1   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<27>_lut<0> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<27>_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<27>_cy<0> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<27>_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<27>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<27>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<27>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<27>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<27>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<27>_cy<3>)
-     MUXCY:CI->O           3   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<27>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/o<27>)
-     MUXCY:CI->O           2   0.235   1.002  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_231_o1191_cy (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[27]_GND_7_o_MUX_204_o)
-     LUT5:I1->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<26>_lutdi (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<26>_lutdi)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<26>_cy<0> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<26>_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<26>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<26>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<26>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<26>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<26>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<26>_cy<3>)
-     MUXCY:CI->O           8   0.023   0.944  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<26>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/o<26>)
-     LUT4:I3->O            2   0.254   0.834  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_327_o1191 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[27]_GND_7_o_MUX_300_o)
-     LUT5:I3->O            1   0.250   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<25>_lut<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<25>_lut<1>)
-     MUXCY:S->O            1   0.215   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<25>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<25>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<25>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<25>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<25>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<25>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<25>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<25>_cy<4>)
-     MUXCY:CI->O          13   0.023   1.098  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<25>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/o<25>)
-     LUT6:I5->O            3   0.254   1.196  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_421_o1191 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[27]_GND_7_o_MUX_394_o)
-     LUT5:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<24>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<24>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<24>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<24>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<24>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<24>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<24>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<24>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<24>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<24>_cy<4>)
-     MUXCY:CI->O          13   0.023   1.098  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<24>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/o<24>)
-     LUT6:I5->O            4   0.254   1.080  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_513_o1181 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[26]_GND_7_o_MUX_487_o)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<23>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<23>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<23>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<23>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<23>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<23>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<23>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<23>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<23>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<23>_cy<4>)
-     MUXCY:CI->O          16   0.023   1.182  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<23>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/o<23>)
-     LUT4:I3->O            5   0.254   1.271  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_603_o1191 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[27]_GND_7_o_MUX_576_o)
-     LUT5:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<22>_lutdi2 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<22>_lutdi2)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<22>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<22>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<22>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<22>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<22>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<22>_cy<4>)
-     MUXCY:CI->O          25   0.023   1.403  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<22>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/o<22>)
-     LUT6:I5->O            3   0.254   1.042  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_691_o1161 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[24]_GND_7_o_MUX_667_o)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<21>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<21>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<21>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<21>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<21>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<21>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<21>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<21>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<21>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<21>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<21>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<21>_cy<5>)
-     MUXCY:CI->O          25   0.023   1.403  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<21>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<21>)
-     LUT6:I5->O            5   0.254   1.117  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_777_o1151 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[23]_GND_7_o_MUX_754_o)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<20>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<20>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<20>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<20>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<20>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<20>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<20>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<20>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<20>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<20>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<20>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<20>_cy<5>)
-     MUXCY:CI->O          34   0.023   1.553  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<20>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<20>)
-     LUT6:I5->O            3   0.254   1.042  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_861_o1141 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[22]_GND_7_o_MUX_839_o)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<19>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<19>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<19>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<19>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<19>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<19>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<19>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<19>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<19>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<19>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<19>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<19>_cy<5>)
-     MUXCY:CI->O          31   0.023   1.503  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<19>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<19>)
-     LUT6:I5->O            5   0.254   1.117  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_943_o1131 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[21]_GND_7_o_MUX_922_o)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<18>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<18>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<18>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<18>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<18>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<18>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<18>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<18>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<18>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<18>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<18>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<18>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<18>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<18>_cy<6>)
-     MUXCY:CI->O          42   0.023   1.687  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<18>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<18>)
-     LUT6:I5->O            3   0.254   1.042  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_1023_o1121 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[20]_GND_7_o_MUX_1003_o)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<17>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<17>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<17>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<17>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<17>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<17>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<17>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<17>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<17>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<17>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<17>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<17>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<17>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<17>_cy<6>)
-     MUXCY:CI->O          37   0.023   1.604  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<17>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<17>)
-     LUT5:I4->O            5   0.254   1.271  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_1101_o1191 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[27]_GND_7_o_MUX_1074_o)
-     LUT5:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<16>_lutdi5 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<16>_lutdi5)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<16>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<16>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<16>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<16>_cy<6>)
-     MUXCY:CI->O          50   0.023   1.821  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<16>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<16>)
-     LUT6:I5->O            3   0.254   1.042  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_1177_o191 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[18]_GND_7_o_MUX_1159_o)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<15>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<15>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<15>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<15>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<15>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<15>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<15>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<15>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<15>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<15>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<15>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<15>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<15>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<15>_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<15>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<15>_cy<7>)
-     MUXCY:CI->O          43   0.023   1.704  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<15>_cy<8> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<15>)
-     LUT5:I4->O            5   0.254   1.271  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_1251_o1191 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[27]_GND_7_o_MUX_1224_o)
-     LUT5:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<14>_lutdi6 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<14>_lutdi6)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<14>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<14>_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<14>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<14>_cy<7>)
-     MUXCY:CI->O          58   0.023   1.883  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<14>_cy<8> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<14>)
-     LUT6:I5->O            3   0.254   1.042  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_1323_o171 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[16]_GND_7_o_MUX_1307_o)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<13>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<13>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<13>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<13>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<13>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<13>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<13>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<13>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<13>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<13>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<13>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<13>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<13>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<13>_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<13>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<13>_cy<7>)
-     MUXCY:CI->O          50   0.023   1.821  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<13>_cy<8> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<13>)
-     LUT6:I5->O            5   0.254   1.117  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_1393_o161 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[15]_GND_7_o_MUX_1378_o)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<12>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<12>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<12>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<12>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<12>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<12>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<12>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<12>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<12>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<12>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<12>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<12>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<12>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<12>_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<12>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<12>_cy<7>)
-     MUXCY:CI->O          67   0.023   1.953  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<12>_cy<8> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<12>)
-     LUT6:I5->O            3   0.254   1.042  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_1461_o151 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[14]_GND_7_o_MUX_1447_o)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_cy<8> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_cy<8>)
-     MUXCY:CI->O          56   0.023   1.868  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<11>_cy<9> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<11>)
-     LUT6:I5->O            5   0.254   1.117  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_1527_o141 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[13]_GND_7_o_MUX_1514_o)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_cy<8> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_cy<8>)
-     MUXCY:CI->O          75   0.023   2.015  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<10>_cy<9> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<10>)
-     LUT6:I5->O            3   0.254   1.042  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_1591_o131 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[12]_GND_7_o_MUX_1579_o)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_cy<8> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_cy<8>)
-     MUXCY:CI->O          61   0.023   1.906  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<9>_cy<9> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<9>)
-     LUT6:I5->O            5   0.254   1.117  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_1653_o121 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[11]_GND_7_o_MUX_1642_o)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<8> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<9> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<9>)
-     MUXCY:CI->O          83   0.023   2.077  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<8>_cy<10> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<8>)
-     LUT6:I5->O            3   0.254   1.042  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_1713_o111 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[10]_GND_7_o_MUX_1703_o)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<8> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<9> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<9>)
-     MUXCY:CI->O          68   0.023   1.961  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<7>_cy<10> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<7>)
-     LUT6:I5->O            5   0.254   1.117  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_GND_7_o_MUX_1771_o1271 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[9]_GND_7_o_MUX_1762_o)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<8> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<9> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<9>)
-     MUXCY:CI->O          92   0.023   2.147  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<6>_cy<10> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<6>)
-     LUT6:I5->O            3   0.254   1.042  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_a[27]_MUX_1827_o1261 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[8]_a[27]_MUX_1819_o)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<8> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<9> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<9>)
-     MUXCY:CI->O          75   0.023   2.015  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<5>_cy<10> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<5>)
-     LUT6:I5->O            5   0.254   1.117  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_a[27]_MUX_1855_o1251 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[7]_a[27]_MUX_1848_o)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<8> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<9> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<10> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<10>)
-     MUXCY:CI->O          99   0.023   2.201  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<4>_cy<11> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<4>)
-     LUT6:I5->O            4   0.254   1.080  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_a[0]_a[27]_MUX_1883_o1241 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/a[6]_a[27]_MUX_1877_o)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<8> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<9> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<10> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<10>)
-     MUXCY:CI->O         103   0.023   2.218  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<3>_cy<11> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<3>)
-     LUT6:I5->O            3   0.254   1.042  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_n2469241 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/n2469<5>)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<8> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<9> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<10> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<10>)
-     MUXCY:CI->O          80   0.023   2.054  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<2>_cy<11> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<2>)
-     LUT6:I5->O            2   0.254   1.002  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_n2473231 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/n2473<4>)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<8> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<9> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<10> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<10>)
-     MUXCY:CI->O          29   0.023   1.470  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<1>_cy<11> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<1>)
-     LUT6:I5->O            2   0.254   1.002  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mmux_n2360221 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/n2360<3>)
-     LUT4:I0->O            0   0.254   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_lutdi1 (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_lutdi1)
-     MUXCY:DI->O           1   0.181   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<1> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<2> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<3> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<4> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<5> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<6> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<7> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<8> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<9> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<10> (Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<10>)
-     MUXCY:CI->O           2   0.235   0.725  Cymometer/PWR_6_o_fs_cnt[21]_div_23/Mcompar_o<0>_cy<11> (Cymometer/PWR_6_o_fs_cnt[21]_div_23_OUT<0>)
-     DSP48A1:A0->P47      18   5.220   1.234  Cymometer/Mmult_n0060 (Cymometer/Mmult_n0060_P47_to_Mmult_n00601)
-     DSP48A1:C30->PCOUT47    1   3.149   0.000  Cymometer/Mmult_n00601 (Cymometer/Mmult_n00601_PCOUT_to_Mmult_n00602_PCIN_47)
-     DSP48A1:PCIN47->P4    1   2.645   0.681  Cymometer/Mmult_n00602 (Cymometer/n0060<21>)
-     FDCE:D                    0.074          Cymometer/data_fx_21
+     FDC:C->Q              2   0.525   1.156  Cymometer/clk_cnt_24 (Cymometer/clk_cnt_24)
+     LUT5:I0->O            5   0.254   1.069  Cymometer/n0056_inv_inv31 (Cymometer/n0056_inv_inv3)
+     LUT6:I3->O            2   0.235   0.726  Cymometer/n0056_inv_inv34_1 (Cymometer/n0056_inv_inv34)
+     LUT3:I2->O           31   0.254   1.502  Cymometer/_n0167_inv1 (Cymometer/_n0167_inv)
+     FDCE:CE                   0.302          Cymometer/fx_cnt_predict_temp_0
     ----------------------------------------
-    Total                    112.799ns (35.209ns logic, 77.589ns route)
-                                       (31.2% logic, 68.8% route)
+    Total                      6.023ns (1.570ns logic, 4.453ns route)
+                                       (26.1% logic, 73.9% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'LCD1602_U1/lcd_clk'
-  Clock period: 4.955ns (frequency: 201.828MHz)
-  Total number of paths / destination ports: 137 / 28
+Timing constraint: Default period analysis for Clock 'icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Clock period: 9.265ns (frequency: 107.933MHz)
+  Total number of paths / destination ports: 4598 / 742
 -------------------------------------------------------------------------
-Delay:               4.955ns (Levels of Logic = 3)
-  Source:            LCD1602_U1/char_cnt_1 (FF)
-  Destination:       LCD1602_U1/LCD1602_U1/LCD_DATA_0 (FF)
-  Source Clock:      LCD1602_U1/lcd_clk rising
-  Destination Clock: LCD1602_U1/lcd_clk rising
+Delay:               9.265ns (Levels of Logic = 8)
+  Source:            ila_filter_debug/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B18KGT0.G_RAMB18[18].u_ramb18/U_RAMB18 (RAM)
+  Destination:       icon_debug/U0/U_ICON/U_TDO_reg (FF)
+  Source Clock:      icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+  Destination Clock: icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
 
-  Data Path: LCD1602_U1/char_cnt_1 to LCD1602_U1/LCD1602_U1/LCD_DATA_0
+  Data Path: ila_filter_debug/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B18KGT0.G_RAMB18[18].u_ramb18/U_RAMB18 to icon_debug/U0/U_ICON/U_TDO_reg
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            26   0.525   1.850  LCD1602_U1/char_cnt_1 (LCD1602_U1/char_cnt_1)
-     LUT5:I0->O            1   0.254   0.958  LCD1602_U1/LCD1602_U1/state_state[9]_PWR_17_o_select_18_OUT<0>2 (LCD1602_U1/LCD1602_U1/state_state[9]_PWR_17_o_select_18_OUT<0>1)
-     LUT6:I2->O            1   0.254   0.790  LCD1602_U1/LCD1602_U1/state_state[9]_PWR_17_o_select_18_OUT<0>6 (LCD1602_U1/LCD1602_U1/state_state[9]_PWR_17_o_select_18_OUT<0>5)
-     LUT6:I4->O            1   0.250   0.000  LCD1602_U1/LCD1602_U1/state_state[9]_PWR_17_o_select_18_OUT<0>15 (LCD1602_U1/LCD1602_U1/state[9]_PWR_17_o_select_18_OUT<0>)
-     FDP:D                     0.074          LCD1602_U1/LCD1602_U1/LCD_DATA_0
+     RAMB16BWER:CLKA->DOA7    1   2.100   0.958  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B18KGT0.G_RAMB18[18].u_ramb18/U_RAMB18 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_data<169>)
+     LUT6:I2->O            1   0.254   0.958  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_1914 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_1914)
+     LUT6:I2->O            1   0.254   0.958  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_145 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_145)
+     LUT6:I2->O            1   0.254   0.958  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_91 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_91)
+     LUT6:I2->O            1   0.254   0.000  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_41 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_4)
+     MUXF7:I0->O           1   0.163   0.790  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_2_f7 (U0/I_NO_D.U_ILA/iDATA_DOUT)
+     LUT3:I1->O            1   0.250   0.790  U0/I_NO_D.U_ILA/U_DOUT (CONTROL<3>)
+     end scope: 'ila_filter_debug:CONTROL<3>'
+     begin scope: 'icon_debug:CONTROL0<3>'
+     LUT6:I4->O            1   0.250   0.000  U0/U_ICON/U_TDO_MUX/U_CS_MUX/I4.U_MUX16/Mmux_O11 (U0/U_ICON/iTDO_next)
+     FDE:D                     0.074          U0/U_ICON/U_TDO_reg
     ----------------------------------------
-    Total                      4.955ns (1.357ns logic, 3.598ns route)
-                                       (27.4% logic, 72.6% route)
+    Total                      9.265ns (3.853ns logic, 5.412ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'icon_debug/U0/iUPDATE_OUT'
+  Clock period: 2.300ns (frequency: 434.783MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.300ns (Levels of Logic = 1)
+  Source:            icon_debug/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:       icon_debug/U0/U_ICON/U_iDATA_CMD (FF)
+  Source Clock:      icon_debug/U0/iUPDATE_OUT rising
+  Destination Clock: icon_debug/U0/iUPDATE_OUT rising
+
+  Data Path: icon_debug/U0/U_ICON/U_iDATA_CMD to icon_debug/U0/U_ICON/U_iDATA_CMD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.525   0.765  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              1   0.255   0.681  U0/U_ICON/U_iDATA_CMD_n (U0/U_ICON/iDATA_CMD_n)
+     FDC:D                     0.074          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      2.300ns (0.854ns logic, 1.446ns route)
+                                       (37.1% logic, 62.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_fx'
-  Total number of paths / destination ports: 52 / 52
+  Total number of paths / destination ports: 110 / 110
 -------------------------------------------------------------------------
-Offset:              5.150ns (Levels of Logic = 2)
+Offset:              6.133ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
-  Destination:       Cymometer/gate_cnt_4 (FF)
+  Destination:       Cymometer/gate_cnt_10 (FF)
   Destination Clock: clk_fx rising
 
-  Data Path: rst_n to Cymometer/gate_cnt_4
+  Data Path: rst_n to Cymometer/gate_cnt_10
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.328   0.681  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O            239   0.255   2.427  PLL_Clk/rst_n_INV_1_o1_INV_0 (Cymometer/rst_n_inv)
-     FDC:CLR                   0.459          Cymometer/gate_fx
+     IBUF:I->O            39   1.328   1.636  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            495   0.255   2.455  PLL_Clk/rst_n_INV_1_o1_INV_0 (Cymometer/rst_n_inv)
+     FDCE:CLR                  0.459          Cymometer/fx_cnt_0
     ----------------------------------------
-    Total                      5.150ns (2.042ns logic, 3.108ns route)
-                                       (39.7% logic, 60.3% route)
+    Total                      6.133ns (2.042ns logic, 4.091ns route)
+                                       (33.3% logic, 66.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sys_clk'
-  Total number of paths / destination ports: 163 / 163
+  Total number of paths / destination ports: 953 / 951
 -------------------------------------------------------------------------
-Offset:              5.150ns (Levels of Logic = 2)
+Offset:              6.133ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
-  Destination:       Cymometer/fs_cnt_temp_21 (FF)
+  Destination:       Cymometer/fs_cnt_temp_31 (FF)
   Destination Clock: sys_clk rising 4.0X
 
-  Data Path: rst_n to Cymometer/fs_cnt_temp_21
+  Data Path: rst_n to Cymometer/fs_cnt_temp_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.328   0.681  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O            239   0.255   2.427  PLL_Clk/rst_n_INV_1_o1_INV_0 (Cymometer/rst_n_inv)
-     FDCE:CLR                  0.459          Cymometer/data_fx_0
+     IBUF:I->O            39   1.328   1.636  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            495   0.255   2.455  PLL_Clk/rst_n_INV_1_o1_INV_0 (Cymometer/rst_n_inv)
+     FDC:CLR                   0.459          Cymometer/fx_edge_0
     ----------------------------------------
-    Total                      5.150ns (2.042ns logic, 3.108ns route)
-                                       (39.7% logic, 60.3% route)
+    Total                      6.133ns (2.042ns logic, 4.091ns route)
+                                       (33.3% logic, 66.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'LCD1602_U1/lcd_clk'
-  Total number of paths / destination ports: 24 / 24
+Timing constraint: Default OFFSET IN BEFORE for Clock 'icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Total number of paths / destination ports: 317 / 306
 -------------------------------------------------------------------------
-Offset:              5.150ns (Levels of Logic = 2)
-  Source:            rst_n (PAD)
-  Destination:       LCD1602_U1/char_cnt_4 (FF)
-  Destination Clock: LCD1602_U1/lcd_clk rising
+Offset:              6.596ns (Levels of Logic = 5)
+  Source:            icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT (PAD)
+  Destination:       ila_filter_debug/U0/I_NO_D.U_ILA/U_STAT/U_STAT_CNT/G[0].U_FDRE (FF)
+  Destination Clock: icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
 
-  Data Path: rst_n to LCD1602_U1/char_cnt_4
+  Data Path: icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT to ila_filter_debug/U0/I_NO_D.U_ILA/U_STAT/U_STAT_CNT/G[0].U_FDRE
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.328   0.681  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O            239   0.255   2.427  PLL_Clk/rst_n_INV_1_o1_INV_0 (Cymometer/rst_n_inv)
-     FDCE:CLR                  0.459          LCD1602_U1/char_cnt_0
+    BSCAN_SPARTAN6:SHIFT    3   0.000   0.766  U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/iSHIFT_OUT)
+     LUT2:I1->O           32   0.254   1.796  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
+     LUT4:I0->O            3   0.254   0.874  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_LCE (CONTROL0<4>)
+     end scope: 'icon_debug:CONTROL0<4>'
+     begin scope: 'ila_filter_debug:CONTROL<4>'
+     LUT2:I0->O            1   0.250   0.681  U0/I_NO_D.U_ILA/U_STAT/U_STATCMD (U0/I_NO_D.U_ILA/U_STAT/iSTATCMD_CE)
+     INV:I->O             10   0.255   1.007  U0/I_NO_D.U_ILA/U_STAT/U_STATCMD_n (U0/I_NO_D.U_ILA/U_STAT/iSTATCMD_CE_n)
+     FDRE:R                    0.459          U0/I_NO_D.U_ILA/U_STAT/U_STAT_CNT/G[9].U_FDRE
     ----------------------------------------
-    Total                      5.150ns (2.042ns logic, 3.108ns route)
-                                       (39.7% logic, 60.3% route)
+    Total                      6.596ns (1.472ns logic, 5.124ns route)
+                                       (22.3% logic, 77.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'LCD1602_U1/lcd_clk'
-  Total number of paths / destination ports: 9 / 9
+Timing constraint: Default OFFSET IN BEFORE for Clock 'icon_debug/U0/iUPDATE_OUT'
+  Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              4.118ns (Levels of Logic = 1)
-  Source:            LCD1602_U1/LCD1602_U1/LCD_DATA_7 (FF)
-  Destination:       LCD_DATA<7> (PAD)
-  Source Clock:      LCD1602_U1/lcd_clk rising
+Offset:              2.120ns (Levels of Logic = 1)
+  Source:            icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SEL (PAD)
+  Destination:       icon_debug/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination Clock: icon_debug/U0/iUPDATE_OUT rising
 
-  Data Path: LCD1602_U1/LCD1602_U1/LCD_DATA_7 to LCD_DATA<7>
+  Data Path: icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SEL to icon_debug/U0/U_ICON/U_iDATA_CMD
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q              1   0.525   0.681  LCD1602_U1/LCD1602_U1/LCD_DATA_7 (LCD1602_U1/LCD1602_U1/LCD_DATA_7)
-     OBUF:I->O                 2.912          LCD_DATA_7_OBUF (LCD_DATA<7>)
+    BSCAN_SPARTAN6:SEL     2   0.000   0.725  U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/U_ICON/iSEL)
+     INV:I->O              1   0.255   0.681  U0/U_ICON/U_iSEL_n (U0/U_ICON/iSEL_n)
+     FDC:CLR                   0.459          U0/U_ICON/U_iDATA_CMD
     ----------------------------------------
-    Total                      4.118ns (3.437ns logic, 0.681ns route)
-                                       (83.5% logic, 16.5% route)
+    Total                      2.120ns (0.714ns logic, 1.406ns route)
+                                       (33.7% logic, 66.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sys_clk'
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              4.162ns (Levels of Logic = 1)
-  Source:            LCD1602_U1/lcd_clk (FF)
-  Destination:       LCD_EN (PAD)
+Offset:              4.240ns (Levels of Logic = 1)
+  Source:            SPI_ctrl_top/SPI_Slave_Ctrl/MISO (FF)
+  Destination:       MISO (PAD)
   Source Clock:      sys_clk rising 4.0X
 
-  Data Path: LCD1602_U1/lcd_clk to LCD_EN
+  Data Path: SPI_ctrl_top/SPI_Slave_Ctrl/MISO to MISO
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             2   0.525   0.725  LCD1602_U1/lcd_clk (LCD1602_U1/lcd_clk)
-     OBUF:I->O                 2.912          LCD_EN_OBUF (LCD_EN)
+     FDR:C->Q              4   0.525   0.803  SPI_ctrl_top/SPI_Slave_Ctrl/MISO (SPI_ctrl_top/SPI_Slave_Ctrl/MISO)
+     OBUF:I->O                 2.912          MISO_OBUF (MISO)
     ----------------------------------------
-    Total                      4.162ns (3.437ns logic, 0.725ns route)
-                                       (82.6% logic, 17.4% route)
+    Total                      4.240ns (3.437ns logic, 0.803ns route)
+                                       (81.1% logic, 18.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.525ns (Levels of Logic = 0)
+  Source:            icon_debug/U0/U_ICON/U_TDO_reg (FF)
+  Destination:       icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:TDO (PAD)
+  Source Clock:      icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: icon_debug/U0/U_ICON/U_TDO_reg to icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              0   0.525   0.000  U0/U_ICON/U_TDO_reg (U0/U_ICON/iTDO)
+    BSCAN_SPARTAN6:TDO         0.000          U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS
+    ----------------------------------------
+    Total                      0.525ns (0.525ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               5.005ns (Levels of Logic = 2)
+  Source:            SCK (PAD)
+  Destination:       SCK_2 (PAD)
+
+  Data Path: SCK to SCK_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.328   0.765  SCK_IBUF (SCK_2_OBUF)
+     OBUF:I->O                 2.912          SCK_2_OBUF (SCK_2)
+    ----------------------------------------
+    Total                      5.005ns (4.240ns logic, 0.765ns route)
+                                       (84.7% logic, 15.3% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock LCD1602_U1/lcd_clk
-------------------+---------+---------+---------+---------+
-                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------+---------+---------+---------+---------+
-LCD1602_U1/lcd_clk|    4.955|         |         |         |
-sys_clk           |   89.189|         |         |         |
-------------------+---------+---------+---------+---------+
-
 Clock to Setup on destination clock clk_fx
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_fx         |    4.076|         |         |         |
+clk_fx         |    6.747|         |         |         |
+sys_clk        |    1.280|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock sys_clk
+Clock to Setup on destination clock icon_debug/CONTROL0<13>
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_fx         |   14.134|         |         |         |
-sys_clk        |  112.799|         |         |         |
+sys_clk        |         |         |    2.269|         |
 ---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL
+-------------------------------------------------+---------+---------+---------+---------+
+                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------+---------+---------+---------+---------+
+icon_debug/CONTROL0<13>                          |         |    4.308|         |         |
+icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    9.265|         |         |         |
+icon_debug/U0/iUPDATE_OUT                        |    2.958|         |         |         |
+sys_clk                                          |    4.067|         |         |         |
+-------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock icon_debug/U0/iUPDATE_OUT
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+icon_debug/U0/iUPDATE_OUT|    2.300|         |         |         |
+-------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sys_clk
+-------------------------------------------------+---------+---------+---------+---------+
+                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------+---------+---------+---------+---------+
+clk_fx                                           |    2.202|         |         |         |
+icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    7.122|         |         |         |
+sys_clk                                          |    6.023|         |         |         |
+-------------------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 38.00 secs
-Total CPU time to Xst completion: 37.95 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.10 secs
  
 --> 
 
-Total memory usage is 4619396 kilobytes
+Total memory usage is 4513400 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   14 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :   32 (   0 filtered)
+Number of infos    :   30 (   0 filtered)
 

@@ -8,6 +8,20 @@ Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 Reading NGO file
 "D:/GsZoMuLu/ISE/FPGA_Xilinx-Spartan-6_Projects/Cymometer_LCD1602/Top_cymometer.
 ngc" ...
+Loading design module
+"D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602/chipscope_ila.
+ngc"...
+Loading design module
+"D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602/chipscope_icon
+.ngc"...
+Applying constraints in
+"D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602/chipscope_ila.
+ncf" to module "ila_filter_debug"...
+Checking Constraint Associations...
+Applying constraints in
+"D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\Cymometer_LCD1602/chipscope_icon
+.ncf" to module "icon_debug"...
+Checking Constraint Associations...
 Gathering constraint information from source properties...
 Done.
 
@@ -36,10 +50,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 4438592 kilobytes
+Total memory usage is 4441272 kilobytes
 
 Writing NGD file "Top_cymometer.ngd" ...
-Total REAL time to NGDBUILD completion:  4 sec
-Total CPU time to NGDBUILD completion:   4 sec
+Total REAL time to NGDBUILD completion:  8 sec
+Total CPU time to NGDBUILD completion:   8 sec
 
 Writing NGDBUILD log file "Top_cymometer.bld"...

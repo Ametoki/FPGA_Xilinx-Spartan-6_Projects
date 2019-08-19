@@ -4,20 +4,17 @@ TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
 ##
 NET rst_n                  LOC = L3  | IOSTANDARD = "LVCMOS33";           ## reset pushbutton
 ##
-NET clk_fx                 LOC = K16 | CLOCK_DEDICATED_ROUTE = FALSE;    ## CLK_FX_INPUT
+NET clk_fx                  LOC = K16 | IOSTANDARD = "LVCMOS33";     ## CLK_FX_INPUT
 #NET clk_out                LOC = L16 | IOSTANDARD = "LVCMOS33";          ## CLK_FX_OUTPUT
+##################################################################################
+#SPI Pin define
+##################################################################################
+NET SCK                 LOC = H16 | IOSTANDARD = "LVCMOS33";       ## SCK
+#NET MOSI                LOC = G16 | IOSTANDARD = "LVCMOS33";       ## MOSI
+NET MISO                LOC = F15 | IOSTANDARD = "LVCMOS33";       ## MISO
+NET nCS                 LOC = D11 | IOSTANDARD = "LVCMOS33";       ## SS
 
-##################################################################################
-#LCD1602 Pin define
-##################################################################################
-NET LCD_RS                 LOC = J16 | IOSTANDARD = "LVCMOS33";          ## 
-NET LCD_RW                 LOC = K15 | IOSTANDARD = "LVCMOS33";          ## 
-NET LCD_EN                 LOC = M16 | IOSTANDARD = "LVCMOS33";          ## 
-NET LCD_DATA<0>            LOC = N16 | IOSTANDARD = "LVCMOS33";          ##  
-NET LCD_DATA<1>            LOC = P15 | IOSTANDARD = "LVCMOS33";          ##  
-NET LCD_DATA<2>            LOC = R15 | IOSTANDARD = "LVCMOS33";          ##  
-NET LCD_DATA<3>            LOC = R14 | IOSTANDARD = "LVCMOS33";          ##  
-NET LCD_DATA<4>            LOC = T13 | IOSTANDARD = "LVCMOS33";          ## 
-NET LCD_DATA<5>            LOC = T12 | IOSTANDARD = "LVCMOS33";          ## 
-NET LCD_DATA<6>            LOC = T9  | IOSTANDARD = "LVCMOS33";          ## 
-NET LCD_DATA<7>            LOC = T7  | IOSTANDARD = "LVCMOS33";          ## 
+NET "clk_fx" CLOCK_DEDICATED_ROUTE = FALSE;
+NET SCK_2               LOC = E11 | IOSTANDARD = "LVCMOS33";       ## MOSI
+NET MISO_2              LOC = E15 | IOSTANDARD = "LVCMOS33";       ## MOSI
+NET nCS_2               LOC = C16 | IOSTANDARD = "LVCMOS33";       ## MOSI

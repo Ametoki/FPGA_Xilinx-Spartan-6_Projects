@@ -1,0 +1,5 @@
+verilog work "src/LCD1602_Driver.v"
+verilog work "src/SPI_Slave.v"
+verilog work "src/LCD1602_Top.v"
+verilog work "src/KEY_Debounce.v"
+verilog work "src/SPI_Top.v"

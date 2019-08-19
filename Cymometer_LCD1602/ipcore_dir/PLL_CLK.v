@@ -71,8 +71,7 @@ module PLL_CLK
   // Clock out ports
   output        sys_clk_h,
   // Status and control signals
-  input         rst,
-  output        locked
+  input         rst
  );
 
   // Input buffering
@@ -87,8 +86,6 @@ module PLL_CLK
   //    * Unused inputs are tied off
   //    * Unused outputs are labeled unused
   wire        psdone_unused;
-  wire        locked_int;
-  wire [7:0]  status_int;
   wire clkfb;
   wire clk0;
   wire clkfx;
@@ -124,14 +121,11 @@ module PLL_CLK
     .PSINCDEC              (1'b0),
     .PSDONE                (),
     // Other control and status signals
-    .LOCKED                (locked_int),
-    .STATUS                (status_int),
- 
+    .LOCKED                (),
+    .STATUS                (),
     .RST                   (rst),
     // Unused pin- tie low
     .DSSEN                 (1'b0));
-
-    assign locked = locked_int;
 
   // Output buffering
   //-----------------------------------

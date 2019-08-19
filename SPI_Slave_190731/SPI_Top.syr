@@ -1,0 +1,712 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: SPI_Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SPI_Top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SPI_Top"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : SPI_Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SPI_Slave_190731\src\LCD1602_Driver.v" into library work
+Parsing module <LCD1602_Driver>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SPI_Slave_190731\src\SPI_Slave.v" into library work
+Parsing module <SPI_Slave>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SPI_Slave_190731\src\LCD1602_Top.v" into library work
+Parsing module <LCD1602_Top>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SPI_Slave_190731\src\KEY_Debounce.v" into library work
+Parsing module <KEY_Debounce>.
+Analyzing Verilog file "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SPI_Slave_190731\src\SPI_Top.v" into library work
+Parsing module <SPI_Top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <SPI_Top>.
+
+Elaborating module <LCD1602_Top>.
+
+Elaborating module <LCD1602_Driver>.
+
+Elaborating module <SPI_Slave>.
+
+Elaborating module <KEY_Debounce>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SPI_Top>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SPI_Slave_190731\src\SPI_Top.v".
+    Found 2-bit register for signal <key_state>.
+    Found 1-bit register for signal <sck_r1>.
+    Found 1-bit register for signal <ncs_r0>.
+    Found 1-bit register for signal <ncs_r1>.
+    Found 1-bit register for signal <sck_r0>.
+    Found 8-bit register for signal <data>.
+    Found finite state machine <FSM_0> for signal <key_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 2                                              |
+    | Clock              | sys_clk (rising_edge)                          |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit subtractor for signal <RECV_DATA[7]_GND_1_o_sub_8_OUT> created at line 170.
+    Found 8-bit adder for signal <RECV_DATA[7]_GND_1_o_add_1_OUT> created at line 157.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <SPI_Top> synthesized.
+
+Synthesizing Unit <LCD1602_Top>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SPI_Slave_190731\src\LCD1602_Top.v".
+    Found 5-bit register for signal <char_cnt>.
+    Found 16-bit register for signal <count>.
+    Found 1-bit register for signal <lcd_clk>.
+    Found 16-bit adder for signal <count[15]_GND_2_o_add_2_OUT> created at line 57.
+    Found 5-bit adder for signal <char_cnt[4]_GND_2_o_add_6_OUT> created at line 67.
+    Found 5-bit comparator greater for signal <char_cnt[4]_PWR_2_o_LessThan_6_o> created at line 66
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <LCD1602_Top> synthesized.
+
+Synthesizing Unit <LCD1602_Driver>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SPI_Slave_190731\src\LCD1602_Driver.v".
+        IDLE = 10'b0000000000
+        CLEAR = 10'b0000000001
+        RETURN = 10'b0000000010
+        MODE = 10'b0000000100
+        DISPLAY = 10'b0000001000
+        SHIFT = 10'b0000010000
+        FUNCTION = 10'b0000100000
+        CGRAM = 10'b0001000000
+        DDRAM = 10'b0010000000
+        WRITE = 10'b0100000000
+        WAIT = 10'b1000000000
+    Found 8-bit register for signal <LCD_DATA>.
+    Found 10-bit register for signal <state>.
+    Found 1-bit register for signal <LCD_WE>.
+    Found 1-bit register for signal <LCD_RS>.
+INFO:Xst:1799 - State 1000000000 is never reached in FSM <state>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 9                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 9                                              |
+    | Clock              | lcd_clk (rising_edge)                          |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000000000                                     |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit adder for signal <PWR_3_o_GND_3_o_add_2_OUT> created at line 113.
+    Found 8-bit adder for signal <PWR_3_o_GND_3_o_sub_5_OUT> created at line 115.
+    Found 5-bit comparator lessequal for signal <n0005> created at line 112
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <LCD1602_Driver> synthesized.
+
+Synthesizing Unit <SPI_Slave>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SPI_Slave_190731\src\SPI_Slave.v".
+    Found 8-bit register for signal <byte_recv>.
+    Found 8-bit register for signal <byte_sended>.
+    Found 4-bit register for signal <bit_recv_cnt>.
+    Found 4-bit register for signal <bit_sended_cnt>.
+    Found 3-bit register for signal <sck_edge>.
+    Found 8-bit register for signal <RECV_DATA>.
+    Found 1-bit register for signal <MISO>.
+    Found 1-bit register for signal <sending_flag>.
+    Found 2-bit register for signal <send_state>.
+    Found finite state machine <FSM_2> for signal <send_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 3                                              |
+    | Clock              | sys_clk (rising_edge)                          |
+    | Reset              | _n0110 (positive)                              |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <bit_recv_cnt[3]_GND_5_o_add_4_OUT> created at line 70.
+    Found 4-bit adder for signal <bit_sended_cnt[3]_GND_5_o_add_22_OUT> created at line 126.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  37 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <SPI_Slave> synthesized.
+
+Synthesizing Unit <KEY_Debounce>.
+    Related source file is "D:\GsZoMuLu\ISE\FPGA_Xilinx-Spartan-6_Projects\SPI_Slave_190731\src\KEY_Debounce.v".
+        N = 20
+        FREQ = 50
+        MAX_TIME = 20
+    Found 1-bit register for signal <button_out_d0>.
+    Found 1-bit register for signal <button_out>.
+    Found 20-bit register for signal <q_reg>.
+    Found 1-bit register for signal <DFF2>.
+    Found 1-bit register for signal <button_negedge>.
+    Found 1-bit register for signal <DFF1>.
+    Found 21-bit adder for signal <n0027> created at line 48.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+Unit <KEY_Debounce> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 10
+ 16-bit adder                                          : 1
+ 21-bit adder                                          : 4
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 1
+ 8-bit adder                                           : 1
+ 8-bit addsub                                          : 1
+# Registers                                            : 43
+ 1-bit register                                        : 29
+ 16-bit register                                       : 1
+ 20-bit register                                       : 4
+ 3-bit register                                        : 1
+ 4-bit register                                        : 2
+ 5-bit register                                        : 1
+ 8-bit register                                        : 5
+# Comparators                                          : 2
+ 5-bit comparator greater                              : 1
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 10
+ 16-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 6
+# FSMs                                                 : 3
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <LCD1602_Top>.
+The following registers are absorbed into counter <char_cnt>: 1 register on signal <char_cnt>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <LCD1602_Top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SPI_Slave>.
+The following registers are absorbed into counter <bit_recv_cnt>: 1 register on signal <bit_recv_cnt>.
+The following registers are absorbed into counter <bit_sended_cnt>: 1 register on signal <bit_sended_cnt>.
+Unit <SPI_Slave> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 20-bit adder                                          : 4
+ 8-bit adder                                           : 1
+ 8-bit addsub                                          : 1
+# Counters                                             : 4
+ 16-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+ 5-bit up counter                                      : 1
+# Registers                                            : 152
+ Flip-Flops                                            : 152
+# Comparators                                          : 2
+ 5-bit comparator greater                              : 1
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 5
+ 8-bit 2-to-1 multiplexer                              : 5
+# FSMs                                                 : 3
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <key_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <LCD1602_Top/LCD1602_U1/FSM_1> on signal <state[1:9]> with one-hot encoding.
+-------------------------
+ State      | Encoding
+-------------------------
+ 0000000000 | 000000001
+ 0000000001 | 000000010
+ 0000000010 | 000000100
+ 0000000100 | 000001000
+ 0000001000 | 000010000
+ 0000010000 | 000100000
+ 0000100000 | 001000000
+ 0010000000 | 010000000
+ 0100000000 | 100000000
+ 1000000000 | unreached
+-------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <SPI_Slave_Ctrl/FSM_2> on signal <send_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 11    | 11
+-------------------
+
+Optimizing unit <SPI_Top> ...
+
+Optimizing unit <LCD1602_Top> ...
+
+Optimizing unit <LCD1602_Driver> ...
+
+Optimizing unit <SPI_Slave> ...
+
+Optimizing unit <KEY_Debounce> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SPI_Top, actual ratio is 7.
+
+Final Macro Processing ...
+
+Processing Unit <SPI_Top> :
+	Found 4-bit shift register for signal <SPI_Slave_Ctrl/sck_edge_1>.
+Unit <SPI_Top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 190
+ Flip-Flops                                            : 190
+# Shift Registers                                      : 1
+ 4-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : SPI_Top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 495
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 91
+#      LUT2                        : 38
+#      LUT3                        : 19
+#      LUT4                        : 12
+#      LUT5                        : 96
+#      LUT6                        : 42
+#      MUXCY                       : 91
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 96
+# FlipFlops/Latches                : 195
+#      FDC                         : 124
+#      FDCE                        : 33
+#      FDE                         : 17
+#      FDP                         : 17
+#      FDR                         : 4
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 24
+#      IBUF                        : 8
+#      OBUF                        : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             195  out of  11440     1%  
+ Number of Slice LUTs:                  306  out of   5720     5%  
+    Number used as Logic:               305  out of   5720     5%  
+    Number used as Memory:                1  out of   1440     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    339
+   Number with an unused Flip Flop:     144  out of    339    42%  
+   Number with an unused LUT:            33  out of    339     9%  
+   Number of fully used LUT-FF pairs:   162  out of    339    47%  
+   Number of unique control sets:        12
+
+IO Utilization: 
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of    186    13%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+sys_clk                            | BUFGP                  | 172   |
+LCD1602_Top/lcd_clk                | BUFG                   | 24    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.537ns (Maximum Frequency: 220.410MHz)
+   Minimum input arrival time before clock: 5.404ns
+   Maximum output required time after clock: 4.202ns
+   Maximum combinational path delay: 4.965ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sys_clk'
+  Clock period: 4.537ns (frequency: 220.410MHz)
+  Total number of paths / destination ports: 3628 / 209
+-------------------------------------------------------------------------
+Delay:               4.537ns (Levels of Logic = 3)
+  Source:            LCD1602_Top/count_5 (FF)
+  Destination:       LCD1602_Top/count_15 (FF)
+  Source Clock:      sys_clk rising
+  Destination Clock: sys_clk rising
+
+  Data Path: LCD1602_Top/count_5 to LCD1602_Top/count_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.525   1.181  LCD1602_Top/count_5 (LCD1602_Top/count_5)
+     LUT6:I0->O            1   0.254   0.790  LCD1602_Top/count[15]_PWR_2_o_equal_2_o<15>2 (LCD1602_Top/count[15]_PWR_2_o_equal_2_o<15>1)
+     LUT6:I4->O           17   0.250   1.209  LCD1602_Top/count[15]_PWR_2_o_equal_2_o<15>3 (LCD1602_Top/count[15]_PWR_2_o_equal_2_o)
+     LUT2:I1->O            1   0.254   0.000  LCD1602_Top/Mcount_count_eqn_151 (LCD1602_Top/Mcount_count_eqn_15)
+     FDC:D                     0.074          LCD1602_Top/count_15
+    ----------------------------------------
+    Total                      4.537ns (1.357ns logic, 3.180ns route)
+                                       (29.9% logic, 70.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'LCD1602_Top/lcd_clk'
+  Clock period: 3.446ns (frequency: 290.192MHz)
+  Total number of paths / destination ports: 112 / 28
+-------------------------------------------------------------------------
+Delay:               3.446ns (Levels of Logic = 2)
+  Source:            LCD1602_Top/char_cnt_0 (FF)
+  Destination:       LCD1602_Top/LCD1602_U1/LCD_DATA_3 (FF)
+  Source Clock:      LCD1602_Top/lcd_clk rising
+  Destination Clock: LCD1602_Top/lcd_clk rising
+
+  Data Path: LCD1602_Top/char_cnt_0 to LCD1602_Top/LCD1602_U1/LCD_DATA_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            13   0.525   1.553  LCD1602_Top/char_cnt_0 (LCD1602_Top/char_cnt_0)
+     LUT6:I0->O            1   0.254   0.790  LCD1602_Top/LCD1602_U1/state_state[9]_PWR_3_o_select_18_OUT<1>3_SW0 (N32)
+     LUT6:I4->O            1   0.250   0.000  LCD1602_Top/LCD1602_U1/state_state[9]_PWR_3_o_select_18_OUT<1>3 (LCD1602_Top/LCD1602_U1/state[9]_PWR_3_o_select_18_OUT<1>)
+     FDP:D                     0.074          LCD1602_Top/LCD1602_U1/LCD_DATA_1
+    ----------------------------------------
+    Total                      3.446ns (1.103ns logic, 2.343ns route)
+                                       (32.0% logic, 68.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sys_clk'
+  Total number of paths / destination ports: 182 / 181
+-------------------------------------------------------------------------
+Offset:              5.404ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       ncs_r0 (FF)
+  Destination Clock: sys_clk rising
+
+  Data Path: rst_n to ncs_r0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.328   0.975  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            174   0.255   2.387  rst_n_inv1_INV_0 (LCD1602_Top/LCD1602_U1/rst_n_inv)
+     FDC:CLR                   0.459          LCD1602_Top/count_0
+    ----------------------------------------
+    Total                      5.404ns (2.042ns logic, 3.362ns route)
+                                       (37.8% logic, 62.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'LCD1602_Top/lcd_clk'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              5.404ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       LCD1602_Top/char_cnt_4 (FF)
+  Destination Clock: LCD1602_Top/lcd_clk rising
+
+  Data Path: rst_n to LCD1602_Top/char_cnt_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.328   0.975  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            174   0.255   2.387  rst_n_inv1_INV_0 (LCD1602_Top/LCD1602_U1/rst_n_inv)
+     FDC:CLR                   0.459          LCD1602_Top/LCD1602_U1/LCD_WE
+    ----------------------------------------
+    Total                      5.404ns (2.042ns logic, 3.362ns route)
+                                       (37.8% logic, 62.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'LCD1602_Top/lcd_clk'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            LCD1602_Top/LCD1602_U1/LCD_DATA_7 (FF)
+  Destination:       LCD_DATA<7> (PAD)
+  Source Clock:      LCD1602_Top/lcd_clk rising
+
+  Data Path: LCD1602_Top/LCD1602_U1/LCD_DATA_7 to LCD_DATA<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.525   0.681  LCD1602_Top/LCD1602_U1/LCD_DATA_7 (LCD1602_Top/LCD1602_U1/LCD_DATA_7)
+     OBUF:I->O                 2.912          LCD_DATA_7_OBUF (LCD_DATA<7>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sys_clk'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.202ns (Levels of Logic = 1)
+  Source:            SPI_Slave_Ctrl/MISO (FF)
+  Destination:       MISO (PAD)
+  Source Clock:      sys_clk rising
+
+  Data Path: SPI_Slave_Ctrl/MISO to MISO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.525   0.765  SPI_Slave_Ctrl/MISO (SPI_Slave_Ctrl/MISO)
+     OBUF:I->O                 2.912          MISO_OBUF (MISO)
+    ----------------------------------------
+    Total                      4.202ns (3.437ns logic, 0.765ns route)
+                                       (81.8% logic, 18.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               4.965ns (Levels of Logic = 2)
+  Source:            SCK (PAD)
+  Destination:       SCK_2 (PAD)
+
+  Data Path: SCK to SCK_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.328   0.725  SCK_IBUF (SCK_2_OBUF)
+     OBUF:I->O                 2.912          SCK_2_OBUF (SCK_2)
+    ----------------------------------------
+    Total                      4.965ns (4.240ns logic, 0.725ns route)
+                                       (85.4% logic, 14.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock LCD1602_Top/lcd_clk
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+LCD1602_Top/lcd_clk|    3.446|         |         |         |
+sys_clk            |    2.724|         |         |         |
+-------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sys_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sys_clk        |    4.537|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.30 secs
+ 
+--> 
+
+Total memory usage is 4494980 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

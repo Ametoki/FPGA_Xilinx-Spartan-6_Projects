@@ -35,7 +35,7 @@ assign    LCD_ON = 1'b1;
 assign    LCD_RW = 1'b0;
 assign    LCD_EN = lcd_clk;
 initial   LCD_WE = 1'b0;
-reg[9:0] state;
+reg[9:0]  state;
 
 parameter     IDLE = 10'b00_0000_0000; //initial state
 parameter    CLEAR = 10'b00_0000_0001; //clear
